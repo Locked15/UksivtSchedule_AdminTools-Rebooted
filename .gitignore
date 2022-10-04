@@ -1,2 +1,5 @@
-# All compiled files excludes from GIT.
+# All Compiled Files Excludes From GIT.
 /target/
+
+# IDE Settings.
+/.idea/
