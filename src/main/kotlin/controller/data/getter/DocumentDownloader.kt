@@ -1,10 +1,11 @@
-package controller.dataGetter
+package controller.data.getter
 
 import org.apache.commons.io.FileUtils
 import java.io.File
 import java.io.IOException
 import java.net.MalformedURLException
 import java.net.URL
+
 
 /**
  * Rewritten on Kotlin.
@@ -21,14 +22,6 @@ import java.net.URL
 @Suppress("Unused")
 class DocumentDownloader {
 
-	companion object {
-		
-		/**
-		 * A template for a download link to a document on Google Drive.
-		 */
-		const val GOOGLE_DRIVE_LINK_TEMPLATE = "https://drive.google.com/uc?export=download&id="
-	}
-	
 	/* region Functions */
 	
 	/**
@@ -66,6 +59,17 @@ class DocumentDownloader {
 		}
 		
 		return false
+	}
+	/* endregion */
+	
+	/* region Companion */
+	
+	companion object {
+		
+		/**
+		 * A template for a download link to a document on Google Drive.
+		 */
+		const val GOOGLE_DRIVE_LINK_TEMPLATE = "https://drive.google.com/uc?export=download&id="
 	}
 	/* endregion */
 }
