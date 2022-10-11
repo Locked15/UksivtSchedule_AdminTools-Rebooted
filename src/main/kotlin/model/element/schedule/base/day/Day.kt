@@ -1,4 +1,4 @@
-package model.elements.schedule.base.day
+package model.element.schedule.base.day
 
 
 /**

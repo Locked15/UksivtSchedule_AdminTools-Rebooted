@@ -1,6 +1,6 @@
-package model.elements.schedule.base.day
+package model.element.schedule.base.day
 
-import model.elements.schedule.base.day.Day.*
+import model.element.schedule.base.day.Day.*
 
 
 /**

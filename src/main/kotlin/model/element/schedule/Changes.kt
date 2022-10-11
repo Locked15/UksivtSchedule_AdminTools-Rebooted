@@ -1,6 +1,6 @@
-package model.elements.schedule
+package model.element.schedule
 
-import model.elements.schedule.base.Lesson
+import model.element.schedule.base.Lesson
 
 
 /**
@@ -10,13 +10,13 @@ import model.elements.schedule.base.Lesson
  */
 class Changes(val changes: MutableList<Lesson>, var absolute: Boolean) {
 	
-	/* region Constructors */
+	/* region Additional Constructors */
 	
 	/**
 	 * Additional constructor, that write default values to properties.
 	 * Info: [changes] set to an empty list, [absolute] to false.
 	 */
-	constructor() : this(changes = mutableListOf<Lesson>(), absolute = false)
+	constructor() : this(mutableListOf<Lesson>(), false)
 	
 	/**
 	 * Additional constructor, that write changes to property.

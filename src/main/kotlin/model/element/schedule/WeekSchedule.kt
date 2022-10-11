@@ -1,4 +1,4 @@
-package model.elements.schedule
+package model.element.schedule
 
 
 /**
@@ -8,7 +8,7 @@ package model.elements.schedule
  */
 class WeekSchedule(var groupName: String?, var daySchedules: List<DaySchedule>) {
 	
-	/* region Constructors */
+	/* region Additional Constructors */
 	
 	/**
 	 * Empty constructor.

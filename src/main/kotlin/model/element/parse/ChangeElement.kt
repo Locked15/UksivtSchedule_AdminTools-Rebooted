@@ -1,6 +1,6 @@
-package model.elements.parse
+package model.element.parse
 
-import model.elements.schedule.base.day.Day
+import model.element.schedule.base.day.Day
 
 
 /**

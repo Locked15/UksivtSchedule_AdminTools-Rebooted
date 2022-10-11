@@ -1,4 +1,4 @@
-package model.elements.schedule.base
+package model.element.schedule.base
 
 
 /**
@@ -11,7 +11,7 @@ package model.elements.schedule.base
  */
 class Lesson(var number: Int?, var name: String?, var teacher: String?, var place: String?) : Comparable<Lesson> {
 	
-	/* region Constructors */
+	/* region Additional Constructors */
 	
 	/**
 	 * Default constructor of the class.

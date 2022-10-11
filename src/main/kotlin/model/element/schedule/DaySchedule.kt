@@ -1,7 +1,7 @@
-package model.elements.schedule
+package model.element.schedule
 
-import model.elements.schedule.base.Lesson
-import model.elements.schedule.base.day.Day
+import model.element.schedule.base.Lesson
+import model.element.schedule.base.day.Day
 
 
 /**
