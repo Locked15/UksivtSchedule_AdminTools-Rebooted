@@ -8,13 +8,13 @@ import model.element.schedule.base.Lesson
  *
  * Earlier, it wasn't a class, just a combination of list with changes and boolean with absolute determination.
  */
-class Changes(val changes: MutableList<Lesson>, var absolute: Boolean) {
+class Changes(val changedLessons: MutableList<Lesson>, var absolute: Boolean) {
 	
 	/* region Additional Constructors */
 	
 	/**
 	 * Additional constructor, that write default values to properties.
-	 * Info: [changes] set to an empty list, [absolute] to false.
+	 * Info: [changedLessons] set to an empty list, [absolute] to false.
 	 */
 	constructor() : this(mutableListOf<Lesson>(), false)
 	
