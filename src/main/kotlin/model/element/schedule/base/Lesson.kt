@@ -11,7 +11,7 @@ package model.element.schedule.base
  */
 class Lesson(var number: Int?, var name: String?, var teacher: String?, var place: String?) : Comparable<Lesson> {
 	
-	/* region Additional Constructors */
+	/* region Constructors */
 	
 	/**
 	 * Default constructor of the class.

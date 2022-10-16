@@ -2,12 +2,24 @@ package model.element.schedule
 
 import model.element.schedule.base.Lesson
 import model.element.schedule.base.day.Day
+import controller.Writer
 
 
 /**
- * Class, that represents one day schedule.
+ * Class, that represents one-day schedule.
  */
 class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
+
+    /* region Constructors */
+
+    /**
+     * Initializes a new instance of DaySchedule only with given [day].
+     * [lessons] initializes with an [empty list][mutableListOf].
+     *
+     * Uses by [Writer] [manual extraction][Writer.manualScheduleExtraction] sub-functions.
+     */
+    constructor(day: Day) : this(day, mutableListOf())
+    /* endregion */
 
     /* region Functions */
 

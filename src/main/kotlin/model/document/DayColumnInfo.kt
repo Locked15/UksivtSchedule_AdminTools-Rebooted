@@ -6,7 +6,7 @@ import org.apache.poi.ss.util.CellAddress
 
 class DayColumnInfo(val coordinates: CellAddress, val currentDay: Day) {
 
-	/* region Additional Constructors */
+	/* region Constructors */
 	
 	/**
 	 * Main constructor of the class.

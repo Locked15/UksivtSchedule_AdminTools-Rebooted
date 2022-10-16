@@ -10,7 +10,7 @@ import model.element.schedule.base.Lesson
  */
 class Changes(val changedLessons: MutableList<Lesson>, var absolute: Boolean) {
 	
-	/* region Additional Constructors */
+	/* region Constructors */
 	
 	/**
 	 * Additional constructor, that write default values to properties.
