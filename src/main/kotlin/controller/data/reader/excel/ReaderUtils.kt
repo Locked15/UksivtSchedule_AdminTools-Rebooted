@@ -9,6 +9,8 @@ import java.util.concurrent.atomic.AtomicBoolean
 import model.element.schedule.base.day.fromString as getDayValueFromString
 
 
+/* region "searchTargetSheet" function */
+
 /**
  * Searches [a target sheet][Sheet] inside [book], by send [group name][groupName].
  * If search isn't successful, returns 'NULL' value.
@@ -51,6 +53,10 @@ private fun checkCellToContain(cell: Cell, groupName: String): Boolean {
 
     return value == groupName
 }
+
+/* endregion */
+
+/* region "searchTargetColumns" function */
 
 /**
  * Searches target columns inside [sheet].
@@ -117,6 +123,9 @@ private fun checkCellContinuousState(currentCell: Cell, value: String): Boolean 
     return currentCell.cellStyle.wrapText ||
             (value != Reader.UNITED_CELL_VALUE && value != Reader.EMPTY_CELL_VALUE)
 }
+/* endregion */
+
+/* region "searchDaysCoordinates" function */
 
 /**
  * Searches [coordinates][DayColumnInfo] of day declarations inside a document.
@@ -157,3 +166,4 @@ private fun parseCellToFindDayCoordinates(cell: Cell): DayColumnInfo? {
 
     return null
 }
+/* endregion */

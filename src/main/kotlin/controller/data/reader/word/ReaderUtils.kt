@@ -6,6 +6,8 @@ import model.document.parse.word.iterator.OuterIteratorModel
 import org.apache.poi.xwpf.usermodel.XWPFTable
 
 
+/* region "searchTargetTable" function */
+
 fun searchTargetTable(tables: List<XWPFTable>): XWPFTable {
     for (table in tables) {
         if (checkTableIsCorrect(table)) {
@@ -32,6 +34,9 @@ private fun secondTableCheckPart(header: String): Boolean = header.contains("з�
 
 private fun thirdTableCheckPart(header: String): Boolean = header.contains("заменяющий преподаватель", true) &&
         header.contains("ауд", true)
+/* endregion */
+
+/* region "checkToParsingStopper" function */
 
 fun checkToParsingStopper(base: BaseIteratorModel, outer: OuterIteratorModel, inner: InnerIteratorModel,
                           target: String): Boolean {
@@ -46,3 +51,4 @@ private fun firstStopperCheckPart(listen: Boolean, foundText: String, target: St
 
 private fun secondStopperCheckPart(cellNumber: Int): Boolean = cellNumber == 0 ||
         cellNumber == 3
+/* endregion */
