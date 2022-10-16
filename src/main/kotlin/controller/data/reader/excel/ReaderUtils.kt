@@ -5,11 +5,19 @@ import model.document.DayColumnInfo
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Sheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
-import org.apache.poi.xwpf.usermodel.XWPFTable
 import java.util.concurrent.atomic.AtomicBoolean
 import model.element.schedule.base.day.fromString as getDayValueFromString
 
 
+/**
+ * Searches [a target sheet][Sheet] inside [book], by send [group name][groupName].
+ * If search isn't successful, returns 'NULL' value.
+ *
+ * Use full-array iterations, so may negatively affect performance.
+ *
+ * Earlier, it was a monolithic and the whole function, but on *Rebooted* version, I refactored it.
+ * Now statement-checks logic moved to [private][checkSheetToContain] [functions][checkCellToContain].
+ */
 fun searchTargetSheet(book: XSSFWorkbook, groupName: String): Sheet? {
     val sheets = book.sheetIterator()
     for (sheet in sheets) {
@@ -21,6 +29,9 @@ fun searchTargetSheet(book: XSSFWorkbook, groupName: String): Sheet? {
     return null
 }
 
+/**
+ * Checks sent [sheet] to contain [target group][groupName].
+ */
 private fun checkSheetToContain(sheet: Sheet, groupName: String): Boolean {
     val cells = sheet.getRow(0).cellIterator()
     for (cell in cells) {
@@ -32,12 +43,21 @@ private fun checkSheetToContain(sheet: Sheet, groupName: String): Boolean {
     return false
 }
 
+/**
+ * Checks sent [cell] to contain [target group][groupName].
+ */
 private fun checkCellToContain(cell: Cell, groupName: String): Boolean {
     val value = cell.stringCellValue.lowercase()
 
     return value == groupName
 }
 
+/**
+ * Searches target columns inside [sheet].
+ * Target columns define by sent [group].
+ *
+ * Returns [list][List] with [data][ColumnBorders] about target columns.
+ */
 fun searchTargetColumns(sheet: Sheet, group: String): List<ColumnBorders> {
     val searchIndices = mutableListOf<ColumnBorders>()
     completeParseProcess(group, searchIndices, sheet)
@@ -45,6 +65,11 @@ fun searchTargetColumns(sheet: Sheet, group: String): List<ColumnBorders> {
     return searchIndices
 }
 
+/**
+ * Parses current [sheet] to find target columns.
+ *
+ * When the target column is found, it writes info about their borders.
+ */
 private fun completeParseProcess(group: String, searchIndices: MutableList<ColumnBorders>, sheet: Sheet) {
     val listenToCycleEnding = AtomicBoolean(false)
     val cells = sheet.getRow(0).cellIterator()
@@ -58,6 +83,9 @@ private fun completeParseProcess(group: String, searchIndices: MutableList<Colum
     }
 }
 
+/**
+ * Parses [cell] and updates info about border indices.
+ */
 private fun parseCellAndUpdateIndices(group: String, cell: Cell, listenToCycleEnding: AtomicBoolean,
                                       searchIndices: MutableList<ColumnBorders>) {
     val value = cell.stringCellValue
@@ -74,16 +102,26 @@ private fun parseCellAndUpdateIndices(group: String, cell: Cell, listenToCycleEn
     }
 }
 
+/**
+ * Get left border index of given [cell].
+ */
 private fun getLeftIndex(cell: Cell): Int {
     return if (cell.columnIndex > 0) cell.columnIndex - 1
     else 0
 }
 
+/**
+ * Checks if [cell][currentCell] with given [value] is continuous.
+ */
 private fun checkCellContinuousState(currentCell: Cell, value: String): Boolean {
     return currentCell.cellStyle.wrapText ||
             (value != Reader.UNITED_CELL_VALUE && value != Reader.EMPTY_CELL_VALUE)
 }
 
+/**
+ * Searches [coordinates][DayColumnInfo] of day declarations inside a document.
+ * Returns list with these objects.
+ */
 fun searchDaysCoordinates(sheet: Sheet): List<DayColumnInfo> {
     val rows = sheet.rowIterator()
     val toReturn = mutableListOf<DayColumnInfo>()
@@ -101,6 +139,9 @@ fun searchDaysCoordinates(sheet: Sheet): List<DayColumnInfo> {
     return toReturn
 }
 
+/**
+ * Parses [cell] to find [day coordinates][DayColumnInfo].
+ */
 private fun parseCellToFindDayCoordinates(cell: Cell): DayColumnInfo? {
     // Info: If we try to get a string value from non-string cell, we'll get an exception.
     try {
@@ -116,20 +157,3 @@ private fun parseCellToFindDayCoordinates(cell: Cell): DayColumnInfo? {
 
     return null
 }
-
-fun checkThatTableIsCorrect(table: XWPFTable): Boolean {
-    val header = table.text
-
-    /* Change table always contains some of these values, so check it.
-       And, as you know, sometimes a changes document contains more than one table. */
-    return firstCheckPart(header) || secondCheckPart(header) || thirdCheckPart(header)
-}
-
-private fun firstCheckPart(header: String): Boolean = header.contains("группа", true) &&
-        header.contains("заменяемая дисциплина", true)
-
-private fun secondCheckPart(header: String): Boolean = header.contains("заменяемый преподаватель", true) &&
-        header.contains("заменяющая дисциплина", true)
-
-private fun thirdCheckPart(header: String): Boolean = header.contains("заменяющий преподаватель", true) &&
-        header.contains("ауд", true)
