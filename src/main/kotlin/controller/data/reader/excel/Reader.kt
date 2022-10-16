@@ -17,6 +17,9 @@ import model.exception.GroupDoesNotExistException
 import java.lang.Exception
 
 
+/**
+ * Reader-Class for an Excel documents with basic schedules.
+ */
 class Reader(pathToFile: String) {
 
     /* region Properties */
@@ -34,7 +37,7 @@ class Reader(pathToFile: String) {
     /**
      * Creates a new instance of a document with base schedule.
      *
-     * May throw exceptions, if sent a path is incorrect.
+     * May throw exceptions, if sent an incorrect path.
      */
     init {
         val docStream = FileInputStream(pathToFile)
@@ -111,7 +114,7 @@ class Reader(pathToFile: String) {
                 for (row in iterationData.rows) {
                     /** Inner iteration data, placed inside the second cycle. */
                     val localData = InnerIteratorModel(lessonNameIsAdded = false, lessonPlaceIsAdded = false,
-                                                       DayColumnInfo.getInfoByDay(
+                                                       dayEndingRow = DayColumnInfo.getInfoByDay(
                                                                Day.getValueByIndex(iterationData.dayIterator),
                                                                baseData.dayColumnsIndices)?.coordinates?.row,
                                                        cells = row.cellIterator())
