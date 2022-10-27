@@ -1,13 +1,14 @@
 package model.site.parse
 
 import controller.data.getter.SiteParser
-
+import model.element.schedule.base.day.Day
 
 /**
  * Wrapper class for inner iteration of [site parsing function][SiteParser.getAvailableNodes].
  * Use to minify code.
  *
- * @param dayCounter  The number of current parsing day.
- * @param isFirstIteration  Define when iteration found an end of the month and re-begins iteration process.
+ * @param dayOfWeekCounter  Current day of week ID. Can be used to evaluate [Day] value by itself.
+ * @param isFirstIteration  Define when iteration found an end of the month and re-begins an iteration process.
  */
-class InnerIteratorModel(var dayCounter: Int, var isFirstIteration: Boolean)
+class InnerIteratorModel(var dayOfWeekCounter: Int, var isFirstIteration: Boolean)
+

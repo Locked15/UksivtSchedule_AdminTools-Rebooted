@@ -13,5 +13,5 @@ import controller.data.getter.SiteParser
  * @param listOfMonthChangesElements  List of containers, that contains day changes elements.
  *                                    It gets from parent node, by '.children()' function.
  */
-class ChangeElementsWrapper(val generalChangesElement: Element,
-                            val listOfMonthChangesElements: List<Element>)
+class ChangeElementsWrapper(val generalChangesElement: Element?,
+                            val listOfMonthChangesElements: List<Element>?)
