@@ -18,6 +18,7 @@ import java.lang.Exception
  *
  * Its functionality allows scrapping [college website](https://www.uksivt.ru) [page](https://www.uksivt.ru/zameny)
  * and [extracting links][ChangeElement.linkToDocument] to change documents.
+ *
  * Extracted links [boxed inside][ChangeElement] [objects][MonthChanges] with side-information
  * ([day][ChangeElement.dayOfWeek],
  * [month][ChangeElement.dayOfMonth],
@@ -57,62 +58,33 @@ class SiteParser {
 
 	/* region Functions */
 
+	/**
+	 * Parses college [website](https://uksivt.ru) [page](https://uksivt.ru/zameny)
+	 * and seeks all available [changes nodes][ChangeElement].
+	 *
+	 * It parses [limited count][months] of [months][MonthChanges].
+	 *
+	 * Some Info:
+	 * This function has been written in 2021 year, so it may not include last edits of the site.
+	 * Please [tell](mailto:almgal353@gmail.com) [me](https://bit.ly/3WbRlMn)
+	 * if something [WENT][Exception] [WRONG][Error] on a parsing process.
+	 */
 	fun getAvailableNodes(months: Int = 2): MutableList<MonthChanges> {
 		val base = BaseIteratorModel(0, 0, "Январь", mutableListOf(), mutableListOf())
 		if (webPage != null) {
-			val elements = ChangeElementsWrapper(webPage.getElementById(PATH_BEGIN_ELEMENT_ID)!!
-                                                     .select(CSS_SELECTOR_TO_DOCUMENTS_SECTION)[0],
-												 webPage.getElementById(PATH_BEGIN_ELEMENT_ID)!!
-                                                     .select(CSS_SELECTOR_TO_DOCUMENTS_SECTION)[0]
-                                                     .children())
-            for (element in elements.listOfMonthChangesElements) {
+			val elements = executePageQueriesAndGetElements()
+            for (element in elements.listOfMonthChangesElements ?: emptyList()) {
                 calculateNewMonthBeginning(element, base)
                 if (element.nodeName() == "table" && base.monthCounter < months) {
-	                /* At first table contains tag <thead>, and then <tbody>, that contain table body.
-	                   We need it. */
 					val table = TableContentWrapper(element.children()[0], element.children()[1],
 													element.children()[1].children())
 	                for (row in table.rows) {
 						val innerIterator = InnerIteratorModel(0, false)
-		                if (row == table.rows.first()) {
-							continue
-		                }
-		                
-		                // All rows after the first, contains target information.
-		                for (cell in row.children()) {
-							/* First cell contains non-breaking space, so we'll have to skip it.
-							   Also, if the first day of the month isn't monday, some cells also be empty. */
-							if (cell.text() == NON_BREAKING_SPACE) {
-								// If we don't meet at least one day, we'll continue to skip cells.
-								if (!innerIterator.isFirstIteration) {
-									innerIterator.dayCounter++
-								}
-								// So, to skip some cells, we declare value and continue the cycle.
-								innerIterator.isFirstIteration = false
-								continue
-							}
-			                
-			                /* Some cells don't contain anything, so we'll have to check it.
-			                   Commonly it's cells on weekend days. */
-			                if (cell.children().size < 1) {
-								base.changes.add(ChangeElement(Day.getValueByIndex(base.dayCounter), -1, null))
-			                }
-			                // In another case, cell contains changes, so we need to get a children element.
-			                else {
-								val link = cell.children().first()
-				                base.changes.add(ChangeElement(Day.getValueByIndex(base.dayCounter), base.dayCounter,
-					                                           link?.attr("href")))
-			                }
-			                
-			                /* And in the end we increase values of iterators.
-			                   This needed to define information about current parser position. */
-			                base.dayCounter++
-			                innerIterator.dayCounter++
-		                }
+		                if (row == table.rows.first()) continue
+
+		                iterateAndReadRowCells(row, base, innerIterator)
 	                }
-	                /* At this moment we completed current month parsing and may begin to next one.
-	                   (Previous, if says within date-context). */
-	                base.monthCounter++
+	                increaseMonth(base)
                 }
             }
 		}
@@ -120,6 +92,26 @@ class SiteParser {
 		return base.monthChanges
 	}
 
+	/**
+	 * Executes page queries (like CSS-Selector query) and extracts changes container children.
+	 * Then packs it into a [new object][ChangeElementsWrapper] and returns.
+	 */
+	private fun executePageQueriesAndGetElements(): ChangeElementsWrapper {
+		val containerElement = webPage?.getElementById(PATH_BEGIN_ELEMENT_ID)
+			?.select(CSS_SELECTOR_TO_DOCUMENTS_SECTION)
+			?.get(0)
+		val contentElement = containerElement?.children()
+
+		return ChangeElementsWrapper(containerElement, contentElement)
+	}
+
+	/**
+	 * Evaluates expressions of a new month beginning.
+	 * Updates relative objects and saves values.
+	 *
+	 * Also called on the first iteration,
+	 * to initialize [some][BaseIteratorModel.changes] [properties][BaseIteratorModel.currentMonth].
+	 */
     private fun calculateNewMonthBeginning(element: Element, model: BaseIteratorModel) {
         /* Month-scoped elements always lie inside <p> tag, but in the beginning of the page
            it is space, created by the same tag.
@@ -133,9 +125,80 @@ class SiteParser {
                 .lastIndexOf(' '))
                 .replace(NON_BREAKING_SPACE, "")
             model.changes = mutableListOf()
-            model.dayCounter = 1
+            model.dayOfMonthCounter = 1
         }
     }
+
+	/**
+	 * Iterates [current row][row] [cells][List] and updates [related][base] [objects][inner].
+	 * Cell content parses by [another function][parseCellValueAndUpdateObjects].
+	 */
+	private fun iterateAndReadRowCells(row: Element, base: BaseIteratorModel, inner: InnerIteratorModel) {
+		// All rows after the first, contains target information.
+		for (cell in row.children()) {
+			if (checkFirstCellAndUpdateObjects(cell, inner)) continue
+			else parseCellValueAndUpdateObjects(cell, base, inner)
+
+			increaseIterators(base, inner)
+		}
+	}
+
+	/**
+	 * Checks first row cell and updates objects.
+	 *
+	 * The first cell contains a non-breaking space for indentation goal, so we'll have to skip it.
+	 * If new month begins on non-monday, so we'll have to skip more than one cell.
+	 */
+	private fun checkFirstCellAndUpdateObjects(cell: Element, iterator: InnerIteratorModel): Boolean {
+		var result = false
+		if (cell.text() == NON_BREAKING_SPACE) {
+			// If we don't meet at least one day, we'll continue to skip cells.
+			if (!iterator.isFirstIteration) {
+				iterator.dayOfWeekCounter++
+			}
+			// So, to skip some cells, we declare value and continue the cycle.
+			iterator.isFirstIteration = false
+			result = true
+		}
+
+		return result
+	}
+
+	/**
+	 * Parses cell value, and, if it contains something, writes it to a [related][model] [objects][inner].
+	 * Although it writes empty value, that can be skipped later.
+	 */
+	private fun parseCellValueAndUpdateObjects(cell: Element, model: BaseIteratorModel, inner: InnerIteratorModel) {
+		if (cell.children().size < 1) {
+			model.changes.add(ChangeElement(Day.getValueByIndex(inner.dayOfWeekCounter), -1, null))
+		}
+		else {
+			val link = cell.children().first()
+			model.changes.add(ChangeElement(Day.getValueByIndex(inner.dayOfWeekCounter), model.dayOfMonthCounter,
+											link?.attr("href")))
+		}
+	}
+
+	/**
+	 * Increases month counter.
+	 * If the current month is december (12), sets it to january (1).
+	 *
+	 * Nor more, nor less.
+	 */
+	private fun increaseMonth(base: BaseIteratorModel) {
+		if (base.monthCounter < 12) base.monthCounter++
+		else base.monthCounter = 1
+	}
+
+	/**
+	 * Increases common [iterator][BaseIteratorModel.dayOfMonthCounter] [values][InnerIteratorModel.dayOfWeekCounter].
+	 *
+	 * Nor more, nor less.
+	 */
+	private fun increaseIterators(base: BaseIteratorModel, inner: InnerIteratorModel) {
+		base.dayOfMonthCounter++
+		inner.dayOfWeekCounter++
+	}
 	/* endregion */
 
 	/* region Companion */
