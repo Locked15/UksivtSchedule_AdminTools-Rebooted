@@ -1,15 +1,28 @@
 package controller.data.getter
 
+import model.element.parse.ChangeElement
 import model.element.parse.MonthChanges
+import model.element.schedule.base.day.Day
 import model.site.parse.BaseIteratorModel
 import model.site.parse.ChangeElementsWrapper
-import org.jsoup.Connection.Base
+import model.site.parse.InnerIteratorModel
+import model.site.parse.TableContentWrapper
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.lang.Exception
 
 
+/**
+ * Site parser class.
+ *
+ * Its functionality allows scrapping [college website](https://www.uksivt.ru) [page](https://www.uksivt.ru/zameny)
+ * and [extracting links][ChangeElement.linkToDocument] to change documents.
+ * Extracted links [boxed inside][ChangeElement] [objects][MonthChanges] with side-information
+ * ([day][ChangeElement.dayOfWeek],
+ * [month][ChangeElement.dayOfMonth],
+ * [etc][MonthChanges.currentMonth]).
+ */
 class SiteParser {
 
 	/* region Properties */
@@ -55,7 +68,51 @@ class SiteParser {
             for (element in elements.listOfMonthChangesElements) {
                 calculateNewMonthBeginning(element, base)
                 if (element.nodeName() == "table" && base.monthCounter < months) {
-
+	                /* At first table contains tag <thead>, and then <tbody>, that contain table body.
+	                   We need it. */
+					val table = TableContentWrapper(element.children()[0], element.children()[1],
+													element.children()[1].children())
+	                for (row in table.rows) {
+						val innerIterator = InnerIteratorModel(0, false)
+		                if (row == table.rows.first()) {
+							continue
+		                }
+		                
+		                // All rows after the first, contains target information.
+		                for (cell in row.children()) {
+							/* First cell contains non-breaking space, so we'll have to skip it.
+							   Also, if the first day of the month isn't monday, some cells also be empty. */
+							if (cell.text() == NON_BREAKING_SPACE) {
+								// If we don't meet at least one day, we'll continue to skip cells.
+								if (!innerIterator.isFirstIteration) {
+									innerIterator.dayCounter++
+								}
+								// So, to skip some cells, we declare value and continue the cycle.
+								innerIterator.isFirstIteration = false
+								continue
+							}
+			                
+			                /* Some cells don't contain anything, so we'll have to check it.
+			                   Commonly it's cells on weekend days. */
+			                if (cell.children().size < 1) {
+								base.changes.add(ChangeElement(Day.getValueByIndex(base.dayCounter), -1, null))
+			                }
+			                // In another case, cell contains changes, so we need to get a children element.
+			                else {
+								val link = cell.children().first()
+				                base.changes.add(ChangeElement(Day.getValueByIndex(base.dayCounter), base.dayCounter,
+					                                           link?.attr("href")))
+			                }
+			                
+			                /* And in the end we increase values of iterators.
+			                   This needed to define information about current parser position. */
+			                base.dayCounter++
+			                innerIterator.dayCounter++
+		                }
+	                }
+	                /* At this moment we completed current month parsing and may begin to next one.
+	                   (Previous, if says within date-context). */
+	                base.monthCounter++
                 }
             }
 		}
