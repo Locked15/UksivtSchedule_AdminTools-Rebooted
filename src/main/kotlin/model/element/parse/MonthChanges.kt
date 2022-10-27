@@ -5,7 +5,7 @@ import java.time.Month
 import java.util.*
 
 
-class MonthChanges(val currentMonth: Month?, val changes: List<ChangeElement>) {
+class MonthChanges(val currentMonth: String?, val changes: List<ChangeElement>) {
 	
 	/* region Functions */
 	
