@@ -66,6 +66,9 @@ class Writer(private val reader: Reader) {
 
         /** region Constants */
 
+        /**
+         * Contains file name template for newly creating assets.
+         */
         private const val FILE_NAME_TEMPLATE = "%s.json"
         /** endregion */
 
