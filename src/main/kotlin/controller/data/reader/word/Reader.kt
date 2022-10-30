@@ -1,16 +1,16 @@
 package controller.data.reader.word
 
-import model.document.parse.word.iterator.BaseIteratorModel
-import model.document.parse.word.iterator.InnerIteratorModel
-import model.document.parse.word.iterator.OuterIteratorModel
-import model.element.schedule.Changes
-import model.element.schedule.DaySchedule
-import model.element.schedule.base.Lesson
-import model.element.schedule.base.day.Day
+import model.data.parse.changes.wrapper.BaseIteratorModel
+import model.data.parse.changes.wrapper.InnerIteratorModel
+import model.data.parse.changes.wrapper.OuterIteratorModel
+import model.data.schedule.Changes
+import model.data.schedule.DaySchedule
+import model.data.schedule.base.Lesson
+import model.data.schedule.base.day.Day
 import model.exception.WrongDayInDocumentException
 import org.apache.poi.xwpf.usermodel.XWPFDocument
 import java.io.FileInputStream
-import model.document.parse.word.CellDefineResult
+import model.data.parse.changes.CellDefineResult
 
 
 /**

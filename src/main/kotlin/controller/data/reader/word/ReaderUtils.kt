@@ -1,8 +1,8 @@
 package controller.data.reader.word
 
-import model.document.parse.word.iterator.BaseIteratorModel
-import model.document.parse.word.iterator.InnerIteratorModel
-import model.document.parse.word.iterator.OuterIteratorModel
+import model.data.parse.changes.wrapper.BaseIteratorModel
+import model.data.parse.changes.wrapper.InnerIteratorModel
+import model.data.parse.changes.wrapper.OuterIteratorModel
 import org.apache.poi.xwpf.usermodel.XWPFTable
 
 

@@ -1,4 +1,4 @@
-import view.Console
+import view.console.Basic
 
 
 /**
@@ -8,7 +8,7 @@ import view.Console
  */
 fun main(args: Array<String>) {
     print("Enter your name: ")
-    Console(readln()).beginSession()
+    Basic(readln()).beginSession()
 
     println("\nConnection terminated.\nGood day.")
 }

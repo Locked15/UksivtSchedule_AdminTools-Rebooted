@@ -4,18 +4,18 @@ import controller.data.getter.SiteParser
 import controller.data.reader.word.Reader as WordReader
 import controller.data.reader.excel.Reader as ExcelReader
 import controller.io.*
-import model.element.schedule.DaySchedule
-import model.element.schedule.WeekSchedule
-import model.element.schedule.base.Lesson
-import model.element.schedule.base.day.Day
-import model.element.schedule.Changes
+import model.data.schedule.DaySchedule
+import model.data.schedule.WeekSchedule
+import model.data.schedule.base.Lesson
+import model.data.schedule.base.day.Day
+import model.data.schedule.Changes
 import model.exception.WrongDayInDocumentException
-import view.Console
+import view.console.Basic
 import java.util.Locale
 
 
 /**
- * Controller class for the [Console] view.
+ * Controller class for the [Basic] view.
  * It contains functions that are intended to 'listen' console inputted commands.
  */
 class ConsoleController {

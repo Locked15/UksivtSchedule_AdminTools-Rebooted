@@ -1,7 +1,7 @@
 package controller.io
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.element.schedule.Changes
+import model.data.schedule.Changes
 import java.io.FileWriter
 
 

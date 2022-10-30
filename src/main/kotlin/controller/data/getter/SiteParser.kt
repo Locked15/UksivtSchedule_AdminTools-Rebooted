@@ -1,12 +1,12 @@
 package controller.data.getter
 
-import model.element.parse.ChangeElement
-import model.element.parse.MonthChanges
-import model.element.schedule.base.day.Day
-import model.site.parse.BaseIteratorModel
-import model.site.parse.ChangeElementsWrapper
-import model.site.parse.InnerIteratorModel
-import model.site.parse.TableContentWrapper
+import model.data.parse.site.ChangeElement
+import model.data.parse.site.MonthChanges
+import model.data.schedule.base.day.Day
+import model.data.parse.site.wrapper.BaseIteratorModel
+import model.data.parse.site.wrapper.ChangeElementsWrapper
+import model.data.parse.site.wrapper.InnerIteratorModel
+import model.data.parse.site.wrapper.TableContentWrapper
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element

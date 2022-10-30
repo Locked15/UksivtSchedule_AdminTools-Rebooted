@@ -1,10 +1,10 @@
 package controller.io
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.element.schedule.DaySchedule
-import model.element.schedule.WeekSchedule
-import model.element.schedule.base.Lesson
-import model.element.schedule.base.day.Day
+import model.data.schedule.DaySchedule
+import model.data.schedule.WeekSchedule
+import model.data.schedule.base.Lesson
+import model.data.schedule.base.day.Day
 import java.io.FileWriter
 import java.io.IOException
 

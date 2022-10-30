@@ -1,12 +1,12 @@
 package controller.data.reader.excel
 
-import model.document.ColumnBorders
-import model.document.DayColumnInfo
+import model.data.parse.schedule.ColumnBorders
+import model.data.parse.schedule.DayColumnInfo
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Sheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import java.util.concurrent.atomic.AtomicBoolean
-import model.element.schedule.base.day.fromString as getDayValueFromString
+import model.data.schedule.base.day.fromString as getDayValueFromString
 
 
 /* region "searchTargetSheet" function */
