@@ -411,7 +411,7 @@ class ConsoleController {
          * Returns [generated schedule][WeekSchedule].
          */
         private fun generateScheduleForManualMode(group: String): WeekSchedule {
-            val schedules = mutableListOf<DaySchedule>()
+            val schedule = WeekSchedule(group)
             for (i in 0 until 7) {
                 val day = generateNewDayScheduleAndNoticeUser(i)
                 for (j in 0 until 7) {
@@ -426,10 +426,10 @@ class ConsoleController {
                         day.lessons.add(Lesson(j))
                     }
                 }
-                schedules.add(day)
+                schedule.daySchedules.add(day)
             }
 
-            return WeekSchedule(group, schedules)
+            return schedule
         }
 
         /**
