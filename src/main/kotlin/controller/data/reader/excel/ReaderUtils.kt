@@ -6,7 +6,7 @@ import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Sheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import java.util.concurrent.atomic.AtomicBoolean
-import model.data.schedule.base.day.fromString as getDayValueFromString
+import model.data.schedule.base.day.fromRussianString as getDayValueFromString
 
 
 /* region "searchTargetSheet" function */
@@ -49,11 +49,9 @@ private fun checkSheetToContain(sheet: Sheet, groupName: String): Boolean {
  * Checks sent [cell] to contain [target group][groupName].
  */
 private fun checkCellToContain(cell: Cell, groupName: String): Boolean {
-    val value = cell.stringCellValue.lowercase()
-
-    return value == groupName
+    val value = cell.stringCellValue
+    return value.contains(groupName, true)
 }
-
 /* endregion */
 
 /* region "searchTargetColumns" function */
@@ -151,7 +149,7 @@ fun searchDaysCoordinates(sheet: Sheet): List<DayColumnInfo> {
 /**
  * Parses [cell] to find [day coordinates][DayColumnInfo].
  */
-private fun parseCellToFindDayCoordinates(cell: Cell): DayColumnInfo? {
+private fun parseCellToFindDayCoordinates(cell: Cell, verbose: Boolean = false): DayColumnInfo? {
     // Info: If we try to get a string value from non-string cell, we'll get an exception.
     try {
         val stringValue = cell.stringCellValue
@@ -161,7 +159,7 @@ private fun parseCellToFindDayCoordinates(cell: Cell): DayColumnInfo? {
         }
     }
     catch (ex: IllegalStateException) {
-        println("\n\nFind *non-string* cell inside document.\nOccurred error: $ex.")
+        if (verbose) println("\n\nFind *non-string* cell inside document.\nOccurred error: $ex.")
     }
 
     return null
