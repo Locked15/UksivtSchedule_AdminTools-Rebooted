@@ -1,5 +1,7 @@
 package model.data.schedule
 
+import com.fasterxml.jackson.databind.ObjectMapper
+
 
 /**
  * Class, that represents whole week schedule.
@@ -16,5 +18,16 @@ class WeekSchedule(var groupName: String?, var daySchedules: MutableList<DaySche
 	 * Schedules initializes with [empty list][listOf].
 	 */
 	constructor(groupName: String?): this(groupName, mutableListOf())
+	/* endregion */
+
+	/* region Functions */
+
+	/**
+	 * Returns string representation of the [object][WeekSchedule].
+	 */
+	override fun toString(): String {
+		val serializer = ObjectMapper()
+		return serializer.writerWithDefaultPrettyPrinter().writeValueAsString(this)
+	}
 	/* endregion */
 }
