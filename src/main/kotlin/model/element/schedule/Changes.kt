@@ -14,6 +14,7 @@ class Changes(val changedLessons: MutableList<Lesson>, var absolute: Boolean) {
 	
 	/**
 	 * Additional constructor, that write default values to properties.
+	 *
 	 * Info: [changedLessons] set to an empty list, [absolute] to false.
 	 */
 	constructor() : this(mutableListOf<Lesson>(), false)

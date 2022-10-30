@@ -9,12 +9,12 @@ package model.element.schedule
 class WeekSchedule(var groupName: String?, var daySchedules: List<DaySchedule>) {
 	
 	/* region Constructors */
-	
+
 	/**
-	 * Empty constructor.
-	 *
-	 * Write 'NULL' value to [groupName], and empty list to [daySchedules].
+	 * Creates a new instance of [WeekSchedule].
+	 * New instance with given [group name][groupName].
+	 * Schedules initializes with [empty list][listOf].
 	 */
-	constructor() : this(null, listOf<DaySchedule>())
+	constructor(groupName: String?): this(groupName, listOf())
 	/* endregion */
 }
