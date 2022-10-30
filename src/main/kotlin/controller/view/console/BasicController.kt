@@ -1,4 +1,4 @@
-package controller.view
+package controller.view.console
 
 import controller.data.getter.SiteParser
 import controller.data.reader.word.Reader as WordReader
@@ -12,13 +12,14 @@ import model.data.schedule.Changes
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
 import java.util.Locale
+import kotlin.system.exitProcess
 
 
 /**
  * Controller class for the [Basic] view.
  * It contains functions that are intended to 'listen' console inputted commands.
  */
-class ConsoleController {
+class BasicController {
 
     /* region Properties */
 
@@ -250,6 +251,16 @@ class ConsoleController {
      */
     fun showLastResult() = println(lastResult.toString())
     /* endregion */
+
+    /* region Command: 'Exit' */
+
+    /**
+     * Exits a current program process.
+     *
+     * Warning: calling this function will close program immediately, without any other actions.
+     */
+    fun exit(): Nothing = exitProcess(0)
+    /* endregion */
     /* endregion */
 
     /* region Companion */
@@ -279,6 +290,8 @@ class ConsoleController {
                 Locale.ENGLISH -> helpMessage =
                     """
                         Admin Tools for Uksivt Schedule System by Locked15.
+                        
+                        To close program, input nothing in command input box.
                         All commands are case-insensitive.
                         
                         Valuable commands:
@@ -295,6 +308,8 @@ class ConsoleController {
                               '-s' or '--site' — To parse college site.
                           * Type 'write' to write last gotten value to file;
                           * Type 'show' to show last gotten value in terminal.
+                          * Type 'exit', to completely close the program.
+                            Using this command will close program immediately.
                         (This commands just makes some functions and don't store data).
                         
                         If you used 'schedule' command, you can use optional parameter:
@@ -313,6 +328,8 @@ class ConsoleController {
                 Locale.CHINESE -> helpMessage =
                     """
                         Locked15 的 Uksivt 計劃系統管理工具。
+                        
+                        要關閉程序，在命令選擇框中不輸入任何內容。
                         所有命令都不區分大小寫。
                         
                         有價值的命令：
@@ -329,6 +346,8 @@ class ConsoleController {
                               '-s' 或者 '--site' — 解析大學網站。
                           * 類型 'write' 將最後得到的值寫入文件；
                           * 類型 'show' 在終端中顯示最後得到的值。
+                          * 鍵入“退出”以完全關閉程序。
+                            使用此命令將立即退出。
                         （這個命令只是做一些功能，不存儲數據）。
                         
                         如果你用過 'schedule' 命令，您可以使用可選參數：
@@ -348,6 +367,8 @@ class ConsoleController {
                 else -> helpMessage =
                     """
                         Средства Администрирования для Системы Расписания УКСиВТ от Locked15.
+                        
+                        Чтобы закрыть программу не указывайте название команды в строке ввода.
                         Все команды нечувствительны к регистру.
                         
                         Значимые команды:
@@ -364,6 +385,8 @@ class ConsoleController {
                               '-s' или '--site' — Для чтения страницы сайта колледжа.
                           * Введите 'write', чтобы записать последнее полученное значение в файл;
                           * Введите 'show', чтобы вывести последнее полученное значение в терминал (консоль).
+                          * Введите 'exit', чтобы полностью закрыть программу.
+                            Использование этой команды завершит работу немедленно. 
                         (Эти команды просто выполняют какие-либо действия и не сохраняют свои результаты).
                         
                         Если вы использовали команду 'schedule', вы можете использовать дополнительные параметры:

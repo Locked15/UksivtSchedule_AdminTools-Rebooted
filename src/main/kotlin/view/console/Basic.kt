@@ -1,6 +1,6 @@
 package view.console
 
-import controller.view.ConsoleController
+import controller.view.console.BasicController
 import model.view.Command
 import model.view.CommandInfo
 import java.util.*
@@ -25,7 +25,7 @@ class Basic(private val user: String) {
      *
      * View Action -> Controller Command -> View Result.
      */
-    private val controller = ConsoleController()
+    private val controller = BasicController()
 
     /**
      * [Dictionary] with key-value pairs.
@@ -67,6 +67,10 @@ class Basic(private val user: String) {
             "show" to Pair(showDescription,
                            Command("Show") {
                                controller.showLastResult()
+                           }),
+            "exit" to Pair(exitDescription,
+                           Command("Exit") {
+                               controller.exit()
                            }
             )
     )
@@ -99,14 +103,16 @@ class Basic(private val user: String) {
      * Although, it [returns to input of the command name][beginSession].
      */
     private fun performUserInput(input: String) {
-        val commandInfo = parseInputtedText(this, input)
-        if (commandInfo.action != null) {
-            if (confirmCommandExecution(commandInfo.action.first)) {
-                executeCommand(commandInfo.args, commandInfo.action.second)
+        if (input.isNotBlank()) {
+            val commandInfo = parseInputtedText(this, input)
+            if (commandInfo.action != null) {
+                if (confirmCommandExecution(commandInfo.action.first)) {
+                    executeCommand(commandInfo.args, commandInfo.action.second)
+                }
             }
-        }
-        else {
-            println("Inputted command isn't supported, please enter 'help' to get list of supported ones.\n")
+            else {
+                println("Inputted command isn't supported, please enter 'help' to get list of supported ones.\n")
+            }
         }
     }
 
@@ -173,9 +179,14 @@ class Basic(private val user: String) {
         private val writeDescription: String
 
         /**
-         * Description of the 'show' command.
+         * Description of the 'Show' command.
          */
         private val showDescription: String
+
+        /**
+         * Description of the 'Exit' command.
+         */
+        private val exitDescription: String
         /* endregion */
 
         /* region Initializers */
@@ -194,6 +205,7 @@ class Basic(private val user: String) {
                     parseDescription = "Begins basic parsing process (may be useful for debugging process)"
                     writeDescription = "Writes last gotten result value to file"
                     showDescription = "Show last gotten result in the console (terminal)"
+                    exitDescription = "Exits from program"
                 }
                 Locale.CHINESE -> {
                     scheduleDescription = "開始計劃閱讀過程（需要準備好的文件）"
@@ -203,6 +215,7 @@ class Basic(private val user: String) {
                     parseDescription = "開始基本解析過程（可能對調試過程有用）"
                     writeDescription = "將最後獲得的結果值寫入文件"
                     showDescription = "在控制台（終端）中顯示最後得到的結果"
+                    exitDescription = "退出程序"
                 }
 
                 else -> {
@@ -213,6 +226,7 @@ class Basic(private val user: String) {
                     parseDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
                     writeDescription = "Записать последний полученный результат в файл"
                     showDescription = "Отобразить последний полученный результат в консоли (терминале)"
+                    exitDescription = "Выход из программы"
                 }
             }
         }
