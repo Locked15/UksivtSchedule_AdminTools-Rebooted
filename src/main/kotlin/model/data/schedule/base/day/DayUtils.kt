@@ -4,40 +4,37 @@ import model.data.schedule.base.day.Day.*
 
 
 /**
- * Function to get english day name of a [Day] element.
- * It can be useful, when you need to get value without 'UPPERCASE'.
- *
- * Saved to maintain backward compatibility with some modules.
- */
-fun toString(day: Day?): String {
-	return when (day) {
-		MONDAY -> "Monday"
-		TUESDAY -> "Tuesday"
-		WEDNESDAY -> "Wednesday"
-		THURSDAY -> "Thursday"
-		FRIDAY -> "Friday"
-		SATURDAY -> "Saturday"
-		SUNDAY -> "Sunday"
-		
-		else -> "Unknown"
-	}
-}
-
-/**
  * Function that converts english day name to [Day] element.
  *
  * Saved to maintain backward compatibility with some modules.
+ * Splatted to two functions: [english][fromEnglishString] and [russian][fromRussianString] versions.
  */
-fun fromString(s: String): Day? {
-	return when (s) {
-		"Monday" -> MONDAY
-		"Tuesday" -> TUESDAY
-		"Wednesday" -> WEDNESDAY
-		"Thursday" -> THURSDAY
-		"Friday" -> FRIDAY
-		"Saturday" -> SATURDAY
-		"Sunday" -> SUNDAY
-		
-		else -> null
-	}
+fun fromEnglishString(name: String) = when (name.lowercase()) {
+    "monday" -> MONDAY
+    "tuesday" -> TUESDAY
+    "wednesday" -> WEDNESDAY
+    "thursday" -> THURSDAY
+    "friday" -> FRIDAY
+    "saturday" -> SATURDAY
+    "sunday" -> SUNDAY
+
+    else -> null
+}
+
+/**
+ * Function that converts russian day name to [Day] element.
+ *
+ * Saved to maintain backward compatibility with some modules.
+ * Splatted to two functions: [english][fromEnglishString] and [russian][fromRussianString] versions.
+ */
+fun fromRussianString(name: String) = when (name.lowercase()) {
+    "понедельник" -> MONDAY
+    "вторник" -> TUESDAY
+    "среда" -> WEDNESDAY
+    "четверг" -> THURSDAY
+    "пятница" -> FRIDAY
+    "суббота" -> SATURDAY
+    "воскресенье" -> SUNDAY
+
+    else -> null
 }
