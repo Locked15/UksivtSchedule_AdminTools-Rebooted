@@ -95,13 +95,8 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
     override fun toString(): String {
         val toReturnBuilder: StringBuilder = StringBuilder(String.format(STRING_HEADER_TEMPLATE, day.englishName))
         for (lesson in lessons) {
-            val formatString = String.format(STRING_BODY_TEMPLATE,
-                                             lesson.number,
-                                             lesson.name,
-                                             lesson.place,
-                                             lesson.teacher
-            )
-
+            val formatString = String.format(STRING_BODY_TEMPLATE, lesson.number, lesson.name, lesson.place,
+                                             lesson.teacher)
             toReturnBuilder.append(formatString)
         }
 
@@ -120,7 +115,7 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
          *
          * Use it with [String.format] function.
          */
-        const val STRING_HEADER_TEMPLATE = "%s:\n {"
+        const val STRING_HEADER_TEMPLATE = "%s:\n"
 
         /**
          * Template to generate string representation of [DaySchedule] object.
