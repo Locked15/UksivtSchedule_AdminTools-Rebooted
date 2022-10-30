@@ -104,7 +104,7 @@ class Basic(private val user: String) {
      */
     private fun performUserInput(input: String) {
         if (input.isNotBlank()) {
-            val commandInfo = parseInputtedText(this, input)
+            val commandInfo = parseInputtedText(this, input.trim())
             if (commandInfo.action != null) {
                 if (confirmCommandExecution(commandInfo.action.first)) {
                     executeCommand(commandInfo.args, commandInfo.action.second)

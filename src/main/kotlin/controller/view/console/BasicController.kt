@@ -495,6 +495,40 @@ class BasicController {
         }
         /* endregion */
 
+        /* region Group Input Functions */
+
+        /**
+         * Asks user to input [group name][String].
+         * Checks inputted group name to be presented inside an [available groups list][groups].
+         *
+         * If you don't want to use check, just send an empty list ('[listOf]').
+         */
+        private fun getSafeTargetGroup(groups: List<String?>): String {
+            var target: String
+            do {
+                target = inputText("Select target group")
+            } while (checkGroupCondition(target, groups))
+
+            return getGroupNameOrInputtedValue(target, groups)
+        }
+
+        /**
+         * Checks 'do...while' condition to [getSafeTargetGroup] function.
+         */
+        private fun checkGroupCondition(target: String, groups: List<String?>) = groups.isNotEmpty() &&
+                groups.find { group ->
+                    group?.equals(target, true) == true
+                } == null
+
+        /**
+         * Returns the [group name][String], as it presented in [available list][groups] OR
+         * if list it empty, returns base user [inputted value][target].
+         */
+        private fun getGroupNameOrInputtedValue(target: String, groups: List<String?>) = groups.find { group ->
+            group?.equals(target, true) == true
+        } ?: target
+        /* endregion */
+
         /* region General Functions */
 
         /**
@@ -537,25 +571,10 @@ class BasicController {
         private fun getSafeFilePath(vararg extensions: String): String {
             var path: String
             do {
-                path = inputText("Input file path")
+                path = inputText("Input file path").trim('"', ' ')
             } while (!extensions.any { ext -> path.endsWith(ext) })
 
             return path
-        }
-
-        /**
-         * Asks user to input [group name][String].
-         * Checks inputted group name to be presented inside an [available groups list][groups].
-         *
-         * If you don't want to use check, just send an empty list ('[listOf]').
-         */
-        private fun getSafeTargetGroup(groups: List<String?>): String {
-            var target: String
-            do {
-                target = inputText("Select target group")
-            } while (!groups.any { group -> group == target })
-
-            return target
         }
 
         /**
@@ -583,7 +602,7 @@ class BasicController {
          * Just write a query.
          */
         private fun inputText(ask: String): String {
-            print("$ask:")
+            print("$ask: ")
             return readln()
         }
         /* endregion */
