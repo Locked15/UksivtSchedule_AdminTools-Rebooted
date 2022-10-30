@@ -11,7 +11,9 @@ import model.data.schedule.DaySchedule
 /**
  * Wrapper-Model for Excel document parse.
  * These properties must be placed inside the first cycle.
- *
+
+ * @param lessonNameIsAdded  Determine [lesson name][Lesson.name] is added to a current generating [lesson][Lesson].
+ * @param lessonPlaceIsAdded  Determine [lesson place][Lesson.place] is added to a current generating [lesson][Lesson].
  * @param lessonIterator  It used inside the second cycle and must save value between iterations.
  *                       Used to define a lesson-change statement.
  *                       **Prior 'firstCycleIterator' variable**.
@@ -29,5 +31,6 @@ import model.data.schedule.DaySchedule
  *              Iteration process repeated two times, cause schedule divided on two parts:
  *              Monday -> Wednesday, Thursday -> Saturday.
  */
-class OuterIteratorModel(var lessonIterator: Int, var dayIterator: Int, var lessonNumber: Int, var lesson: Lesson,
-                         var currentDay: Day?, var lessons: MutableList<Lesson>, val rows: Iterator<Row>)
+class OuterIteratorModel(var lessonNameIsAdded: Boolean, var lessonPlaceIsAdded: Boolean, var lessonIterator: Int,
+                         var dayIterator: Int, var lessonNumber: Int, var lesson: Lesson, var currentDay: Day?,
+                         var lessons: MutableList<Lesson>, val rows: Iterator<Row>)
