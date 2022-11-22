@@ -1,0 +1,232 @@
+{
+  "groupName" : "21ПД-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Галимов Ф.Х,",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "112"
+    }, {
+      "number" : 4,
+      "name" : "Математика",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329"
+    }, {
+      "number" : 5,
+      "name" : "Экол право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "117"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329"
+    }, {
+      "number" : 2,
+      "name" : "Гр.право и гр.процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "110"
+    }, {
+      "number" : 3,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "343"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Админ право",
+      "teacher" : "Султанов У.З.",
+      "place" : "203"
+    }, {
+      "number" : 2,
+      "name" : "Гр.право и гр.процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "301"
+    }, {
+      "number" : 3,
+      "name" : "Гр.право и гр.процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "301"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Админ право",
+      "teacher" : "Султанов У.З.",
+      "place" : "336"
+    }, {
+      "number" : 5,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "203"
+    }, {
+      "number" : 6,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "203"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Экол право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "339"
+    }, {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Админ право",
+      "teacher" : "Султанов У.З.",
+      "place" : "13"
+    }, {
+      "number" : 1,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "214"
+    }, {
+      "number" : 2,
+      "name" : "История",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "343"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

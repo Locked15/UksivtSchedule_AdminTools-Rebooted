@@ -1,0 +1,232 @@
+{
+  "groupName" : "19ПД-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "337"
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "337"
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "337"
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "337"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "214"
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "214"
+    }, {
+      "number" : 5,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "214"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "343"
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "343"
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 01.05",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111а"
+    }, {
+      "number" : 1,
+      "name" : "МДК 01.05",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111а"
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Галимов Ф.Х.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "112"
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "112"
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "112"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "114"
+    }, {
+      "number" : 1,
+      "name" : "УП 02.01",
+      "teacher" : "Афлятунов С.Х.",
+      "place" : "114"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

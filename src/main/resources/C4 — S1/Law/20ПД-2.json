@@ -1,0 +1,232 @@
+{
+  "groupName" : "20ПД-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Галимов Ф.Х.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Спец техника",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "110"
+    }, {
+      "number" : 3,
+      "name" : "Спец техника",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "110"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ПО ОРД",
+      "teacher" : "Щеклеин А",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ПО ОРД",
+      "teacher" : "Щеклеин А",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Угол право",
+      "teacher" : "Галиев А.Г.",
+      "place" : "13"
+    }, {
+      "number" : 5,
+      "name" : "Угол право",
+      "teacher" : "Галиев А.Г.",
+      "place" : "13"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ТСП",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "114"
+    }, {
+      "number" : 4,
+      "name" : "ТСП",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "114"
+    }, {
+      "number" : 5,
+      "name" : "Ин.яз",
+      "teacher" : "Ханова Л.В.",
+      "place" : "325"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "114"
+    }, {
+      "number" : 1,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "114"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Угол право",
+      "teacher" : "Галиев А.Г.",
+      "place" : "203"
+    }, {
+      "number" : 3,
+      "name" : "Угол право",
+      "teacher" : "Галиев А.Г.",
+      "place" : "203"
+    }, {
+      "number" : 4,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "114"
+    }, {
+      "number" : 5,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "114"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "117"
+    }, {
+      "number" : 3,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "117"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

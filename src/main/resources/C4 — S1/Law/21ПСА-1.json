@@ -1,0 +1,232 @@
+{
+  "groupName" : "21ПСА-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 4,
+      "name" : "ПИСО",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "323"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "343"
+    }, {
+      "number" : 5,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "343"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Гражд процесс",
+      "teacher" : "Маликов М.Г.",
+      "place" : "339"
+    }, {
+      "number" : 2,
+      "name" : "История",
+      "teacher" : "Баранова Н.Г.",
+      "place" : "338"
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Ханова Л.В.",
+      "place" : "315"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х,",
+      "place" : "203"
+    }, {
+      "number" : 1,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 2,
+      "name" : "БЖД",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "ПИСО",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "14"
+    }, {
+      "number" : 5,
+      "name" : "Информатика",
+      "teacher" : "Фатхелисламова Э.А.",
+      "place" : "216"
+    }, {
+      "number" : 6,
+      "name" : "Информатика",
+      "teacher" : "Фатхелисламова Э.А.",
+      "place" : "216"
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "БЖД",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 4,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "214"
+    }, {
+      "number" : 5,
+      "name" : "Гражд процесс",
+      "teacher" : "Маликов М.Г.",
+      "place" : "3"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

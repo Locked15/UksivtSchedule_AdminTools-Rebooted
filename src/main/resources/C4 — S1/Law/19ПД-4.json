@@ -1,0 +1,232 @@
+{
+  "groupName" : "19ПД-4",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "323"
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "323"
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "323"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "339"
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "339"
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "339"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "322"
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "322"
+    }, {
+      "number" : 5,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "322"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "112"
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "112"
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "112"
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Галимов Ф.Х.",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК 01.05",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111а"
+    }, {
+      "number" : 4,
+      "name" : "МДК 01.05",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111а"
+    }, {
+      "number" : 5,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "111"
+    }, {
+      "number" : 3,
+      "name" : "УП 02.01",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "111"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

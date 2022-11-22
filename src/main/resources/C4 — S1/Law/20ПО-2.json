@@ -1,0 +1,232 @@
+{
+  "groupName" : "20ПО-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Ханова Л.В.",
+      "place" : "315"
+    }, {
+      "number" : 4,
+      "name" : "Страховое дело",
+      "teacher" : "Киселева М.В.",
+      "place" : "339"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ПСО",
+      "teacher" : "Кильсенбаев Э.Р.",
+      "place" : "114"
+    }, {
+      "number" : 1,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 2,
+      "name" : "Гражд процесс",
+      "teacher" : "Хасанова Г.Р.",
+      "place" : "общ"
+    }, {
+      "number" : 3,
+      "name" : "Ит в ПД",
+      "teacher" : "Фатхелисламова Э.А.",
+      "place" : "216"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП 01.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 1,
+      "name" : "УП 01.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 2,
+      "name" : "Уголовное право",
+      "teacher" : "Дуйсенов И.А.",
+      "place" : "13"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ИТ в ПД",
+      "teacher" : "Фатхелисламова Э.А.",
+      "place" : "216"
+    }, {
+      "number" : 2,
+      "name" : "ПСО",
+      "teacher" : "Кильсенбаев Э.Р.",
+      "place" : "114"
+    }, {
+      "number" : 3,
+      "name" : "УП 01.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 4,
+      "name" : "УП 01.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Уголовное право",
+      "teacher" : "Дуйсенов И.А.",
+      "place" : "333"
+    }, {
+      "number" : 2,
+      "name" : "Уголовный процесс",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "343"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Семейное право",
+      "teacher" : "Шангареева Г.Ф.",
+      "place" : "общ"
+    }, {
+      "number" : 2,
+      "name" : "Уголовный процесс",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "118"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

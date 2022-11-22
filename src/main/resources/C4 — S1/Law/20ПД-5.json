@@ -1,0 +1,232 @@
+{
+  "groupName" : "20ПД-5",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "ПО ОРД",
+      "teacher" : "Щеклеин А.",
+      "place" : "111"
+    }, {
+      "number" : 6,
+      "name" : "ПО ОРД",
+      "teacher" : "Щеклеин А.",
+      "place" : "111"
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Криминология",
+      "teacher" : "Имаева  А.В.",
+      "place" : "305"
+    }, {
+      "number" : 4,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "110"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Криминология",
+      "teacher" : "Имаева  А.В.",
+      "place" : "111"
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324"
+    }, {
+      "number" : 3,
+      "name" : "Уголовное право",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "110"
+    }, {
+      "number" : 4,
+      "name" : "Уголовное право",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "ТСП",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : "ТСП",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Уголовное право",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "343"
+    }, {
+      "number" : 2,
+      "name" : "Криминология",
+      "teacher" : "Имаева  А.В.",
+      "place" : "111"
+    }, {
+      "number" : 3,
+      "name" : "Криминология",
+      "teacher" : "Имаева  А.В.",
+      "place" : "111"
+    }, {
+      "number" : 4,
+      "name" : "Спец техника",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Галимов Ф.Х.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Уголовное право",
+      "teacher" : "Сагидуллин Д.Р.",
+      "place" : "118"
+    }, {
+      "number" : 4,
+      "name" : "Спец техника",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}
