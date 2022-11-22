@@ -1,0 +1,232 @@
+{
+  "groupName" : "22уКСК-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322"
+    }, {
+      "number" : 3,
+      "name" : "Инженерная графика",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "14"
+    }, {
+      "number" : 4,
+      "name" : "Инженерная графика",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "14"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ЭВМ",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327"
+    }, {
+      "number" : 3,
+      "name" : "УП 04.01",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Основы электротехники",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 2,
+      "name" : "Основы электротехники",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП 04.01",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001"
+    }, {
+      "number" : 3,
+      "name" : "УП 04.01",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001"
+    }, {
+      "number" : 4,
+      "name" : "Основы электротехники",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 5,
+      "name" : "Основы электротехники",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "НЭРТО",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "3"
+    }, {
+      "number" : 2,
+      "name" : "НЭРТО",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "3"
+    }, {
+      "number" : 3,
+      "name" : "Основы электротехники",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Электротех измерения",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 1,
+      "name" : "Электротех измерения",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 2,
+      "name" : "Инженерная графика",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "218"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}
