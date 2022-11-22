@@ -1,0 +1,232 @@
+{
+  "groupName" : "21Л-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК 01.01",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : "Основы эк теории",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301"
+    }, {
+      "number" : 4,
+      "name" : "ИТ в ПД",
+      "teacher" : "Хасанова А.М.",
+      "place" : "227"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Математика",
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Логинова А.И.",
+      "place" : "11"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ИТ в ПД",
+      "teacher" : "Хасанова А.М.",
+      "place" : "227"
+    }, {
+      "number" : 1,
+      "name" : "ИТ в ПД",
+      "teacher" : "Хасанова А.М.",
+      "place" : "227"
+    }, {
+      "number" : 2,
+      "name" : "История",
+      "teacher" : "Логинова А.И.",
+      "place" : "313"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.01",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317"
+    }, {
+      "number" : 4,
+      "name" : "Основы эк теории",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301"
+    }, {
+      "number" : 5,
+      "name" : "Математика",
+      "teacher" : null,
+      "place" : "331"
+    }, {
+      "number" : 6,
+      "name" : "Математика",
+      "teacher" : null,
+      "place" : "331"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК 01.01",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317"
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.01",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : "Психология общ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Каримова А.А.",
+      "place" : "339"
+    }, {
+      "number" : 1,
+      "name" : "Русский и КР",
+      "teacher" : "Андреева Р.М.",
+      "place" : "314"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

@@ -1,0 +1,232 @@
+{
+  "groupName" : "21Э-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Психология",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305"
+    }, {
+      "number" : 4,
+      "name" : "Основы предпр.деят",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    }, {
+      "number" : 5,
+      "name" : "Основы предпр.деят",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОБУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 1,
+      "name" : "ОБУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 2,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "309"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ОБУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : "МДК 05.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "14"
+    }, {
+      "number" : 4,
+      "name" : "УП 05.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "14"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Математика",
+      "teacher" : "Сафронкина Е.С.",
+      "place" : "301"
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Сафронкина Е.С.",
+      "place" : "301"
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Каримова А.А.",
+      "place" : "324"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "325"
+    }, {
+      "number" : 1,
+      "name" : "МДК 05.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "301"
+    }, {
+      "number" : 2,
+      "name" : "МДК 05.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "301"
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОБУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 1,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "334"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}
