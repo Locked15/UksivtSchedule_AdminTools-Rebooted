@@ -1,0 +1,232 @@
+{
+  "groupName" : "20ОИБ-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "БД",
+      "teacher" : "Стюкова Я.Д,",
+      "place" : "217"
+    }, {
+      "number" : 4,
+      "name" : "БД",
+      "teacher" : "Стюкова Я.Д,",
+      "place" : "217"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ЭКС",
+      "teacher" : "Гильзер Е.М.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ЭКС",
+      "teacher" : "Гильзер Е.М.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ОС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 3,
+      "name" : "ОС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "БД",
+      "teacher" : "Стюкова Я.Д,",
+      "place" : "217"
+    }, {
+      "number" : 1,
+      "name" : "БД",
+      "teacher" : "Стюкова Я.Д,",
+      "place" : "217"
+    }, {
+      "number" : 2,
+      "name" : "Уп 0101",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 3,
+      "name" : "Уп 0101",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "СИСПИ",
+      "teacher" : "Киреев И.С.",
+      "place" : "14"
+    }, {
+      "number" : 5,
+      "name" : "СИСПИ",
+      "teacher" : "Киреев И.С.",
+      "place" : "14"
+    }, {
+      "number" : 6,
+      "name" : "Уп 0101",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Хабибов Р.Г.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322"
+    }, {
+      "number" : 2,
+      "name" : "СИСПИ",
+      "teacher" : "Киреев И.С.",
+      "place" : "245"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "ЭКС",
+      "teacher" : "Гильзер Е.М.",
+      "place" : "16"
+    }, {
+      "number" : 5,
+      "name" : "ЭКС",
+      "teacher" : "Гильзер Е.М.",
+      "place" : "16"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

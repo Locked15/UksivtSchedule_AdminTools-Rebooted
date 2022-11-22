@@ -1,0 +1,232 @@
+{
+  "groupName" : "21П-5",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Психология",
+      "teacher" : "Никонова Е.А.",
+      "place" : "2"
+    }, {
+      "number" : 5,
+      "name" : "ЭВМ",
+      "teacher" : "Бакирова А.Ю,",
+      "place" : "327"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "психология",
+      "teacher" : "Никонова Е.А.",
+      "place" : "001б"
+    }, {
+      "number" : 1,
+      "name" : "ИТ",
+      "teacher" : "Хасанова А.М.",
+      "place" : "229"
+    }, {
+      "number" : 2,
+      "name" : "ИТ",
+      "teacher" : "Хасанова А.М.",
+      "place" : "229"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ЭВМ",
+      "teacher" : "Бакирова А.Ю,",
+      "place" : "327"
+    }, {
+      "number" : 1,
+      "name" : "ОСИС",
+      "teacher" : "Киреев И.С.",
+      "place" : "235"
+    }, {
+      "number" : 2,
+      "name" : "ОСИС",
+      "teacher" : "Киреев И.С.",
+      "place" : "235"
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 2,
+      "name" : "История",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 4,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 2,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 3,
+      "name" : "Архитектура",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 1,
+      "name" : "ОАИП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

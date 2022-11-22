@@ -1,0 +1,242 @@
+{
+  "groupName" : "20П-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Спец курс",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 2,
+      "name" : "ОПБД",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 3,
+      "name" : "ОПБД",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 2,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 3,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "ПП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 5,
+      "name" : "ПП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 6,
+      "name" : "ПП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 7,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320"
+    }, {
+      "number" : 1,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 2,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 6,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 3,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 4,
+      "name" : "ПП",
+      "teacher" : "Храмов Л.А.",
+      "place" : "5"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 7,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}

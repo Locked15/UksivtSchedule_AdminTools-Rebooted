@@ -1,0 +1,242 @@
+{
+  "groupName" : "20П-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ПП",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 1,
+      "name" : "ОПБД",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 2,
+      "name" : "Спец курс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 3,
+      "name" : "ОПБД",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 1,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 2,
+      "name" : "ПП",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 1,
+      "name" : "Поддержка и тестирование",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 2,
+      "name" : "ПП",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 3,
+      "name" : "ПП",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 7,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 2,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК 0103",
+      "teacher" : "Зиганшина Р.С.",
+      "place" : "241"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 7,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}
