@@ -1,0 +1,232 @@
+{
+  "groupName" : "20уКСК-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 5,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "3"
+    }, {
+      "number" : 6,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "3"
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "2"
+    }, {
+      "number" : 2,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "2"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "3"
+    }, {
+      "number" : 5,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "3"
+    }, {
+      "number" : 6,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "3"
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.02",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.02",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 5,
+      "name" : "МДК 02.02",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 6,
+      "name" : "Физ-ра",
+      "teacher" : "Хабибов Р.Г.",
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "2"
+    }, {
+      "number" : 1,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "2"
+    }, {
+      "number" : 2,
+      "name" : "Практика по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "2"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.02",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.02",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  } ]
+}
