@@ -1,0 +1,235 @@
+{
+  "groupName" : "20ОИБ-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322"
+    }, {
+      "number" : 1,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "313"
+    }, {
+      "number" : 2,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "313"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.02",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 4,
+      "name" : "МДК.02.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 5,
+      "name" : "МДК.02.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ПП.01.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 1,
+      "name" : "ПП.01.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.02",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 4,
+      "name" : "МДК.02.02",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 5,
+      "name" : "МДК.02.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    }, {
+      "number" : 6,
+      "name" : "МДК.02.01",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.04",
+      "teacher" : "Белозерцев Л.Н.",
+      "place" : "234"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.04",
+      "teacher" : "Белозерцев Л.Н.",
+      "place" : "234"
+    }, {
+      "number" : 5,
+      "name" : "МДК.01.04",
+      "teacher" : "Белозерцев Л.Н.",
+      "place" : "234"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП.01.02",
+      "teacher" : "Гильзер Е.М.",
+      "place" : "3"
+    }, {
+      "number" : 3,
+      "name" : "УП.01.02",
+      "teacher" : "Гильзер Е.М.",
+      "place" : "3"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

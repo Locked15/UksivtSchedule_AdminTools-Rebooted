@@ -1,0 +1,235 @@
+{
+  "groupName" : "21П-4",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.01.04",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 1,
+      "name" : "ТВиМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327"
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.01.01 л/р",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.01 л/р",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.01.04",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.04",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 2,
+      "name" : "Спецкурс",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 3,
+      "name" : "Численные методы",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП.01.01",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 3,
+      "name" : "УП.01.01",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.01 л/р",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Комп.сети",
+      "teacher" : "Гильзер Е.М.",
+      "place" : "3"
+    }, {
+      "number" : 3,
+      "name" : "Диск.мат-ка",
+      "teacher" : "Бакирова А.Ю,",
+      "place" : "327"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.04 л/р",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.01 л/р",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 2,
+      "name" : "УП.01.02",
+      "teacher" : "Каюмов С.А.",
+      "place" : "229"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

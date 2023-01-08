@@ -1,0 +1,235 @@
+{
+  "groupName" : "20П-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 4,
+      "name" : "МДК.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 5,
+      "name" : "МДК.02.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Основы философии",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336"
+    }, {
+      "number" : 2,
+      "name" : "БЖД",
+      "teacher" : "Исмаилова Р.Х.",
+      "place" : "235"
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 1,
+      "name" : "УП.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.03",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Спецкурс",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 3,
+      "name" : "Спецкурс",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 4,
+      "name" : "Веб",
+      "teacher" : "Дмитриева Е.К.",
+      "place" : "9"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 1,
+      "name" : "ПП.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 2,
+      "name" : "ПП.11.01",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Веб",
+      "teacher" : "Дмитриева Е.К.",
+      "place" : "9"
+    }, {
+      "number" : 1,
+      "name" : "Веб",
+      "teacher" : "Дмитриева Е.К.",
+      "place" : "9"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

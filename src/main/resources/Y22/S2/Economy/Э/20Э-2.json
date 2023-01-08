@@ -1,0 +1,235 @@
+{
+  "groupName" : "20Э-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Аудит",
+      "teacher" : "Попова И.А.",
+      "place" : "203"
+    }, {
+      "number" : 4,
+      "name" : "Аудит",
+      "teacher" : "Попова И.А.",
+      "place" : "203"
+    }, {
+      "number" : 5,
+      "name" : "Ин яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 6,
+      "name" : "Ин яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : "МДК.04.01",
+      "teacher" : "Попова И.А.",
+      "place" : "301"
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "МДК.03.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "203"
+    }, {
+      "number" : 6,
+      "name" : "МДК.03.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "203"
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.04.02",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "305"
+    }, {
+      "number" : 4,
+      "name" : "МДК.04.02",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "305"
+    }, {
+      "number" : 5,
+      "name" : "МДК.04.02",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "305"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.03.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "331"
+    }, {
+      "number" : 2,
+      "name" : "МДК.03.01",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "331"
+    }, {
+      "number" : 3,
+      "name" : "Аудит",
+      "teacher" : "Попова И.А.",
+      "place" : "338"
+    }, {
+      "number" : 4,
+      "name" : "Аудит",
+      "teacher" : "Попова И.А.",
+      "place" : "338"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.04.01",
+      "teacher" : "Попова И.А.",
+      "place" : "308"
+    }, {
+      "number" : 2,
+      "name" : "МДК.04.01",
+      "teacher" : "Попова И.А.",
+      "place" : "308"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

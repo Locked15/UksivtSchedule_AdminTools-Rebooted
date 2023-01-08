@@ -1,0 +1,235 @@
+{
+  "groupName" : "20ПО-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Жилищное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "117"
+    }, {
+      "number" : 2,
+      "name" : "Экон организации",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339"
+    }, {
+      "number" : 3,
+      "name" : "Экон организации",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 1,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 2,
+      "name" : "Основы бухучета",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "203"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Гражд.процесс",
+      "teacher" : "Хасанова Г.Р.",
+      "place" : "112"
+    }, {
+      "number" : 4,
+      "name" : "Жилищное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "114"
+    }, {
+      "number" : 5,
+      "name" : "Жилищное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "114"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин яз",
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Гражд.процесс",
+      "teacher" : "Хасанова Г.Р.",
+      "place" : "118"
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 4,
+      "name" : "МДК.02.01",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "323"
+    }, {
+      "number" : 5,
+      "name" : "Основы бухучета",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "341"
+    }, {
+      "number" : 6,
+      "name" : "Основы бухучета",
+      "teacher" : "Толипова Р.С.  ",
+      "place" : "341"
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

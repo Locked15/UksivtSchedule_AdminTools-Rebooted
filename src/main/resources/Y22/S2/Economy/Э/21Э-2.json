@@ -1,0 +1,235 @@
+{
+  "groupName" : "21Э-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин яз",
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП.01.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : "УП.01.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.01",
+      "teacher" : "Попова И.А.",
+      "place" : "301"
+    }, {
+      "number" : 5,
+      "name" : "МДК.01.01",
+      "teacher" : "Попова И.А.",
+      "place" : "301"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Экон организ",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301"
+    }, {
+      "number" : 1,
+      "name" : "Экон организ",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301"
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ЭОП",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "338"
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.01",
+      "teacher" : "Попова И.А.",
+      "place" : "331"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.01",
+      "teacher" : "Попова И.А.",
+      "place" : "331"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ИТ в ПД",
+      "teacher" : "Защихина Е..В.",
+      "place" : "217"
+    }, {
+      "number" : 4,
+      "name" : "ИТ в ПД",
+      "teacher" : "Защихина Е..В.",
+      "place" : "217"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Основы филос",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336"
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "МДК.02.01",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

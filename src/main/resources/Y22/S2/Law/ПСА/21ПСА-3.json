@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ПСА-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Основы философии",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336"
+    }, {
+      "number" : 3,
+      "name" : "Конст право",
+      "teacher" : "Султанов А.Х.",
+      "place" : "343"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.04.01",
+      "teacher" : "Хасанова Г.Р.",
+      "place" : "общ"
+    }, {
+      "number" : 1,
+      "name" : "МДК.04.02",
+      "teacher" : "Хасанова Г.Р.",
+      "place" : "общ"
+    }, {
+      "number" : 2,
+      "name" : "Управл персоналом",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Труд право",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "110"
+    }, {
+      "number" : 2,
+      "name" : "Граж процесс",
+      "teacher" : "Маликов М.Г.",
+      "place" : "216"
+    }, {
+      "number" : 3,
+      "name" : "Основы статистики",
+      "teacher" : "Попова И.А.",
+      "place" : "343"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Конст право",
+      "teacher" : "Султанов А.Х.",
+      "place" : "общ"
+    }, {
+      "number" : 4,
+      "name" : "Уголовное право",
+      "teacher" : "Корниенко А.А.",
+      "place" : "203"
+    }, {
+      "number" : 5,
+      "name" : "Уголовное право",
+      "teacher" : "Корниенко А.А.",
+      "place" : "203"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Уголовное право",
+      "teacher" : "Корниенко А.А.",
+      "place" : "315"
+    }, {
+      "number" : 1,
+      "name" : "Уголовное право",
+      "teacher" : "Корниенко А.А.",
+      "place" : "315"
+    }, {
+      "number" : 2,
+      "name" : "Ин яз",
+      "teacher" : "Каримова Г.Ф.",
+      "place" : "324"
+    }, {
+      "number" : 3,
+      "name" : "Админ право",
+      "teacher" : "Султанов У.З.",
+      "place" : "111"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Уголовный процесс",
+      "teacher" : "Маликов М.Г.",
+      "place" : "320"
+    }, {
+      "number" : 5,
+      "name" : "Уголовный процесс",
+      "teacher" : "Маликов М.Г.",
+      "place" : "320"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

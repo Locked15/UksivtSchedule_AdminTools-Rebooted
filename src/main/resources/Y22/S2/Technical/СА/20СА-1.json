@@ -1,0 +1,235 @@
+{
+  "groupName" : "20СА-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Стандарттизация",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "16"
+    }, {
+      "number" : 1,
+      "name" : "МДК.02.03",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235"
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.03",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "УП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : "16"
+    }, {
+      "number" : 3,
+      "name" : "УП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : "16"
+    }, {
+      "number" : 4,
+      "name" : "УП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : "16"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.02.01",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 1,
+      "name" : "МДК.02.01",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 2,
+      "name" : "ПП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : "1"
+    }, {
+      "number" : 3,
+      "name" : "ПП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : "1"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 3,
+      "name" : "МДК.02.02",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 4,
+      "name" : "МДК.02.02",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ПП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : " 001б"
+    }, {
+      "number" : 2,
+      "name" : "ПП.01.01",
+      "teacher" : "Павлов Н.А.",
+      "place" : " 001б"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "319"
+    }, {
+      "number" : 2,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "319"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

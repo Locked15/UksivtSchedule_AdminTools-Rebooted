@@ -1,0 +1,235 @@
+{
+  "groupName" : "21уЛ-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ"
+    }, {
+      "number" : 4,
+      "name" : "Страх дело",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 5,
+      "name" : "Страх дело",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК.04.01",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 3,
+      "name" : "МДК.04.01",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 4,
+      "name" : "МДК.04.01",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ПОПД",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "331"
+    }, {
+      "number" : 4,
+      "name" : "ПОПД",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "331"
+    }, {
+      "number" : 5,
+      "name" : "ПОПД",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "331"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 1,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 2,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Страх дело",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 2,
+      "name" : "Страх дело",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 2,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 3,
+      "name" : "МДК.03.02",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

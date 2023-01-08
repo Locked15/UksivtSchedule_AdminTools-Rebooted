@@ -113,6 +113,8 @@ class Reader(pathToFile: String) {
                 parseCurrentPartOfTheDocument(column, targetSheet, baseData)
             }
 
+            // Insert sunday schedule and then return ready value.
+            baseData.schedules.add(DaySchedule(Day.SUNDAY, mutableListOf()))
             return WeekSchedule(groupName, baseData.schedules)
         }
         else {

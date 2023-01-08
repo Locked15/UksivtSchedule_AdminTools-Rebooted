@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ЗИО-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Экон организации",
+      "teacher" : "Арсланова О,Н.",
+      "place" : "301"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "общ"
+    }, {
+      "number" : 1,
+      "name" : "Осн философии",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК.01.01",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.01",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ДОУ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305"
+    }, {
+      "number" : 4,
+      "name" : "Экон организации",
+      "teacher" : "Арсланова О,Н.",
+      "place" : "301"
+    }, {
+      "number" : 5,
+      "name" : "Осн мен и маркет",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "БЖД",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "314"
+    }, {
+      "number" : 5,
+      "name" : "Земельное право",
+      "teacher" : "Шангареева Г.Ф.",
+      "place" : "343"
+    }, {
+      "number" : 6,
+      "name" : "Земельное право",
+      "teacher" : "Шангареева Г.Ф.",
+      "place" : "343"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 4,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 5,
+      "name" : "ПСД",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    }, {
+      "number" : 6,
+      "name" : "МДК.03.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "УП.03.01",
+      "teacher" : "Булатов А.Р.",
+      "place" : "305"
+    }, {
+      "number" : 5,
+      "name" : "УП.03.01",
+      "teacher" : "Булатов А.Р.",
+      "place" : "305"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

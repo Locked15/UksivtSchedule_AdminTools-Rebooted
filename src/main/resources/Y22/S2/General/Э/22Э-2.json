@@ -1,0 +1,235 @@
+{
+  "groupName" : "22Э-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин яз",
+      "teacher" : "Каримова Г.Ф.",
+      "place" : "324"
+    }, {
+      "number" : 2,
+      "name" : "Ин яз",
+      "teacher" : "Каримова Г.Ф.",
+      "place" : "324"
+    }, {
+      "number" : 3,
+      "name" : "Математика",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "313"
+    }, {
+      "number" : 4,
+      "name" : "Математика",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "313"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОБЖ",
+      "teacher" : "Кобелева С.В.",
+      "place" : "313"
+    }, {
+      "number" : 1,
+      "name" : "Экономика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308"
+    }, {
+      "number" : 2,
+      "name" : "Астрономия",
+      "teacher" : "Сыртланова Л.А.",
+      "place" : "333"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Обществознание",
+      "teacher" : "Сафуанова З.А.",
+      "place" : "315"
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Информатика",
+      "teacher" : "Давлетшина З.Д.",
+      "place" : "234"
+    }, {
+      "number" : 2,
+      "name" : "Математика",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "314"
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "336"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Баш яз",
+      "teacher" : "Хисамутдинова Р.М.",
+      "place" : "321"
+    }, {
+      "number" : 4,
+      "name" : "География",
+      "teacher" : "резерв",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Математика",
+      "teacher" : "Аввакумов А.А.",
+      "place" : "319"
+    }, {
+      "number" : 1,
+      "name" : "Русский яз",
+      "teacher" : "Андреева Р.М.",
+      "place" : "314"
+    }, {
+      "number" : 2,
+      "name" : "Литература",
+      "teacher" : "Андреева Р.М.",
+      "place" : "314"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

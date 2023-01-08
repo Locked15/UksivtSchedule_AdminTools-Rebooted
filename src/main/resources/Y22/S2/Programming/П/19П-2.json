@@ -1,0 +1,235 @@
+{
+  "groupName" : "19П-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Спец курс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 1,
+      "name" : "Спец курс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 2,
+      "name" : "Спец курс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "ИСРПО",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 4,
+      "name" : "ИСРПО",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 5,
+      "name" : "Стандартизация",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 6,
+      "name" : "Стандартизация",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ПОПД",
+      "teacher" : "Дуйсенов И.А.",
+      "place" : "214"
+    }, {
+      "number" : 2,
+      "name" : "ПОПД",
+      "teacher" : "Дуйсенов И.А.",
+      "place" : "214"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Иняз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : "с/з"
+    }, {
+      "number" : 5,
+      "name" : "ИСРПО",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 6,
+      "name" : "Экономика отрасли",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339"
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Экономика отрасли",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339"
+    }, {
+      "number" : 3,
+      "name" : "Экономика отрасли",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339"
+    }, {
+      "number" : 4,
+      "name" : "Спецкурс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 5,
+      "name" : "Спецкурс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Менеджмент",
+      "teacher" : "Киселева М.В.",
+      "place" : "343"
+    }, {
+      "number" : 3,
+      "name" : "Менеджмент",
+      "teacher" : "Киселева М.В.",
+      "place" : "343"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

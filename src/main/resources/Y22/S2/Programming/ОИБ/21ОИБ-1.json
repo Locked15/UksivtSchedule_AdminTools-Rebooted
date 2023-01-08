@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ОИБ-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Элект. и схемот.",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 3,
+      "name" : "ОИБ",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОАиП л/р",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 1,
+      "name" : "ОАиП",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 2,
+      "name" : "ОАиП",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : "319"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "МДК.04.01",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : "общ"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320"
+    }, {
+      "number" : 1,
+      "name" : "УП.04.01",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 2,
+      "name" : "ПП.04.01",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 3,
+      "name" : "МДК.04.01",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОАИП л/р",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Гущина М.В.",
+      "place" : "323а"
+    }, {
+      "number" : 2,
+      "name" : "Математика",
+      "teacher" : "Гущина М.В.",
+      "place" : "323а"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Элект. и схемот.",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 4,
+      "name" : "Элект. и схемот.",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

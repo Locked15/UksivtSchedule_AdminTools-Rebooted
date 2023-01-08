@@ -1,0 +1,235 @@
+{
+  "groupName" : "20ЗИО-1",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "УП.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    }, {
+      "number" : 6,
+      "name" : "УП.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "УП.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    }, {
+      "number" : 2,
+      "name" : "Страх дело",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "ПОПД",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "331"
+    }, {
+      "number" : 2,
+      "name" : "ПОПД",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "331"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.04.01",
+      "teacher" : "Миниханова Г.Ф.",
+      "place" : "337"
+    }, {
+      "number" : 1,
+      "name" : "МДК.04.01",
+      "teacher" : "Миниханова Г.Ф.",
+      "place" : "337"
+    }, {
+      "number" : 2,
+      "name" : "МДК.04.01",
+      "teacher" : "Миниханова Г.Ф.",
+      "place" : "337"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Ин яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "14"
+    }, {
+      "number" : 4,
+      "name" : "Страх дело",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    }, {
+      "number" : 5,
+      "name" : "Страх дело",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    }, {
+      "number" : 6,
+      "name" : "Страх дело",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341"
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    }, {
+      "number" : 2,
+      "name" : "МДК.02.01",
+      "teacher" : "Нагаева З.Т.",
+      "place" : "337"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

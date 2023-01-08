@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ПД-2",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : "ПИСО",
+      "teacher" : "Языкбаев А.Г.",
+      "place" : "341"
+    }, {
+      "number" : 6,
+      "name" : "ПИСО",
+      "teacher" : "Языкбаев А.Г.",
+      "place" : "341"
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Гр право и гр процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "343"
+    }, {
+      "number" : 3,
+      "name" : "Основы философии",
+      "teacher" : "Исмагилова Г.М,",
+      "place" : "315"
+    }, {
+      "number" : 4,
+      "name" : "Конст право",
+      "teacher" : "Султанов А.Х.",
+      "place" : "316"
+    }, {
+      "number" : 5,
+      "name" : "Конст право",
+      "teacher" : "Султанов А.Х.",
+      "place" : "316"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ИТ",
+      "teacher" : "Уразаева А.А.",
+      "place" : "227"
+    }, {
+      "number" : 1,
+      "name" : "ИТ",
+      "teacher" : "Уразаева А.А.",
+      "place" : "227"
+    }, {
+      "number" : 2,
+      "name" : "Гр право и гр процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "117"
+    }, {
+      "number" : 3,
+      "name" : "Гр право и гр процесс",
+      "teacher" : "Зайнуллина И.И.",
+      "place" : "117"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин яз",
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "ПИСО",
+      "teacher" : "Языкбаев А.Г.",
+      "place" : "111а"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "НПП",
+      "teacher" : "Муззафаров Ф.Ф.",
+      "place" : "323"
+    }, {
+      "number" : 5,
+      "name" : "НПП",
+      "teacher" : "Муззафаров Ф.Ф.",
+      "place" : "323"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "БЖД",
+      "teacher" : "Акчев С.А.",
+      "place" : "110"
+    }, {
+      "number" : 4,
+      "name" : "Труд право",
+      "teacher" : "Акчев С.А.",
+      "place" : "110"
+    }, {
+      "number" : 5,
+      "name" : "Баш яз",
+      "teacher" : "Хисамутдинова Р.М.",
+      "place" : "321"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

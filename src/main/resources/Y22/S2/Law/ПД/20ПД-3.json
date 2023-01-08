@@ -1,0 +1,235 @@
+{
+  "groupName" : "20ПД-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП.01.01",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 1,
+      "name" : "УП.01.01",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Прав осн ОРД",
+      "teacher" : "Щеклеин А.",
+      "place" : "112"
+    }, {
+      "number" : 1,
+      "name" : "Криминалистика",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 2,
+      "name" : "Криминалистика",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.05",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Уголовный процесс",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 1,
+      "name" : "Уголовный процесс",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 2,
+      "name" : "Уголовный процесс",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.02",
+      "teacher" : "Щеклеин А.",
+      "place" : "112"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.01",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 2,
+      "name" : "МДК.01.01",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "111"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.01.01",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "323"
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.01",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "323"
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "Иняз",
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.02",
+      "teacher" : "Щеклеин А.",
+      "place" : "112"
+    }, {
+      "number" : 5,
+      "name" : "МДК.01.02",
+      "teacher" : "Щеклеин А.",
+      "place" : "112"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

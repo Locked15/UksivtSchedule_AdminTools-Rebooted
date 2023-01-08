@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ПО-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "МДК.01.02",
+      "teacher" : "Кильсенбаев Э.Р.",
+      "place" : "114"
+    }, {
+      "number" : 2,
+      "name" : "Гражданское право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 3,
+      "name" : "Гражданское право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Основы философии",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336"
+    }, {
+      "number" : 3,
+      "name" : "Конст право",
+      "teacher" : "Албмухаметова Г.А.",
+      "place" : "117"
+    }, {
+      "number" : 4,
+      "name" : "Основы эк права",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "111а"
+    }, {
+      "number" : 5,
+      "name" : "Ин яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Гражданское право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Трудовое право",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "341"
+    }, {
+      "number" : 2,
+      "name" : "МДК.01.02",
+      "teacher" : "Кильсенбаев Э.Р.",
+      "place" : "114"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Трудовое право",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "203"
+    }, {
+      "number" : 1,
+      "name" : "Трудовое право",
+      "teacher" : "Ишкильдина Г.Р.",
+      "place" : "203"
+    }, {
+      "number" : 2,
+      "name" : "Угол право",
+      "teacher" : "Дуйсенов И.А.",
+      "place" : "343"
+    }, {
+      "number" : 3,
+      "name" : "ИТ",
+      "teacher" : "Мусина Г.А.",
+      "place" : "7"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.01.01",
+      "teacher" : "Калмацкий Н.А.",
+      "place" : "118"
+    }, {
+      "number" : 4,
+      "name" : "МДК.01.01",
+      "teacher" : "Калмацкий Н.А.",
+      "place" : "118"
+    }, {
+      "number" : 5,
+      "name" : "МДК.01.01",
+      "teacher" : "Калмацкий Н.А.",
+      "place" : "118"
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

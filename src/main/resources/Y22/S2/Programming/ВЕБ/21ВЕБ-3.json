@@ -1,0 +1,235 @@
+{
+  "groupName" : "21ВЕБ-3",
+  "daySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : "МДК.08.02",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 4,
+      "name" : "ТВиМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327"
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Дискр. Математика",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327"
+    }, {
+      "number" : 1,
+      "name" : "УП.08.01",
+      "teacher" : "Давлетшина З.Д.",
+      "place" : "234"
+    }, {
+      "number" : 2,
+      "name" : "УП.08.01",
+      "teacher" : "Давлетшина З.Д.",
+      "place" : "234"
+    }, {
+      "number" : 3,
+      "name" : "УП.08.01",
+      "teacher" : "Давлетшина З.Д.",
+      "place" : "234"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ПП.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 1,
+      "name" : "ПП.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 2,
+      "name" : "ПП.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320"
+    }, {
+      "number" : 2,
+      "name" : "КС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231"
+    }, {
+      "number" : 3,
+      "name" : "ПП.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОАиП",
+      "teacher" : "Уразаева А.А.",
+      "place" : "227"
+    }, {
+      "number" : 1,
+      "name" : "ОАиП",
+      "teacher" : "Уразаева А.А.",
+      "place" : "227"
+    }, {
+      "number" : 2,
+      "name" : "ЧМ",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218"
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 1,
+      "name" : "МДК.08.01",
+      "teacher" : "Васильева А.А.",
+      "place" : "243"
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}
