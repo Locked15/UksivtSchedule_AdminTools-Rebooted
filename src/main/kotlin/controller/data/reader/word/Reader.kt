@@ -206,7 +206,7 @@ class Reader(pathToFile: String) {
      * [Returned list][List] easily can be added to schedule objects.
      */
     private fun expandWrappedLesson(wrappedNumber: String, lesson: Lesson): List<Lesson> {
-        val splatted = wrappedNumber.split(",").map { e -> e.trim(' ') }
+        val splatted = wrappedNumber.split(",", ".").map { e -> e.trim(' ') }
         val toReturn = mutableListOf<Lesson>()
         for (number in splatted) {
             toReturn.add(Lesson(number.toInt(), lesson.name,

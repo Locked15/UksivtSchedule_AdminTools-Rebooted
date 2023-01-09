@@ -47,7 +47,7 @@ fun checkToParsingStopper(base: BaseIteratorModel, outer: OuterIteratorModel, in
 }
 
 private fun firstStopperCheckPart(listen: Boolean, foundText: String, target: String): Boolean = listen &&
-        foundText.lowercase() == target.lowercase()
+        foundText.lowercase() != target.lowercase()
 
 private fun secondStopperCheckPart(cellNumber: Int): Boolean = cellNumber == 0 ||
         cellNumber == 3
