@@ -12,4 +12,4 @@ import model.data.schedule.Changes
  *                         If this sets to true, iterator will parse changes elements
  *                         (i.e. lesson names, teachers, places, etc).
  */
-class BaseIteratorModel(var cycleStopper: Boolean, var listenToChanges: Boolean, val changes: Changes)
+class BaseIteratorModel(var cycleStopper: Boolean, var listenToChanges: Boolean, var changes: Changes)

@@ -35,7 +35,7 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
             println("Found 'NULL' changes value on schedule merging. Base schedule will return.\nSkipping...")
             DaySchedule(day, lessons)
         }
-        else if (changes.absolute) {
+        else if (changes.isAbsolute) {
             println("Absolute changes found on schedule merging. New schedule will be applied.\nCalculation...")
             DaySchedule(day, changes.changedLessons).fillEmptyLessons()
         }
@@ -136,19 +136,6 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
         /* region Static Functions */
 
         /**
-         * Generates a template [changes][Changes] object with practise value.
-         * Returned value can be merged with [base schedule][DaySchedule] to get final "On Practise" schedule.
-         */
-        fun getOnPractiseChanges(): Changes {
-            val changes = mutableListOf<Lesson>()
-            for (i in 0..6) {
-                changes.add(Lesson(i, "Практика"))
-            }
-
-            return Changes(changes, true)
-        }
-
-        /**
          * Generates a template schedule for practise days.
          *
          * Return value contains seven lessons (0..6), with 'Практика' value in lessons name.
@@ -157,6 +144,20 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
             val lessons = mutableListOf<Lesson>()
             for (i in 0..6) {
                 lessons.add(Lesson(i, "Практика"))
+            }
+
+            return DaySchedule(day, lessons)
+        }
+
+        /**
+         * Generates a template schedule for debt liquidation days.
+         *
+         * Return value contains seven lessons (0..6), with 'Ликвидация Задолженностей' value in lessons name.
+         */
+        fun getDebtLiquidationSchedule(day: Day): DaySchedule {
+            val lessons = mutableListOf<Lesson>()
+            for (i in 0 .. 6) {
+                lessons.add(Lesson(i, "Ликвидация Задолженностей"))
             }
 
             return DaySchedule(day, lessons)

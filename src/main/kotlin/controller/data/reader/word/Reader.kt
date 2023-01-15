@@ -11,6 +11,10 @@ import model.exception.WrongDayInDocumentException
 import org.apache.poi.xwpf.usermodel.XWPFDocument
 import java.io.FileInputStream
 import model.data.parse.changes.CellDefineResult
+import model.data.schedule.base.day.fromRussianString
+import java.lang.Exception
+import java.util.Calendar
+import java.util.GregorianCalendar
 
 
 /**
@@ -54,27 +58,34 @@ class Reader(pathToFile: String) {
      * Now it returns only changes.
      */
     fun getChanges(groupName: String, day: Day?): Changes? {
-        // Checks header, because it can contain info about practise.
-        if (checkGroupsToContain(getPractiseGroups(day), groupName)) {
-            return DaySchedule.getOnPractiseChanges()
+        val headerInfo = getHeaderAdditionalInfo(day)
+        if (checkGroupsToContain(headerInfo.first, groupName)) {
+            // We check header, because it can contain info about practise.
+            return Changes.getOnPractiseChanges(headerInfo.second)
         }
         // Otherwise, we'll parse the main content of the document.
         else {
             /** Base model, that contains information about parsing, including [Changes] object. */
-            val baseData = BaseIteratorModel(cycleStopper = false, listenToChanges = false, changes = Changes())
+            val baseData = BaseIteratorModel(cycleStopper = false, listenToChanges = false,
+                                             changes = Changes(headerInfo.second))
             for (row in searchTargetTable(document.tables).rows) {
-                /** Model with iteration data, especially with a generating lesson. */
-                val iterationData = OuterIteratorModel(0, "", Lesson())
+                /** Model with iteration data, including generating lesson.
+                 * Begins with -1 cell number, because we increment it right on first iteration. */
+                val iterationData = OuterIteratorModel(-1, "", Lesson())
                 for (cell in row.tableCells) {
                     /** Local data that uses inside last cycle. */
                     val localData = InnerIteratorModel(cell.text, cell.text.lowercase())
+                    if (groupName.lowercase() == localData.lowerText) {
+                        // !!! Use this to stop at target document location. !!! \\
+                        localData.toString()
+                    }
+
+                    iterationData.cellNumber++
                     when (defineCellContent(baseData, iterationData, localData, groupName)) {
                         CellDefineResult.CONTINUE -> continue
                         CellDefineResult.READ -> readCellValueAndUpdateObject(localData.text, iterationData)
                         CellDefineResult.BREAK -> break
                     }
-
-                    iterationData.cellNumber++
                 }
 
                 checkStateAndUpdateChangedLessons(baseData, iterationData)
@@ -89,6 +100,78 @@ class Reader(pathToFile: String) {
         }
     }
 
+    /* region Work with Document Header */
+
+    /**
+     * Extracts a full list of groups, that targets to practise on a current changes document.
+     * If sent [day] isn't 'NULL' it also checks declared day in document and target day.
+     *
+     * Also, parses header to get information about [changes date and month][Calendar].
+     *
+     * [Returned value][Pair] is full list of [groups][String],
+     * that schedule must be generated via [special function][DaySchedule.getOnPractiseSchedule]
+     * AND [date object][Calendar] with target date and day.
+     */
+    private fun getHeaderAdditionalInfo(day: Day?): Pair<List<String>, Calendar?> {
+        val builder = StringBuilder()
+        var foundDate: Calendar? = null
+        for (i in document.paragraphs.indices) {
+            // First paragraphs contain administration info, so ignore them:
+            if (i < DATE_INFO_PARAGRAPH_ID) {
+                continue
+            }
+            // Fifth paragraph contains day name and week number, so we can check data:
+            else if (i == DATE_INFO_PARAGRAPH_ID) {
+                if (day != null) completeDayCheck(document.paragraphs[i].text, day.russianName)
+                foundDate = completeDateParse(document.paragraphs[i].text)
+            }
+            // Left paragraphs contains information, that we need:
+            else {
+                builder.append(document.paragraphs[i].text)
+            }
+        }
+
+        // Last one element contains "On Practise" string ending, not group, so remove it.
+        val practiseText = builder.toString().split(ON_PRACTISE_ENDING).dropLast(1)
+        return Pair(practiseText, foundDate)
+    }
+
+    /**
+     * Completes current document day check.
+     * If check fails, it throws an [exception][WrongDayInDocumentException].
+     */
+    private fun completeDayCheck(text: String, targetDayName: String) {
+        if (!text.contains(targetDayName, true)) {
+            throw WrongDayInDocumentException("Sent day and day, declared in document don't equal.")
+        }
+    }
+
+    /**
+     * Completes date parse by document header value.
+     * Initializes
+     */
+    private fun completeDateParse(text: String): Calendar {
+        /**
+         * Contains elements with information about target date.
+         * All values represented in upper case.
+         *
+         * IDs:
+         * * 0 — Contains in-month day number (1, 19, 24, etc);
+         * * 1 — Contains month name on russian language with specific ending ('ДЕКАБРЯ', 'СЕНТЯБРЯ', etc);
+         * * 2 — Contains in-week day name ('ПОНЕДЕЛЬНИК', 'СУББОТА', etc).
+         *
+         * Because we split original string with multiple regexes, we must remove empty elements (that will appear).
+         */
+        val elements = text.split(" ", "–").drop(1).filterNot { el -> el == "" }
+        val monthId = getMonthIndexByName(elements[1])
+        val dayId = fromRussianString(elements[2])
+
+        var parsedDate = Calendar.getInstance()
+        parsedDate = GregorianCalendar(parsedDate.get(Calendar.YEAR), monthId, elements[0].toInt())
+        return parsedDate
+    }
+    /* endregion */
+
     /**
      * Defines current cell content and updates [iterator][baseData] [model][iterationData] [objects][localData].
      * Sent [target] value contains group name, that must be found.
@@ -97,14 +180,10 @@ class Reader(pathToFile: String) {
      */
     private fun defineCellContent(baseData: BaseIteratorModel, iterationData: OuterIteratorModel,
                                   localData: InnerIteratorModel, target: String): CellDefineResult {
-        // Before other checks, we must check cell to empty value:
-        if (localData.text == EMPTY_WORD_TABLE_CELL_VALUE) {
-            iterationData.cellNumber++
-        }
         // If we have met with target group name, we'll start changes reading:
-        else if (localData.lowerText == target.lowercase()) {
+        if (checkValueToEquality(localData.lowerText, target)) {
             baseData.listenToChanges = true
-            baseData.changes.absolute = true
+            baseData.changes.isAbsolute = true
         }
         // If we met another group name AND we're reading changes, so we'll have to break the cycle.
         else if (checkToParsingStopper(baseData, iterationData, localData, target)) {
@@ -137,48 +216,26 @@ class Reader(pathToFile: String) {
     }
 
     /**
-     * Extracts a full list of groups, that targets to practise on a current changes document.
-     * If sent [day] isn't 'NULL' it also checks declared day in document and target day.
-     *
-     * [Returned value][List] is full list of [groups][String],
-     * that schedule must be generated via [special function][DaySchedule.getOnPractiseSchedule].
-     */
-    private fun getPractiseGroups(day: Day?): List<String> {
-        val builder = StringBuilder()
-        for (i in document.paragraphs.indices) {
-            // First paragraphs contain administration info, so ignore them:
-            if (i < 5) {
-                continue
-            }
-            // Fifth paragraph contains day name and week number, so we can check data:
-            else if (i == 5 && day != null) {
-                if (document.paragraphs[i].text.contains(day.russianName, true)) {
-                    throw WrongDayInDocumentException("Sent day and day, declared in document don't equal.")
-                }
-            }
-            // Left paragraphs contains information, that we need:
-            else {
-                builder.append(document.paragraphs[i].text)
-            }
-        }
-
-        // Last one element contains "On Practise" string ending, not group, so remove it.
-        return builder.toString().split(ON_PRACTISE_ENDING, ",").dropLast(1)
-    }
-
-    /**
      * Checks a [target group][target] to contain an inside collection of [groups][groups].
      * This function fixes target and practise groups, so it's not affected by data-anomalies.
      *
      * May be used to check "On Practise" groups.
      */
     private fun checkGroupsToContain(groups: List<String>, target: String): Boolean {
-        val fixedTarget = target.trim().replace("-", "").replace("_", "").replace(".", "")
         for (group in groups) {
-            val fixedGroup = group.trim().replace("-", "").replace("_", "").replace(".", "")
-            if (fixedGroup == fixedTarget) {
+            if (checkValueToEquality(group, target)) {
                 return true
             }
+        }
+
+        return false
+    }
+
+    private fun checkValueToEquality(text: String, target: String): Boolean {
+        val fixedText = text.trim().replace("-", "").replace("_", "").replace(".", "")
+        val fixedTarget = target.trim().replace("-", "").replace("_", "").replace(".", "")
+        if (fixedText.equals(fixedTarget, true)) {
+            return true
         }
 
         return false
@@ -192,7 +249,12 @@ class Reader(pathToFile: String) {
      * updates [generating lessons][BaseIteratorModel.changes] with unwrapped values.
      */
     private fun checkStateAndUpdateChangedLessons(base: BaseIteratorModel, outer: OuterIteratorModel) {
-        if (base.listenToChanges && outer.rawLessonNumbers != "") {
+        // In this case we found "Debt Liquidation" and have to update all Changes Object.
+        if (base.listenToChanges && outer.rawLessonNumbers.contains("ликвидация", true)) {
+            base.changes = Changes.getDebtLiquidationChanges(base.changes.changesDate)
+            base.cycleStopper = true
+        }
+        else if (base.listenToChanges && outer.rawLessonNumbers != "") {
             base.changes.changedLessons.addAll(expandWrappedLesson(outer.rawLessonNumbers, outer.currentLesson))
         }
     }
@@ -209,8 +271,13 @@ class Reader(pathToFile: String) {
         val splatted = wrappedNumber.split(",", ".").map { e -> e.trim(' ') }
         val toReturn = mutableListOf<Lesson>()
         for (number in splatted) {
-            toReturn.add(Lesson(number.toInt(), lesson.name,
-                                lesson.teacher, lesson.place))
+            try {
+                toReturn.add(Lesson(number.toInt(), lesson.name,
+                                    lesson.teacher, lesson.place))
+            }
+            catch (ex: Exception) {
+                // Something bad happened. IDK.
+            }
         }
 
         return toReturn
@@ -251,6 +318,14 @@ class Reader(pathToFile: String) {
          * Uses to split whole string into [List].
          */
         internal const val ON_PRACTISE_ENDING = "— на практике"
+
+        /**
+         * Contains ID of the document paragraph, that contains information about target day and month.
+         *
+         * I.E.:
+         * "НА 19 ДЕКАБРЯ – ПОНЕДЕЛЬНИК".
+         */
+        private const val DATE_INFO_PARAGRAPH_ID = 4;
     }
     /* endregion */
 }

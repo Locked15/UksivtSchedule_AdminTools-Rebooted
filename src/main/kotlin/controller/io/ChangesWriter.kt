@@ -32,7 +32,7 @@ private fun writeToFile(changes: Changes): Boolean {
     val serializer = ObjectMapper()
     val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(changes)
     return try {
-        val stream = FileWriter(getFilePath(changes.absolute).toFile(), false)
+        val stream = FileWriter(getFilePath(changes.isAbsolute).toFile(), false)
         stream.write(serializedValue)
         stream.close()
 

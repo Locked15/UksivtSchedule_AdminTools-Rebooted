@@ -137,7 +137,9 @@ class BasicController {
      * Writes value to file, if user sent '-w' or '--write' as arg.
      */
     fun parseChanges(args: List<String>) {
-        collectDataAndParseChangesFile()
+        val auto = args.contains("-a") || args.contains("--auto")
+        collectDataAndParseChangesFile(auto)
+
         if (args.contains("-w") || args.contains("--write")) {
             writeLastResult()
         }
@@ -147,11 +149,17 @@ class BasicController {
      * Collects target data for a parsing process.
      * Then, begins changes document parse.
      */
-    private fun collectDataAndParseChangesFile() {
-        val data = getTargetDataForChangesParse()
+    private fun collectDataAndParseChangesFile(auto: Boolean) {
+        val data = getTargetDataForChangesParse(auto)
         val reader = WordReader(data.first)
 
-        lastResult = reader.getChanges(data.second, data.third) ?: Changes()
+        if (auto) {
+
+        }
+        else {
+            // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
+            lastResult = reader.getChanges(data.second!!, data.third) ?: Changes()
+        }
     }
     /* endregion */
     /* endregion */
@@ -192,10 +200,10 @@ class BasicController {
      */
     private fun beginBasicChangesDocumentParsingIfPossible(args: List<String>) {
         if (args.contains("-cd") || args.contains("--changes-document")) {
-            val data = getTargetDataForChangesParse()
+            val data = getTargetDataForChangesParse(false)
             val reader = WordReader(data.first)
 
-            reader.getChanges(data.second, data.third)
+            reader.getChanges(data.second!!, data.third)
         }
     }
 
@@ -554,9 +562,9 @@ class BasicController {
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */
-        private fun getTargetDataForChangesParse(): Triple<String, String, Day?> {
+        private fun getTargetDataForChangesParse(auto: Boolean): Triple<String, String?, Day?> {
             val path = getSafeFilePath(".doc", ".docx")
-            val group = getSafeTargetGroup(listOf())
+            val group = if (auto) null else inputText("Input target group")
             val day = getSafeTargetDay()
 
             return Triple(path, group, day)

@@ -4,7 +4,37 @@ import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
 import org.apache.poi.xwpf.usermodel.XWPFTable
+import java.util.Calendar
 
+
+/* region Date Parsing sub-functions */
+
+fun getMonthIndexByName(name: String): Int {
+    return when (name.lowercase()) {
+        // Winter is coming...
+        "декабрь", "декабря" -> Calendar.DECEMBER
+        "январь", "января" -> Calendar.JANUARY
+        "февраль", "февраля" -> Calendar.FEBRUARY
+
+        // Spring is outta here...
+        "март", "марта" -> Calendar.MARCH
+        "апрель", "апреля" -> Calendar.APRIL
+        "май", "мая" -> Calendar.MAY
+
+        // We have only dreams about Summer...
+        "июнь", "июня" -> Calendar.JUNE
+        "июль", "июля" -> Calendar.JULY
+        "август", "августа" -> Calendar.AUGUST
+
+        // It will end. We all are falling in the Fall...
+        "сентябрь", "сентября" -> Calendar.SEPTEMBER
+        "октябрь", "октября" -> Calendar.OCTOBER
+        "ноябрь", "ноября" -> Calendar.NOVEMBER
+
+        else -> throw IllegalArgumentException("Found invalid month name.\nOriginal value: $name.")
+    }
+}
+/* endregion */
 
 /* region "searchTargetTable" function */
 
@@ -47,7 +77,7 @@ fun checkToParsingStopper(base: BaseIteratorModel, outer: OuterIteratorModel, in
 }
 
 private fun firstStopperCheckPart(listen: Boolean, foundText: String, target: String): Boolean = listen &&
-        foundText.lowercase() != target.lowercase()
+        foundText.isNotEmpty() && foundText.lowercase() != target.lowercase()
 
 private fun secondStopperCheckPart(cellNumber: Int): Boolean = cellNumber == 0 ||
         cellNumber == 3
