@@ -5,7 +5,7 @@ import org.jsoup.select.Elements
 
 
 /**
- * This class wraps table content, that contain information with day changes.
+ * This class wraps table content, that contain information with day targetChangesOfDay.
  *
  * @param header  Represents <thead> element with table header.
  * @param body  Represents <tbody> an element with table body.

@@ -46,8 +46,8 @@ class Basic(private val user: String) {
                                Command("Schedule") {
                                    controller.parseSchedule(it)
                                }),
-            "changes" to Pair(changesDescription,
-                              Command("Changes") {
+            "targetChangesOfDay" to Pair(targetChangesOfDayDescription,
+                              Command("TargetChangesOfDay") {
                                   controller.parseChanges(it)
                               }
             ),
@@ -162,11 +162,11 @@ class Basic(private val user: String) {
         private val scheduleDescription: String
 
         /**
-         * Description of the 'Changes' command.
+         * Description of the 'TargetChangesOfDay' command.
          *
          * This is a valuable one.
          */
-        private val changesDescription: String
+        private val targetChangesOfDayDescription: String
 
         /**
          * Description of the 'Parse' command.
@@ -199,7 +199,7 @@ class Basic(private val user: String) {
             when (Locale.getDefault()) {
                 Locale.ENGLISH -> {
                     scheduleDescription = "Begins schedule-reading process (requires prepared file)"
-                    changesDescription = "Begins changes-reading process (requires downloaded document)"
+                    targetChangesOfDayDescription = "Begins targetChangesOfDay-reading process (requires downloaded document)"
 
                     helpDescription = "Show context help for this application"
                     parseDescription = "Begins basic parsing process (may be useful for debugging process)"
@@ -209,7 +209,7 @@ class Basic(private val user: String) {
                 }
                 Locale.CHINESE -> {
                     scheduleDescription = "開始計劃閱讀過程（需要準備好的文件）"
-                    changesDescription = "開始更改閱讀過程（需要下載的文檔）"
+                    targetChangesOfDayDescription = "開始更改閱讀過程（需要下載的文檔）"
 
                     helpDescription = "顯示此應用程序的上下文幫助"
                     parseDescription = "開始基本解析過程（可能對調試過程有用）"
@@ -220,7 +220,7 @@ class Basic(private val user: String) {
 
                 else -> {
                     scheduleDescription = "Начать процесс считывания файла расписания (требует готового файла)"
-                    changesDescription = "Начать процесс чтения замен (требуется загруженный документ)"
+                    targetChangesOfDayDescription = "Начать процесс чтения замен (требуется загруженный документ)"
 
                     helpDescription = "Показать контекстную справку для приложения"
                     parseDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"

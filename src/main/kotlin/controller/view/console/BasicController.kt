@@ -8,8 +8,8 @@ import model.data.schedule.DaySchedule
 import model.data.schedule.WeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
-import model.data.schedule.Changes
-import model.data.schedule.ChangesList
+import model.data.schedule.TargetChangesOfDay
+import model.data.schedule.GeneralChangesOfDay
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
 import java.util.Locale
@@ -32,7 +32,7 @@ class BasicController {
      * * [String] — Before any command was executed.
      * * [WeekSchedule] — After [parseSchedule] command;
      * * [List] with [WeekSchedule] — After [parseSchedule] in Automatic Mode;
-     * * [Changes] — After [parseChanges] command.
+     * * [TargetChangesOfDay] — After [parseChanges] command.
      */
     private var lastResult: Any = "There is Nothing.\nFor now."
     /* endregion */
@@ -131,10 +131,10 @@ class BasicController {
     }
     /* endregion */
 
-    /* region Command: 'Changes' */
+    /* region Command: 'TargetChangesOfDay' */
 
     /**
-     * Completes a parsing process on [changes][Changes] [document][WordReader.document].
+     * Completes a parsing process on [targetChangesOfDay][TargetChangesOfDay] [document][WordReader.document].
      * Writes value to file, if user sent '-w' or '--write' as arg.
      */
     fun parseChanges(args: List<String>) {
@@ -148,24 +148,24 @@ class BasicController {
 
     /**
      * Collects target data for a parsing process.
-     * Then, begins changes document parse.
+     * Then, begins targetChangesOfDay document parse.
      */
     private fun collectDataAndParseChangesFile(auto: Boolean) {
         val data = getTargetDataForChangesParse(auto)
         var reader = WordReader(data.first)
 
         if (auto) {
-            val results = mutableListOf<Changes?>()
+            val results = mutableListOf<TargetChangesOfDay?>()
             for (group in reader.getAvailableGroups()) {
                 reader = WordReader(data.first)
                 results.add(reader.getChanges(group, data.third))
             }
 
-            lastResult = ChangesList(results)
+            lastResult = GeneralChangesOfDay(results)
         }
         else {
             // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
-            lastResult = reader.getChanges(data.second!!, data.third) ?: Changes()
+            lastResult = reader.getChanges(data.second!!, data.third) ?: TargetChangesOfDay()
         }
     }
     /* endregion */
@@ -191,7 +191,7 @@ class BasicController {
      * Currently supported parsing types:
      * * '-s' or '--site' — Parses college [website](https://www.uksivt.ru/zameny).
      * * '-sd' or '--schedule-document' — Parses prepared schedule document in target mode.
-     * * '-cd' or '--changes-document' — Parses downloaded changes document.
+     * * '-cd' or '--targetChangesOfDay-document' — Parses downloaded targetChangesOfDay document.
      *
      * This function invented to debugging purpose, so it DOES NOT write value to [result][lastResult].
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
@@ -203,10 +203,10 @@ class BasicController {
     }
 
     /**
-     * Begins basic changes document parsing, if user sent right arguments.
+     * Begins basic targetChangesOfDay document parsing, if user sent right arguments.
      */
     private fun beginBasicChangesDocumentParsingIfPossible(args: List<String>) {
-        if (args.contains("-cd") || args.contains("--changes-document")) {
+        if (args.contains("-cd") || args.contains("--targetChangesOfDay-document")) {
             val data = getTargetDataForChangesParse(false)
             val reader = WordReader(data.first)
 
@@ -248,8 +248,8 @@ class BasicController {
         is WeekSchedule -> writeSchedule(lastResult as WeekSchedule)
         is List<*> -> writeSchedule(lastResult as List<*>)
 
-        is Changes -> writeChanges(lastResult as Changes)
-        is ChangesList -> writeChanges(lastResult as ChangesList)
+        is TargetChangesOfDay -> writeChanges(lastResult as TargetChangesOfDay)
+        is GeneralChangesOfDay -> writeChanges(lastResult as GeneralChangesOfDay)
 
         else -> {
             println("Unknown (or incompatible) type to write.")
@@ -313,14 +313,14 @@ class BasicController {
                         
                         Valuable commands:
                           * Type 'schedule' to begin schedule-reading process (requires prepared file);
-                          * Type 'changes' to begin processing changes document (requires downloaded document).
+                          * Type 'targetChangesOfDay' to begin processing targetChangesOfDay document (requires downloaded document).
                         (This commands writes gotten value to property, so they can be written later).
                         
                         Functional commands:
                           * Type 'help' to show context help message (this command);
                           * Type 'parse' to begin basic parsing process:
                             It requires second parameter:
-                              '-cd' or '--changes-document' — To parse changes document;
+                              '-cd' or '--targetChangesOfDay-document' — To parse targetChangesOfDay document;
                               '-sd' or '--schedule-document' — To parse schedule document;
                               '-s' or '--site' — To parse college site.
                           * Type 'write' to write last gotten value to file;
@@ -351,14 +351,14 @@ class BasicController {
                         
                         有價值的命令：
                           * 類型 'schedule' 開始計劃閱讀過程（需要準備好的文件）;
-                          * 類型 'changes' 開始處理變更文件（需要下載文件）。
+                          * 類型 'targetChangesOfDay' 開始處理變更文件（需要下載文件）。
                         （此命令將獲取的值寫入屬性，因此可以稍後再寫入）。
                         
                         功能命令：
                           * 類型 'help' 顯示上下文幫助消息（此命令）；
                           * 類型 'parse' 開始基本的解析過程：
                             它需要第二個參數：
-                              '-cd' 或者 '--changes-document' — 解析更改文檔；
+                              '-cd' 或者 '--targetChangesOfDay-document' — 解析更改文檔；
                               '-sd' 或者 '--schedule-document' — 解析進度文件；
                               '-s' 或者 '--site' — 解析大學網站。
                           * 類型 'write' 將最後得到的值寫入文件；
@@ -390,14 +390,14 @@ class BasicController {
                         
                         Значимые команды:
                           * Введите 'schedule', чтобы начать чтение документа расписания (требует готового документа);
-                          * Введите 'changes', чтобы начать чтение документа замен (требует скачанного документа).
+                          * Введите 'targetChangesOfDay', чтобы начать чтение документа замен (требует скачанного документа).
                         (Эти команды записывают полученное значение в свойство, так что его можно обработать позднее).
                         
                         Функциональные команды:
                           * Введите 'help', чтобы вывести контекстную справку по приложению (текущая команда);
                           * Введите 'parse', чтобы начать базовый процесс чтения чего-либо:
                             Команда требует хотя бы один параметр для работы:
-                              '-cd' или '--changes-document' — Для чтения документа замен;
+                              '-cd' или '--targetChangesOfDay-document' — Для чтения документа замен;
                               '-sd' или '--schedule-document' — Для чтения документа расписания;
                               '-s' или '--site' — Для чтения страницы сайта колледжа.
                           * Введите 'write', чтобы записать последнее полученное значение в файл;
@@ -498,7 +498,7 @@ class BasicController {
         }
 
         /**
-         * Asks user to input [day index][Int] for day-check on changes [parsing process][parseChanges].
+         * Asks user to input [day index][Int] for day-check on targetChangesOfDay [parsing process][parseChanges].
          * Then, a result depends on user input:
          * * If user input correct value, the program will check day-corresponding and
          *   throws [exception][WrongDayInDocumentException] if days aren't equal.
@@ -564,10 +564,10 @@ class BasicController {
         }
 
         /**
-         * Asks user to input target information to the [changes document][WordReader.document] [parse][parseChanges].
+         * Asks user to input target information to the [targetChangesOfDay document][WordReader.document] [parse][parseChanges].
          *
          * It returns [Triple] object with following data:
-         * * [First][Triple.first] — Path to the changes document;
+         * * [First][Triple.first] — Path to the targetChangesOfDay document;
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */

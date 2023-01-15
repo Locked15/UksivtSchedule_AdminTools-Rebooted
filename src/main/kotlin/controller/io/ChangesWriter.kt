@@ -1,8 +1,8 @@
 package controller.io
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.data.schedule.Changes
-import model.data.schedule.ChangesList
+import model.data.schedule.TargetChangesOfDay
+import model.data.schedule.GeneralChangesOfDay
 import java.io.FileWriter
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -11,13 +11,13 @@ import java.nio.file.Paths
 /* region Properties */
 
 /**
- * Contains file name template for newly creating changes file.
+ * Contains file name template for newly creating targetChangesOfDay file.
  */
 private const val TARGET_FILE_NAME_TEMPLATE = "%b.json"
 
 /**
- * Contains file name template for newly creating changes file.
- * Supposed to be used with united file ([ChangesList] object).
+ * Contains file name template for newly creating targetChangesOfDay file.
+ * Supposed to be used with united file ([GeneralChangesOfDay] object).
  */
 private const val UNITED_FILE_NAME_TEMPLATE = "%d.json"
 /* endregion */
@@ -25,23 +25,23 @@ private const val UNITED_FILE_NAME_TEMPLATE = "%d.json"
 /* region Functions */
 
 /**
- * Writes [changes][Changes] object to the file.
+ * Writes [targetChangesOfDay][TargetChangesOfDay] object to the file.
  *
  * Returns a [result][Boolean] of the process.
  */
-fun writeChanges(changes: Changes) = writeToTargetFile(changes)
+fun writeChanges(targetChangesOfDay: TargetChangesOfDay) = writeToTargetFile(targetChangesOfDay)
 
-fun writeChanges(changesList: ChangesList) = writeToUnitedFile(changesList.changes)
+fun writeChanges(generalChangesOfDay: GeneralChangesOfDay) = writeToUnitedFile(generalChangesOfDay.changes)
 
 /**
- * Writes [value][changes] to the file.
+ * Writes [value][targetChangesOfDay] to the file.
  * File will be placed inside the "resources" directory.
  */
-private fun writeToTargetFile(changes: Changes): Boolean {
+private fun writeToTargetFile(targetChangesOfDay: TargetChangesOfDay): Boolean {
     val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(changes)
+    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(targetChangesOfDay)
     return try {
-        val stream = FileWriter(getTargetFilePath(changes.isAbsolute).toFile(), false)
+        val stream = FileWriter(getTargetFilePath(targetChangesOfDay.isAbsolute).toFile(), false)
         stream.write(serializedValue)
         stream.close()
 
@@ -53,11 +53,11 @@ private fun writeToTargetFile(changes: Changes): Boolean {
     }
 }
 
-private fun writeToUnitedFile(changesList: List<Changes?>): Boolean {
+private fun writeToUnitedFile(targetChangesOfDayList: List<TargetChangesOfDay?>): Boolean {
     val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(changesList)
+    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(targetChangesOfDayList)
     return try {
-        val stream = FileWriter(getUnitedFilePath(changesList.size).toFile(), false)
+        val stream = FileWriter(getUnitedFilePath(targetChangesOfDayList.size).toFile(), false)
         stream.write(serializedValue)
         stream.close()
 
@@ -69,7 +69,7 @@ private fun writeToUnitedFile(changesList: List<Changes?>): Boolean {
     }
 }
 /**
- * Returns the file [path][Path] for writing changes.
+ * Returns the file [path][Path] for writing targetChangesOfDay.
  * It contains [absolute value][absolute].
  */
 private fun getTargetFilePath(absolute: Boolean) = Paths.get(System.getProperty("user.dir"), "src", "main", "resources",

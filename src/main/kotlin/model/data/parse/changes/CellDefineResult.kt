@@ -20,7 +20,7 @@ enum class CellDefineResult {
 
     /**
      * Break the cycles.
-     * Parser found another group declaration while reading changes.
+     * Parser found another group declaration while reading targetChangesOfDay.
      *
      * To old versions: this value is analogue to *1* code.
      */

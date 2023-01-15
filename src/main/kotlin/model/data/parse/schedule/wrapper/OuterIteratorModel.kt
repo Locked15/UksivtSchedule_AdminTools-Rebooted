@@ -21,7 +21,7 @@ import model.data.schedule.DaySchedule
  *                        Contains index of the current day and used in the corresponding statements.
  *                        **Prior 'i' variable**.
  * @param lessonNumber  Used to initialize lessons (represents number of the future lessons).
- *                      Changes between iterations of the second cycle and must save itself value.
+ *                      TargetChangesOfDay between iterations of the second cycle and must save itself value.
  * @param lesson  Lesson, that will be added to a [schedule collection][DaySchedule], then to [WeekSchedule] object.
  *                It placed inside the first cycle, cause some fields initializes on the second iteration.
  * @param currentDay  Contains a current day object. Set 'NULL', if something went wrong (or it's the first iteration).

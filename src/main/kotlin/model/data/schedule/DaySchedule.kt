@@ -23,24 +23,24 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
     /* region Functions */
 
     /**
-     * Merge current schedule with [given changes][changes].
-     * If sent changes are 'NULL', returns a [new object][DaySchedule] with the same schedule as current.
+     * Merge current schedule with [given targetChangesOfDay][targetChangesOfDay].
+     * If sent targetChangesOfDay are 'NULL', returns a [new object][DaySchedule] with the same schedule as current.
      *
      * Before calling this method check, that schedule is full (with empty lessons).
-     * If you don't make it, the final schedule can be messed up (changes placed at the end of order).
+     * If you don't make it, the final schedule can be messed up (targetChangesOfDay placed at the end of order).
      */
-    fun mergeWithChanges(changes: Changes?): DaySchedule {
+    fun mergeWithChanges(targetChangesOfDay: TargetChangesOfDay?): DaySchedule {
         val mergedSchedule = lessons.toMutableList()
-        return if (changes == null) {
-            println("Found 'NULL' changes value on schedule merging. Base schedule will return.\nSkipping...")
+        return if (targetChangesOfDay == null) {
+            println("Found 'NULL' targetChangesOfDay value on schedule merging. Base schedule will return.\nSkipping...")
             DaySchedule(day, lessons)
         }
-        else if (changes.isAbsolute) {
-            println("Absolute changes found on schedule merging. New schedule will be applied.\nCalculation...")
-            DaySchedule(day, changes.changedLessons).fillEmptyLessons()
+        else if (targetChangesOfDay.isAbsolute) {
+            println("Absolute targetChangesOfDay found on schedule merging. New schedule will be applied.\nCalculation...")
+            DaySchedule(day, targetChangesOfDay.changedLessons).fillEmptyLessons()
         }
         else {
-            for (lesson in changes.changedLessons) {
+            for (lesson in targetChangesOfDay.changedLessons) {
                 if (lesson.name?.lowercase() == "нет") lesson.name = null
                 else if (lesson.number == null) println("Found 'NULL' lesson number.\nUsed default (0) value.")
 
@@ -49,7 +49,7 @@ class DaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
                 }
                 catch (exception: IndexOutOfBoundsException) {
                     mergedSchedule.add(Lesson(lesson.number, lesson.name, lesson.teacher, lesson.place))
-                    println("While merging schedule with changes found missing lesson...")
+                    println("While merging schedule with targetChangesOfDay found missing lesson...")
                 }
             }
 

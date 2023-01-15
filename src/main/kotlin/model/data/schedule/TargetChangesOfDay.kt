@@ -5,12 +5,12 @@ import java.util.Calendar
 
 
 /**
- * Class, that encapsulates Changes for the schedule.
+ * Class, that encapsulates TargetChangesOfDay for the schedule.
  *
- * Earlier, it wasn't a class, just a combination of list with changes and boolean with absolute determination.
+ * Earlier, it wasn't a class, just a combination of list with targetChangesOfDay and boolean with absolute determination.
  */
-class Changes(val changedLessons: MutableList<Lesson>, var isAbsolute: Boolean, var changesDate: Calendar?,
-              var targetGroup: String?) {
+class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute: Boolean, var changesDate: Calendar?,
+                         var targetGroup: String?) {
 
     /* region Constructors */
 
@@ -59,42 +59,42 @@ class Changes(val changedLessons: MutableList<Lesson>, var isAbsolute: Boolean, 
     companion object {
 
         /**
-         * Contains template for string-formatting instances of [Changes] objects.
+         * Contains template for string-formatting instances of [TargetChangesOfDay] objects.
          */
         const val STRING_BODY_TEMPLATE =
             """
                 Target: %s;
                 IsAbsolute: %b;
                 Date: %s;
-                Changes:
+                TargetChangesOfDay:
                 {
                     %s.
                 }
             """
 
         /**
-         * Generates a template [changes][Changes] object with practise value.
+         * Generates a template [targetChangesOfDay][TargetChangesOfDay] object with practise value.
          * Returned value can be merged with [base schedule][DaySchedule] to get final "On Practise" schedule.
          */
-        fun getOnPractiseChanges(date: Calendar?, target: String?): Changes {
+        fun getOnPractiseChanges(date: Calendar?, target: String?): TargetChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
                 changes.add(Lesson(i, "Практика"))
             }
 
-            return Changes(changes, true, date, target)
+            return TargetChangesOfDay(changes, true, date, target)
         }
 
         /**
-         * Generates a template [changes][Changes] object with 'Ликвидация Задолженностей' values.
+         * Generates a template [targetChangesOfDay][TargetChangesOfDay] object with 'Ликвидация Задолженностей' values.
          */
-        fun getDebtLiquidationChanges(date: Calendar?, target: String?): Changes {
+        fun getDebtLiquidationChanges(date: Calendar?, target: String?): TargetChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
                 changes.add(Lesson(i, "Ликвидация Задолженностей"))
             }
 
-            return Changes(changes, true, date, target)
+            return TargetChangesOfDay(changes, true, date, target)
         }
     }
     /* endregion */
