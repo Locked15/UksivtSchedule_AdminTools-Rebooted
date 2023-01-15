@@ -9,6 +9,7 @@ import model.data.schedule.WeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.data.schedule.Changes
+import model.data.schedule.ChangesList
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
 import java.util.Locale
@@ -151,10 +152,16 @@ class BasicController {
      */
     private fun collectDataAndParseChangesFile(auto: Boolean) {
         val data = getTargetDataForChangesParse(auto)
-        val reader = WordReader(data.first)
+        var reader = WordReader(data.first)
 
         if (auto) {
+            val results = mutableListOf<Changes?>()
+            for (group in reader.getAvailableGroups()) {
+                reader = WordReader(data.first)
+                results.add(reader.getChanges(group, data.third))
+            }
 
+            lastResult = ChangesList(results)
         }
         else {
             // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
@@ -239,8 +246,10 @@ class BasicController {
      */
     fun writeLastResult() = when (lastResult) {
         is WeekSchedule -> writeSchedule(lastResult as WeekSchedule)
-        is Changes -> writeChanges(lastResult as Changes)
         is List<*> -> writeSchedule(lastResult as List<*>)
+
+        is Changes -> writeChanges(lastResult as Changes)
+        is ChangesList -> writeChanges(lastResult as ChangesList)
 
         else -> {
             println("Unknown (or incompatible) type to write.")
@@ -503,7 +512,7 @@ class BasicController {
         }
         /* endregion */
 
-        /* region Group Input Functions */
+        /* region Input Group Functions */
 
         /**
          * Asks user to input [group name][String].

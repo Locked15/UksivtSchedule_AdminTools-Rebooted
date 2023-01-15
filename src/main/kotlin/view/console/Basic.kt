@@ -260,7 +260,8 @@ class Basic(private val user: String) {
             val command = splatted[0]
 
             // We take all arguments, ignoring the first element (that contains the command itself).
-            return CommandInfo(args = splatted.drop(1), action = console.availableActions[command.lowercase()])
+            return CommandInfo(args = splatted.drop(1).map { arg -> arg.lowercase() },
+                               action = console.availableActions[command.lowercase()])
         }
         /* endregion */
     }

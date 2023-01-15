@@ -11,7 +11,6 @@ import model.exception.WrongDayInDocumentException
 import org.apache.poi.xwpf.usermodel.XWPFDocument
 import java.io.FileInputStream
 import model.data.parse.changes.CellDefineResult
-import model.data.schedule.base.day.fromRussianString
 import java.lang.Exception
 import java.util.Calendar
 import java.util.GregorianCalendar
@@ -45,6 +44,20 @@ class Reader(pathToFile: String) {
 
     /* region Functions */
 
+    fun getAvailableGroups(): List<String> {
+        val foundGroups = mutableListOf<String>()
+        // First row will contain information about cells, so we'll have to skip it.
+        for (row in searchTargetTable(document.tables).rows.drop(1)) {
+            for ((cellNumber, cell) in row.tableCells.withIndex()) {
+                if (checkCellToBeDeclarationSpecificCell(cellNumber) && !cell.text.isNullOrBlank())
+                    foundGroups.add(cell.text)
+            }
+        }
+
+        // I not sure about it, but I think it's better if I will distinct final list.
+        return foundGroups.distinct()
+    }
+
     /**
      * Class main function (and one of two, with *public* visibility modifier).
      * Parses [current document][document] and return [object][Changes],
@@ -61,13 +74,13 @@ class Reader(pathToFile: String) {
         val headerInfo = getHeaderAdditionalInfo(day)
         if (checkGroupsToContain(headerInfo.first, groupName)) {
             // We check header, because it can contain info about practise.
-            return Changes.getOnPractiseChanges(headerInfo.second)
+            return Changes.getOnPractiseChanges(headerInfo.second, groupName)
         }
         // Otherwise, we'll parse the main content of the document.
         else {
             /** Base model, that contains information about parsing, including [Changes] object. */
             val baseData = BaseIteratorModel(cycleStopper = false, listenToChanges = false,
-                                             changes = Changes(headerInfo.second))
+                                             changes = Changes(groupName, headerInfo.second))
             for (row in searchTargetTable(document.tables).rows) {
                 /** Model with iteration data, including generating lesson.
                  * Begins with -1 cell number, because we increment it right on first iteration. */
@@ -162,9 +175,8 @@ class Reader(pathToFile: String) {
          *
          * Because we split original string with multiple regexes, we must remove empty elements (that will appear).
          */
-        val elements = text.split(" ", "–").drop(1).filterNot { el -> el == "" }
+        val elements = text.split(" ", "–").drop(1).filterNot { el -> el == EMPTY_WORD_TABLE_CELL_VALUE }
         val monthId = getMonthIndexByName(elements[1])
-        val dayId = fromRussianString(elements[2])
 
         var parsedDate = Calendar.getInstance()
         parsedDate = GregorianCalendar(parsedDate.get(Calendar.YEAR), monthId, elements[0].toInt())
@@ -251,7 +263,7 @@ class Reader(pathToFile: String) {
     private fun checkStateAndUpdateChangedLessons(base: BaseIteratorModel, outer: OuterIteratorModel) {
         // In this case we found "Debt Liquidation" and have to update all Changes Object.
         if (base.listenToChanges && outer.rawLessonNumbers.contains("ликвидация", true)) {
-            base.changes = Changes.getDebtLiquidationChanges(base.changes.changesDate)
+            base.changes = Changes.getDebtLiquidationChanges(base.changes.changesDate, base.changes.targetGroup)
             base.cycleStopper = true
         }
         else if (base.listenToChanges && outer.rawLessonNumbers != "") {
@@ -284,7 +296,7 @@ class Reader(pathToFile: String) {
     }
 
     /**
-     * Class secondary main function (and one of two, with *public* visibility modifier).
+     * Class secondary main function (and one of three, with *public* visibility modifier).
      * Returns [base schedule][schedule] with [merged][DaySchedule.mergeWithChanges] [changes][Changes].
      *
      * Represents original (".getDayScheduleWithChanges()") function from old *AdminTools*.
@@ -325,7 +337,7 @@ class Reader(pathToFile: String) {
          * I.E.:
          * "НА 19 ДЕКАБРЯ – ПОНЕДЕЛЬНИК".
          */
-        private const val DATE_INFO_PARAGRAPH_ID = 4;
+        private const val DATE_INFO_PARAGRAPH_ID = 4
     }
     /* endregion */
 }

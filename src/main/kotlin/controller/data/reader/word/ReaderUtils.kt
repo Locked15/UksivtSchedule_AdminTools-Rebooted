@@ -70,15 +70,15 @@ private fun thirdTableCheckPart(header: String): Boolean = header.contains("за
 
 fun checkToParsingStopper(base: BaseIteratorModel, outer: OuterIteratorModel, inner: InnerIteratorModel,
                           target: String): Boolean {
-    val metAnotherGroupWhileParseChanges = firstStopperCheckPart(base.listenToChanges, inner.text, target)
-    val anotherGroupNameMetOnSpecifiedCell = secondStopperCheckPart(outer.cellNumber)
+    val metAnotherGroupWhileParseChanges = checkCellToDifference(base.listenToChanges, inner.text, target)
+    val anotherGroupNameMetOnSpecifiedCell = checkCellToBeDeclarationSpecificCell(outer.cellNumber)
 
     return metAnotherGroupWhileParseChanges && anotherGroupNameMetOnSpecifiedCell
 }
 
-private fun firstStopperCheckPart(listen: Boolean, foundText: String, target: String): Boolean = listen &&
+private fun checkCellToDifference(listen: Boolean, foundText: String, target: String): Boolean = listen &&
         foundText.isNotEmpty() && foundText.lowercase() != target.lowercase()
 
-private fun secondStopperCheckPart(cellNumber: Int): Boolean = cellNumber == 0 ||
+fun checkCellToBeDeclarationSpecificCell(cellNumber: Int): Boolean = cellNumber == 0 ||
         cellNumber == 3
 /* endregion */
