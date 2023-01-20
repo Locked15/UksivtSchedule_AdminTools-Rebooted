@@ -1,8 +1,8 @@
 package controller.io
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.data.schedule.TargetChangesOfDay
-import model.data.schedule.GeneralChangesOfDay
+import model.data.changes.TargetChangesOfDay
+import model.data.changes.GeneralChangesOfDay
 import java.io.FileWriter
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -19,7 +19,7 @@ private const val TARGET_FILE_NAME_TEMPLATE = "%b.json"
  * Contains file name template for newly creating targetChangesOfDay file.
  * Supposed to be used with united file ([GeneralChangesOfDay] object).
  */
-private const val UNITED_FILE_NAME_TEMPLATE = "%d.json"
+private const val UNITED_FILE_NAME_TEMPLATE = "ChangesOfDay. Available-Count: %d.json"
 /* endregion */
 
 /* region Functions */

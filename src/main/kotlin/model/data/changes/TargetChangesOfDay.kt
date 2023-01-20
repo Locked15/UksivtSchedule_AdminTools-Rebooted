@@ -1,4 +1,4 @@
-package model.data.schedule
+package model.data.changes
 
 import model.data.schedule.base.Lesson
 import java.util.Calendar
@@ -9,8 +9,8 @@ import java.util.Calendar
  *
  * Earlier, it wasn't a class, just a combination of list with targetChangesOfDay and boolean with absolute determination.
  */
-class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute: Boolean, var changesDate: Calendar?,
-                         var targetGroup: String?) {
+class TargetChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
+                         val changedLessons: MutableList<Lesson>) {
 
     /* region Constructors */
 
@@ -19,7 +19,7 @@ class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute
      *
      * Info: [changedLessons] set to an empty list, [isAbsolute] to false.
      */
-    constructor() : this(mutableListOf<Lesson>(), false, null, null)
+    constructor() : this(null, false, null, mutableListOf<Lesson>())
 
     /**
      * Additional constructor, that write default values to properties.
@@ -27,7 +27,7 @@ class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute
      * Info: [changedLessons] set to an empty list, [isAbsolute] to false.
      * Writes [sent date][date] to [changesDate] property.
      */
-    constructor(date: Calendar?) : this(mutableListOf<Lesson>(), false, date, null)
+    constructor(date: Calendar?) : this(null, false, date, mutableListOf<Lesson>())
 
     /**
      * Additional constructor, that write default values to properties.
@@ -36,7 +36,7 @@ class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute
      * Writes [sent date][date] to [changesDate] property.
      * Also writes [target] to the [targetGroup] property.
      */
-    constructor(target: String?, date: Calendar?) : this(mutableListOf<Lesson>(), false, date, target)
+    constructor(target: String?, date: Calendar?) : this(target, false, date, mutableListOf<Lesson>())
     /* endregion */
 
     /* region Functions */
@@ -82,7 +82,7 @@ class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute
                 changes.add(Lesson(i, "Практика"))
             }
 
-            return TargetChangesOfDay(changes, true, date, target)
+            return TargetChangesOfDay(target, true, date, changes)
         }
 
         /**
@@ -94,7 +94,7 @@ class TargetChangesOfDay(val changedLessons: MutableList<Lesson>, var isAbsolute
                 changes.add(Lesson(i, "Ликвидация Задолженностей"))
             }
 
-            return TargetChangesOfDay(changes, true, date, target)
+            return TargetChangesOfDay(target, true, date, changes)
         }
     }
     /* endregion */

@@ -1,5 +1,6 @@
 package model.data.schedule
 
+import model.data.changes.TargetChangesOfDay
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 

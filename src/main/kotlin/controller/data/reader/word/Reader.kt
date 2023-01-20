@@ -3,7 +3,7 @@ package controller.data.reader.word
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
-import model.data.schedule.TargetChangesOfDay
+import model.data.changes.TargetChangesOfDay
 import model.data.schedule.DaySchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day

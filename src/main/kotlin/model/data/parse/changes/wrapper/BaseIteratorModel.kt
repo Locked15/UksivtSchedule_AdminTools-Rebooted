@@ -1,6 +1,6 @@
 package model.data.parse.changes.wrapper
 
-import model.data.schedule.TargetChangesOfDay
+import model.data.changes.TargetChangesOfDay
 
 
 /**

@@ -8,8 +8,8 @@ import model.data.schedule.DaySchedule
 import model.data.schedule.WeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
-import model.data.schedule.TargetChangesOfDay
-import model.data.schedule.GeneralChangesOfDay
+import model.data.changes.TargetChangesOfDay
+import model.data.changes.GeneralChangesOfDay
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
 import java.util.Locale
