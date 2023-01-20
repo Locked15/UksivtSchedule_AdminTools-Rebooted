@@ -42,33 +42,33 @@ class Basic(private val user: String) {
      */
     private val availableActions = mapOf(
             // Valuable Commands:
-            "schedule" to Pair(scheduleDescription,
+            "schedule" to Pair(scheduleCommandDescription,
                                Command("Schedule") {
                                    controller.parseSchedule(it)
                                }),
-            "targetChangesOfDay" to Pair(targetChangesOfDayDescription,
-                              Command("TargetChangesOfDay") {
+            "changes" to Pair(changesCommandDescription,
+                              Command("Changes") {
                                   controller.parseChanges(it)
                               }
             ),
             // Functional Commands:
-            "help" to Pair(helpDescription,
+            "help" to Pair(helpCommandDescription,
                            Command("Help") {
                                controller.showHelp()
                            }),
-            "parse" to Pair(parseDescription,
+            "parse" to Pair(parseCommandDescription,
                             Command("Parse") {
                                 controller.initializeBasicParsingProcessByArguments(it)
                             }),
-            "write" to Pair(writeDescription,
+            "write" to Pair(writeCommandDescription,
                             Command("Write") {
                                 controller.writeLastResult()
                             }),
-            "show" to Pair(showDescription,
+            "show" to Pair(showCommandDescription,
                            Command("Show") {
                                controller.showLastResult()
                            }),
-            "exit" to Pair(exitDescription,
+            "exit" to Pair(exitCommandDescription,
                            Command("Exit") {
                                controller.exit()
                            }
@@ -152,41 +152,41 @@ class Basic(private val user: String) {
          *
          * This is a functional one.
          */
-        private val helpDescription: String
+        private val helpCommandDescription: String
 
         /**
          * Description of the 'Schedule' command.
          *
          * This is a valuable one.
          */
-        private val scheduleDescription: String
+        private val scheduleCommandDescription: String
 
         /**
          * Description of the 'TargetChangesOfDay' command.
          *
          * This is a valuable one.
          */
-        private val targetChangesOfDayDescription: String
+        private val changesCommandDescription: String
 
         /**
          * Description of the 'Parse' command.
          */
-        private val parseDescription: String
+        private val parseCommandDescription: String
 
         /**
          * Description of the 'Write' command.
          */
-        private val writeDescription: String
+        private val writeCommandDescription: String
 
         /**
          * Description of the 'Show' command.
          */
-        private val showDescription: String
+        private val showCommandDescription: String
 
         /**
          * Description of the 'Exit' command.
          */
-        private val exitDescription: String
+        private val exitCommandDescription: String
         /* endregion */
 
         /* region Initializers */
@@ -198,35 +198,35 @@ class Basic(private val user: String) {
         init {
             when (Locale.getDefault()) {
                 Locale.ENGLISH -> {
-                    scheduleDescription = "Begins schedule-reading process (requires prepared file)"
-                    targetChangesOfDayDescription = "Begins targetChangesOfDay-reading process (requires downloaded document)"
+                    scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
+                    changesCommandDescription = "Begins targetChangesOfDay-reading process (requires downloaded document)"
 
-                    helpDescription = "Show context help for this application"
-                    parseDescription = "Begins basic parsing process (may be useful for debugging process)"
-                    writeDescription = "Writes last gotten result value to file"
-                    showDescription = "Show last gotten result in the console (terminal)"
-                    exitDescription = "Exits from program"
+                    helpCommandDescription = "Show context help for this application"
+                    parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
+                    writeCommandDescription = "Writes last gotten result value to file"
+                    showCommandDescription = "Show last gotten result in the console (terminal)"
+                    exitCommandDescription = "Exits from program"
                 }
                 Locale.CHINESE -> {
-                    scheduleDescription = "開始計劃閱讀過程（需要準備好的文件）"
-                    targetChangesOfDayDescription = "開始更改閱讀過程（需要下載的文檔）"
+                    scheduleCommandDescription = "開始計劃閱讀過程（需要準備好的文件）"
+                    changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
 
-                    helpDescription = "顯示此應用程序的上下文幫助"
-                    parseDescription = "開始基本解析過程（可能對調試過程有用）"
-                    writeDescription = "將最後獲得的結果值寫入文件"
-                    showDescription = "在控制台（終端）中顯示最後得到的結果"
-                    exitDescription = "退出程序"
+                    helpCommandDescription = "顯示此應用程序的上下文幫助"
+                    parseCommandDescription = "開始基本解析過程（可能對調試過程有用）"
+                    writeCommandDescription = "將最後獲得的結果值寫入文件"
+                    showCommandDescription = "在控制台（終端）中顯示最後得到的結果"
+                    exitCommandDescription = "退出程序"
                 }
 
                 else -> {
-                    scheduleDescription = "Начать процесс считывания файла расписания (требует готового файла)"
-                    targetChangesOfDayDescription = "Начать процесс чтения замен (требуется загруженный документ)"
+                    scheduleCommandDescription = "Начать процесс считывания файла расписания (требует готового файла)"
+                    changesCommandDescription = "Начать процесс чтения замен (требуется загруженный документ)"
 
-                    helpDescription = "Показать контекстную справку для приложения"
-                    parseDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
-                    writeDescription = "Записать последний полученный результат в файл"
-                    showDescription = "Отобразить последний полученный результат в консоли (терминале)"
-                    exitDescription = "Выход из программы"
+                    helpCommandDescription = "Показать контекстную справку для приложения"
+                    parseCommandDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
+                    writeCommandDescription = "Записать последний полученный результат в файл"
+                    showCommandDescription = "Отобразить последний полученный результат в консоли (терминале)"
+                    exitCommandDescription = "Выход из программы"
                 }
             }
         }

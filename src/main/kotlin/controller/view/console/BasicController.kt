@@ -313,7 +313,7 @@ class BasicController {
                         
                         Valuable commands:
                           * Type 'schedule' to begin schedule-reading process (requires prepared file);
-                          * Type 'targetChangesOfDay' to begin processing targetChangesOfDay document (requires downloaded document).
+                          * Type 'changes' to begin processing targetChangesOfDay document (requires downloaded document).
                         (This commands writes gotten value to property, so they can be written later).
                         
                         Functional commands:
@@ -351,7 +351,7 @@ class BasicController {
                         
                         有價值的命令：
                           * 類型 'schedule' 開始計劃閱讀過程（需要準備好的文件）;
-                          * 類型 'targetChangesOfDay' 開始處理變更文件（需要下載文件）。
+                          * 類型 'changes' 開始處理變更文件（需要下載文件）。
                         （此命令將獲取的值寫入屬性，因此可以稍後再寫入）。
                         
                         功能命令：
@@ -390,7 +390,7 @@ class BasicController {
                         
                         Значимые команды:
                           * Введите 'schedule', чтобы начать чтение документа расписания (требует готового документа);
-                          * Введите 'targetChangesOfDay', чтобы начать чтение документа замен (требует скачанного документа).
+                          * Введите 'changes', чтобы начать чтение документа замен (требует скачанного документа).
                         (Эти команды записывают полученное значение в свойство, так что его можно обработать позднее).
                         
                         Функциональные команды:
