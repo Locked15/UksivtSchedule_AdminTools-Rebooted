@@ -1,5 +1,6 @@
 package model.data.schedule.origin
 
+import com.fasterxml.jackson.annotation.JsonAlias
 import com.fasterxml.jackson.databind.ObjectMapper
 
 
@@ -8,7 +9,8 @@ import com.fasterxml.jackson.databind.ObjectMapper
  *
  * It indented to identify group schedule, so it contains [property][groupName] with group name.
  */
-class TargetedWeekSchedule(var groupName: String?, var targetedDaySchedules: MutableList<TargetedDaySchedule>) {
+class TargetedWeekSchedule(var groupName: String?,
+						   @JsonAlias("daySchedules") var targetedDaySchedules: MutableList<TargetedDaySchedule>) {
 	
 	/* region Constructors */
 
