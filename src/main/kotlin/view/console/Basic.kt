@@ -51,6 +51,11 @@ class Basic(private val user: String) {
                                   controller.parseChanges(it)
                               }
             ),
+            "assets" to Pair(assetsCommandDescription,
+                             Command("Assets") {
+                                 controller.parseAssets(it)
+                             }
+            ),
             // Functional Commands:
             "help" to Pair(helpCommandDescription,
                            Command("Help") {
@@ -162,11 +167,18 @@ class Basic(private val user: String) {
         private val scheduleCommandDescription: String
 
         /**
-         * Description of the 'TargetedChangesOfDay' command.
+         * Description of the 'Changes' command.
          *
          * This is a valuable one.
          */
         private val changesCommandDescription: String
+
+        /**
+         * Description of the 'Assets' command.
+         *
+         * This is a valuable one.
+         */
+        private val assetsCommandDescription: String
 
         /**
          * Description of the 'Parse' command.
@@ -200,6 +212,7 @@ class Basic(private val user: String) {
                 Locale.ENGLISH -> {
                     scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
                     changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
+                    assetsCommandDescription = "Begins assets-reading process (requires prepared assets in json format)"
 
                     helpCommandDescription = "Show context help for this application"
                     parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
@@ -210,6 +223,7 @@ class Basic(private val user: String) {
                 Locale.CHINESE -> {
                     scheduleCommandDescription = "開始計劃閱讀過程（需要準備好的文件）"
                     changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
+                    assetsCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
 
                     helpCommandDescription = "顯示此應用程序的上下文幫助"
                     parseCommandDescription = "開始基本解析過程（可能對調試過程有用）"
@@ -221,6 +235,7 @@ class Basic(private val user: String) {
                 else -> {
                     scheduleCommandDescription = "Начать процесс считывания файла расписания (требует готового файла)"
                     changesCommandDescription = "Начать процесс чтения замен (требуется загруженный документ)"
+                    assetsCommandDescription = "Начать процесс считывания файла ассетов (требуется готовый файл в формате JSON)"
 
                     helpCommandDescription = "Показать контекстную справку для приложения"
                     parseCommandDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
