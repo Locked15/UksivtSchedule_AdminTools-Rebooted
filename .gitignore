@@ -3,7 +3,6 @@
 
 # IDE Settings.
 /.idea/
-*.iml
 
 # Project Settings.
 /mvnw*
