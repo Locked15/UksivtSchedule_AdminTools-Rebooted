@@ -3,19 +3,13 @@ package controller.io
 import com.fasterxml.jackson.databind.ObjectMapper
 import model.data.schedule.origin.GeneralWeekSchedule
 import model.data.schedule.origin.TargetedWeekSchedule
+import projectDirectory
+import resourcePathElements
 import java.io.FileWriter
 import java.io.IOException
 import java.nio.file.Path
 import java.nio.file.Paths
 
-
-/* region Properties */
-
-/**
- * Contains file name template for newly creating assets.
- */
-private const val FILE_NAME_TEMPLATE = "%s.json"
-/* endregion */
 
 /* region Functions */
 
@@ -41,7 +35,7 @@ private fun writeToTargetFile(group: String?, schedule: TargetedWeekSchedule): B
     val serializer = ObjectMapper()
     val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(schedule)
     return try {
-        val stream = FileWriter(getTargetFilePath(group ?: "NotRecognized").toFile(), false)
+        val stream = FileWriter(getTargetFilePath(group ?: "NotRecognized").toString(), false)
         stream.write(serializedValue)
         stream.close()
 
@@ -57,6 +51,10 @@ private fun writeToTargetFile(group: String?, schedule: TargetedWeekSchedule): B
  * Returns the file [path][Path] for writing asset-file.
  * It contains [group name][group].
  */
-private fun getTargetFilePath(group: String) = Paths.get(System.getProperty("user.dir"), "src", "main", "resources",
-                                                         String.format(FILE_NAME_TEMPLATE, group))
+private fun getTargetFilePath(group: String): Path? {
+    var path = Paths.get(projectDirectory)
+    resourcePathElements.forEach { path = path.resolve(it) }
+
+    return path.resolve("$group.json")
+}
 /* endregion */
