@@ -60,7 +60,7 @@ class SiteParser {
 
     /**
      * Parses college [website](https://uksivt.ru) [page](https://uksivt.ru/zameny)
-     * and seeks all available [targetedChangesOfDay nodes][ChangeElement].
+     * and seeks all available [changes nodes][ChangeElement].
      *
      * It parses [limited count][months] of [months][MonthChanges].
      *
@@ -93,7 +93,7 @@ class SiteParser {
     }
 
     /**
-     * Executes page queries (like CSS-Selector query) and extracts targetedChangesOfDay container children.
+     * Executes page queries (like CSS-Selector query) and extracts changes container children.
      * Then packs it into a [new object][ChangeElementsWrapper] and returns.
      */
     private fun executePageQueriesAndGetElements(): ChangeElementsWrapper {
@@ -208,7 +208,7 @@ class SiteParser {
         const val NON_BREAKING_SPACE = "\u00A0"
 
         /**
-         * Path to official college website, targeted to targetedChangesOfDay page.
+         * Path to official college website, targeted to changes page.
          */
         const val COLLEGE_CHANGES_PAGE_PATH = "https://www.uksivt.ru/zameny"
 

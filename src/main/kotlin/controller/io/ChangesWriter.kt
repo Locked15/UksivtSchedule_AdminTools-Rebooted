@@ -11,7 +11,7 @@ import java.nio.file.Paths
 /* region Properties */
 
 /**
- * Contains file name template for newly creating targetedChangesOfDay file.
+ * Contains file name template for newly creating targeted changes of day file.
  */
 private const val TARGET_FILE_NAME_TEMPLATE = "%b.json"
 
@@ -27,23 +27,23 @@ private const val UNITED_FILE_NAME_TEMPLATE = "Changes (%d.%d.%d!). Available-Co
 /* region Functions */
 
 /**
- * Writes [targetedChangesOfDay][TargetedChangesOfDay] object to the file.
+ * Writes [targeted changes of day][TargetedChangesOfDay] object to the file.
  *
  * Returns a [result][Boolean] of the process.
  */
-fun writeChanges(targetedChangesOfDay: TargetedChangesOfDay) = writeToTargetFile(targetedChangesOfDay)
+fun writeChanges(changes: TargetedChangesOfDay) = writeToTargetFile(changes)
 
 fun writeChanges(generalChangesOfDay: GeneralChangesOfDay) = writeToUnitedFile(generalChangesOfDay)
 
 /**
- * Writes [value][targetedChangesOfDay] to the file.
+ * Writes [value][targetChanges] to the file.
  * File will be placed inside the "resources" directory.
  */
-private fun writeToTargetFile(targetedChangesOfDay: TargetedChangesOfDay): Boolean {
+private fun writeToTargetFile(targetChanges: TargetedChangesOfDay): Boolean {
     val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(targetedChangesOfDay)
+    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(targetChanges)
     return try {
-        val stream = FileWriter(getTargetFilePath(targetedChangesOfDay.isAbsolute).toFile(), false)
+        val stream = FileWriter(getTargetFilePath(targetChanges.isAbsolute).toFile(), false)
         stream.write(serializedValue)
         stream.close()
 
@@ -79,7 +79,7 @@ private fun writeToUnitedFile(generalChangesOfDay: GeneralChangesOfDay): Boolean
 }
 
 /**
- * Returns the file [path][Path] for writing targetedChangesOfDay.
+ * Returns the file [path][Path] for writing targeted changes object.
  * It contains [absolute value][absolute] declaration variable.
  */
 private fun getTargetFilePath(absolute: Boolean) = Paths.get(System.getProperty("user.dir"), "src", "main", "resources",

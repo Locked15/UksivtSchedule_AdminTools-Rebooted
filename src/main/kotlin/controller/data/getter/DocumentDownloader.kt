@@ -26,7 +26,7 @@ class DocumentDownloader {
 	
 	/**
 	 * Merge an original document link and Google Drive a template link.
-	 * Returned link can be used to download a targetedChangesOfDay document.
+	 * Returned link can be used to download a changes document.
 	 *
 	 * @param linkToFile Original link to the document.
 	 * @return Ready-To-Download link to the document.

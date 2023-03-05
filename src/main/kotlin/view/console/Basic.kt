@@ -199,7 +199,7 @@ class Basic(private val user: String) {
             when (Locale.getDefault()) {
                 Locale.ENGLISH -> {
                     scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
-                    changesCommandDescription = "Begins targetedChangesOfDay-reading process (requires downloaded document)"
+                    changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
 
                     helpCommandDescription = "Show context help for this application"
                     parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"

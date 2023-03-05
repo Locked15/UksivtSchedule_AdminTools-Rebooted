@@ -52,7 +52,7 @@ private fun checkTableIsCorrect(table: XWPFTable): Boolean {
     val header = table.text
 
     /* Change table always contains some of these values, so check it.
-       And, as you know, sometimes a targetedChangesOfDay document contains more than one table. */
+       And, as you know, sometimes a changes document contains more than one table. */
     return firstTableCheckPart(header) || secondTableCheckPart(header) || thirdTableCheckPart(header)
 }
 

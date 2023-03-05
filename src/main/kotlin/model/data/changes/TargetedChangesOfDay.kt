@@ -8,7 +8,8 @@ import java.util.Calendar
 /**
  * Class, that encapsulates TargetedChangesOfDay for the schedule.
  *
- * Earlier, it wasn't a class, just a combination of list with targetedChangesOfDay and boolean with absolute determination.
+ * Earlier, it wasn't a class, just a combination of list with [Changes][TargetedChangesOfDay]
+ * and boolean, that defines is absolute that change or not.
  */
 class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
                            val changedLessons: MutableList<Lesson>) {
@@ -74,7 +75,7 @@ class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, va
             """
 
         /**
-         * Generates a template [targetedChangesOfDay][TargetedChangesOfDay] object with practise value.
+         * Generates a template [changes][TargetedChangesOfDay] object with practise value.
          * Returned value can be merged with [base schedule][TargetedDaySchedule] to get final "On Practise" schedule.
          */
         fun getOnPractiseChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
@@ -87,7 +88,7 @@ class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, va
         }
 
         /**
-         * Generates a template [targetedChangesOfDay][TargetedChangesOfDay] object with 'Ликвидация Задолженностей' values.
+         * Generates a template [changes][TargetedChangesOfDay] object with 'Ликвидация Задолженностей' values.
          */
         fun getDebtLiquidationChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
             val changes = mutableListOf<Lesson>()
