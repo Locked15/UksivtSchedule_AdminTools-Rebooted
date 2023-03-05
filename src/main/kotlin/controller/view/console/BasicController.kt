@@ -13,6 +13,7 @@ import model.data.changes.GeneralChangesOfDay
 import model.data.schedule.origin.GeneralWeekSchedule
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
+import java.nio.file.Paths
 import java.util.Locale
 import kotlin.system.exitProcess
 
@@ -56,7 +57,7 @@ class BasicController {
      */
     fun parseSchedule(args: List<String>) {
         parseScheduleBySelectedMode(args)
-        writeScheduleBySentArgs(args)
+        if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
 
     /**
@@ -119,37 +120,93 @@ class BasicController {
         val groupName = inputText("Input group name")
         return generateScheduleForManualMode(groupName)
     }
+    /* endregion */
 
-    /**
-     * Checks sent [arguments][args] and writes a value to the file, if user sent needed arg.
-     *
-     * To enable this, sent '-w' or '--write' as arg.
-     */
-    private fun writeScheduleBySentArgs(args: List<String>) {
-        if (args.contains("-w") || args.contains("--write")) {
-            writeLastResult()
+    /* region Command: 'Assets' */
+
+    fun parseAssets(args: List<String>) {
+        parseAssetsBySelectedMode(args)
+        if (args.contains("-w") || args.contains("--write")) writeLastResult()
+    }
+
+    private fun parseAssetsBySelectedMode(args: List<String>) {
+        lastResult = if (args.contains("-a") || args.contains("--automatic")) {
+            parseAllAvailableAssets()
         }
+        else if (args.contains("-u") || args.contains("--united")) {
+            parseAssetsByUnitedFile()
+        }
+        else if (args.contains("-b") || args.contains("--branch")) {
+            parseAssetsByBranch()
+        }
+        else {
+            parseAssetsByTarget()
+        }
+    }
+
+    private fun parseAllAvailableAssets(): GeneralWeekSchedule {
+        val results = mutableListOf<TargetedWeekSchedule>()
+        for (branch in AssetsManager.getBranchesNames()) {
+            for (affiliation in AssetsManager.getAffiliationsNames(branch)) {
+                for (group in AssetsManager.getGroupsNames(branch, affiliation)) {
+                    AssetsManager.readScheduleAsset(branch, affiliation, group)?.let {
+                        results.add(it)
+                    } ?: run {
+                        println("WARNING:\nFind empty value, while processing auto-assets parse." +
+                                        "Args: $branch — $affiliation — $group.")
+                    }
+                }
+            }
+        }
+
+        println("Auto-Parsing is complete. Is it faster than 'System.Text.Json' on C#?")
+        return GeneralWeekSchedule(results)
+    }
+
+    private fun parseAssetsByUnitedFile(): GeneralWeekSchedule {
+        val path = getSafeFilePath(".json")
+        return AssetsManager.readUnknownAsset<GeneralWeekSchedule>(Paths.get(path))!!
+    }
+
+    private fun parseAssetsByBranch(): GeneralWeekSchedule {
+        val results = mutableListOf<TargetedWeekSchedule>()
+        val targetBranch = inputValueSafely(AssetsManager.getBranchesNames(), "Select target branch to parse")
+        for (affiliation in AssetsManager.getAffiliationsNames(targetBranch)) {
+            for (group in AssetsManager.getGroupsNames(targetBranch, affiliation)) {
+                AssetsManager.readScheduleAsset(targetBranch, affiliation, group)?.let {
+                    results.add(it)
+                }
+            }
+        }
+
+        return GeneralWeekSchedule(results)
+    }
+
+    private fun parseAssetsByTarget(): TargetedWeekSchedule {
+        val branch = inputValueSafely(AssetsManager.getBranchesNames(), "Select target branch to parse")
+        val affiliation = inputValueSafely(AssetsManager.getAffiliationsNames(branch), "Select affiliation")
+        val group = inputValueSafely(AssetsManager.getGroupsNames(branch, affiliation), "Select group to parse")
+
+        return AssetsManager.readScheduleAsset(branch, affiliation, group)!!
     }
     /* endregion */
 
-    /* region Command: 'TargetedChangesOfDay' */
+    /* region Command: 'Changes' */
 
     /**
-     * Completes a parsing process on [targetedChangesOfDay][TargetedChangesOfDay] [document][WordReader.document].
+     * Completes a parsing process on [changes][TargetedChangesOfDay] [document][WordReader.document].
      * Writes value to file, if user sent '-w' or '--write' as arg.
      */
     fun parseChanges(args: List<String>) {
         val auto = args.contains("-a") || args.contains("--auto")
         collectDataAndParseChangesFile(auto)
 
-        if (args.contains("-w") || args.contains("--write")) {
-            writeLastResult()
-        }
+        if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
 
     /**
      * Collects target data for a parsing process.
-     * Then, begins targetedChangesOfDay document parse.
+     * Then, begins changes document parse.
      */
     private fun collectDataAndParseChangesFile(auto: Boolean) {
         val data = getTargetDataForChangesParse(auto)
@@ -192,7 +249,7 @@ class BasicController {
      * Currently supported parsing types:
      * * '-s' or '--site' — Parses college [website](https://www.uksivt.ru/zameny).
      * * '-sd' or '--schedule-document' — Parses prepared schedule document in target mode.
-     * * '-cd' or '--targetedChangesOfDay-document' — Parses downloaded targetedChangesOfDay document.
+     * * '-cd' or '--changes-document' — Parses downloaded changes document.
      *
      * This function invented to debugging purpose, so it DOES NOT write value to [result][lastResult].
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
@@ -204,10 +261,10 @@ class BasicController {
     }
 
     /**
-     * Begins basic targetedChangesOfDay document parsing, if user sent right arguments.
+     * Begins basic changes document parsing, if user sent right arguments.
      */
     private fun beginBasicChangesDocumentParsingIfPossible(args: List<String>) {
-        if (args.contains("-cd") || args.contains("--targetedChangesOfDay-document")) {
+        if (args.contains("-cd") || args.contains("--changes-document")) {
             val data = getTargetDataForChangesParse(false)
             val reader = WordReader(data.first)
 
@@ -247,7 +304,16 @@ class BasicController {
      */
     fun writeLastResult() = when (lastResult) {
         is TargetedWeekSchedule -> writeSchedule(lastResult as TargetedWeekSchedule)
-        is GeneralWeekSchedule -> writeSchedule(lastResult as GeneralWeekSchedule)
+        is GeneralWeekSchedule -> {
+            val writeType = getSafeIntValue("Select writing type:" +
+                                                    "\n  0 — United files mode;" +
+                                                    "\n  1 — Standalone files mode.\nChoose",
+                                            0, 1)
+            if (writeType == 0)
+                AssetsManager.writeScheduleUnitedAssetFile(inputText("File name"), lastResult as GeneralWeekSchedule)
+            else
+                writeSchedule(lastResult as GeneralWeekSchedule)
+        }
 
         is TargetedChangesOfDay -> writeChanges(lastResult as TargetedChangesOfDay)
         is GeneralChangesOfDay -> writeChanges(lastResult as GeneralChangesOfDay)
@@ -321,7 +387,7 @@ class BasicController {
                           * Type 'help' to show context help message (this command);
                           * Type 'parse' to begin basic parsing process:
                             It requires second parameter:
-                              '-cd' or '--targetedChangesOfDay-document' — To parse targetedChangesOfDay document;
+                              '-cd' or '--changes-document' — To parse changes document;
                               '-sd' or '--schedule-document' — To parse schedule document;
                               '-s' or '--site' — To parse college site.
                           * Type 'write' to write last gotten value to file;
@@ -359,7 +425,7 @@ class BasicController {
                           * 類型 'help' 顯示上下文幫助消息（此命令）；
                           * 類型 'parse' 開始基本的解析過程：
                             它需要第二個參數：
-                              '-cd' 或者 '--targetedChangesOfDay-document' — 解析更改文檔；
+                              '-cd' 或者 '--changes-document' — 解析更改文檔；
                               '-sd' 或者 '--schedule-document' — 解析進度文件；
                               '-s' 或者 '--site' — 解析大學網站。
                           * 類型 'write' 將最後得到的值寫入文件；
@@ -398,7 +464,7 @@ class BasicController {
                           * Введите 'help', чтобы вывести контекстную справку по приложению (текущая команда);
                           * Введите 'parse', чтобы начать базовый процесс чтения чего-либо:
                             Команда требует хотя бы один параметр для работы:
-                              '-cd' или '--targetedChangesOfDay-document' — Для чтения документа замен;
+                              '-cd' или '--changes-document' — Для чтения документа замен;
                               '-sd' или '--schedule-document' — Для чтения документа расписания;
                               '-s' или '--site' — Для чтения страницы сайта колледжа.
                           * Введите 'write', чтобы записать последнее полученное значение в файл;
@@ -499,7 +565,7 @@ class BasicController {
         }
 
         /**
-         * Asks user to input [day index][Int] for day-check on targetedChangesOfDay [parsing process][parseChanges].
+         * Asks user to input [day index][Int] for day-check on changes [parsing process][parseChanges].
          * Then, a result depends on user input:
          * * If user input correct value, the program will check day-corresponding and
          *   throws [exception][WrongDayInDocumentException] if days aren't equal.
@@ -513,41 +579,45 @@ class BasicController {
         }
         /* endregion */
 
-        /* region Input Group Functions */
+        /* region General-Safe Input Functions */
 
         /**
          * Asks user to input [group name][String].
-         * Checks inputted group name to be presented inside an [available groups list][groups].
+         * Checks inputted group name to be presented inside an [available groups list][availableOnes].
+         *
+         * If user sent [message] console will show itself instead basic one ('Select target value').
+         * Sent value must don't contain ending (program will finish it automatically).
          *
          * If you don't want to use check, just send an empty list ('[listOf]').
          */
-        private fun getSafeTargetGroup(groups: List<String?>): String {
+        private fun inputValueSafely(availableOnes: List<String?>, message: String = "Select target value"): String {
             var target: String
             do {
-                target = inputText("Select target group")
-            } while (checkGroupCondition(target, groups))
+                target = inputText(message)
+            } while (checkFinalCondition(target, availableOnes))
 
-            return getGroupNameOrInputtedValue(target, groups)
+            return getTargetValueOrInputtedOne(target, availableOnes)
         }
 
         /**
-         * Checks 'do...while' condition to [getSafeTargetGroup] function.
+         * Checks 'do...while' condition to [inputValueSafely] function.
          */
-        private fun checkGroupCondition(target: String, groups: List<String?>) = groups.isNotEmpty() &&
-                groups.find { group ->
-                    group?.equals(target, true) == true
+        private fun checkFinalCondition(inputted: String, available: List<String?>) = available.isNotEmpty() &&
+                available.find { availableOne ->
+                    availableOne?.equals(inputted, true) == true
                 } == null
 
         /**
-         * Returns the [group name][String], as it presented in [available list][groups] OR
-         * if list it empty, returns base user [inputted value][target].
+         * Returns the [available value][String], as it presented in [available list][availableOnes] OR
+         * if list it empty, returns base user [inputted value][inputtedValue].
          */
-        private fun getGroupNameOrInputtedValue(target: String, groups: List<String?>) = groups.find { group ->
-            group?.equals(target, true) == true
-        } ?: target
+        private fun getTargetValueOrInputtedOne(inputtedValue: String,
+                                                availableOnes: List<String?>) = availableOnes.find { available ->
+            available?.equals(inputtedValue, true) == true
+        } ?: inputtedValue
         /* endregion */
 
-        /* region General Functions */
+        /* region Specific-Safe Input Functions */
 
         /**
          * Asks user to input target information to [schedule document][ExcelReader.document] [parsing][parseSchedule].
@@ -559,16 +629,16 @@ class BasicController {
         private fun getTargetDataForScheduleParse(): Pair<String, ExcelReader> {
             val path = getSafeFilePath(".xls", ".xlsx")
             val reader = ExcelReader(path)
-            val target = getSafeTargetGroup(reader.getGroups())
+            val target = inputValueSafely(reader.getGroups(), "Select target group")
 
             return Pair(target, reader)
         }
 
         /**
-         * Asks user to input target information to the [targetedChangesOfDay document][WordReader.document] [parse][parseChanges].
+         * Asks user to input target information to the [changes document][WordReader.document] [parse][parseChanges].
          *
          * It returns [Triple] object with following data:
-         * * [First][Triple.first] — Path to the targetedChangesOfDay document;
+         * * [First][Triple.first] — Path to the changes document;
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */
@@ -611,6 +681,9 @@ class BasicController {
 
             return input.toInt()
         }
+        /* endregion */
+
+        /* region General Functions */
 
         /**
          * Asks user to [input][readln] [text][String].
