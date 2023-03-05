@@ -11,7 +11,7 @@
     <version>1.2-Preview_1</version>
     <packaging>jar</packaging>
 
-    <name>AdminTools-Rebooted</name>
+    <name>UksivtScheduler_AdminTools-Rebooted</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
