@@ -1,6 +1,10 @@
 import view.console.Basic
 
 
+val projectDirectory: String = System.getProperty("user.dir")
+
+val resourcePathElements = listOf("src", "main", "resources")
+
 /**
  * Entry point of the program.
  *
