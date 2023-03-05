@@ -227,6 +227,21 @@ class BasicController {
         }
     }
     /* endregion */
+
+    /* region Command: 'Final' */
+
+    fun bakeFinalSchedule(args: List<String>) {
+        if (completeChecksBeforeBeginFinalize()) {
+            TODO("Implement final schedule generation (including all groups (even not-changed), it requires for next expanding).")
+        }
+        else {
+            println("WARNING:\nCommand 'Final' can be used only if latest result is filled with basic schedule.")
+        }
+    }
+
+    private fun completeChecksBeforeBeginFinalize() = lastResult is TargetedChangesOfDay ||
+            (lastResult as List<*>).all { it is TargetedChangesOfDay }
+    /* endregion */
     /* endregion */
 
     /* region Functional Commands */

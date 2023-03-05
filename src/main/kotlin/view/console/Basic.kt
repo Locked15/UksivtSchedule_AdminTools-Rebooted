@@ -46,16 +46,18 @@ class Basic(private val user: String) {
                                Command("Schedule") {
                                    controller.parseSchedule(it)
                                }),
-            "changes" to Pair(changesCommandDescription,
-                              Command("Changes") {
-                                  controller.parseChanges(it)
-                              }
-            ),
             "assets" to Pair(assetsCommandDescription,
                              Command("Assets") {
                                  controller.parseAssets(it)
-                             }
-            ),
+                             }),
+            "changes" to Pair(changesCommandDescription,
+                              Command("Changes") {
+                                  controller.parseChanges(it)
+                              }),
+            "final" to Pair(finalCommandDescription,
+                            Command("Final") {
+                                controller.bakeFinalSchedule(it)
+                            }),
             // Functional Commands:
             "help" to Pair(helpCommandDescription,
                            Command("Help") {
@@ -167,6 +169,13 @@ class Basic(private val user: String) {
         private val scheduleCommandDescription: String
 
         /**
+         * Description of the 'Assets' command.
+         *
+         * This is a valuable one.
+         */
+        private val assetsCommandDescription: String
+
+        /**
          * Description of the 'Changes' command.
          *
          * This is a valuable one.
@@ -174,11 +183,11 @@ class Basic(private val user: String) {
         private val changesCommandDescription: String
 
         /**
-         * Description of the 'Assets' command.
+         * Description of the 'Final' command.
          *
          * This is a valuable one.
          */
-        private val assetsCommandDescription: String
+        private val finalCommandDescription: String
 
         /**
          * Description of the 'Parse' command.
@@ -211,8 +220,10 @@ class Basic(private val user: String) {
             when (Locale.getDefault()) {
                 Locale.ENGLISH -> {
                     scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
-                    changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
                     assetsCommandDescription = "Begins assets-reading process (requires prepared assets in json format)"
+                    changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
+                    finalCommandDescription =
+                        "Begins merging process between basic schedule and changes. Requires last value to contain basic schedule"
 
                     helpCommandDescription = "Show context help for this application"
                     parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
@@ -222,8 +233,9 @@ class Basic(private val user: String) {
                 }
                 Locale.CHINESE -> {
                     scheduleCommandDescription = "開始計劃閱讀過程（需要準備好的文件）"
-                    changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
                     assetsCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
+                    changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
+                    finalCommandDescription = "開始基本計劃和變更之間的合併過程。 需要最後一個值來包含基本計劃。"
 
                     helpCommandDescription = "顯示此應用程序的上下文幫助"
                     parseCommandDescription = "開始基本解析過程（可能對調試過程有用）"
@@ -234,11 +246,15 @@ class Basic(private val user: String) {
 
                 else -> {
                     scheduleCommandDescription = "Начать процесс считывания файла расписания (требует готового файла)"
+                    assetsCommandDescription =
+                        "Начать процесс считывания файла ассетов (требуется готовый файл в формате JSON)"
                     changesCommandDescription = "Начать процесс чтения замен (требуется загруженный документ)"
-                    assetsCommandDescription = "Начать процесс считывания файла ассетов (требуется готовый файл в формате JSON)"
+                    finalCommandDescription =
+                        "Начать процесс слияния базового расписания и замен. Требует наличия базового расписания в 'lastResult'"
 
                     helpCommandDescription = "Показать контекстную справку для приложения"
-                    parseCommandDescription = "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
+                    parseCommandDescription =
+                        "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
                     writeCommandDescription = "Записать последний полученный результат в файл"
                     showCommandDescription = "Отобразить последний полученный результат в консоли (терминале)"
                     exitCommandDescription = "Выход из программы"
