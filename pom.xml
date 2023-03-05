@@ -6,9 +6,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Schedule-AdminTools</artifactId>
+    <artifactId>UksivtScheduler_AdminTools-Rebooted</artifactId>
     <groupId>org.schedule.uksivt</groupId>
-    <version>1.2-Preview</version>
+    <version>1.2-Preview_1</version>
     <packaging>jar</packaging>
 
     <name>AdminTools-Rebooted</name>
