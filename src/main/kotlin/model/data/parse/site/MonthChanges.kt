@@ -64,7 +64,7 @@ class MonthChanges(val currentMonth: String?, val changes: List<ChangeElement>) 
 				New Month:
 				{
 					Current Month: %s;
-					TargetChangesOfDay:
+					TargetedChangesOfDay:
 					{
 						%s
 					}

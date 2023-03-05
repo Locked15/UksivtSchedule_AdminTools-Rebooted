@@ -4,12 +4,13 @@ import controller.data.getter.SiteParser
 import controller.data.reader.word.Reader as WordReader
 import controller.data.reader.excel.Reader as ExcelReader
 import controller.io.*
-import model.data.schedule.DaySchedule
-import model.data.schedule.WeekSchedule
+import model.data.schedule.origin.TargetedDaySchedule
+import model.data.schedule.origin.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
-import model.data.changes.TargetChangesOfDay
+import model.data.changes.TargetedChangesOfDay
 import model.data.changes.GeneralChangesOfDay
+import model.data.schedule.origin.GeneralWeekSchedule
 import model.exception.WrongDayInDocumentException
 import view.console.Basic
 import java.util.Locale
@@ -30,9 +31,9 @@ class BasicController {
      *
      * For current update, it may contain follow values:
      * * [String] — Before any command was executed.
-     * * [WeekSchedule] — After [parseSchedule] command;
-     * * [List] with [WeekSchedule] — After [parseSchedule] in Automatic Mode;
-     * * [TargetChangesOfDay] — After [parseChanges] command.
+     * * [TargetedWeekSchedule] — After [parseSchedule] command;
+     * * [List] with [TargetedWeekSchedule] — After [parseSchedule] in Automatic Mode;
+     * * [TargetedChangesOfDay] — After [parseChanges] command.
      */
     private var lastResult: Any = "There is Nothing.\nFor now."
     /* endregion */
@@ -78,11 +79,11 @@ class BasicController {
      * Processing a parsing process in automatic mode.
      * Can be used if a target document is prepared to fully automatic parse.
      *
-     * Writes [List] with [WeekSchedule] to [result][lastResult].
+     * Writes [List] with [TargetedWeekSchedule] to [result][lastResult].
      *
      * Send '-a' or '--automatic' to args, to activate this mode.
      */
-    private fun processAutomaticMode(): List<WeekSchedule> {
+    private fun processAutomaticMode(): List<TargetedWeekSchedule> {
         val path = getSafeFilePath(".xls", ".xlsx")
         val reader = ExcelReader(path)
 
@@ -95,12 +96,12 @@ class BasicController {
      * Can be used if you are not sure about a whole document preparing, but the current part is prepared.
      *
      * This mode parses only one group schedule.
-     * So, writes [WeekSchedule] to [result][lastResult].
+     * So, writes [TargetedWeekSchedule] to [result][lastResult].
      *
      * Send '-t' or '--target' to args, to activate this mode.
      * OR, you can end nothing's, cause it used by default, as I said.
      */
-    private fun processTargetMode(): WeekSchedule {
+    private fun processTargetMode(): TargetedWeekSchedule {
         val data = getTargetDataForScheduleParse()
         return data.second.getWeekSchedule(data.first)
     }
@@ -110,11 +111,11 @@ class BasicController {
      * It's invented to be used on non-parsable documents or sections.
      *
      * So, if you are not sure about the stability of the section or parser, use this mode.
-     * Writes [WeekSchedule] to [result][lastResult].
+     * Writes [TargetedWeekSchedule] to [result][lastResult].
      *
      * Send '-m' or '--manual' to args, to activate this mode.
      */
-    private fun processManualMode(): WeekSchedule {
+    private fun processManualMode(): TargetedWeekSchedule {
         val groupName = inputText("Input group name")
         return generateScheduleForManualMode(groupName)
     }
@@ -131,10 +132,10 @@ class BasicController {
     }
     /* endregion */
 
-    /* region Command: 'TargetChangesOfDay' */
+    /* region Command: 'TargetedChangesOfDay' */
 
     /**
-     * Completes a parsing process on [targetChangesOfDay][TargetChangesOfDay] [document][WordReader.document].
+     * Completes a parsing process on [targetedChangesOfDay][TargetedChangesOfDay] [document][WordReader.document].
      * Writes value to file, if user sent '-w' or '--write' as arg.
      */
     fun parseChanges(args: List<String>) {
@@ -148,14 +149,14 @@ class BasicController {
 
     /**
      * Collects target data for a parsing process.
-     * Then, begins targetChangesOfDay document parse.
+     * Then, begins targetedChangesOfDay document parse.
      */
     private fun collectDataAndParseChangesFile(auto: Boolean) {
         val data = getTargetDataForChangesParse(auto)
         var reader = WordReader(data.first)
 
         if (auto) {
-            val results = mutableListOf<TargetChangesOfDay?>()
+            val results = mutableListOf<TargetedChangesOfDay?>()
             for (group in reader.getAvailableGroups()) {
                 reader = WordReader(data.first)
                 results.add(reader.getChanges(group, data.third))
@@ -165,7 +166,7 @@ class BasicController {
         }
         else {
             // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
-            lastResult = reader.getChanges(data.second!!, data.third) ?: TargetChangesOfDay()
+            lastResult = reader.getChanges(data.second!!, data.third) ?: TargetedChangesOfDay()
         }
     }
     /* endregion */
@@ -191,7 +192,7 @@ class BasicController {
      * Currently supported parsing types:
      * * '-s' or '--site' — Parses college [website](https://www.uksivt.ru/zameny).
      * * '-sd' or '--schedule-document' — Parses prepared schedule document in target mode.
-     * * '-cd' or '--targetChangesOfDay-document' — Parses downloaded targetChangesOfDay document.
+     * * '-cd' or '--targetedChangesOfDay-document' — Parses downloaded targetedChangesOfDay document.
      *
      * This function invented to debugging purpose, so it DOES NOT write value to [result][lastResult].
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
@@ -203,10 +204,10 @@ class BasicController {
     }
 
     /**
-     * Begins basic targetChangesOfDay document parsing, if user sent right arguments.
+     * Begins basic targetedChangesOfDay document parsing, if user sent right arguments.
      */
     private fun beginBasicChangesDocumentParsingIfPossible(args: List<String>) {
-        if (args.contains("-cd") || args.contains("--targetChangesOfDay-document")) {
+        if (args.contains("-cd") || args.contains("--targetedChangesOfDay-document")) {
             val data = getTargetDataForChangesParse(false)
             val reader = WordReader(data.first)
 
@@ -245,10 +246,10 @@ class BasicController {
      * If value can't be written, prints message and returns false.
      */
     fun writeLastResult() = when (lastResult) {
-        is WeekSchedule -> writeSchedule(lastResult as WeekSchedule)
-        is List<*> -> writeSchedule(lastResult as List<*>)
+        is TargetedWeekSchedule -> writeSchedule(lastResult as TargetedWeekSchedule)
+        is GeneralWeekSchedule -> writeSchedule(lastResult as GeneralWeekSchedule)
 
-        is TargetChangesOfDay -> writeChanges(lastResult as TargetChangesOfDay)
+        is TargetedChangesOfDay -> writeChanges(lastResult as TargetedChangesOfDay)
         is GeneralChangesOfDay -> writeChanges(lastResult as GeneralChangesOfDay)
 
         else -> {
@@ -313,14 +314,14 @@ class BasicController {
                         
                         Valuable commands:
                           * Type 'schedule' to begin schedule-reading process (requires prepared file);
-                          * Type 'changes' to begin processing targetChangesOfDay document (requires downloaded document).
+                          * Type 'changes' to begin processing changes document (requires downloaded document).
                         (This commands writes gotten value to property, so they can be written later).
                         
                         Functional commands:
                           * Type 'help' to show context help message (this command);
                           * Type 'parse' to begin basic parsing process:
                             It requires second parameter:
-                              '-cd' or '--targetChangesOfDay-document' — To parse targetChangesOfDay document;
+                              '-cd' or '--targetedChangesOfDay-document' — To parse targetedChangesOfDay document;
                               '-sd' or '--schedule-document' — To parse schedule document;
                               '-s' or '--site' — To parse college site.
                           * Type 'write' to write last gotten value to file;
@@ -358,7 +359,7 @@ class BasicController {
                           * 類型 'help' 顯示上下文幫助消息（此命令）；
                           * 類型 'parse' 開始基本的解析過程：
                             它需要第二個參數：
-                              '-cd' 或者 '--targetChangesOfDay-document' — 解析更改文檔；
+                              '-cd' 或者 '--targetedChangesOfDay-document' — 解析更改文檔；
                               '-sd' 或者 '--schedule-document' — 解析進度文件；
                               '-s' 或者 '--site' — 解析大學網站。
                           * 類型 'write' 將最後得到的值寫入文件；
@@ -397,7 +398,7 @@ class BasicController {
                           * Введите 'help', чтобы вывести контекстную справку по приложению (текущая команда);
                           * Введите 'parse', чтобы начать базовый процесс чтения чего-либо:
                             Команда требует хотя бы один параметр для работы:
-                              '-cd' или '--targetChangesOfDay-document' — Для чтения документа замен;
+                              '-cd' или '--targetedChangesOfDay-document' — Для чтения документа замен;
                               '-sd' или '--schedule-document' — Для чтения документа расписания;
                               '-s' или '--site' — Для чтения страницы сайта колледжа.
                           * Введите 'write', чтобы записать последнее полученное значение в файл;
@@ -430,10 +431,10 @@ class BasicController {
          * Requires to be created [reader] object to work.
          *
          * Iterates through all available groups and writes its schedule to list.
-         * Then, return [List] with all [available schedules][WeekSchedule].
+         * Then, return [List] with all [available schedules][TargetedWeekSchedule].
          */
-        private fun generateSchedulesForAutomaticMode(reader: ExcelReader): List<WeekSchedule> {
-            val list = mutableListOf<WeekSchedule>()
+        private fun generateSchedulesForAutomaticMode(reader: ExcelReader): List<TargetedWeekSchedule> {
+            val list = GeneralWeekSchedule(mutableListOf())
             reader.getGroups().forEach { group ->
                 group?.let {
                     list.add(reader.getWeekSchedule(group))
@@ -448,10 +449,10 @@ class BasicController {
          * Requires target [group name][group].
          *
          * Iterator through all seven days of week and asks user to input information.
-         * Returns [generated schedule][WeekSchedule].
+         * Returns [generated schedule][TargetedWeekSchedule].
          */
-        private fun generateScheduleForManualMode(group: String): WeekSchedule {
-            val schedule = WeekSchedule(group)
+        private fun generateScheduleForManualMode(group: String): TargetedWeekSchedule {
+            val schedule = TargetedWeekSchedule(group)
             for (i in 0 until 7) {
                 val day = generateNewDayScheduleAndNoticeUser(i)
                 for (j in 0 until 7) {
@@ -466,20 +467,20 @@ class BasicController {
                         day.lessons.add(Lesson(j))
                     }
                 }
-                schedule.daySchedules.add(day)
+                schedule.targetedDaySchedules.add(day)
             }
 
             return schedule
         }
 
         /**
-         * Generates new [day schedule object][DaySchedule] by sent [day index][index].
+         * Generates new [day schedule object][TargetedDaySchedule] by sent [day index][index].
          * Returns this object.
          *
          * Notices user, when generating is complete.
          */
-        private fun generateNewDayScheduleAndNoticeUser(index: Int): DaySchedule {
-            val day = DaySchedule(Day.getValueByIndex(index))
+        private fun generateNewDayScheduleAndNoticeUser(index: Int): TargetedDaySchedule {
+            val day = TargetedDaySchedule(Day.getValueByIndex(index))
             println("Current Day: ${day.day.englishName}.")
 
             return day
@@ -498,7 +499,7 @@ class BasicController {
         }
 
         /**
-         * Asks user to input [day index][Int] for day-check on targetChangesOfDay [parsing process][parseChanges].
+         * Asks user to input [day index][Int] for day-check on targetedChangesOfDay [parsing process][parseChanges].
          * Then, a result depends on user input:
          * * If user input correct value, the program will check day-corresponding and
          *   throws [exception][WrongDayInDocumentException] if days aren't equal.
@@ -564,10 +565,10 @@ class BasicController {
         }
 
         /**
-         * Asks user to input target information to the [targetChangesOfDay document][WordReader.document] [parse][parseChanges].
+         * Asks user to input target information to the [targetedChangesOfDay document][WordReader.document] [parse][parseChanges].
          *
          * It returns [Triple] object with following data:
-         * * [First][Triple.first] — Path to the targetChangesOfDay document;
+         * * [First][Triple.first] — Path to the targetedChangesOfDay document;
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */

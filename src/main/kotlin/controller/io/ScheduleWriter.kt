@@ -1,7 +1,8 @@
 package controller.io
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.data.schedule.WeekSchedule
+import model.data.schedule.origin.GeneralWeekSchedule
+import model.data.schedule.origin.TargetedWeekSchedule
 import java.io.FileWriter
 import java.io.IOException
 import java.nio.file.Path
@@ -22,22 +23,21 @@ private const val FILE_NAME_TEMPLATE = "%s.json"
  * Writes [schedule] to the file.
  * Returns a [result][Boolean] of the process.
  */
-fun writeSchedule(schedule: WeekSchedule) = writeToTargetFile(schedule.groupName, schedule)
+fun writeSchedule(schedule: TargetedWeekSchedule) = writeToTargetFile(schedule.groupName, schedule)
 
 /**
- * Writes [all available schedules][schedules] to the corresponding files.
+ * Writes [all available schedules][basicSchedules] to the corresponding files.
  * Returns a [result][Boolean] of this process.
  */
-fun writeSchedule(schedules: List<*>) = schedules.all { schedule ->
-    if (schedule is WeekSchedule) writeToTargetFile(schedule.groupName, schedule)
-    else false
+fun writeSchedule(basicSchedules: GeneralWeekSchedule) = basicSchedules.all { schedule ->
+    writeToTargetFile(schedule.groupName, schedule)
 }
 
 /**
  * Writes [given schedule][schedule] of [group] to asset-file.
  * File will be placed inside the "resources" directory.
  */
-private fun writeToTargetFile(group: String?, schedule: WeekSchedule): Boolean {
+private fun writeToTargetFile(group: String?, schedule: TargetedWeekSchedule): Boolean {
     val serializer = ObjectMapper()
     val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(schedule)
     return try {

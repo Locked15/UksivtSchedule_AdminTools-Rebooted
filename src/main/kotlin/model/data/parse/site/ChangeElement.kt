@@ -8,7 +8,7 @@ import model.data.schedule.base.day.Day
  * It contains information about the following things:
  * - [Day of week][dayOfWeek]
  * - [Day of month][dayOfMonth]
- * - [Link to targetChangesOfDay document][linkToDocument]
+ * - [Link to targetedChangesOfDay document][linkToDocument]
  *
  * Change elements are created based on the DOM elements of the site,
  * and if the structure of the site has changed, this class **probably must be updated too**.
@@ -18,7 +18,7 @@ class ChangeElement(val dayOfWeek: Day, val dayOfMonth: Int, val linkToDocument:
 	/* region Properties */
 	
 	/**
-	 * Returns current state of targetChangesOfDay inside this element.
+	 * Returns current state of targetedChangesOfDay inside this element.
 	 *
 	 * This property is read-only and evaluates at a call moment.
 	 */

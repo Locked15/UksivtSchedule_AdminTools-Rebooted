@@ -2,7 +2,7 @@ package model.data.parse.schedule.wrapper
 
 import model.data.parse.schedule.ColumnBorders
 import model.data.parse.schedule.DayColumnInfo
-import model.data.schedule.DaySchedule
+import model.data.schedule.origin.TargetedDaySchedule
 
 
 /**
@@ -13,5 +13,5 @@ import model.data.schedule.DaySchedule
  * @param dayColumnsIndices List with indices of columns, that contains day declarations.
  * @param targetBorders List with indices of target columns, that contains schedule info for the target group.
  */
-class BaseIteratorModel(val schedules: MutableList<DaySchedule>, val dayColumnsIndices: List<DayColumnInfo>,
+class BaseIteratorModel(val schedules: MutableList<TargetedDaySchedule>, val dayColumnsIndices: List<DayColumnInfo>,
                         val targetBorders: List<ColumnBorders>)

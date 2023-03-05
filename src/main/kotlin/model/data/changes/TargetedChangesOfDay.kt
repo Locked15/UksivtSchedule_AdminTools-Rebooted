@@ -1,16 +1,17 @@
 package model.data.changes
 
 import model.data.schedule.base.Lesson
+import model.data.schedule.origin.TargetedDaySchedule
 import java.util.Calendar
 
 
 /**
- * Class, that encapsulates TargetChangesOfDay for the schedule.
+ * Class, that encapsulates TargetedChangesOfDay for the schedule.
  *
- * Earlier, it wasn't a class, just a combination of list with targetChangesOfDay and boolean with absolute determination.
+ * Earlier, it wasn't a class, just a combination of list with targetedChangesOfDay and boolean with absolute determination.
  */
-class TargetChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
-                         val changedLessons: MutableList<Lesson>) {
+class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
+                           val changedLessons: MutableList<Lesson>) {
 
     /* region Constructors */
 
@@ -59,42 +60,42 @@ class TargetChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var 
     companion object {
 
         /**
-         * Contains template for string-formatting instances of [TargetChangesOfDay] objects.
+         * Contains template for string-formatting instances of [TargetedChangesOfDay] objects.
          */
         const val STRING_BODY_TEMPLATE =
             """
                 Target: %s;
                 IsAbsolute: %b;
                 Date: %s;
-                TargetChangesOfDay:
+                TargetedChangesOfDay:
                 {
                     %s.
                 }
             """
 
         /**
-         * Generates a template [targetChangesOfDay][TargetChangesOfDay] object with practise value.
-         * Returned value can be merged with [base schedule][DaySchedule] to get final "On Practise" schedule.
+         * Generates a template [targetedChangesOfDay][TargetedChangesOfDay] object with practise value.
+         * Returned value can be merged with [base schedule][TargetedDaySchedule] to get final "On Practise" schedule.
          */
-        fun getOnPractiseChanges(date: Calendar?, target: String?): TargetChangesOfDay {
+        fun getOnPractiseChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
                 changes.add(Lesson(i, "Практика"))
             }
 
-            return TargetChangesOfDay(target, true, date, changes)
+            return TargetedChangesOfDay(target, true, date, changes)
         }
 
         /**
-         * Generates a template [targetChangesOfDay][TargetChangesOfDay] object with 'Ликвидация Задолженностей' values.
+         * Generates a template [targetedChangesOfDay][TargetedChangesOfDay] object with 'Ликвидация Задолженностей' values.
          */
-        fun getDebtLiquidationChanges(date: Calendar?, target: String?): TargetChangesOfDay {
+        fun getDebtLiquidationChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
                 changes.add(Lesson(i, "Ликвидация Задолженностей"))
             }
 
-            return TargetChangesOfDay(target, true, date, changes)
+            return TargetedChangesOfDay(target, true, date, changes)
         }
     }
     /* endregion */

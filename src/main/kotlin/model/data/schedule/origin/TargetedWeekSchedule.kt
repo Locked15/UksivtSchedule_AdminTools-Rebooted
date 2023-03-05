@@ -1,4 +1,4 @@
-package model.data.schedule
+package model.data.schedule.origin
 
 import com.fasterxml.jackson.databind.ObjectMapper
 
@@ -8,12 +8,12 @@ import com.fasterxml.jackson.databind.ObjectMapper
  *
  * It indented to identify group schedule, so it contains [property][groupName] with group name.
  */
-class WeekSchedule(var groupName: String?, var daySchedules: MutableList<DaySchedule>) {
+class TargetedWeekSchedule(var groupName: String?, var targetedDaySchedules: MutableList<TargetedDaySchedule>) {
 	
 	/* region Constructors */
 
 	/**
-	 * Creates a new instance of [WeekSchedule].
+	 * Creates a new instance of [TargetedWeekSchedule].
 	 * New instance with given [group name][groupName].
 	 * Schedules initializes with [empty list][listOf].
 	 */
@@ -23,7 +23,7 @@ class WeekSchedule(var groupName: String?, var daySchedules: MutableList<DaySche
 	/* region Functions */
 
 	/**
-	 * Returns string representation of the [object][WeekSchedule].
+	 * Returns string representation of the [object][TargetedWeekSchedule].
 	 */
 	override fun toString(): String {
 		val serializer = ObjectMapper()

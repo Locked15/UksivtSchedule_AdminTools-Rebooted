@@ -8,9 +8,9 @@ import controller.data.getter.SiteParser
  * Wrapper class to iterator variables, that used by [site parser function][SiteParser.getAvailableNodes].
  * May be useful on a debug process (because you can check values directly).
  *
- * @param generalChangesElement  Container that contains all month-scoped targetChangesOfDay elements.
+ * @param generalChangesElement  Container that contains all month-scoped targetedChangesOfDay elements.
  *                               It gets by CSS-Selector.
- * @param listOfMonthChangesElements  List of containers, that contains day targetChangesOfDay elements.
+ * @param listOfMonthChangesElements  List of containers, that contains day targetedChangesOfDay elements.
  *                                    It gets from parent node, by '.children()' function.
  */
 class ChangeElementsWrapper(val generalChangesElement: Element?,

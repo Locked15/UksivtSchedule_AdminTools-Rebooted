@@ -4,8 +4,8 @@ import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
-import model.data.schedule.WeekSchedule
-import model.data.schedule.DaySchedule
+import model.data.schedule.origin.TargetedWeekSchedule
+import model.data.schedule.origin.TargetedDaySchedule
 
 
 /**
@@ -21,11 +21,11 @@ import model.data.schedule.DaySchedule
  *                        Contains index of the current day and used in the corresponding statements.
  *                        **Prior 'i' variable**.
  * @param lessonNumber  Used to initialize lessons (represents number of the future lessons).
- *                      TargetChangesOfDay between iterations of the second cycle and must save itself value.
- * @param lesson  Lesson, that will be added to a [schedule collection][DaySchedule], then to [WeekSchedule] object.
+ *                      TargetedChangesOfDay between iterations of the second cycle and must save itself value.
+ * @param lesson  Lesson, that will be added to a [schedule collection][TargetedDaySchedule], then to [TargetedWeekSchedule] object.
  *                It placed inside the first cycle, cause some fields initializes on the second iteration.
  * @param currentDay  Contains a current day object. Set 'NULL', if something went wrong (or it's the first iteration).
- * @param lessons  Collection of lessons, that will be constructed to the [final object][DaySchedule].
+ * @param lessons  Collection of lessons, that will be constructed to the [final object][TargetedDaySchedule].
  *                 Placed inside the first cycle and resets value every iteration.
  * @param rows  Iterator of [Row] objects, that contains all rows of the [document][XSSFWorkbook].
  *              Iteration process repeated two times, cause schedule divided on two parts:

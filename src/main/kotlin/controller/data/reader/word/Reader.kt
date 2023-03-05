@@ -3,8 +3,8 @@ package controller.data.reader.word
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
-import model.data.changes.TargetChangesOfDay
-import model.data.schedule.DaySchedule
+import model.data.changes.TargetedChangesOfDay
+import model.data.schedule.origin.TargetedDaySchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.exception.WrongDayInDocumentException
@@ -17,14 +17,14 @@ import java.util.GregorianCalendar
 
 
 /**
- * Reader-Class for a Word documents with schedule targetChangesOfDay.
+ * Reader-Class for a Word documents with schedule targetedChangesOfDay.
  */
 class Reader(pathToFile: String) {
 
     /* region Properties */
 
     /**
-     * Contains a document with targetChangesOfDay for specified day.
+     * Contains a document with targetedChangesOfDay for specified day.
      */
     private val document: XWPFDocument
     /* endregion */
@@ -60,27 +60,27 @@ class Reader(pathToFile: String) {
 
     /**
      * Class main function (and one of two, with *public* visibility modifier).
-     * Parses [current document][document] and return [object][TargetChangesOfDay],
-     * that contains targetChangesOfDay to the [target group][groupName].
-     * May return 'NULL' if a document doesn't contain targetChangesOfDay for a target group.
+     * Parses [current document][document] and return [object][TargetedChangesOfDay],
+     * that contains targetedChangesOfDay to the [target group][groupName].
+     * May return 'NULL' if a document doesn't contain targetedChangesOfDay for a target group.
      *
      * If sent [day] isn't 'NULL', function will check target day and day, declared in a document to equality.
      * If they ain't equal, it **throws [exception][WrongDayInDocumentException]**.
      *
-     * Info: earlier it contains merging logic (it returns schedule with merged targetChangesOfDay), but I refactored it.
-     * Now it returns only targetChangesOfDay.
+     * Info: earlier it contains merging logic (it returns schedule with merged targetedChangesOfDay), but I refactored it.
+     * Now it returns only targetedChangesOfDay.
      */
-    fun getChanges(groupName: String, day: Day?): TargetChangesOfDay? {
+    fun getChanges(groupName: String, day: Day?): TargetedChangesOfDay? {
         val headerInfo = getHeaderAdditionalInfo(day)
         if (checkGroupsToContain(headerInfo.first, groupName)) {
             // We check header, because it can contain info about practise.
-            return TargetChangesOfDay.getOnPractiseChanges(headerInfo.second, groupName)
+            return TargetedChangesOfDay.getOnPractiseChanges(headerInfo.second, groupName)
         }
         // Otherwise, we'll parse the main content of the document.
         else {
-            /** Base model, that contains information about parsing, including [TargetChangesOfDay] object. */
+            /** Base model, that contains information about parsing, including [TargetedChangesOfDay] object. */
             val baseData = BaseIteratorModel(cycleStopper = false, listenToChanges = false,
-                                             targetChangesOfDay = TargetChangesOfDay(groupName, headerInfo.second))
+                                             targetedChangesOfDay = TargetedChangesOfDay(groupName, headerInfo.second))
             for (row in searchTargetTable(document.tables).rows) {
                 /** Model with iteration data, including generating lesson.
                  * Begins with -1 cell number, because we increment it right on first iteration. */
@@ -108,21 +108,21 @@ class Reader(pathToFile: String) {
                 }
             }
 
-            return if (baseData.targetChangesOfDay.changedLessons.isEmpty()) null
-            else baseData.targetChangesOfDay
+            return if (baseData.targetedChangesOfDay.changedLessons.isEmpty()) null
+            else baseData.targetedChangesOfDay
         }
     }
 
     /* region Work with Document Header */
 
     /**
-     * Extracts a full list of groups, that targets to practise on a current targetChangesOfDay document.
+     * Extracts a full list of groups, that targets to practise on a current targetedChangesOfDay document.
      * If sent [day] isn't 'NULL' it also checks declared day in document and target day.
      *
-     * Also, parses header to get information about [targetChangesOfDay date and month][Calendar].
+     * Also, parses header to get information about [targetedChangesOfDay date and month][Calendar].
      *
      * [Returned value][Pair] is full list of [groups][String],
-     * that schedule must be generated via [special function][DaySchedule.getOnPractiseSchedule]
+     * that schedule must be generated via [special function][TargetedDaySchedule.getOnPractiseSchedule]
      * AND [date object][Calendar] with target date and day.
      */
     private fun getHeaderAdditionalInfo(day: Day?): Pair<List<String>, Calendar?> {
@@ -192,17 +192,17 @@ class Reader(pathToFile: String) {
      */
     private fun defineCellContent(baseData: BaseIteratorModel, iterationData: OuterIteratorModel,
                                   localData: InnerIteratorModel, target: String): CellDefineResult {
-        // If we have met with target group name, we'll start targetChangesOfDay reading:
+        // If we have met with target group name, we'll start targetedChangesOfDay reading:
         if (checkValueToEquality(localData.lowerText, target)) {
             baseData.listenToChanges = true
-            baseData.targetChangesOfDay.isAbsolute = true
+            baseData.targetedChangesOfDay.isAbsolute = true
         }
-        // If we met another group name AND we're reading targetChangesOfDay, so we'll have to break the cycle.
+        // If we met another group name AND we're reading targetedChangesOfDay, so we'll have to break the cycle.
         else if (checkToParsingStopper(baseData, iterationData, localData, target)) {
             baseData.cycleStopper = true
             return CellDefineResult.BREAK
         }
-        // In all other cases (and if we're reading targetChangesOfDay), we'll read cell value:
+        // In all other cases (and if we're reading targetedChangesOfDay), we'll read cell value:
         else if (baseData.listenToChanges) {
             return CellDefineResult.READ
         }
@@ -258,21 +258,21 @@ class Reader(pathToFile: String) {
      *
      * It's an encapsulated function, moved from [base][getChanges] function.
      * It calls [expandWrappedLesson] with stored data and
-     * updates [generating lessons][BaseIteratorModel.targetChangesOfDay] with unwrapped values.
+     * updates [generating lessons][BaseIteratorModel.targetedChangesOfDay] with unwrapped values.
      */
     private fun checkStateAndUpdateChangedLessons(base: BaseIteratorModel, outer: OuterIteratorModel) {
-        // In this case we found "Debt Liquidation" and have to update all TargetChangesOfDay Object.
+        // In this case we found "Debt Liquidation" and have to update all TargetedChangesOfDay Object.
         if (base.listenToChanges && outer.rawLessonNumbers.contains("ликвидация", true)) {
-            base.targetChangesOfDay = TargetChangesOfDay.getDebtLiquidationChanges(base.targetChangesOfDay.changesDate, base.targetChangesOfDay.targetGroup)
+            base.targetedChangesOfDay = TargetedChangesOfDay.getDebtLiquidationChanges(base.targetedChangesOfDay.changesDate, base.targetedChangesOfDay.targetGroup)
             base.cycleStopper = true
         }
         else if (base.listenToChanges && outer.rawLessonNumbers != "") {
-            base.targetChangesOfDay.changedLessons.addAll(expandWrappedLesson(outer.rawLessonNumbers, outer.currentLesson))
+            base.targetedChangesOfDay.changedLessons.addAll(expandWrappedLesson(outer.rawLessonNumbers, outer.currentLesson))
         }
     }
 
     /**
-     * Expands a wrapped-style written lesson inside a document with targetChangesOfDay.
+     * Expands a wrapped-style written lesson inside a document with targetedChangesOfDay.
      * It requires [string with short-format lesson numbers][wrappedNumber] and [lesson template][lesson].
      *
      * Numbers expands and generates few lessons, based on [template][lesson].
@@ -297,15 +297,15 @@ class Reader(pathToFile: String) {
 
     /**
      * Class secondary main function (and one of three, with *public* visibility modifier).
-     * Returns [base schedule][schedule] with [merged][DaySchedule.mergeWithChanges] [targetChangesOfDay][TargetChangesOfDay].
+     * Returns [base schedule][schedule] with [merged][TargetedDaySchedule.mergeWithChanges] [targetedChangesOfDay][TargetedChangesOfDay].
      *
      * Represents original (".getDayScheduleWithChanges()") function from old *AdminTools*.
      * Because it won't be used often, I moved it down in functions order.
      */
-    fun getChangedSchedule(schedule: DaySchedule, groupName: String, day: Day?): DaySchedule {
+    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedDaySchedule {
         val changes = getChanges(groupName, day)
         if (changes != null) {
-            println("Automatic merge tool found empty targetChangesOfDay." +
+            println("Automatic merge tool found empty targetedChangesOfDay." +
                             "\nBase schedule (new ref) will be return.")
         }
 

@@ -6,8 +6,8 @@ import model.data.parse.schedule.DayColumnInfo
 import model.data.parse.schedule.wrapper.BaseIteratorModel
 import model.data.parse.schedule.wrapper.InnerIteratorModel
 import model.data.parse.schedule.wrapper.OuterIteratorModel
-import model.data.schedule.DaySchedule
-import model.data.schedule.WeekSchedule
+import model.data.schedule.origin.TargetedDaySchedule
+import model.data.schedule.origin.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import org.apache.poi.ss.usermodel.Cell
@@ -99,12 +99,12 @@ class Reader(pathToFile: String) {
     }
 
     /**
-     * Parse actual document and tries to extract [full-week schedule][WeekSchedule] for [group][groupName].
+     * Parse actual document and tries to extract [full-week schedule][TargetedWeekSchedule] for [group][groupName].
      *
      * @throws GroupDoesNotExistException If [sent group][groupName] doesn't exist in a current document.
      * @throws NullPointerException If runtime met 'NULL' pointing instruction.
      */
-    fun getWeekSchedule(groupName: String): WeekSchedule {
+    fun getWeekSchedule(groupName: String): TargetedWeekSchedule {
         val targetSheet = searchTargetSheet(document, groupName)
         if (targetSheet != null) {
             /** Base data, placed outside cycles. */
@@ -114,8 +114,8 @@ class Reader(pathToFile: String) {
             }
 
             // Insert sunday schedule and then return ready value.
-            baseData.schedules.add(DaySchedule(Day.SUNDAY, mutableListOf()))
-            return WeekSchedule(groupName, baseData.schedules)
+            baseData.schedules.add(TargetedDaySchedule(Day.SUNDAY, mutableListOf()))
+            return TargetedWeekSchedule(groupName, baseData.schedules)
         }
         else {
             throw GroupDoesNotExistException("\n\nIn parsing process failure occurred:\n" +
@@ -142,9 +142,9 @@ class Reader(pathToFile: String) {
         }
 
         /* At this point, we get to the end of the day.
-           We'll add last lesson (that out-of-iteration), and then generate 'DaySchedule' object. */
+           We'll add last lesson (that out-of-iteration), and then generate 'TargetedDaySchedule' object. */
         iterationData.lessons.add(iterationData.lesson)
-        base.schedules.add(DaySchedule(iterationData.currentDay!!, iterationData.lessons))
+        base.schedules.add(TargetedDaySchedule(iterationData.currentDay!!, iterationData.lessons))
     }
 
     /**
@@ -188,9 +188,9 @@ class Reader(pathToFile: String) {
                     // Inserts a last lesson:
                     iter.lessons.add(iter.lesson)
 
-                    /* Then we add ready-to-generate 'DaySchedule' to list and clear current lessons list.
+                    /* Then we add ready-to-generate 'TargetedDaySchedule' to list and clear current lessons list.
                    Clearing process made by creation new object, to prevent pass-by-reference troubles. */
-                    base.schedules.add(DaySchedule(iter.currentDay!!, iter.lessons))
+                    base.schedules.add(TargetedDaySchedule(iter.currentDay!!, iter.lessons))
                     iter.lessons = mutableListOf()
                 }
 
