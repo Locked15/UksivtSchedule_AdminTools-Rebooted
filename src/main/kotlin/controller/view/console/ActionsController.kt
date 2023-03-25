@@ -4,16 +4,24 @@ import controller.data.getter.SiteParser
 import controller.data.reader.word.Reader as WordReader
 import controller.data.reader.excel.Reader as ExcelReader
 import controller.io.*
-import model.data.schedule.origin.TargetedDaySchedule
-import model.data.schedule.origin.TargetedWeekSchedule
+import controller.io.service.getAffiliationsNames
+import controller.io.service.getBranchesNames
+import controller.io.service.getGroupsNames
+import controller.view.base.ControllerBase
+import model.data.schedule.origin.day.TargetedDaySchedule
+import model.data.schedule.origin.week.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
-import model.data.changes.TargetedChangesOfDay
-import model.data.changes.GeneralChangesOfDay
-import model.data.schedule.origin.GeneralWeekSchedule
-import model.exception.WrongDayInDocumentException
+import model.data.change.day.TargetedChangesOfDay
+import model.data.change.day.GeneralChangesOfDay
+import model.data.parse.ParseSource
+import model.data.parse.changes.ParseDataDetails
+import model.data.schedule.origin.week.GeneralWeekSchedule
+import model.data.schedule.result.day.GeneralDayScheduleResult
+import model.data.schedule.result.day.TargetedDayScheduleResult
 import view.console.Basic
 import java.nio.file.Paths
+import java.util.Calendar
 import java.util.Locale
 import kotlin.system.exitProcess
 
@@ -22,7 +30,7 @@ import kotlin.system.exitProcess
  * Controller class for the [Basic] view.
  * It contains functions that are intended to 'listen' console inputted commands.
  */
-class BasicController {
+class ActionsController : ControllerBase() {
 
     /* region Properties */
 
@@ -32,9 +40,12 @@ class BasicController {
      *
      * For current update, it may contain follow values:
      * * [String] — Before any command was executed.
-     * * [TargetedWeekSchedule] — After [parseSchedule] command;
-     * * [List] with [TargetedWeekSchedule] — After [parseSchedule] in Automatic Mode;
-     * * [TargetedChangesOfDay] — After [parseChanges] command.
+     *
+     * * [TargetedWeekSchedule] — After [parseSchedule] command in Target or Manual mode;
+     * * [GeneralWeekSchedule] — After [parseSchedule] in Automatic mode (or reading united asset).
+     *
+     * * [TargetedChangesOfDay] — After [parseChanges] command in Targeted or Manual mode;
+     * * [GeneralChangesOfDay] — After [parseChanges] in Automatic mode.
      */
     private var lastResult: Any = "There is Nothing.\nFor now."
     /* endregion */
@@ -56,7 +67,7 @@ class BasicController {
      * * '-w' or '--write' — Program will automatically write gotten value to file.
      */
     fun parseSchedule(args: List<String>) {
-        parseScheduleBySelectedMode(args)
+        lastResult = parseScheduleBySelectedMode(args)
         if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
 
@@ -64,8 +75,8 @@ class BasicController {
      * Begins a parsing process in [the][processAutomaticMode] [selected][processTargetMode] [mode][processManualMode].
      * Selected mode depends on [sent arguments][args].
      */
-    private fun parseScheduleBySelectedMode(args: List<String>) {
-        lastResult = if (args.contains("-a") || args.contains("--automatic")) {
+    private fun parseScheduleBySelectedMode(args: List<String>): Any {
+        return if (args.contains("-a") || args.contains("--automatic")) {
             processAutomaticMode()
         }
         else if (args.contains("-m") || args.contains("--manual")) {
@@ -84,8 +95,8 @@ class BasicController {
      *
      * Send '-a' or '--automatic' to args, to activate this mode.
      */
-    private fun processAutomaticMode(): List<TargetedWeekSchedule> {
-        val path = getSafeFilePath(".xls", ".xlsx")
+    private fun processAutomaticMode(): GeneralWeekSchedule {
+        val path = getSafeFilePath("xls", "xlsx")
         val reader = ExcelReader(path)
 
         return generateSchedulesForAutomaticMode(reader)
@@ -125,12 +136,12 @@ class BasicController {
     /* region Command: 'Assets' */
 
     fun parseAssets(args: List<String>) {
-        parseAssetsBySelectedMode(args)
+        lastResult = parseAssetsBySelectedMode(args)
         if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
 
-    private fun parseAssetsBySelectedMode(args: List<String>) {
-        lastResult = if (args.contains("-a") || args.contains("--automatic")) {
+    private fun parseAssetsBySelectedMode(args: List<String>): Any {
+        return if (args.contains("-a") || args.contains("--automatic")) {
             parseAllAvailableAssets()
         }
         else if (args.contains("-u") || args.contains("--united")) {
@@ -146,10 +157,10 @@ class BasicController {
 
     private fun parseAllAvailableAssets(): GeneralWeekSchedule {
         val results = mutableListOf<TargetedWeekSchedule>()
-        for (branch in AssetsManager.getBranchesNames()) {
-            for (affiliation in AssetsManager.getAffiliationsNames(branch)) {
-                for (group in AssetsManager.getGroupsNames(branch, affiliation)) {
-                    AssetsManager.readScheduleAsset(branch, affiliation, group)?.let {
+        for (branch in getBranchesNames()) {
+            for (affiliation in getAffiliationsNames(branch)) {
+                for (group in getGroupsNames(branch, affiliation)) {
+                    readScheduleAsset(branch, affiliation, group)?.let {
                         results.add(it)
                     } ?: run {
                         println("WARNING:\nFind empty value, while processing auto-assets parse." +
@@ -164,16 +175,16 @@ class BasicController {
     }
 
     private fun parseAssetsByUnitedFile(): GeneralWeekSchedule {
-        val path = getSafeFilePath(".json")
-        return AssetsManager.readUnknownAsset<GeneralWeekSchedule>(Paths.get(path))!!
+        val path = getSafeFilePath("json")
+        return readUnknownAsset<GeneralWeekSchedule>(Paths.get(path))!!
     }
 
     private fun parseAssetsByBranch(): GeneralWeekSchedule {
         val results = mutableListOf<TargetedWeekSchedule>()
-        val targetBranch = inputValueSafely(AssetsManager.getBranchesNames(), "Select target branch to parse")
-        for (affiliation in AssetsManager.getAffiliationsNames(targetBranch)) {
-            for (group in AssetsManager.getGroupsNames(targetBranch, affiliation)) {
-                AssetsManager.readScheduleAsset(targetBranch, affiliation, group)?.let {
+        val targetBranch = inputValueSafely(getBranchesNames(), "Select target branch to parse")
+        for (affiliation in getAffiliationsNames(targetBranch)) {
+            for (group in getGroupsNames(targetBranch, affiliation)) {
+                readScheduleAsset(targetBranch, affiliation, group)?.let {
                     results.add(it)
                 }
             }
@@ -183,11 +194,11 @@ class BasicController {
     }
 
     private fun parseAssetsByTarget(): TargetedWeekSchedule {
-        val branch = inputValueSafely(AssetsManager.getBranchesNames(), "Select target branch to parse")
-        val affiliation = inputValueSafely(AssetsManager.getAffiliationsNames(branch), "Select affiliation")
-        val group = inputValueSafely(AssetsManager.getGroupsNames(branch, affiliation), "Select group to parse")
+        val branch = inputValueSafely(getBranchesNames(), "Select target branch to parse")
+        val affiliation = inputValueSafely(getAffiliationsNames(branch), "Select affiliation")
+        val group = inputValueSafely(getGroupsNames(branch, affiliation), "Select group to parse")
 
-        return AssetsManager.readScheduleAsset(branch, affiliation, group)!!
+        return readScheduleAsset(branch, affiliation, group)!!
     }
     /* endregion */
 
@@ -198,8 +209,7 @@ class BasicController {
      * Writes value to file, if user sent '-w' or '--write' as arg.
      */
     fun parseChanges(args: List<String>) {
-        val auto = args.contains("-a") || args.contains("--auto")
-        collectDataAndParseChangesFile(auto)
+        lastResult = parseChangesBySelectedMode(args)
 
         if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
@@ -208,39 +218,114 @@ class BasicController {
      * Collects target data for a parsing process.
      * Then, begins changes document parse.
      */
-    private fun collectDataAndParseChangesFile(auto: Boolean) {
-        val data = getTargetDataForChangesParse(auto)
-        var reader = WordReader(data.first)
+    private fun parseChangesBySelectedMode(args: List<String>): Any {
+        val isAutoMode = args.contains("-a") || args.contains("--auto")
+        val isUnitedMode = args.contains("-u") || args.contains("--united")
+        val data = getTargetDataForChangesParse(isAutoMode,
+                                                if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT)
 
-        if (auto) {
+        val result = completeChangesParseBySelectedSource(if (isUnitedMode) ParseSource.UNITED_FILE
+                                                          else ParseSource.DOCUMENT, data)
+
+        return if (result == null) {
+            println("WARNING:\n\tWhen parsing changes (auto: $isAutoMode, united: $isUnitedMode) got 'NULL' value!")
+            TargetedChangesOfDay()
+        }
+        else result
+    }
+
+    private fun completeChangesParseBySelectedSource(dataSource: ParseSource, parseData: ParseDataDetails): Any? {
+        return if (dataSource.isUnitedMode()) completeChangesParseByUnitedFile(parseData)
+        else completeChangesParseByDocument(parseData)
+    }
+
+    private fun completeChangesParseByDocument(data: ParseDataDetails): Any? {
+        var reader = WordReader(data.pathToFile)
+        return if (data.isAutoMode) {
             val results = mutableListOf<TargetedChangesOfDay?>()
             for (group in reader.getAvailableGroups()) {
-                reader = WordReader(data.first)
-                results.add(reader.getChanges(group, data.third))
+                reader = WordReader(data.pathToFile)
+                results.add(reader.getChanges(group, data.targetDay))
             }
 
-            lastResult = GeneralChangesOfDay(results)
+            GeneralChangesOfDay(results)
         }
         else {
             // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
-            lastResult = reader.getChanges(data.second!!, data.third) ?: TargetedChangesOfDay()
+            reader.getChanges(data.targetGroup!!, data.targetDay)
+        }
+    }
+
+    private fun completeChangesParseByUnitedFile(data: ParseDataDetails): Any? {
+        val result = readUnknownAsset<GeneralChangesOfDay>(Paths.get(data.pathToFile))
+        return if (data.isAutoMode) {
+            result
+        }
+        else {
+            result?.changes?.firstOrNull { change -> change?.targetGroup.equals(data.targetGroup, true) }
         }
     }
     /* endregion */
 
     /* region Command: 'Final' */
 
-    fun bakeFinalSchedule(args: List<String>) {
+    fun parseFinalSchedule(args: List<String>) {
+        val isUnitedMode = args.contains("-u") || args.contains("--united")
         if (completeChecksBeforeBeginFinalize()) {
-            TODO("Implement final schedule generation (including all groups (even not-changed), it requires for next expanding).")
+            val parseSource = if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT
+            convertLastResultToGeneralScheduleIfItIsTargeted()
+
+            // From this point we begin to get required data and then generate final schedule objects.
+            val changesData = completeChangesParseBySelectedSource(parseSource,
+                                                                   getTargetDataForChangesParse(true, parseSource))
+            lastResult = buildFinalSchedulesWithChangesData(changesData as GeneralChangesOfDay)
+
+            if (args.contains("-w") || args.contains("--write")) writeLastResult()
         }
         else {
             println("WARNING:\nCommand 'Final' can be used only if latest result is filled with basic schedule.")
         }
     }
 
-    private fun completeChecksBeforeBeginFinalize() = lastResult is TargetedChangesOfDay ||
-            (lastResult as List<*>).all { it is TargetedChangesOfDay }
+    private fun convertLastResultToGeneralScheduleIfItIsTargeted() {
+        if (lastResult is TargetedWeekSchedule)
+            lastResult = GeneralWeekSchedule(mutableListOf((lastResult as TargetedWeekSchedule)))
+    }
+
+    private fun buildFinalSchedulesWithChangesData(changesData: GeneralChangesOfDay): GeneralDayScheduleResult {
+        val finalSchedules = mutableListOf<TargetedDayScheduleResult>()
+        for (weekSchedule in (lastResult as GeneralWeekSchedule)) {
+            val targetSchedule = weekSchedule?.getDayScheduleByDay(changesData.getChangesBasicDay())
+            // We checks got target schedule. And notify user, because 'NULL' in this situation isn't awaited value.
+            if (targetSchedule != null) {
+                finalSchedules.add(buildTargetFinalSchedule(weekSchedule.groupName ?: "[NOT_AVAILABLE]",
+                                                            targetSchedule, changesData))
+            }
+            else {
+                println("WARNING: \n\t'targetSchedule' in 'buildFinalSchedulesWithChangesData' was 'NULL'.")
+            }
+        }
+
+        return GeneralDayScheduleResult(finalSchedules)
+    }
+
+    private fun buildTargetFinalSchedule(targetGroup: String, targetSchedule: TargetedDaySchedule,
+                                         changesData: GeneralChangesOfDay): TargetedDayScheduleResult {
+        val targetChange = changesData.getTargetChangeByGroupName(targetGroup)
+        return if (targetChange != null) {
+            val builtResult = targetSchedule.buildFinalSchedule(changesData.getTargetChangeByGroupName(targetGroup))
+            builtResult
+        }
+        else {
+            // TODO: Make 'Information' log level or similar, to log additional information (such non-changed schedule building).
+            val builtIn =
+                targetSchedule.buildFinalSchedule(targetGroup, changesData.changesDate ?: Calendar.getInstance())
+            builtIn
+        }
+    }
+
+    private fun completeChecksBeforeBeginFinalize() = lastResult is TargetedWeekSchedule ||
+            lastResult is GeneralWeekSchedule
     /* endregion */
     /* endregion */
 
@@ -270,41 +355,39 @@ class BasicController {
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
      */
     fun initializeBasicParsingProcessByArguments(args: List<String>) {
-        beginBasicChangesDocumentParsingIfPossible(args)
-        beginBasicScheduleParsingIfPossible(args)
-        beginBasicSiteParsingIfPossible(args)
+        if (args.contains("-cd") || args.contains("--changes-document"))
+            beginBasicChangesDocumentParsingIfPossible()
+        if (args.contains("-sd") || args.contains("--schedule-document"))
+            beginBasicScheduleParsingIfPossible()
+        if (args.contains("-s") || args.contains("--site"))
+            beginBasicSiteParsingIfPossible()
     }
 
     /**
      * Begins basic changes document parsing, if user sent right arguments.
      */
-    private fun beginBasicChangesDocumentParsingIfPossible(args: List<String>) {
-        if (args.contains("-cd") || args.contains("--changes-document")) {
-            val data = getTargetDataForChangesParse(false)
-            val reader = WordReader(data.first)
+    private fun beginBasicChangesDocumentParsingIfPossible() {
+        val data = getTargetDataForChangesParse(isAutoMode = false,
+                                                ParseSource.DOCUMENT)
+        val reader = WordReader(data.pathToFile)
 
-            reader.getChanges(data.second!!, data.third)
-        }
+        reader.getChanges(data.targetGroup!!, data.targetDay)
     }
 
     /**
      * Begins basic schedule document parsing if user sent rights arguments.
      */
-    private fun beginBasicScheduleParsingIfPossible(args: List<String>) {
-        if (args.contains("-sd") || args.contains("--schedule-document")) {
-            val data = getTargetDataForScheduleParse()
-            data.second.getWeekSchedule(data.first)
-        }
+    private fun beginBasicScheduleParsingIfPossible() {
+        val data = getTargetDataForScheduleParse()
+        data.second.getWeekSchedule(data.first)
     }
 
     /**
      * Begins basic site parsing if user sent right arguments.
      */
-    private fun beginBasicSiteParsingIfPossible(args: List<String>) {
-        if (args.contains("-s") || args.contains("--site")) {
-            val months = getSafeIntValue("Input count of parsed months", 0, 12)
-            SiteParser().getAvailableNodes(months)
-        }
+    private fun beginBasicSiteParsingIfPossible() {
+        val months = getSafeIntValue("Input count of parsed months", 0, 12)
+        SiteParser().getAvailableNodes(months)
     }
     /* endregion */
 
@@ -318,20 +401,33 @@ class BasicController {
      * If value can't be written, prints message and returns false.
      */
     fun writeLastResult() = when (lastResult) {
-        is TargetedWeekSchedule -> writeSchedule(lastResult as TargetedWeekSchedule)
+        is TargetedWeekSchedule -> writeBasicScheduleToTargetFile(lastResult as TargetedWeekSchedule)
         is GeneralWeekSchedule -> {
             val writeType = getSafeIntValue("Select writing type:" +
-                                                    "\n  0 — United files mode;" +
-                                                    "\n  1 — Standalone files mode.\nChoose",
+                                                    "\n\t0 — United files mode;" +
+                                                    "\n\t1 — Standalone files mode." +
+                                                    "\nChoose",
                                             0, 1)
             if (writeType == 0)
-                AssetsManager.writeScheduleUnitedAssetFile(inputText("File name"), lastResult as GeneralWeekSchedule)
+                writeBasicScheduleToUnitedAsset(inputText("File name"), lastResult as GeneralWeekSchedule)
             else
-                writeSchedule(lastResult as GeneralWeekSchedule)
+                writeBasicScheduleToTargetFile(lastResult as GeneralWeekSchedule)
         }
 
-        is TargetedChangesOfDay -> writeChanges(lastResult as TargetedChangesOfDay)
-        is GeneralChangesOfDay -> writeChanges(lastResult as GeneralChangesOfDay)
+        is TargetedChangesOfDay -> writeDayChangesToFile(lastResult as TargetedChangesOfDay)
+        is GeneralChangesOfDay -> writeDayChangesToFile(lastResult as GeneralChangesOfDay)
+
+        is GeneralDayScheduleResult -> {
+            val writeType = getSafeIntValue("Select writing type:" +
+                                                    "\n\t0 — JSON Asset mode;" +
+                                                    "\n\t1 — Word Document mode." +
+                                                    "\nChoose",
+                                            0, 1)
+            if (writeType == 0)
+                writeFinalSchedule(inputText("File name"), lastResult as GeneralDayScheduleResult)
+            else
+                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with final schedule.")
+        }
 
         else -> {
             println("Unknown (or incompatible) type to write.")
@@ -514,7 +610,7 @@ class BasicController {
          * Iterates through all available groups and writes its schedule to list.
          * Then, return [List] with all [available schedules][TargetedWeekSchedule].
          */
-        private fun generateSchedulesForAutomaticMode(reader: ExcelReader): List<TargetedWeekSchedule> {
+        private fun generateSchedulesForAutomaticMode(reader: ExcelReader): GeneralWeekSchedule {
             val list = GeneralWeekSchedule(mutableListOf())
             reader.getGroups().forEach { group ->
                 group?.let {
@@ -578,58 +674,6 @@ class BasicController {
             val confirm = inputText("Lesson №$lessonNumber is presented (Y/N)")
             return confirm.contains("y", true)
         }
-
-        /**
-         * Asks user to input [day index][Int] for day-check on changes [parsing process][parseChanges].
-         * Then, a result depends on user input:
-         * * If user input correct value, the program will check day-corresponding and
-         *   throws [exception][WrongDayInDocumentException] if days aren't equal.
-         * * If user input '-1', the program will ignore the day-corresponding check.
-         */
-        private fun getSafeTargetDay(): Day? {
-            val index = getSafeIntValue("Input target day index (0..6) to insert day-check " +
-                                                "OR '-1' to ignore it", -1, 6)
-
-            return if (index == -1) null else Day.getValueByIndex(index)
-        }
-        /* endregion */
-
-        /* region General-Safe Input Functions */
-
-        /**
-         * Asks user to input [group name][String].
-         * Checks inputted group name to be presented inside an [available groups list][availableOnes].
-         *
-         * If user sent [message] console will show itself instead basic one ('Select target value').
-         * Sent value must don't contain ending (program will finish it automatically).
-         *
-         * If you don't want to use check, just send an empty list ('[listOf]').
-         */
-        private fun inputValueSafely(availableOnes: List<String?>, message: String = "Select target value"): String {
-            var target: String
-            do {
-                target = inputText(message)
-            } while (checkFinalCondition(target, availableOnes))
-
-            return getTargetValueOrInputtedOne(target, availableOnes)
-        }
-
-        /**
-         * Checks 'do...while' condition to [inputValueSafely] function.
-         */
-        private fun checkFinalCondition(inputted: String, available: List<String?>) = available.isNotEmpty() &&
-                available.find { availableOne ->
-                    availableOne?.equals(inputted, true) == true
-                } == null
-
-        /**
-         * Returns the [available value][String], as it presented in [available list][availableOnes] OR
-         * if list it empty, returns base user [inputted value][inputtedValue].
-         */
-        private fun getTargetValueOrInputtedOne(inputtedValue: String,
-                                                availableOnes: List<String?>) = availableOnes.find { available ->
-            available?.equals(inputtedValue, true) == true
-        } ?: inputtedValue
         /* endregion */
 
         /* region Specific-Safe Input Functions */
@@ -642,7 +686,7 @@ class BasicController {
          * * [Second][Pair.second] — [Reader][ExcelReader] object.
          */
         private fun getTargetDataForScheduleParse(): Pair<String, ExcelReader> {
-            val path = getSafeFilePath(".xls", ".xlsx")
+            val path = getSafeFilePath("xls", "xlsx")
             val reader = ExcelReader(path)
             val target = inputValueSafely(reader.getGroups(), "Select target group")
 
@@ -653,63 +697,17 @@ class BasicController {
          * Asks user to input target information to the [changes document][WordReader.document] [parse][parseChanges].
          *
          * It returns [Triple] object with following data:
-         * * [First][Triple.first] — Path to the changes document;
+         * * [First][Triple.first] — Path to the changes document (or '.json' united-asset, if [mode is united][ParseSource.UNITED_FILE]);
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */
-        private fun getTargetDataForChangesParse(auto: Boolean): Triple<String, String?, Day?> {
-            val path = getSafeFilePath(".doc", ".docx")
-            val group = if (auto) null else inputText("Input target group")
-            val day = getSafeTargetDay()
+        private fun getTargetDataForChangesParse(isAutoMode: Boolean, source: ParseSource): ParseDataDetails {
+            val path = getSafeFilePath(if (source.isUnitedMode()) "json"
+                                       else "docx")
+            val group = if (isAutoMode) null else inputText("Input target group")
+            val day = if (source.isUnitedMode()) null else getSafeTargetDay()
 
-            return Triple(path, group, day)
-        }
-
-        /**
-         * Asks user to input [file path][String] to target file.
-         * Checks a file extension to be presented inside a [supported ones list][extensions].
-         *
-         * If you don't want to check value, just don't send anything to this function.
-         */
-        private fun getSafeFilePath(vararg extensions: String): String {
-            var path: String
-            do {
-                path = inputText("Input file path").trim('"', ' ')
-            } while (!extensions.any { ext -> path.endsWith(ext) })
-
-            return path
-        }
-
-        /**
-         * Asks user to input [number][Int] with given [message][ask].
-         * If user inputs incorrect value, function will continue to ask the user for input value,
-         * until correct one will be inputted.
-         *
-         * Checks inputted value to be more than [minimal][min] and less than [maximum][max] values.
-         * *Value checks with including, so if you sent '10' and user inputs '10' value will be marked as **correct**.*
-         */
-        private fun getSafeIntValue(ask: String, min: Int = Int.MIN_VALUE, max: Int = Int.MAX_VALUE): Int {
-            var input: String
-            do {
-                input = inputText(ask)
-            } while (input.toIntOrNull() == null || input.toInt() < min || input.toInt() > max)
-
-            return input.toInt()
-        }
-        /* endregion */
-
-        /* region General Functions */
-
-        /**
-         * Asks user to [input][readln] [text][String].
-         * Sent [text][ask] uses as tooltip for input.
-         *
-         * The program uses string templates for tooltip, so you don't need to write ':' an inside text.
-         * Just write a query.
-         */
-        private fun inputText(ask: String): String {
-            print("$ask: ")
-            return readln()
+            return ParseDataDetails(path, group, isAutoMode, day)
         }
         /* endregion */
     }
