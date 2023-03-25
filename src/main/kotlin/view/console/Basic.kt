@@ -1,6 +1,6 @@
 package view.console
 
-import controller.view.console.BasicController
+import controller.view.console.ActionsController
 import model.view.Command
 import model.view.CommandInfo
 import java.util.*
@@ -25,7 +25,7 @@ class Basic(private val user: String) {
      *
      * View Action -> Controller Command -> View Result.
      */
-    private val controller = BasicController()
+    private val controller = ActionsController()
 
     /**
      * [Dictionary] with key-value pairs.
@@ -56,7 +56,7 @@ class Basic(private val user: String) {
                               }),
             "final" to Pair(finalCommandDescription,
                             Command("Final") {
-                                controller.bakeFinalSchedule(it)
+                                controller.parseFinalSchedule(it)
                             }),
             // Functional Commands:
             "help" to Pair(helpCommandDescription,
@@ -113,8 +113,15 @@ class Basic(private val user: String) {
         if (input.isNotBlank()) {
             val commandInfo = parseInputtedText(this, input.trim())
             if (commandInfo.action != null) {
-                if (confirmCommandExecution(commandInfo.action.first)) {
-                    executeCommand(commandInfo.args, commandInfo.action.second)
+                val force = commandInfo.args.contains("-f") || commandInfo.args.contains("--force")
+                if (force || confirmCommandExecution(commandInfo.action.first)) {
+                    try {
+                        executeCommand(commandInfo.args, commandInfo.action.second)
+                    }
+                    catch (exception: Exception) {
+                        println("\n\n!ERROR:\n\tNot-Specified error happened on command execution." +
+                                        "\nInfo: ${exception.message}.\n")
+                    }
                 }
             }
             else {
@@ -171,7 +178,7 @@ class Basic(private val user: String) {
         /**
          * Description of the 'Assets' command.
          *
-         * This is a valuable one.
+         * This is valuable.
          */
         private val assetsCommandDescription: String
 
