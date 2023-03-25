@@ -3,14 +3,16 @@ package controller.data.reader.word
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
-import model.data.changes.TargetedChangesOfDay
-import model.data.schedule.origin.TargetedDaySchedule
+import model.data.change.day.TargetedChangesOfDay
+import model.data.schedule.origin.day.TargetedDaySchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.exception.WrongDayInDocumentException
 import org.apache.poi.xwpf.usermodel.XWPFDocument
 import java.io.FileInputStream
 import model.data.parse.changes.CellDefineResult
+import model.data.schedule.result.day.TargetedDayScheduleResult
+import model.data.schedule.result.day.builder.TargetedDayScheduleResultBuilder
 import java.lang.Exception
 import java.util.Calendar
 import java.util.GregorianCalendar
@@ -122,7 +124,7 @@ class Reader(pathToFile: String) {
      * Also, parses header to get information about [changes date and month][Calendar].
      *
      * [Returned value][Pair] is full list of [groups][String],
-     * that schedule must be generated via [special function][TargetedDaySchedule.getOnPractiseSchedule]
+     * that schedule must be generated via [special function][TargetedDayScheduleResultBuilder.getPractiseFinalSchedule]
      * AND [date object][Calendar] with target date and day.
      */
     private fun getHeaderAdditionalInfo(day: Day?): Pair<List<String>, Calendar?> {
@@ -195,7 +197,7 @@ class Reader(pathToFile: String) {
         // If we have met with target group name, we'll start changes reading:
         if (checkValueToEquality(localData.lowerText, target)) {
             baseData.listenToChanges = true
-            baseData.changes.isAbsolute = true
+            if (iterationData.cellNumber == CENTERED_GROUP_NAME_CELL_ID) baseData.changes.isAbsolute = true
         }
         // If we met another group name AND we're reading changes, so we'll have to break the cycle.
         else if (checkToParsingStopper(baseData, iterationData, localData, target)) {
@@ -263,7 +265,8 @@ class Reader(pathToFile: String) {
     private fun checkStateAndUpdateChangedLessons(base: BaseIteratorModel, outer: OuterIteratorModel) {
         // In this case we found "Debt Liquidation" and have to update all TargetedChangesOfDay Object.
         if (base.listenToChanges && outer.rawLessonNumbers.contains("ликвидация", true)) {
-            base.changes = TargetedChangesOfDay.getDebtLiquidationChanges(base.changes.changesDate, base.changes.targetGroup)
+            base.changes =
+                TargetedChangesOfDay.getDebtLiquidationChanges(base.changes.changesDate, base.changes.targetGroup)
             base.cycleStopper = true
         }
         else if (base.listenToChanges && outer.rawLessonNumbers != "") {
@@ -297,19 +300,24 @@ class Reader(pathToFile: String) {
 
     /**
      * Class secondary main function (and one of three, with *public* visibility modifier).
-     * Returns [base schedule][schedule] with [merged][TargetedDaySchedule.mergeWithChanges] [changes][TargetedChangesOfDay].
+     * Returns [base schedule][schedule] with [merged][TargetedDaySchedule.buildFinalSchedule]
+     * [changes][TargetedChangesOfDay].
      *
      * Represents original (".getDayScheduleWithChanges()") function from old *AdminTools*.
      * Because it won't be used often, I moved it down in functions order.
      */
-    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedDaySchedule {
+    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedDayScheduleResult {
         val changes = getChanges(groupName, day)
         if (changes != null) {
             println("Automatic merge tool found empty targeted changes." +
                             "\nBase schedule (new ref) will be return.")
         }
 
-        return schedule.mergeWithChanges(changes)
+        val resultBuilder = TargetedDayScheduleResultBuilder(schedule)
+        resultBuilder.setChanges(changes)
+        resultBuilder.bakeFinalSchedule()
+
+        return resultBuilder.build()
     }
     /* endregion */
 
@@ -338,6 +346,14 @@ class Reader(pathToFile: String) {
          * "НА 19 ДЕКАБРЯ – ПОНЕДЕЛЬНИК".
          */
         private const val DATE_INFO_PARAGRAPH_ID = 4
+
+        /**
+         * Contains ID of the cell, that may contain information with group name (that schedule is changes),
+         * if changes is absolute.
+         *
+         * Otherwise, it contains info about teacher, that will be replaced.
+         */
+        private const val CENTERED_GROUP_NAME_CELL_ID = 3
     }
     /* endregion */
 }
