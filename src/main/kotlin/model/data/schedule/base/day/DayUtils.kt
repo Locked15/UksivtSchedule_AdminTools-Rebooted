@@ -1,6 +1,8 @@
 package model.data.schedule.base.day
 
 import model.data.schedule.base.day.Day.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 /**
@@ -37,4 +39,18 @@ fun fromRussianString(name: String) = when (name.lowercase()) {
     "воскресенье" -> SUNDAY
 
     else -> null
+}
+
+fun fromCalendarObject(calendar: Calendar?): Day? {
+    return if (calendar == null) {
+        println("WARNING:" +
+                        "\n\tGot 'NULL' calendar value in 'DayUtils.fromCalendarObject'.")
+        null
+    }
+    else {
+        return when (Locale.getDefault()) {
+            Locale.ENGLISH -> fromEnglishString(SimpleDateFormat("EEEE").format(calendar.time))
+            else -> fromRussianString(SimpleDateFormat("EEEE").format(calendar.time))
+        }
+    }
 }
