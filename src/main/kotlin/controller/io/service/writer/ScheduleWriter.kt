@@ -1,8 +1,8 @@
-package controller.io
+package controller.io.service.writer
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import model.data.schedule.origin.GeneralWeekSchedule
-import model.data.schedule.origin.TargetedWeekSchedule
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import model.data.schedule.origin.week.GeneralWeekSchedule
+import model.data.schedule.origin.week.TargetedWeekSchedule
 import projectDirectory
 import resourcePathElements
 import java.io.FileWriter
@@ -24,7 +24,9 @@ fun writeSchedule(schedule: TargetedWeekSchedule) = writeToTargetFile(schedule.g
  * Returns a [result][Boolean] of this process.
  */
 fun writeSchedule(basicSchedules: GeneralWeekSchedule) = basicSchedules.all { schedule ->
-    writeToTargetFile(schedule.groupName, schedule)
+    schedule?.let {
+        writeToTargetFile(it.groupName, it)
+    } ?: false
 }
 
 /**
@@ -32,8 +34,7 @@ fun writeSchedule(basicSchedules: GeneralWeekSchedule) = basicSchedules.all { sc
  * File will be placed inside the "resources" directory.
  */
 private fun writeToTargetFile(group: String?, schedule: TargetedWeekSchedule): Boolean {
-    val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(schedule)
+    val serializedValue = jacksonObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(schedule)
     return try {
         val stream = FileWriter(getTargetFilePath(group ?: "NotRecognized").toString(), false)
         stream.write(serializedValue)

@@ -1,10 +1,9 @@
-package controller.io
+package controller.io.service.writer
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import model.data.changes.TargetedChangesOfDay
-import model.data.changes.GeneralChangesOfDay
-import projectDirectory
-import resourcePathElements
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import controller.io.service.PathResolver
+import model.data.change.day.TargetedChangesOfDay
+import model.data.change.day.GeneralChangesOfDay
 import java.io.FileWriter
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -23,7 +22,7 @@ private const val TARGET_FILE_NAME_TEMPLATE = "%b.json"
  *
  * Name template contains date, month, year and general changed schedules count.
  */
-private const val UNITED_FILE_NAME_TEMPLATE = "Changes (%d.%d.%d!). Available-Count — %d.json"
+private const val UNITED_FILE_NAME_TEMPLATE = "Date %d.%d.%d!. Available-Count — %d.json"
 /* endregion */
 
 /* region Functions */
@@ -42,8 +41,7 @@ fun writeChanges(generalChangesOfDay: GeneralChangesOfDay) = writeToUnitedFile(g
  * File will be placed inside the "resources" directory.
  */
 private fun writeToTargetFile(targetChanges: TargetedChangesOfDay): Boolean {
-    val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(targetChanges)
+    val serializedValue = jacksonObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(targetChanges)
     return try {
         val stream = FileWriter(getTargetFilePath(targetChanges.isAbsolute)!!.toFile(), false)
         stream.write(serializedValue)
@@ -62,12 +60,12 @@ private fun writeToTargetFile(targetChanges: TargetedChangesOfDay): Boolean {
  * File will be placed inside the "resources" directory.
  */
 private fun writeToUnitedFile(generalChangesOfDay: GeneralChangesOfDay): Boolean {
-    val serializer = ObjectMapper()
-    val serializedValue = serializer.writerWithDefaultPrettyPrinter().writeValueAsString(generalChangesOfDay)
+    val serializedValue = jacksonObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(generalChangesOfDay)
     return try {
         val dateAtomicValues = generalChangesOfDay.getAtomicDateValues()
-        val stream = FileWriter(getUnitedFilePath(dateAtomicValues.first, dateAtomicValues.second,
-                                                  dateAtomicValues.third, generalChangesOfDay.changes.size)!!.toFile(),
+        val stream = FileWriter(getUnitedFilePath(dateAtomicValues.first ?: -1, dateAtomicValues.second ?: -1,
+                                                  dateAtomicValues.third ?: -1,
+                                                  generalChangesOfDay.changes.size)!!.toFile(),
                                 false)
         stream.write(serializedValue)
         stream.close()
@@ -85,9 +83,7 @@ private fun writeToUnitedFile(generalChangesOfDay: GeneralChangesOfDay): Boolean
  * It contains [absolute value][absolute] declaration variable.
  */
 private fun getTargetFilePath(absolute: Boolean): Path? {
-    var path = Paths.get(projectDirectory)
-    resourcePathElements.forEach { element -> path = path.resolve(element) }
-
+    val path = PathResolver.changesResourceFolderPath
     return Paths.get(path.toString(), String.format(TARGET_FILE_NAME_TEMPLATE, absolute))
 }
 
@@ -96,9 +92,7 @@ private fun getTargetFilePath(absolute: Boolean): Path? {
  * It contains [day of month][day], [month number][month], [year] and [declared changed schedules count][count].
  */
 private fun getUnitedFilePath(day: Int, month: Int, year: Int, count: Int): Path? {
-    var path = Paths.get(projectDirectory)
-    resourcePathElements.forEach { element -> path = path.resolve(element) }
-
+    val path = PathResolver.changesResourceFolderPath
     return Paths.get(path.toString(), String.format(UNITED_FILE_NAME_TEMPLATE, day, month, year, count))
 }
 /* endregion */
