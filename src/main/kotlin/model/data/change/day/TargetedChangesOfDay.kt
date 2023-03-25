@@ -1,7 +1,9 @@
-package model.data.changes
+package model.data.change.day
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import model.data.change.day.common.AbstractChangesOfDay
 import model.data.schedule.base.Lesson
-import model.data.schedule.origin.TargetedDaySchedule
+import model.data.schedule.origin.day.TargetedDaySchedule
 import java.util.Calendar
 
 
@@ -12,7 +14,7 @@ import java.util.Calendar
  * and boolean, that defines is absolute that change or not.
  */
 class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
-                           val changedLessons: MutableList<Lesson>) {
+                           val changedLessons: MutableList<Lesson>) : AbstractChangesOfDay {
 
     /* region Constructors */
 
@@ -46,33 +48,13 @@ class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, va
     /**
      * Returns string representation of the current object.
      */
-    override fun toString(): String {
-        val builder = StringBuilder(changedLessons.size)
-        for (lesson in changedLessons) {
-            builder.append("${lesson.number} — ${lesson.name}.\n")
-        }
-
-        return String.format(STRING_BODY_TEMPLATE, targetGroup, isAbsolute, changesDate.toString(), builder.toString())
-    }
+    override fun toString(): String = jacksonObjectMapper().writerWithDefaultPrettyPrinter()
+        .writeValueAsString(this)
     /* endregion */
 
     /* region Companion */
 
     companion object {
-
-        /**
-         * Contains template for string-formatting instances of [TargetedChangesOfDay] objects.
-         */
-        const val STRING_BODY_TEMPLATE =
-            """
-                Target: %s;
-                IsAbsolute: %b;
-                Date: %s;
-                TargetedChangesOfDay:
-                {
-                    %s.
-                }
-            """
 
         /**
          * Generates a template [changes][TargetedChangesOfDay] object with practise value.
