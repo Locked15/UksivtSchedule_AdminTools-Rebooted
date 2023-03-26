@@ -8,7 +8,7 @@ Or write it by yourself, of course!
 ## Info
 
 Yeah, it's still a template of README file.
-It's 3:53PM, when I write it, so... just hang out.
+It's 3:53AM, when I write it, so... just hang out.
 
 ## Dev
 
