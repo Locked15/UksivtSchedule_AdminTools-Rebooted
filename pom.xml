@@ -5,10 +5,10 @@
          xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <packaging>jar</packaging>
-    <version>1.2-Preview_1</version>
+    <version>1.2</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>UksivtScheduler_AdminTools-Rebooted</name>
+    <name>UksivtSchedule_AdminTools-Rebooted</name>
     <groupId>org.schedule.uksivt</groupId>
     <artifactId>admin-tools-rebooted</artifactId>
 
