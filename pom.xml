@@ -15,8 +15,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <kotlin.compiler.jvmTarget>18</kotlin.compiler.jvmTarget>
+        <kotlin.version>1.8.10</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
+        <kotlin.compiler.jvmTarget>19</kotlin.compiler.jvmTarget>
 
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
@@ -36,7 +37,7 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>1.8.10</version>
+                <version>${kotlin.version}</version>
                 <executions>
                     <execution>
                         <id>compile</id>
@@ -45,6 +46,7 @@
                             <goal>compile</goal>
                         </goals>
                     </execution>
+
                     <execution>
                         <id>test-compile</id>
                         <phase>test-compile</phase>
@@ -53,6 +55,10 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <jvmTarget>${maven.compiler.target}</jvmTarget>
+                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
