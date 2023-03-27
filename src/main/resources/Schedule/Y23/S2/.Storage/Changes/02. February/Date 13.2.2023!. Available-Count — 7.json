@@ -1,0 +1,105 @@
+{
+  "changes" : [ {
+    "targetGroup" : "21Э-2",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "УП 0101",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "22ПСА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "Лит-ра",
+      "teacher" : "Кинзина А.З.",
+      "place" : "309",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-6",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
+      "place" : "305",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
+      "place" : "305",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "22уКСК-2",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "библ",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "22Э-2",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "313",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "21ЗИО-2",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "Эк орг",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301",
+      "isChanged" : false
+    } ]
+  }, {
+    "targetGroup" : "20ОИБ-2",
+    "isAbsolute" : false,
+    "changesDate" : 1676228400000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : false
+    } ]
+  } ],
+  "changesDate" : 1676228400000
+}
