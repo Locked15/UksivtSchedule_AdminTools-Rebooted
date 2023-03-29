@@ -2,7 +2,7 @@ package model.data.change.day
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import model.data.change.day.common.AbstractChangesOfDay
+import model.data.change.day.base.BasicChangesOfDay
 import model.data.schedule.base.day.Day
 import model.data.schedule.base.day.fromCalendarObject
 import java.util.*
@@ -12,7 +12,7 @@ import java.util.*
  * This is class, that needed to write last result and check its type correctly.
  * I made it, because in Kotlin no stable way to check generic type to equality.
  */
-class GeneralChangesOfDay(val changes: List<TargetedChangesOfDay?>) : AbstractChangesOfDay {
+class GeneralChangesOfDay(val changes: List<TargetedChangesOfDay?>) : BasicChangesOfDay {
 
     /**
      * Private field, contains [changes date][Calendar].

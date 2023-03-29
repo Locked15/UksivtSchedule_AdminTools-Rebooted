@@ -1,9 +1,10 @@
 package model.data.change.day
 
+import com.fasterxml.jackson.annotation.JsonAlias
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import model.data.change.day.common.AbstractChangesOfDay
+import model.data.change.day.base.BasicChangesOfDay
 import model.data.schedule.base.Lesson
-import model.data.schedule.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
 import java.util.Calendar
 
 
@@ -13,8 +14,8 @@ import java.util.Calendar
  * Earlier, it wasn't a class, just a combination of list with [Changes][TargetedChangesOfDay]
  * and boolean, that defines is absolute that change or not.
  */
-class TargetedChangesOfDay(var targetGroup: String?, var isAbsolute: Boolean, var changesDate: Calendar?,
-                           val changedLessons: MutableList<Lesson>) : AbstractChangesOfDay {
+class TargetedChangesOfDay(var targetGroup: String?, @JsonAlias("absolute") var isAbsolute: Boolean,
+                           var changesDate: Calendar?, val changedLessons: MutableList<Lesson>) : BasicChangesOfDay {
 
     /* region Constructors */
 

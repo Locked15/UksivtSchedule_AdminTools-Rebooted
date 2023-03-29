@@ -2,7 +2,7 @@ package model.data.parse.schedule.wrapper
 
 import model.data.parse.schedule.ColumnBorders
 import model.data.parse.schedule.DayColumnInfo
-import model.data.schedule.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
 
 
 /**
