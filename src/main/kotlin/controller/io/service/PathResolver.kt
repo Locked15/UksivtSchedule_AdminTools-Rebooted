@@ -1,7 +1,6 @@
 package controller.io.service
 
-import projectDirectory
-import resourcePathElements
+import globalState
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -25,7 +24,7 @@ class PathResolver {
         private val finalSchedulesFoldersList = listOf(StorageFolderName, "FinalSchedules")
 
         init {
-            finalResourcePath = resolvePath(Paths.get(projectDirectory), resourcePathElements,
+            finalResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
                                             subFoldersList)
 
             changesResourceFolderPath = resolvePath(finalResourcePath,

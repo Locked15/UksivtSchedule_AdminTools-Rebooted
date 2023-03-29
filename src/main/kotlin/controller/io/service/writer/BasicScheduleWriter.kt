@@ -5,8 +5,6 @@ import controller.io.service.PathResolver
 import controller.io.service.writer.base.ValueWriter
 import model.data.schedule.common.origin.week.GeneralWeekSchedule
 import model.data.schedule.common.origin.week.TargetedWeekSchedule
-import projectDirectory
-import resourcePathElements
 import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
@@ -69,11 +67,8 @@ class BasicScheduleWriter : ValueWriter {
          * It contains [group name][group].
          */
         private fun getTargetFilePath(group: String): Path {
-            var path = Paths.get(projectDirectory)
-            resourcePathElements.forEach { path = path.resolve(it) }
-
-            return path.resolve(String.format(TARGET_FILE_NAME_TEMPLATE,
-                                              group))
+            val path = PathResolver.finalResourcePath
+            return path.resolve(String.format(TARGET_FILE_NAME_TEMPLATE, group))
         }
         /* endregion */
 
