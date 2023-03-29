@@ -285,7 +285,7 @@ class Basic(private val user: String) {
             }
             else {
                 println("\nNight's become. Civilians lies to sleep and mafia wakes up." +
-                                "Beware, $user...")
+                                "\nBeware, $user...")
             }
         }
 
@@ -294,11 +294,11 @@ class Basic(private val user: String) {
          * Requires [instance][console] of the main class to get [target action][Command] from [list][availableActions].
          */
         private fun parseInputtedText(console: Basic, input: String): CommandInfo {
-            val splatted = input.split(" ")
-            val command = splatted[0]
+            val split = input.split(" ")
+            val command = split[0]
 
             // We take all arguments, ignoring the first element (that contains the command itself).
-            return CommandInfo(args = splatted.drop(1).map { arg -> arg.lowercase() },
+            return CommandInfo(args = split.drop(1).map { arg -> arg.lowercase() },
                                action = console.availableActions[command.lowercase()])
         }
         /* endregion */
