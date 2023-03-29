@@ -1,9 +1,9 @@
-package model.data.schedule.result.day.builder
+package model.data.schedule.common.result.day.builder
 
 import model.data.change.day.TargetedChangesOfDay
 import model.data.schedule.base.Lesson
-import model.data.schedule.origin.day.TargetedDaySchedule
-import model.data.schedule.result.day.TargetedDayScheduleResult
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.result.day.TargetedFinalDaySchedule
 import java.util.*
 
 
@@ -69,11 +69,11 @@ class TargetedDayScheduleResultBuilder {
         return this
     }
 
-    fun build(): TargetedDayScheduleResult {
+    fun build(): TargetedFinalDaySchedule {
         setUpAdditionalValues()
         validateBuilderProperties()
 
-        return TargetedDayScheduleResult(targetGroup, date, schedule!!)
+        return TargetedFinalDaySchedule(targetGroup, date, schedule!!)
     }
     /* endregion */
 
@@ -152,7 +152,7 @@ class TargetedDayScheduleResultBuilder {
          *
          * Return value contains seven lessons (0..6), with 'Практика' value in lessons name.
          */
-        fun getPractiseFinalSchedule(date: Calendar?, target: String?): TargetedDayScheduleResult {
+        fun getPractiseFinalSchedule(date: Calendar?, target: String?): TargetedFinalDaySchedule {
             val builder = TargetedDayScheduleResultBuilder()
             builder.setChanges(TargetedChangesOfDay.getOnPractiseChanges(date, target))
 
@@ -165,7 +165,7 @@ class TargetedDayScheduleResultBuilder {
          *
          * Return value contains seven lessons (0..6), with 'Ликвидация Задолженностей' value in lessons name.
          */
-        fun getDebtLiquidationFinalSchedule(date: Calendar?, target: String?): TargetedDayScheduleResult {
+        fun getDebtLiquidationFinalSchedule(date: Calendar?, target: String?): TargetedFinalDaySchedule {
             val builder = TargetedDayScheduleResultBuilder()
             builder.setChanges(TargetedChangesOfDay.getDebtLiquidationChanges(date, target))
 

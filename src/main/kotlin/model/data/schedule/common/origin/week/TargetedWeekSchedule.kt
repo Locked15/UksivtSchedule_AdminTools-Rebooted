@@ -1,10 +1,10 @@
-package model.data.schedule.origin.week
+package model.data.schedule.common.origin.week
 
 import com.fasterxml.jackson.annotation.JsonAlias
 import com.fasterxml.jackson.databind.ObjectMapper
 import model.data.schedule.base.day.Day
-import model.data.schedule.origin.day.TargetedDaySchedule
-import model.data.schedule.origin.week.common.AbstractWeekSchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.week.base.BasicWeekSchedule
 
 
 /**
@@ -14,7 +14,7 @@ import model.data.schedule.origin.week.common.AbstractWeekSchedule
  */
 class TargetedWeekSchedule(var groupName: String?,
                            @JsonAlias("daySchedules") var targetedDaySchedules: MutableList<TargetedDaySchedule>) :
-        AbstractWeekSchedule {
+        BasicWeekSchedule {
 
     /* region Constructors */
 

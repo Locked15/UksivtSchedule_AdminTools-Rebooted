@@ -1,10 +1,10 @@
-package model.data.schedule.origin.day
+package model.data.schedule.common.origin.day
 
 import model.data.change.day.TargetedChangesOfDay
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
-import model.data.schedule.result.day.TargetedDayScheduleResult
-import model.data.schedule.result.day.builder.TargetedDayScheduleResultBuilder
+import model.data.schedule.common.result.day.TargetedFinalDaySchedule
+import model.data.schedule.common.result.day.builder.TargetedDayScheduleResultBuilder
 import java.util.*
 
 
@@ -33,7 +33,7 @@ class TargetedDaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
 
     /* region Functions */
 
-    fun buildFinalSchedule(changes: TargetedChangesOfDay?): TargetedDayScheduleResult {
+    fun buildFinalSchedule(changes: TargetedChangesOfDay?): TargetedFinalDaySchedule {
         val builder = TargetedDayScheduleResultBuilder()
         builder.setSchedule(this)
         builder.setChanges(changes)
@@ -44,7 +44,7 @@ class TargetedDaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
         return builder.build()
     }
 
-    fun buildFinalSchedule(targetGroup: String, targetDate: Calendar): TargetedDayScheduleResult {
+    fun buildFinalSchedule(targetGroup: String, targetDate: Calendar): TargetedFinalDaySchedule {
         val builder = TargetedDayScheduleResultBuilder()
         builder.setSchedule(this)
         builder.setTargetGroup(targetGroup)

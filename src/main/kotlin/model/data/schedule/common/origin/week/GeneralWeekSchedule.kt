@@ -1,13 +1,13 @@
-package model.data.schedule.origin.week
+package model.data.schedule.common.origin.week
 
 import model.data.schedule.base.day.Day
-import model.data.schedule.origin.day.GeneralDaySchedule
-import model.data.schedule.origin.day.TargetedDaySchedule
-import model.data.schedule.origin.week.common.AbstractWeekSchedule
+import model.data.schedule.common.origin.day.GeneralDaySchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.week.base.BasicWeekSchedule
 
 
 class GeneralWeekSchedule(c: MutableList<out TargetedWeekSchedule?>) : ArrayList<TargetedWeekSchedule?>(c),
-                                                                      AbstractWeekSchedule {
+                                                                       BasicWeekSchedule {
 
     fun getGeneralDayScheduleByDay(day: Day?): GeneralDaySchedule {
         val results = mutableListOf<TargetedDaySchedule?>()

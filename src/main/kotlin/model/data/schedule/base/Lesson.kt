@@ -1,5 +1,7 @@
 package model.data.schedule.base
 
+import com.fasterxml.jackson.annotation.JsonAlias
+
 
 /**
  * Represents one lesson of the schedule.
@@ -9,7 +11,8 @@ package model.data.schedule.base
  * @param teacher This lesson teacher (written in a short format if it possible).
  * @param place Place, where this lesson would be arranged (in a string format).
  */
-class Lesson(var number: Int?, var name: String?, var teacher: String?, var place: String?, var isChanged: Boolean) :
+class Lesson(var number: Int?, var name: String?, var teacher: String?, var place: String?,
+             @JsonAlias("changed") var isChanged: Boolean) :
         Comparable<Lesson> {
 
     /* region Constructors */

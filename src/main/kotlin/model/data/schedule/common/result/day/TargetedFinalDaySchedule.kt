@@ -1,12 +1,14 @@
-package model.data.schedule.result.day
+package model.data.schedule.common.result.day
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import model.data.schedule.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.result.day.base.BasicFinalDaySchedule
 import java.util.Calendar
 
 
-class TargetedDayScheduleResult(val targetGroup: String?, val scheduleDate: Calendar?,
-                                val schedule: TargetedDaySchedule) {
+class TargetedFinalDaySchedule(val targetGroup: String?, val scheduleDate: Calendar?,
+                               val schedule: TargetedDaySchedule) : BasicFinalDaySchedule {
+
     /**
      * Public field with information about changed this schedule or not.
      *
