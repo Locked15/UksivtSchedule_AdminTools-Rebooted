@@ -8,17 +8,17 @@ import controller.io.service.getAffiliationsNames
 import controller.io.service.getBranchesNames
 import controller.io.service.getGroupsNames
 import controller.view.base.ControllerBase
-import model.data.schedule.origin.day.TargetedDaySchedule
-import model.data.schedule.origin.week.TargetedWeekSchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.week.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.GeneralChangesOfDay
 import model.data.parse.ParseSource
 import model.data.parse.changes.ParseDataDetails
-import model.data.schedule.origin.week.GeneralWeekSchedule
-import model.data.schedule.result.day.GeneralDayScheduleResult
-import model.data.schedule.result.day.TargetedDayScheduleResult
+import model.data.schedule.common.origin.week.GeneralWeekSchedule
+import model.data.schedule.common.result.day.GeneralFinalDaySchedule
+import model.data.schedule.common.result.day.TargetedFinalDaySchedule
 import view.console.Basic
 import java.nio.file.Paths
 import java.util.Calendar
@@ -272,15 +272,18 @@ class ActionsController : ControllerBase() {
     fun parseFinalSchedule(args: List<String>) {
         val isUnitedMode = args.contains("-u") || args.contains("--united")
         if (completeChecksBeforeBeginFinalize()) {
-            val parseSource = if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT
+            // Value preserving may be really useful if you prepare a lot of final schedule data.
             convertLastResultToGeneralScheduleIfItIsTargeted()
+            val preserve = if (args.contains("-p") || args.contains("--preserve")) lastResult else null
 
-            // From this point we begin to get required data and then generate final schedule objects.
+            // From this point, we begin to get required data and then generate result schedule objects.
+            val parseSource = if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT
             val changesData = completeChangesParseBySelectedSource(parseSource,
                                                                    getTargetDataForChangesParse(true, parseSource))
             lastResult = buildFinalSchedulesWithChangesData(changesData as GeneralChangesOfDay)
 
             if (args.contains("-w") || args.contains("--write")) writeLastResult()
+            if (preserve != null) lastResult = preserve
         }
         else {
             println("WARNING:\nCommand 'Final' can be used only if latest result is filled with basic schedule.")
@@ -292,8 +295,8 @@ class ActionsController : ControllerBase() {
             lastResult = GeneralWeekSchedule(mutableListOf((lastResult as TargetedWeekSchedule)))
     }
 
-    private fun buildFinalSchedulesWithChangesData(changesData: GeneralChangesOfDay): GeneralDayScheduleResult {
-        val finalSchedules = mutableListOf<TargetedDayScheduleResult>()
+    private fun buildFinalSchedulesWithChangesData(changesData: GeneralChangesOfDay): GeneralFinalDaySchedule {
+        val finalSchedules = mutableListOf<TargetedFinalDaySchedule>()
         for (weekSchedule in (lastResult as GeneralWeekSchedule)) {
             val targetSchedule = weekSchedule?.getDayScheduleByDay(changesData.getChangesBasicDay())
             // We checks got target schedule. And notify user, because 'NULL' in this situation isn't awaited value.
@@ -306,11 +309,11 @@ class ActionsController : ControllerBase() {
             }
         }
 
-        return GeneralDayScheduleResult(finalSchedules)
+        return GeneralFinalDaySchedule(finalSchedules)
     }
 
     private fun buildTargetFinalSchedule(targetGroup: String, targetSchedule: TargetedDaySchedule,
-                                         changesData: GeneralChangesOfDay): TargetedDayScheduleResult {
+                                         changesData: GeneralChangesOfDay): TargetedFinalDaySchedule {
         val targetChange = changesData.getTargetChangeByGroupName(targetGroup)
         return if (targetChange != null) {
             val builtResult = targetSchedule.buildFinalSchedule(changesData.getTargetChangeByGroupName(targetGroup))
@@ -414,19 +417,21 @@ class ActionsController : ControllerBase() {
                 writeBasicScheduleToTargetFile(lastResult as GeneralWeekSchedule)
         }
 
-        is TargetedChangesOfDay -> writeDayChangesToFile(lastResult as TargetedChangesOfDay)
-        is GeneralChangesOfDay -> writeDayChangesToFile(lastResult as GeneralChangesOfDay)
+        is TargetedChangesOfDay -> writeChangesToAssetFile(lastResult as TargetedChangesOfDay)
+        is GeneralChangesOfDay -> writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
 
-        is GeneralDayScheduleResult -> {
+        is GeneralFinalDaySchedule -> {
             val writeType = getSafeIntValue("Select writing type:" +
                                                     "\n\t0 — JSON Asset mode;" +
                                                     "\n\t1 — Word Document mode." +
                                                     "\nChoose",
                                             0, 1)
+            val fileName = inputText("File name (or empty, to auto-generate it)")
+
             if (writeType == 0)
-                writeFinalSchedule(inputText("File name"), lastResult as GeneralDayScheduleResult)
+                writeFinalSchedule(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
             else
-                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with final schedule.")
+                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with result schedule.")
         }
 
         else -> {

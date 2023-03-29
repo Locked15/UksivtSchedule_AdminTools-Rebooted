@@ -6,8 +6,8 @@ import model.data.parse.schedule.DayColumnInfo
 import model.data.parse.schedule.wrapper.BaseIteratorModel
 import model.data.parse.schedule.wrapper.InnerIteratorModel
 import model.data.parse.schedule.wrapper.OuterIteratorModel
-import model.data.schedule.origin.day.TargetedDaySchedule
-import model.data.schedule.origin.week.TargetedWeekSchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.week.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import org.apache.poi.ss.usermodel.Cell

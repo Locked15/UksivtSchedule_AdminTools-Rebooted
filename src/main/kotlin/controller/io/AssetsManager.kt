@@ -4,25 +4,22 @@ import com.fasterxml.jackson.databind.JsonMappingException
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import controller.io.service.PathResolver.Companion.finalResourcePath
-import controller.io.service.PathResolver.Companion.finalSchedulesResourceFolderPath
-import controller.io.service.writer.writeChanges
-import controller.io.service.writer.writeSchedule
+import controller.io.service.writer.BasicScheduleWriter
+import controller.io.service.writer.ChangesWriter
+import controller.io.service.writer.FinalScheduleWriter
 import model.data.change.day.GeneralChangesOfDay
 import model.data.change.day.TargetedChangesOfDay
-import model.data.change.day.common.AbstractChangesOfDay
-import model.data.schedule.origin.week.GeneralWeekSchedule
-import model.data.schedule.origin.week.TargetedWeekSchedule
-import model.data.schedule.origin.week.common.AbstractWeekSchedule
-import model.data.schedule.result.day.GeneralDayScheduleResult
-import java.io.BufferedWriter
+import model.data.change.day.base.BasicChangesOfDay
+import model.data.schedule.common.result.BasicFinalSchedule
+import model.data.schedule.common.origin.week.GeneralWeekSchedule
+import model.data.schedule.common.origin.week.TargetedWeekSchedule
+import model.data.schedule.common.origin.week.base.BasicWeekSchedule
+import model.data.schedule.common.result.day.GeneralFinalDaySchedule
 import java.io.File
-import java.io.FileWriter
 import java.io.IOException
 import java.nio.file.Path
 import java.nio.file.Paths
 
-
-private const val WRITER_BUFFER_SIZE = 4096
 
 /* region Asset Reading */
 
@@ -69,40 +66,26 @@ fun readScheduleAsset(branch: String, affiliation: String, group: String): Targe
 
 /* region Basic Schedule */
 
-fun writeBasicScheduleToTargetFile(schedule: AbstractWeekSchedule): Boolean {
+fun writeBasicScheduleToTargetFile(schedule: BasicWeekSchedule): Boolean {
     return when (schedule) {
-        is TargetedWeekSchedule -> writeSchedule(schedule)
-        is GeneralWeekSchedule -> writeSchedule(schedule)
+        is TargetedWeekSchedule -> BasicScheduleWriter.beginWritingStandaloneSchedule(schedule)
+        is GeneralWeekSchedule -> BasicScheduleWriter.beginWritingSchedulesToSplitFiles(schedule)
+
         else -> false
     }
 }
 
-fun writeBasicScheduleToUnitedAsset(fileName: String, schedules: GeneralWeekSchedule): Boolean {
-    val finalPath = Paths.get(finalResourcePath.toString(), "$fileName.json")
-    return try {
-        val serializer = jacksonObjectMapper()
-        val writer = FileWriter(File(finalPath.toUri()))
-        val buffered = BufferedWriter(writer, WRITER_BUFFER_SIZE)
-
-        buffered.write(serializer.writerWithDefaultPrettyPrinter().writeValueAsString(schedules))
-        buffered.close()
-
-        true
-    }
-    catch (exception: IOException) {
-        println("ERROR:\nError occurred on united schedule asset writing. " +
-                        "Stack trace: ${exception.message}.")
-        false
-    }
-}
+fun writeBasicScheduleToUnitedAsset(fileName: String, schedules: GeneralWeekSchedule) = BasicScheduleWriter
+    .beginWritingToUnitedFile(fileName, schedules)
 /* endregion */
 
 /* region Changes */
 
-fun writeDayChangesToFile(changes: AbstractChangesOfDay): Boolean {
+fun writeChangesToAssetFile(changes: BasicChangesOfDay): Boolean {
     return when (changes) {
-        is TargetedChangesOfDay -> writeChanges(changes)
-        is GeneralChangesOfDay -> writeChanges(changes)
+        is TargetedChangesOfDay -> ChangesWriter.beginWritingToTargetFile(changes)
+        is GeneralChangesOfDay -> ChangesWriter.beginWritingToUnitedFile(changes)
+
         else -> false
     }
 }
@@ -110,22 +93,11 @@ fun writeDayChangesToFile(changes: AbstractChangesOfDay): Boolean {
 
 /* region Final Schedule */
 
-fun writeFinalSchedule(fileName: String, finalSchedules: GeneralDayScheduleResult): Boolean {
-    val finalPath = Paths.get(finalSchedulesResourceFolderPath.toString(), "$fileName.json")
-    return try {
-        val serializer = jacksonObjectMapper()
-        val writer = FileWriter(File(finalPath.toUri()))
-        val buffered = BufferedWriter(writer, WRITER_BUFFER_SIZE)
+fun writeFinalSchedule(fileName: String?, finalSchedule: BasicFinalSchedule): Boolean {
+    return when (finalSchedule) {
+        is GeneralFinalDaySchedule -> FinalScheduleWriter.beginWriteFinalSchedule(fileName, finalSchedule)
 
-        buffered.write(serializer.writerWithDefaultPrettyPrinter().writeValueAsString(finalSchedules))
-        buffered.close()
-
-        true
-    }
-    catch (exception: IOException) {
-        println("ERROR:\nError occurred on final schedule asset writing. " +
-                        "Stack trace: ${exception.message}.")
-        false
+        else -> false
     }
 }
 /* endregion */

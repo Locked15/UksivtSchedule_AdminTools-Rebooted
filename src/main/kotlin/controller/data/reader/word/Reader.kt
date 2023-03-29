@@ -4,15 +4,15 @@ import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
 import model.data.change.day.TargetedChangesOfDay
-import model.data.schedule.origin.day.TargetedDaySchedule
+import model.data.schedule.common.origin.day.TargetedDaySchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.exception.WrongDayInDocumentException
 import org.apache.poi.xwpf.usermodel.XWPFDocument
 import java.io.FileInputStream
 import model.data.parse.changes.CellDefineResult
-import model.data.schedule.result.day.TargetedDayScheduleResult
-import model.data.schedule.result.day.builder.TargetedDayScheduleResultBuilder
+import model.data.schedule.common.result.day.TargetedFinalDaySchedule
+import model.data.schedule.common.result.day.builder.TargetedDayScheduleResultBuilder
 import java.lang.Exception
 import java.util.Calendar
 import java.util.GregorianCalendar
@@ -306,7 +306,7 @@ class Reader(pathToFile: String) {
      * Represents original (".getDayScheduleWithChanges()") function from old *AdminTools*.
      * Because it won't be used often, I moved it down in functions order.
      */
-    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedDayScheduleResult {
+    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedFinalDaySchedule {
         val changes = getChanges(groupName, day)
         if (changes != null) {
             println("Automatic merge tool found empty targeted changes." +
