@@ -1,4 +1,4 @@
-package model.environment
+package model.environment.log
 
 
 class Logger {
