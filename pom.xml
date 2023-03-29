@@ -77,8 +77,9 @@
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
 
+                            <outputDirectory>./release</outputDirectory>
                             <appendAssemblyId>false</appendAssemblyId>
-                            <finalName>AdminTools-Rebooted (Publish)</finalName>
+                            <finalName>AdminTools-Rebooted</finalName>
                         </configuration>
                     </execution>
                 </executions>
