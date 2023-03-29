@@ -1,4 +1,4 @@
-package model.environment.log
+package controller.view
 
 
 class Logger {
