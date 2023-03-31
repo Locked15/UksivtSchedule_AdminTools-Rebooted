@@ -126,6 +126,13 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.15.4</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -138,13 +145,6 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.3</version>
-            <scope>compile</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.15.4</version>
             <scope>compile</scope>
         </dependency>
 
@@ -163,16 +163,16 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-core -->
         <dependency>
             <groupId>org.jetbrains.exposed</groupId>
             <artifactId>exposed-core</artifactId>
-            <version>0.41.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-dao -->
-        <dependency>
-            <groupId>org.jetbrains.exposed</groupId>
-            <artifactId>exposed-dao</artifactId>
             <version>0.41.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-jdbc -->
@@ -181,6 +181,18 @@
             <artifactId>exposed-jdbc</artifactId>
             <version>0.41.1</version>
             <scope>runtime</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-dao -->
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-dao</artifactId>
+            <version>0.41.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-java-time -->
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-java-time</artifactId>
+            <version>0.41.1</version>
         </dependency>
     </dependencies>
 </project>
