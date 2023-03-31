@@ -394,6 +394,13 @@ class ActionsController : ControllerBase() {
     }
     /* endregion */
 
+    /* region Command: 'Sync' */
+
+    fun beginSynchronization(args: List<String>) {
+        // ToDo.
+    }
+    /* endregion */
+
     /* region Command: 'Write' */
 
     /**

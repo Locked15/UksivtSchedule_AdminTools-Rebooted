@@ -67,6 +67,10 @@ class Basic(private val user: String) {
                             Command("Parse") {
                                 controller.initializeBasicParsingProcessByArguments(it)
                             }),
+            "sync" to Pair(syncCommandDescription,
+                           Command("Sync") {
+                                controller.beginSynchronization(it)
+                           }),
             "write" to Pair(writeCommandDescription,
                             Command("Write") {
                                 controller.writeLastResult()
@@ -202,6 +206,11 @@ class Basic(private val user: String) {
         private val parseCommandDescription: String
 
         /**
+         * Description of the 'Sync' command.
+         */
+        private val syncCommandDescription: String
+
+        /**
          * Description of the 'Write' command.
          */
         private val writeCommandDescription: String
@@ -234,6 +243,7 @@ class Basic(private val user: String) {
 
                     helpCommandDescription = "Show context help for this application"
                     parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
+                    syncCommandDescription = "Begins synchronization process between last result and db"
                     writeCommandDescription = "Writes last gotten result value to file"
                     showCommandDescription = "Show last gotten result in the console (terminal)"
                     exitCommandDescription = "Exits from program"
@@ -246,6 +256,7 @@ class Basic(private val user: String) {
 
                     helpCommandDescription = "顯示此應用程序的上下文幫助"
                     parseCommandDescription = "開始基本解析過程（可能對調試過程有用）"
+                    syncCommandDescription = "TODO: Translate this."
                     writeCommandDescription = "將最後獲得的結果值寫入文件"
                     showCommandDescription = "在控制台（終端）中顯示最後得到的結果"
                     exitCommandDescription = "退出程序"
@@ -262,6 +273,7 @@ class Basic(private val user: String) {
                     helpCommandDescription = "Показать контекстную справку для приложения"
                     parseCommandDescription =
                         "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
+                    syncCommandDescription = "Начать процесс синхронизации последнего полученного результата и БД"
                     writeCommandDescription = "Записать последний полученный результат в файл"
                     showCommandDescription = "Отобразить последний полученный результат в консоли (терминале)"
                     exitCommandDescription = "Выход из программы"
