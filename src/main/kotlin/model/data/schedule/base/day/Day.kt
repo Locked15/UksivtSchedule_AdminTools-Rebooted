@@ -71,9 +71,21 @@ enum class Day(val index: Int, val englishName: String, val russianName: String)
 	 */
 	SUNDAY(6, "Sunday", "Воскресенье");
 	/* endregion */
-	
+
+	/**
+	 * This is a pseudo-override of the hash-code generation.
+	 * Pseudo, because enum classes can't contain explicit overload of the hash code function.
+	 *
+	 * !
+	 * USE THIS INSTEAD OF BASIC 'hashCode', OR YOU WILL GET DATA DUPLICATE.
+	 * !
+	 */
+	fun getHashCode(): Int {
+		return ordinal
+	}
+
 	/* region Companion */
-	
+
 	companion object {
 		
 		/**

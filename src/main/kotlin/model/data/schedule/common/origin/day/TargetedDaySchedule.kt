@@ -90,6 +90,25 @@ class TargetedDaySchedule(val day: Day, val lessons: MutableList<Lesson>) {
         return newSchedule
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as TargetedDaySchedule
+
+        if (day != other.day) return false
+        return lessons == other.lessons
+    }
+
+    /**
+     * TODO: Write Docs.
+     */
+    override fun hashCode(): Int {
+        var result = day.getHashCode()
+        result = 31 * result + lessons.hashCode()
+        return result
+    }
+
     /**
      * Create a string representation of the schedule.
      * Overrides basic method.

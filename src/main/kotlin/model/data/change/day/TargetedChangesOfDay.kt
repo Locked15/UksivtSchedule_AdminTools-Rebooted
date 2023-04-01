@@ -46,6 +46,31 @@ class TargetedChangesOfDay(var targetGroup: String?, @JsonAlias("absolute") var 
 
     /* region Functions */
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as TargetedChangesOfDay
+
+        if (targetGroup != other.targetGroup) return false
+        if (isAbsolute != other.isAbsolute) return false
+        if (changesDate != other.changesDate) return false
+
+        return changedLessons == other.changedLessons
+    }
+
+    /**
+     * User-Override for hash code function.
+     */
+    override fun hashCode(): Int {
+        var result = targetGroup?.hashCode() ?: 0
+        result = 31 * result + isAbsolute.hashCode()
+        result = 31 * result + (changesDate?.hashCode() ?: 0)
+        result = 31 * result + changedLessons.hashCode()
+
+        return result
+    }
+
     /**
      * Returns string representation of the current object.
      */
