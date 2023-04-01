@@ -9,27 +9,35 @@ class PathResolver {
 
     companion object {
 
-        const val StorageFolderName = ".Storage"
+        const val STORAGE_FOLDER_NAME = ".Storage"
 
-        val finalResourcePath: Path
+        const val USER_SECRETS_FOLDER_NAME = "secrets"
+
+        val applicationResourcePath: Path
+
+        val thisSemesterResourcePath: Path
 
         val changesResourceFolderPath: Path
 
         val finalSchedulesResourceFolderPath: Path
 
+        private val applicationSubFoldersList = listOf("Application")
+
         private val subFoldersList = listOf("Schedule", "Y23", "S2")
 
-        private val changesSubFoldersList = listOf(StorageFolderName, "Changes")
+        private val changesSubFoldersList = listOf(STORAGE_FOLDER_NAME, "Changes")
 
-        private val finalSchedulesFoldersList = listOf(StorageFolderName, "FinalSchedules")
+        private val finalSchedulesFoldersList = listOf(STORAGE_FOLDER_NAME, "FinalSchedules")
 
         init {
-            finalResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
-                                            subFoldersList)
+            applicationResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
+                                                  applicationSubFoldersList)
+            thisSemesterResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
+                                                   subFoldersList)
 
-            changesResourceFolderPath = resolvePath(finalResourcePath,
+            changesResourceFolderPath = resolvePath(thisSemesterResourcePath,
                                                     changesSubFoldersList)
-            finalSchedulesResourceFolderPath = resolvePath(finalResourcePath,
+            finalSchedulesResourceFolderPath = resolvePath(thisSemesterResourcePath,
                                                            finalSchedulesFoldersList)
         }
 

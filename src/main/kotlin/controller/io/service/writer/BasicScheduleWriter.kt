@@ -67,7 +67,7 @@ class BasicScheduleWriter : ValueWriter {
          * It contains [group name][group].
          */
         private fun getTargetFilePath(group: String): Path {
-            val path = PathResolver.finalResourcePath
+            val path = PathResolver.thisSemesterResourcePath
             return path.resolve(String.format(TARGET_FILE_NAME_TEMPLATE, group))
         }
         /* endregion */
@@ -97,7 +97,7 @@ class BasicScheduleWriter : ValueWriter {
         }
 
         private fun getUnitedFilePath(size: Int, fileName: String) = Paths.get(
-                PathResolver.finalResourcePath.toString(), String.format(UNITED_FILE_NAME_TEMPLATE, fileName, size))
+                PathResolver.thisSemesterResourcePath.toString(), String.format(UNITED_FILE_NAME_TEMPLATE, fileName, size))
         /* endregion */
     }
 }
