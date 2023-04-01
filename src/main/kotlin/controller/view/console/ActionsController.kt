@@ -1,24 +1,28 @@
 package controller.view.console
 
 import controller.data.getter.SiteParser
+import controller.db.pgsql.schedule.lite.ScheduleDataContext
 import controller.data.reader.word.Reader as WordReader
 import controller.data.reader.excel.Reader as ExcelReader
 import controller.io.*
-import controller.io.service.getAffiliationsNames
-import controller.io.service.getBranchesNames
-import controller.io.service.getGroupsNames
+import controller.io.service.*
 import controller.view.base.ControllerBase
+import model.data.change.BasicScheduleChanges
 import model.data.schedule.common.origin.day.TargetedDaySchedule
 import model.data.schedule.common.origin.week.TargetedWeekSchedule
 import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.GeneralChangesOfDay
+import model.data.change.group.ScheduleChangesGroup
 import model.data.parse.ParseSource
 import model.data.parse.changes.ParseDataDetails
+import model.data.schedule.common.origin.BasicSchedule
 import model.data.schedule.common.origin.week.GeneralWeekSchedule
+import model.data.schedule.common.result.BasicFinalSchedule
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule
 import model.data.schedule.common.result.day.TargetedFinalDaySchedule
+import model.data.schedule.common.result.group.FinalScheduleGroup
 import view.console.Basic
 import java.nio.file.Paths
 import java.util.Calendar
@@ -133,34 +137,52 @@ class ActionsController : ControllerBase() {
     }
     /* endregion */
 
-    /* region Command: 'Assets' */
+    /* region Command: 'Read' */
 
-    fun parseAssets(args: List<String>) {
-        lastResult = parseAssetsBySelectedMode(args)
+    fun readAssets(args: List<String>) {
+        lastResult = readSelectedAssets(args)
         if (args.contains("-w") || args.contains("--write")) writeLastResult()
     }
 
-    private fun parseAssetsBySelectedMode(args: List<String>): Any {
-        return if (args.contains("-a") || args.contains("--automatic")) {
-            parseAllAvailableAssets()
+    private fun readSelectedAssets(args: List<String>): Any {
+        return if (args.contains("basic") || args.contains("schedule")) {
+            readBasicScheduleAssetsBySelectedMode(args)
         }
-        else if (args.contains("-u") || args.contains("--united")) {
-            parseAssetsByUnitedFile()
+        else if (args.contains("change") || args.contains("replacement")) {
+            readChangesBySelectedMode(args)
         }
-        else if (args.contains("-b") || args.contains("--branch")) {
-            parseAssetsByBranch()
+        else if (args.contains("final") || args.contains("result")) {
+            readFinalScheduleBySelectedMode(args)
         }
         else {
-            parseAssetsByTarget()
+            println("WARNING:\n\tYou must specify what kind of assets you want to read.")
+            lastResult
         }
     }
 
-    private fun parseAllAvailableAssets(): GeneralWeekSchedule {
+    /* region Basic Schedule Assets Reading */
+
+    private fun readBasicScheduleAssetsBySelectedMode(args: List<String>): BasicSchedule {
+        return if (args.contains("-a") || args.contains("--automatic")) {
+            readAllAvailableBasicScheduleAssets()
+        }
+        else if (args.contains("-u") || args.contains("--united")) {
+            readBasicScheduleByUnitedAssetFile()
+        }
+        else if (args.contains("-b") || args.contains("--branch")) {
+            readBasicScheduleAssetsByBranch()
+        }
+        else {
+            readBasicScheduleAssetsByTarget()
+        }
+    }
+
+    private fun readAllAvailableBasicScheduleAssets(): GeneralWeekSchedule {
         val results = mutableListOf<TargetedWeekSchedule>()
         for (branch in getBranchesNames()) {
-            for (affiliation in getAffiliationsNames(branch)) {
+            for (affiliation in getAffiliationNames(branch)) {
                 for (group in getGroupsNames(branch, affiliation)) {
-                    readScheduleAsset(branch, affiliation, group)?.let {
+                    readBasicScheduleAsset(branch, affiliation, group)?.let {
                         results.add(it)
                     } ?: run {
                         println("WARNING:\nFind empty value, while processing auto-assets parse." +
@@ -174,17 +196,17 @@ class ActionsController : ControllerBase() {
         return GeneralWeekSchedule(results)
     }
 
-    private fun parseAssetsByUnitedFile(): GeneralWeekSchedule {
+    private fun readBasicScheduleByUnitedAssetFile(): GeneralWeekSchedule {
         val path = getSafeFilePath("json")
         return readUnknownAsset<GeneralWeekSchedule>(Paths.get(path))!!
     }
 
-    private fun parseAssetsByBranch(): GeneralWeekSchedule {
+    private fun readBasicScheduleAssetsByBranch(): GeneralWeekSchedule {
         val results = mutableListOf<TargetedWeekSchedule>()
         val targetBranch = inputValueSafely(getBranchesNames(), "Select target branch to parse")
-        for (affiliation in getAffiliationsNames(targetBranch)) {
+        for (affiliation in getAffiliationNames(targetBranch)) {
             for (group in getGroupsNames(targetBranch, affiliation)) {
-                readScheduleAsset(targetBranch, affiliation, group)?.let {
+                readBasicScheduleAsset(targetBranch, affiliation, group)?.let {
                     results.add(it)
                 }
             }
@@ -193,13 +215,78 @@ class ActionsController : ControllerBase() {
         return GeneralWeekSchedule(results)
     }
 
-    private fun parseAssetsByTarget(): TargetedWeekSchedule {
+    private fun readBasicScheduleAssetsByTarget(): TargetedWeekSchedule {
         val branch = inputValueSafely(getBranchesNames(), "Select target branch to parse")
-        val affiliation = inputValueSafely(getAffiliationsNames(branch), "Select affiliation")
+        val affiliation = inputValueSafely(getAffiliationNames(branch), "Select affiliation")
         val group = inputValueSafely(getGroupsNames(branch, affiliation), "Select group to parse")
 
-        return readScheduleAsset(branch, affiliation, group)!!
+        return readBasicScheduleAsset(branch, affiliation, group)!!
     }
+    /* endregion */
+
+    /* region Change(-s) Assets Reading */
+
+    private fun readChangesBySelectedMode(args: List<String>): BasicScheduleChanges {
+        return if (args.contains("-a") || args.contains("--automatic")) {
+            readAllAvailableChangesAssets()
+        }
+        else {
+            readChangesByTargetFileAsset()
+        }
+    }
+
+    private fun readAllAvailableChangesAssets(): ScheduleChangesGroup {
+        val results = mutableListOf<GeneralChangesOfDay>()
+        for (subFolder in getChangesStorageMonthFolderNames()) {
+            for (fileName in getChangesStorageFileNames(subFolder)) {
+                readChangesAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
+                    println("WARNING:\n\tGot empty changes object on reading." +
+                                    "Parameters: $subFolder/$fileName")
+                }
+            }
+        }
+
+        println("Found ${results.size} schedule changes assets.")
+        return ScheduleChangesGroup(results)
+    }
+
+    private fun readChangesByTargetFileAsset(): GeneralChangesOfDay {
+        val path = getSafeFilePath("json")
+        return readUnknownAsset<GeneralChangesOfDay>(Paths.get(path))!!
+    }
+    /* endregion */
+
+    /* region Final Schedule Assets Parse */
+
+    private fun readFinalScheduleBySelectedMode(args: List<String>): BasicFinalSchedule {
+        return if (args.contains("-a") || args.contains("--automatic")) {
+            readAllAvailableFinalScheduleAssets()
+        }
+        else {
+            readFinalScheduleByTargetFileAsset()
+        }
+    }
+
+    private fun readAllAvailableFinalScheduleAssets(): FinalScheduleGroup {
+        val results = mutableListOf<GeneralFinalDaySchedule>()
+        for (subFolder in getFinalSchedulesStorageMonthFolderNames()) {
+            for (fileName in getFinalSchedulesStorageFileNames(subFolder)) {
+                readFinalScheduleAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
+                    println("WARNING:\n\tGot empty final schedule on reading." +
+                                    "Parameters: $subFolder/$fileName")
+                }
+            }
+        }
+
+        println("Found ${results.size} final schedule assets.")
+        return FinalScheduleGroup(results)
+    }
+
+    private fun readFinalScheduleByTargetFileAsset(): GeneralFinalDaySchedule {
+        val path = getSafeFilePath("json")
+        return readUnknownAsset<GeneralFinalDaySchedule>(Paths.get(path))!!
+    }
+    /* endregion */
     /* endregion */
 
     /* region Command: 'Changes' */
@@ -396,8 +483,18 @@ class ActionsController : ControllerBase() {
 
     /* region Command: 'Sync' */
 
-    fun beginSynchronization(args: List<String>) {
-        // ToDo.
+    fun beginSynchronization(args: List<String>) = when (lastResult) {
+        is ScheduleChangesGroup -> ScheduleDataContext.instance.syncChanges(lastResult as ScheduleChangesGroup)
+        is GeneralChangesOfDay -> ScheduleDataContext.instance.syncChanges(lastResult as GeneralChangesOfDay)
+
+        is FinalScheduleGroup -> ScheduleDataContext.instance.syncFinalSchedules(lastResult as FinalScheduleGroup)
+        is GeneralFinalDaySchedule -> ScheduleDataContext.instance.syncFinalSchedules(lastResult as
+                                                                                              GeneralFinalDaySchedule)
+
+        else -> {
+            println("Found unsupported (or incompatible) type on synchronization: ${lastResult.javaClass}.")
+            false
+        }
     }
     /* endregion */
 
@@ -440,6 +537,8 @@ class ActionsController : ControllerBase() {
             else
                 TODO("It can be modified, to create possibility to generate '.docx' (Word) document with result schedule.")
         }
+        is FinalScheduleGroup -> TODO("Implement final schedule group writing to file (prefer in three modes: " +
+                                              "standalone files, united, standalone docs).")
 
         else -> {
             println("Unknown (or incompatible) type to write.")

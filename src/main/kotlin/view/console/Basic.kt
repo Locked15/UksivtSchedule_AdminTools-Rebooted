@@ -46,9 +46,9 @@ class Basic(private val user: String) {
                                Command("Schedule") {
                                    controller.parseSchedule(it)
                                }),
-            "assets" to Pair(assetsCommandDescription,
-                             Command("Assets") {
-                                 controller.parseAssets(it)
+            "read" to Pair(readCommandDescription,
+                           Command("Read") {
+                                 controller.readAssets(it)
                              }),
             "changes" to Pair(changesCommandDescription,
                               Command("Changes") {
@@ -69,7 +69,7 @@ class Basic(private val user: String) {
                             }),
             "sync" to Pair(syncCommandDescription,
                            Command("Sync") {
-                                controller.beginSynchronization(it)
+                               controller.beginSynchronization(it)
                            }),
             "write" to Pair(writeCommandDescription,
                             Command("Write") {
@@ -184,7 +184,7 @@ class Basic(private val user: String) {
          *
          * This is valuable.
          */
-        private val assetsCommandDescription: String
+        private val readCommandDescription: String
 
         /**
          * Description of the 'Changes' command.
@@ -236,7 +236,7 @@ class Basic(private val user: String) {
             when (Locale.getDefault()) {
                 Locale.ENGLISH -> {
                     scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
-                    assetsCommandDescription = "Begins assets-reading process (requires prepared assets in json format)"
+                    readCommandDescription = "Begins assets-reading process (requires prepared assets in json format)"
                     changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
                     finalCommandDescription =
                         "Begins merging process between basic schedule and changes. Requires last value to contain basic schedule"
@@ -250,7 +250,7 @@ class Basic(private val user: String) {
                 }
                 Locale.CHINESE -> {
                     scheduleCommandDescription = "開始計劃閱讀過程（需要準備好的文件）"
-                    assetsCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
+                    readCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
                     changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
                     finalCommandDescription = "開始基本計劃和變更之間的合併過程。 需要最後一個值來包含基本計劃。"
 
@@ -264,7 +264,7 @@ class Basic(private val user: String) {
 
                 else -> {
                     scheduleCommandDescription = "Начать процесс считывания файла расписания (требует готового файла)"
-                    assetsCommandDescription =
+                    readCommandDescription =
                         "Начать процесс считывания файла ассетов (требуется готовый файл в формате JSON)"
                     changesCommandDescription = "Начать процесс чтения замен (требуется загруженный документ)"
                     finalCommandDescription =
@@ -306,7 +306,7 @@ class Basic(private val user: String) {
          * Requires [instance][console] of the main class to get [target action][Command] from [list][availableActions].
          */
         private fun parseInputtedText(console: Basic, input: String): CommandInfo {
-            val split = input.split(" ")
+            val split = input.split(' ')
             val command = split[0]
 
             // We take all arguments, ignoring the first element (that contains the command itself).
