@@ -288,7 +288,8 @@ class Reader(pathToFile: String) {
         for (number in splatted) {
             try {
                 toReturn.add(Lesson(number.toInt(), lesson.name,
-                                    lesson.teacher, lesson.place))
+                                    lesson.teacher, lesson.place,
+                                    isChanged = true))
             }
             catch (ex: Exception) {
                 // Something bad happened. IDK.
