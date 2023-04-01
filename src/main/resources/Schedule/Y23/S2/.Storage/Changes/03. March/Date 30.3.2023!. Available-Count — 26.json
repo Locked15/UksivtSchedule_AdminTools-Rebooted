@@ -352,13 +352,13 @@
     "changesDate" : 1680116400000,
     "changedLessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Нет",
       "teacher" : null,
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Нет",
       "teacher" : null,
       "place" : null,
       "isChanged" : false

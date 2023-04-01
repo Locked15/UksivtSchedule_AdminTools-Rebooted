@@ -306,7 +306,7 @@
     "changesDate" : 1678734000000,
     "changedLessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Нет",
       "teacher" : null,
       "place" : null,
       "isChanged" : false
