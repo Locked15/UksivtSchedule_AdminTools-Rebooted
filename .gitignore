@@ -7,3 +7,6 @@
 # Project Settings.
 /mvnw*
 /.mvn/
+
+# Application Secrets.
+*/secrets/*.secret
