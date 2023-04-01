@@ -9,4 +9,4 @@
 /.mvn/
 
 # Application Secrets.
-*/secrets/*.secret
+**/secrets/*.secret
