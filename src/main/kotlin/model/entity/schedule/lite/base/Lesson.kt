@@ -13,7 +13,7 @@ class Lesson(id: EntityID<Int>) : Entity<Int>(id) {
 
     var name: String by ScheduleDataContext.Lessons.name
 
-    var teacher: String? by ScheduleDataContext.Lessons.teacher
+    var teacherId: Int? by ScheduleDataContext.Lessons.teacherId
 
     var place: String? by ScheduleDataContext.Lessons.place
 

@@ -1,19 +1,11 @@
 package controller.db.pgsql.schedule.lite
 
 import controller.db.DBKind
-import controller.db.config.DBConfiguration
+import controller.db.config.DBConfigurator
 import model.data.change.group.ScheduleChangesGroup
 import model.data.schedule.common.result.group.FinalScheduleGroup
-import model.entity.schedule.lite.base.Lesson
-import org.jetbrains.exposed.dao.id.EntityID
-import model.data.schedule.base.Lesson as LessonModel
-import model.data.change.day.TargetedChangesOfDay as TargetedDayReplacementsModel
 import model.data.change.day.GeneralChangesOfDay as GeneralDayReplacementsModel
-import model.data.schedule.common.result.day.TargetedFinalDaySchedule as TargetedFinalDayScheduleModel
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule as GeneralFinalDayScheduleModel
-
-import model.entity.schedule.lite.ScheduleReplacement as ReplacementEntity
-import model.entity.schedule.lite.FinalSchedule as FinalScheduleEntity
 
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.dao.id.IntIdTable
@@ -21,30 +13,21 @@ import org.jetbrains.exposed.sql.javatime.date
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.io.FileNotFoundException
 
-import java.time.LocalDate
-
 
 class ScheduleDataContext private constructor() {
 
     private val dbConnection: Database
 
     init {
-        val configuration = DBConfiguration(getDBKind()).getConfiguration()
+        val rawConfiguration = DBConfigurator(getDBKind()).getRawConfiguration()
 
-        if (configuration != null) {
-            val address = configuration.getOrElse("DB.${DB_Name}.Address") { "Unknown" }
-            val user = configuration.getOrElse("DB.${DB_Name}.User") {
-                configuration.getOrElse("DB.General.User") { "Unknown" }
-            }
-            val password = configuration.getOrElse("DB.${DB_Name}.Password") {
-                configuration.getOrElse("DB.General.Password") { "Unknown" }
-            }
-
+        if (rawConfiguration != null) {
+            val connectionModel = getConnectionModel(DB_Name, rawConfiguration)
             dbConnection = Database.connect(
-                    "${getDBKind().getSpecificDataBaseAddressConnector()}://$address/$DB_Name",
+                    "${getDBKind().getSpecificDataBaseAddressConnector()}://${connectionModel.dbAddress}/$DB_Name",
                     driver = getDBKind().getSpecificDataBaseDataDriver(),
-                    user = user,
-                    password = password
+                    user = connectionModel.userName,
+                    password = connectionModel.userPassword
             )
         }
         else {
@@ -85,27 +68,6 @@ class ScheduleDataContext private constructor() {
         return altered > 0
     }
 
-    private fun insertNewChangeToDb(change: TargetedDayReplacementsModel?): Boolean {
-        if (change != null) {
-            val newReplacementId = createNewReplacementInstance(change)
-            createNewLessonInstances(change.changedLessons, newReplacementId.value, null, false)
-
-            return true
-        }
-        return false
-    }
-
-    private fun createNewReplacementInstance(change: TargetedDayReplacementsModel) = ReplacementEntity.new {
-        id
-        commitHash = change.hashCode()
-
-        targetGroup = change.targetGroup!!
-        replacementDate = LocalDate.ofInstant(change.changesDate!!.toInstant(),
-                                              change.changesDate!!.timeZone
-                                                  .toZoneId())
-        isAbsolute = change.isAbsolute
-    }.id
-
     fun syncFinalSchedules(schedules: FinalScheduleGroup): Boolean {
         var altered = 0
         schedules.forEach { if (syncFinalSchedules(it)) altered++ }
@@ -135,59 +97,25 @@ class ScheduleDataContext private constructor() {
         println("Info:\n\tCreated $altered new final schedule entries for ${date.first}.${date.second}.${date.third}!.")
         return altered > 0
     }
-
-    private fun insertNewFinalScheduleToDb(targetSchedule: TargetedFinalDayScheduleModel?): Boolean {
-        if (targetSchedule != null) {
-            // For memory optimization, we'll store in DB only actual lessons (without 'filler' ones).
-            val newFinalScheduleId = createNewFinalScheduleInstance(targetSchedule)
-            createNewLessonInstances(targetSchedule.schedule.lessons.filter { it.name != null },
-                                     null, newFinalScheduleId.value)
-
-            return true
-        }
-        return false
-    }
-
-    private fun createNewFinalScheduleInstance(targetSchedule: TargetedFinalDayScheduleModel): EntityID<Int> {
-        val hash = targetSchedule.hashCode()
-        return FinalScheduleEntity
-            .new {
-                id
-                commitHash = hash
-
-                targetGroup = targetSchedule.targetGroup!!
-                scheduleDate = LocalDate.ofInstant(targetSchedule.scheduleDate!!.toInstant(),
-                                                   targetSchedule.scheduleDate.timeZone
-                                                       .toZoneId())
-            }.id
-    }
-
-    private fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?, newFinalScheduleId: Int?,
-                                         exceptionOnEmptyLessonName: Boolean = true) {
-        for (lesson in lessons) {
-            Lesson.new {
-                id
-
-                number = lesson.number!!
-                name = if (exceptionOnEmptyLessonName) lesson.name!! else lesson.name ?: "Нет"
-                teacher = lesson.teacher
-                place = lesson.place
-                isChanged = true // Hack: Old replacements (Changes) assets contain 'false' in this property.
-
-                replacementId = newReplacementId
-                scheduleId = newFinalScheduleId
-            }
-        }
-    }
     /* endregion */
 
     /* region Data-Access Objects */
+
+    object Teachers : IntIdTable("teachers") {
+        var surname = text("surname")
+
+        var name = text("name")
+            .nullable()
+        var patronymic = text("patronymic")
+            .nullable()
+    }
 
     object Lessons : IntIdTable("lesson") {
         var number = integer("number")
 
         var name = text("name")
-        var teacher = text("teacher")
+        var teacherId = integer("teacher_id")
+            .references(Teachers.id)
             .nullable()
         var place = text("place")
             .nullable()
@@ -200,6 +128,11 @@ class ScheduleDataContext private constructor() {
         var replacementId = integer("replacement_id")
             .references(ScheduleReplacements.id)
             .nullable()
+    }
+
+    object TargetCycles : IntIdTable("target_cycle") {
+        var year = integer("year")
+        var semester = integer("semester")
     }
 
     object FinalSchedules : IntIdTable("final_schedule") {
