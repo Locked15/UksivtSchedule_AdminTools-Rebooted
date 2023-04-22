@@ -12,11 +12,13 @@ class ScheduleReplacement(id: EntityID<Int>) : Entity<Int>(id) {
 
     var commitHash: Int by ScheduleDataContext.ScheduleReplacements.commitHash
 
-    var isAbsolute: Boolean by ScheduleDataContext.ScheduleReplacements.isAbsolute
+    var targetCycleId : Int by ScheduleDataContext.ScheduleReplacements.targetCycleId
 
     var targetGroup: String by ScheduleDataContext.ScheduleReplacements.targetGroup
 
     var replacementDate: LocalDate by ScheduleDataContext.ScheduleReplacements.replacementDate
+
+    var isAbsolute: Boolean by ScheduleDataContext.ScheduleReplacements.isAbsolute
 
     init {
         index(false, ScheduleDataContext.ScheduleReplacements.targetGroup)

@@ -12,6 +12,8 @@ class FinalSchedule(id: EntityID<Int>) : Entity<Int>(id) {
 
     var commitHash: Int by ScheduleDataContext.FinalSchedules.commitHash
 
+    var targetCycleId : Int by ScheduleDataContext.FinalSchedules.targetCycleId
+
     var targetGroup: String by ScheduleDataContext.FinalSchedules.targetGroup
 
     var scheduleDate: LocalDate by ScheduleDataContext.FinalSchedules.scheduleDate
