@@ -7,6 +7,7 @@
         <compilerArguments>
           <stringArguments>
             <stringArg name="jvmTarget" arg="19" />
+
             <stringArg name="apiVersion" arg="2.0" />
             <stringArg name="languageVersion" arg="2.0" />
           </stringArguments>
