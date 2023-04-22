@@ -1,7 +1,11 @@
 package controller.db.pgsql.schedule.lite
 
-import controller.db.DBKind
 import controller.db.config.DBConfigurator
+import controller.db.pgsql.schedule.lite.ScheduleDataContext.FinalSchedules.references
+import controller.db.pgsql.schedule.lite.helper.getConfigurationModel
+import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDb
+import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDb
+
 import model.data.change.group.ScheduleChangesGroup
 import model.data.schedule.common.result.group.FinalScheduleGroup
 import model.data.change.day.GeneralChangesOfDay as GeneralDayReplacementsModel
@@ -11,6 +15,7 @@ import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.javatime.date
 import org.jetbrains.exposed.sql.transactions.transaction
+
 import java.io.FileNotFoundException
 
 
@@ -18,16 +23,19 @@ class ScheduleDataContext private constructor() {
 
     private val dbConnection: Database
 
+    private val dbConfiguration: ScheduleConfig
+
     init {
-        val rawConfiguration = DBConfigurator(getDBKind()).getRawConfiguration()
+        val dbKind = ScheduleConfig.getDBKind()
+        val rawConfiguration = DBConfigurator(ScheduleConfig.getDBKind()).getRawConfiguration()
 
         if (rawConfiguration != null) {
-            val connectionModel = getConnectionModel(DB_Name, rawConfiguration)
+            dbConfiguration = getConfigurationModel(rawConfiguration)
             dbConnection = Database.connect(
-                    "${getDBKind().getSpecificDataBaseAddressConnector()}://${connectionModel.dbAddress}/$DB_Name",
-                    driver = getDBKind().getSpecificDataBaseDataDriver(),
-                    user = connectionModel.userName,
-                    password = connectionModel.userPassword
+                    "${dbKind.getSpecificDataBaseAddressConnector()}://${dbConfiguration.connectionModel.dbAddress}/${ScheduleConfig.DB_Name}",
+                    driver = dbKind.getSpecificDataBaseDataDriver(),
+                    user = dbConfiguration.connectionModel.userName,
+                    password = dbConfiguration.connectionModel.userPassword
             )
         }
         else {
@@ -53,7 +61,8 @@ class ScheduleDataContext private constructor() {
                 val hash = targetChange.hashCode()
                 if (ScheduleReplacements.select { ScheduleReplacements.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewChangeToDb(targetChange)) altered++
+                        if (insertNewChangeToDb(targetChange, dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                            altered++
                     }
                     catch (exception: Exception) {
                         println("ERROR:\n\tObject Info: ${targetChange?.targetGroup}/${targetChange?.changesDate.toString()}." +
@@ -64,7 +73,9 @@ class ScheduleDataContext private constructor() {
         }
 
         val date = changes.getAtomicDateValues()
-        println("Info:\n\tCreated $altered new replacement entries for ${date.first}.${date.second}.${date.third}!.")
+        if (altered > 0)
+            println("Info:\n\tCreated $altered new replacement entries for ${date.first}.${date.second}.${date.third}!.")
+
         return altered > 0
     }
 
@@ -82,7 +93,7 @@ class ScheduleDataContext private constructor() {
                 val hash = targetSchedule.hashCode()
                 if (FinalSchedules.select { FinalSchedules.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewFinalScheduleToDb(targetSchedule))
+                        if (insertNewFinalScheduleToDb(targetSchedule, dbConfiguration.targetCycle.getTargetCycleId()?.value))
                             altered++
                     }
                     catch (ex: Exception) {
@@ -94,14 +105,16 @@ class ScheduleDataContext private constructor() {
         }
 
         val date = schedule.getAtomicDateValues()
-        println("Info:\n\tCreated $altered new final schedule entries for ${date.first}.${date.second}.${date.third}!.")
+        if (altered > 0)
+            println("Info:\n\tCreated $altered new final schedule entries for ${date.first}.${date.second}.${date.third}!.")
+
         return altered > 0
     }
     /* endregion */
 
     /* region Data-Access Objects */
 
-    object Teachers : IntIdTable("teachers") {
+    object Teachers : IntIdTable("teacher") {
         var surname = text("surname")
 
         var name = text("name")
@@ -135,19 +148,24 @@ class ScheduleDataContext private constructor() {
         var semester = integer("semester")
     }
 
-    object FinalSchedules : IntIdTable("final_schedule") {
-        var commitHash = integer("commit_hash")
-
-        var targetGroup = text("target_group")
-        var scheduleDate = date("schedule_date")
-    }
-
     object ScheduleReplacements : IntIdTable("schedule_replacement") {
         var commitHash = integer("commit_hash")
 
-        var isAbsolute = bool("is_absolute")
+        var targetCycleId = integer("cycle_id")
+            .references(TargetCycles.id)
         var targetGroup = text("target_group")
         var replacementDate = date("replacement_date")
+
+        var isAbsolute = bool("is_absolute")
+    }
+
+    object FinalSchedules : IntIdTable("final_schedule") {
+        var commitHash = integer("commit_hash")
+
+        var targetCycleId = integer("cycle_id")
+            .references(TargetCycles.id)
+        var targetGroup = text("target_group")
+        var scheduleDate = date("schedule_date")
     }
     /* endregion */
 
@@ -156,10 +174,6 @@ class ScheduleDataContext private constructor() {
     companion object {
 
         val instance = ScheduleDataContext()
-
-        private const val DB_Name = "UksivtSchedule_Lite"
-
-        private fun getDBKind() = DBKind.POSTGRESQL
     }
     /* endregion */
 }
