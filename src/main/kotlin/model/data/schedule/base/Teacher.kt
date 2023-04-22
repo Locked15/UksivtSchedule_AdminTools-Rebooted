@@ -9,14 +9,14 @@ class Teacher(var surname: String, var name: String?, var patronymic: String?) {
 
     constructor() : this("", null, null)
 
-    fun isShortEntry() = name == null || patronymic == null
+    fun isShortEntry() = name == null && patronymic == null
 
     companion object {
 
         fun normalizeTeacherName(rawName: String) = rawName.replace('.', ' ').replace(',', ' ').trim()
 
         fun createTeacherModelByNormalizedName(normalizedName: String) : Teacher {
-            val atomicNameValues = normalizedName.split(' ')
+            val atomicNameValues = normalizedName.split(' ').filter { it.isNotEmpty() }
             val toReturn = Teacher()
             toReturn.surname = atomicNameValues[0]
 
@@ -35,7 +35,7 @@ class Teacher(var surname: String, var name: String?, var patronymic: String?) {
                     }
                     //? Otherwise, second value is just a short variant of 'name + patron' (i.e. 'Голуб ИА').
                     else {
-                        toReturn.patronymic = atomicNameValues[1][2].toString()
+                        toReturn.patronymic = atomicNameValues[1][1].toString()
                         toReturn
                     }
                 }

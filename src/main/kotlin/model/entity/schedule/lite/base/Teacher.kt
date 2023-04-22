@@ -20,7 +20,7 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     /* region Functions */
 
-    fun isShortEntry() = name == null || patronymic == null;
+    fun isShortEntry() = name == null && patronymic == null;
 
     /**
      * Completes comparison with another teacher model (not entity, because entities are created at DB interaction level).
@@ -40,8 +40,17 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
     }
 
     fun updateSecondaryFields(template: TeacherModel) {
-        if (template.name != null) name = template.name
-        if (template.patronymic != null) patronymic = template.patronymic
+        if (template.name != null || template.patronymic != null) {
+            println("INFO:\n\tTeacher ($surname) entry update:")
+            if (template.name != null) {
+                println("\t\tName is updated: $name -> ${template.name}.")
+                name = template.name
+            }
+            if (template.patronymic != null) {
+                println("\t\tPatronymic is updated: $patronymic —> ${template.name}.")
+                patronymic = template.patronymic
+            }
+        }
     }
     /* endregion */
 
