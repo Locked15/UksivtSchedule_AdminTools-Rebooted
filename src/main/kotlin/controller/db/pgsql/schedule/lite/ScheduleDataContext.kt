@@ -1,7 +1,6 @@
 package controller.db.pgsql.schedule.lite
 
 import controller.db.config.DBConfigurator
-import controller.db.pgsql.schedule.lite.ScheduleDataContext.FinalSchedules.references
 import controller.db.pgsql.schedule.lite.helper.getConfigurationModel
 import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDb
 import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDb

@@ -20,7 +20,7 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     /* region Functions */
 
-    fun isShortEntry() = name == null && patronymic == null;
+    fun isShortEntry() = name == null && patronymic == null
 
     /**
      * Completes comparison with another teacher model (not entity, because entities are created at DB interaction level).
