@@ -522,7 +522,19 @@ class ActionsController : ControllerBase() {
         }
 
         is TargetedChangesOfDay -> writeChangesToAssetFile(lastResult as TargetedChangesOfDay)
-        is GeneralChangesOfDay -> writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
+        is GeneralChangesOfDay -> {
+            val writeType = getSafeIntValue("Select writing type:" +
+                                                    "\n\t0 — JSON Asset mode;" +
+                                                    "\n\t1 — Word Document mode." +
+                                                    "\nChoose",
+                                            0, 1)
+            if (writeType == 0)
+                writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
+            else
+                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with schedule replacements.")
+        }
+        is ScheduleChangesGroup -> TODO("Implement schedule replacement group writing to file (prefer in three modes:" +
+                                                "standalone files, united, standalone docs).")
 
         is GeneralFinalDaySchedule -> {
             val writeType = getSafeIntValue("Select writing type:" +
@@ -533,12 +545,11 @@ class ActionsController : ControllerBase() {
             val fileName = inputText("File name (or empty, to auto-generate it)")
 
             if (writeType == 0)
-                writeFinalSchedule(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
+                writeFinalScheduleToAssetFile(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
             else
-                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with result schedule.")
+                TODO("Same as replacements.")
         }
-        is FinalScheduleGroup -> TODO("Implement final schedule group writing to file (prefer in three modes: " +
-                                              "standalone files, united, standalone docs).")
+        is FinalScheduleGroup -> TODO("Same as replacements.")
 
         else -> {
             println("Unknown (or incompatible) type to write.")

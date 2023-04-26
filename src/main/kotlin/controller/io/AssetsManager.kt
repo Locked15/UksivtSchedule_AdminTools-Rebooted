@@ -131,7 +131,7 @@ fun writeChangesToAssetFile(changes: BasicChangesOfDay): Boolean {
 
 /* region Final Schedule */
 
-fun writeFinalSchedule(fileName: String?, finalSchedule: BasicFinalSchedule): Boolean {
+fun writeFinalScheduleToAssetFile(fileName: String?, finalSchedule: BasicFinalSchedule): Boolean {
     return when (finalSchedule) {
         is GeneralFinalDaySchedule -> FinalScheduleWriter.beginWriteFinalSchedule(fileName, finalSchedule)
 
