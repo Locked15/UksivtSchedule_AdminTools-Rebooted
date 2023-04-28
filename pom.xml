@@ -19,6 +19,8 @@
         <kotlin.version>1.8.21</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>19</kotlin.compiler.jvmTarget>
+        <kotlin.compiler.apiVersion>2.0</kotlin.compiler.apiVersion>
+        <kotlin.compiler.languageVersion>2.0</kotlin.compiler.languageVersion>
 
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
@@ -53,6 +55,8 @@
                 </executions>
                 <configuration>
                     <jvmTarget>${maven.compiler.target}</jvmTarget>
+                    <apiVersion>${kotlin.compiler.apiVersion}</apiVersion>
+                    <languageVersion>${kotlin.compiler.languageVersion}</languageVersion>
                 </configuration>
             </plugin>
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
