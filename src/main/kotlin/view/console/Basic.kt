@@ -17,6 +17,11 @@ class Basic(private val user: String) {
     /* region Properties */
 
     /**
+     * Contains last executed command with arguments and properties.
+     */
+    private var lastCommand = "help -f";
+
+    /**
      * Contains a controller object with realizations of the interaction functions.
      *
      * When user performs any accessible action, view sends a message to the controller,
@@ -115,7 +120,9 @@ class Basic(private val user: String) {
      */
     private fun performUserInput(input: String) {
         if (input.isNotBlank()) {
-            val commandInfo = parseInputtedText(this, input.trim())
+            val rawCommand = if (input.contains("last", true)) lastCommand else input
+            val commandInfo = parseInputtedText(this, rawCommand.trim())
+            //? We should check action to presence or app will crash (as expected, by the way).
             if (commandInfo.action != null) {
                 val force = commandInfo.args.contains("-f") || commandInfo.args.contains("--force")
                 if (force || confirmCommandExecution(commandInfo.action.first)) {
@@ -127,6 +134,8 @@ class Basic(private val user: String) {
                                         "\nInfo: ${exception.message}.\n")
                     }
                 }
+                //? We save the last command after execution, so it saves only if command and arguments are valid.
+                lastCommand = rawCommand
             }
             else {
                 println("Inputted command isn't supported, please enter 'help' to get list of supported ones.\n")
