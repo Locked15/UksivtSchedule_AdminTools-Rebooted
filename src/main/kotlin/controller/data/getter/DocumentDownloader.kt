@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils
 import java.io.File
 import java.io.IOException
 import java.net.MalformedURLException
+import java.net.URI
 import java.net.URL
 
 
@@ -47,7 +48,7 @@ class DocumentDownloader {
 	 */
 	fun downloadGoogleFile(url: String, path: String): Boolean {
 		try {
-			FileUtils.copyURLToFile(URL(url), File(path))
+			FileUtils.copyURLToFile(URI.create(url).toURL(), File(path))
 			
 			return true
 		}
