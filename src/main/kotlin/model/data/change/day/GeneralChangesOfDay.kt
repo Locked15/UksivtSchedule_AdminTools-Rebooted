@@ -45,12 +45,10 @@ class GeneralChangesOfDay(val changes: List<TargetedChangesOfDay?>) : BasicChang
     @JsonIgnore
     fun getAtomicDateValues(): Triple<Int?, Int?, Int?> {
         val dayOfMonth = changesDate?.get(Calendar.DAY_OF_MONTH)
-        val monthIndex = (changesDate?.get(Calendar.MONTH)?.plus(1))
+        val monthIndex = changesDate?.get(Calendar.MONTH)
         val year = changesDate?.get(Calendar.YEAR)
 
-        if (dayOfMonth == null || monthIndex == null || year == null)
-            println("WARNING:\n\tOne of atomic date values for 'GeneralChangesOfDay' was null.")
-        return Triple(dayOfMonth, monthIndex, year)
+        return Triple(dayOfMonth, monthIndex?.plus(1), year)
     }
 
     @JsonIgnore

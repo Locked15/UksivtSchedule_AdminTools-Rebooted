@@ -46,9 +46,9 @@ class Reader(pathToFile: String) {
 
     /* region Functions */
 
-    fun getAvailableGroups(): List<String> {
+    fun getAvailableGroups(showWarnings: Boolean = true): List<String> {
         // First by first, we'll get header-declared groups (practise and so on).
-        val foundGroups = getHeaderAdditionalInfo(null).first.toMutableList()
+        val foundGroups = getHeaderAdditionalInfo(null, showWarnings).first.toMutableList()
         // The first row will contain information about cells, so we'll have to skip it.
         for (row in searchTargetTable(document.tables).rows.drop(1)) {
             for ((cellNumber, cell) in row.tableCells.withIndex()) {
@@ -57,7 +57,8 @@ class Reader(pathToFile: String) {
             }
         }
 
-        // I not sure about it, but I think it's better if I will distinct final list.
+        // I not sure about it, but I think it's better if I will clear from empty elements and distinct final list.
+        foundGroups.removeAll { it.isBlank() }
         return foundGroups.distinct()
     }
 
@@ -73,8 +74,8 @@ class Reader(pathToFile: String) {
      * Info: earlier it contains merging logic (it returns schedule with merged target changes), but I refactored it.
      * Now it returns only [TargetedChangesOfDay].
      */
-    fun getChanges(groupName: String, day: Day?): TargetedChangesOfDay? {
-        val headerInfo = getHeaderAdditionalInfo(day)
+    fun getChanges(groupName: String, day: Day?, showWarnings: Boolean = true): TargetedChangesOfDay? {
+        val headerInfo = getHeaderAdditionalInfo(day, showWarnings)
         if (checkGroupsToContain(headerInfo.first, groupName)) {
             // We check header, because it can contain info about practise.
             return TargetedChangesOfDay.getOnPractiseChanges(headerInfo.second, groupName)
@@ -128,39 +129,50 @@ class Reader(pathToFile: String) {
      * that schedule must be generated via [special function][TargetedDayScheduleResultBuilder.getPractiseFinalSchedule]
      * AND [date object][Calendar] with target date and day.
      */
-    private fun getHeaderAdditionalInfo(day: Day?): Pair<List<String>, Calendar?> {
+    private fun getHeaderAdditionalInfo(day: Day?, showWarnings: Boolean = true): Pair<List<String>, Calendar?> {
         val builder = StringBuilder()
         var foundDate: Calendar? = null
-        for (i in document.paragraphs.indices) {
-            // First paragraphs contain administration info, so ignore them:
+        for (i in document.paragraphs.indices.takeWhile { it <= PRACTISE_GROUP_CELL_ID }) {
+            // The first paragraphs contain administration info, so ignore them:
             if (i < DATE_INFO_PARAGRAPH_ID) {
                 continue
             }
-            // Fifth paragraph contains day name and week number, so we can check data:
+            // The fifth paragraph contains day name and week number, so we can check data:
             else if (i == DATE_INFO_PARAGRAPH_ID) {
                 if (day != null) completeDayCheck(document.paragraphs[i].text, day.russianName)
                 foundDate = completeDateParse(document.paragraphs[i].text)
             }
-            // Left paragraphs contains information, that we need:
-            else {
+            // All left paragraphs contain information, that we need:
+            else if (i < document.paragraphs.size) {
                 builder.append(document.paragraphs[i].text)
             }
         }
 
-        //? Last one element contains "On Practise" line ending, not group, so remove it.
-        val practiseRawTextCollection = builder.toString().split(ON_PRACTISE_FIRST_ENDING, ON_PRACTISE_SECOND_ENDING)
-        /* But (because college can, of course) they may use non-specific separator string, so we need to check it.
-           So, if the size of our collection is less than 2, we have this case (string wasn't split after operation).
-           And all is left to do — return the original string. */
-        val practiseGroups = if (practiseRawTextCollection.size > 1) {
-            practiseRawTextCollection.dropLast(1)[0].split(',').map { it.trim() }
-        }
-        else {
-            practiseRawTextCollection[0].split(',').map { it.trim() }
-        }
+        with (builder.toString()) {
+            /* Because Java doesn't support *Split* function with return-value,
+               that says is this split actual or not, we need to handle this in a makeshift way.
+           So, I create two additional variables:
+               The first one contains a list with the original string;
+               The second one contains a list after string split.
+           And then I can check their sizes, to know IS split actual or NOT. */
+            val headerRawTextBeforeSplit = listOf(this)
+            val headerRawTextAfterSplit = this.split(ON_PRACTISE_FIRST_ENDING, ON_PRACTISE_SECOND_ENDING)
 
-        //? And now, we have a full list of practice groups, without trailing spaces!
-        return Pair(practiseGroups, foundDate)
+            /* But (because college can, of course) they may use non-specific separator string, so we need to check it.
+           If the original size and split one is the same, split ISN'T actually happened, so we warn user about it.
+           If not, so split is actually happened, and we can drop last one element and split them by comma. */
+            val practiseGroups = if (headerRawTextBeforeSplit.size != headerRawTextAfterSplit.size) {
+                headerRawTextAfterSplit.dropLast(1)[0].split(',').map { it.trim() }
+            }
+            else {
+                if (showWarnings)
+                    println("INFO:\n\tPractise wasn't found on changes document read.\n\tIs it supposed to be?")
+                listOf()
+            }
+
+            //? And now, we have a full list of practice groups, without trailing spaces!
+            return Pair(practiseGroups, foundDate)
+        }
     }
 
     /**
@@ -192,8 +204,8 @@ class Reader(pathToFile: String) {
         val elements = text.split(" ", "–").drop(1).filterNot { el -> el == EMPTY_WORD_TABLE_CELL_VALUE }
         val monthId = getMonthIndexByName(elements[1])
 
-        var parsedDate = Calendar.getInstance()
-        parsedDate = GregorianCalendar(parsedDate.get(Calendar.YEAR), monthId, elements[0].toInt())
+        val parsedDate = GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), monthId, elements[0].toInt())
+        parsedDate.add(Calendar.HOUR_OF_DAY, 12)
         return parsedDate
     }
     /* endregion */
@@ -369,6 +381,8 @@ class Reader(pathToFile: String) {
          * Otherwise, it contains info about teacher, that will be replaced.
          */
         private const val CENTERED_GROUP_NAME_CELL_ID = 3
+
+        private const val PRACTISE_GROUP_CELL_ID = 6;
     }
     /* endregion */
 }

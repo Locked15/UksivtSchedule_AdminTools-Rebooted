@@ -8,7 +8,9 @@ import java.util.*
 class GeneralFinalDaySchedule(resultingSchedules: List<TargetedFinalDaySchedule>) :
         ArrayList<TargetedFinalDaySchedule>(resultingSchedules), BasicFinalDaySchedule {
 
-    private val targetDate: Calendar? = resultingSchedules.first { result -> result.scheduleDate != null }.scheduleDate
+    private val targetDate: Calendar? = resultingSchedules.first { result ->
+        result.scheduleDate != null
+    }.scheduleDate
 
     /**
      * Returns atomic values for schedule target date.
@@ -20,12 +22,12 @@ class GeneralFinalDaySchedule(resultingSchedules: List<TargetedFinalDaySchedule>
      * * 'third' — Schedule year (i.e. 2022, 2023, etc).
      */
     fun getAtomicDateValues(): Triple<Int?, Int?, Int?> {
-        // I must increase 'dayOfMonth' property, because instead it will return decreased by '1' value.
-        val dayOfMonth = targetDate?.get(Calendar.DAY_OF_MONTH)?.plus(1)
-        val monthIndex = (targetDate?.get(Calendar.MONTH)?.plus(1))
+        val dayOfMonth = targetDate?.get(Calendar.DAY_OF_MONTH)
+        val monthIndex = targetDate?.get(Calendar.MONTH)
         val year = targetDate?.get(Calendar.YEAR)
 
-        return Triple(dayOfMonth, monthIndex, year)
+        // I must increase 'monthIndex' property, because it's index (and starts with '0').
+        return Triple(dayOfMonth, monthIndex?.plus(1), year)
     }
 
     override fun toString(): String = jacksonObjectMapper().writerWithDefaultPrettyPrinter()
