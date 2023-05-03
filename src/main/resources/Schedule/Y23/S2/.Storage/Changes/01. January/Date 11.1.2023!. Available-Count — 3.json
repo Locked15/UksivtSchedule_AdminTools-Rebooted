@@ -2,36 +2,36 @@
   "changes" : [ {
     "targetGroup" : "20ПД-1",
     "isAbsolute" : false,
-    "changesDate" : 1673377200000,
+    "changesDate" : 1673420400000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "МДК 0101",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПД-2",
     "isAbsolute" : false,
-    "changesDate" : 1673377200000,
+    "changesDate" : 1673420400000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "МДК 0101",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПД-3",
     "isAbsolute" : false,
-    "changesDate" : 1673377200000,
+    "changesDate" : 1673420400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "МДК 0101",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   } ],
-  "changesDate" : 1673377200000
+  "changesDate" : 1673420400000
 }

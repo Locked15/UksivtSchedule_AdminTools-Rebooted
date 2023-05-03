@@ -1,66 +1,66 @@
 {
   "changes" : [ {
     "targetGroup" : "20ПД-2",
-    "changesDate" : 1673290800000,
+    "isAbsolute" : false,
+    "changesDate" : 1673334000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "МДК 0104",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "118",
-      "changed" : false
-    } ],
-    "absolute" : false
+      "isChanged" : true
+    } ]
   }, {
     "targetGroup" : "20ПД-1",
-    "changesDate" : 1673290800000,
+    "isAbsolute" : true,
+    "changesDate" : 1673334000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "МДК 0104",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "118",
-      "changed" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "МДК 0101",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "118",
-      "changed" : false
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : "МДК 0101",
       "teacher" : "Музафаров Ф.Ф.",
       "place" : "118",
-      "changed" : false
+      "isChanged" : true
     }, {
       "number" : 0,
       "name" : "МДК 0105",
       "teacher" : "Хасанова Л.Ф.",
       "place" : "111",
-      "changed" : false
-    } ],
-    "absolute" : true
+      "isChanged" : true
+    } ]
   }, {
     "targetGroup" : "20ПД-4",
-    "changesDate" : 1673290800000,
+    "isAbsolute" : false,
+    "changesDate" : 1673334000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "Криминалистика",
       "teacher" : "Фагманова Э.В.",
       "place" : "112",
-      "changed" : false
-    } ],
-    "absolute" : false
+      "isChanged" : true
+    } ]
   }, {
     "targetGroup" : "20ПД-5",
-    "changesDate" : 1673290800000,
+    "isAbsolute" : false,
+    "changesDate" : 1673334000000,
     "changedLessons" : [ {
       "number" : 4,
       "name" : "Криминалистика",
       "teacher" : "Фагманова Э.В.",
       "place" : "112",
-      "changed" : false
-    } ],
-    "absolute" : false
+      "isChanged" : true
+    } ]
   } ],
-  "changesDate" : 1673290800000
+  "changesDate" : 1673334000000
 }

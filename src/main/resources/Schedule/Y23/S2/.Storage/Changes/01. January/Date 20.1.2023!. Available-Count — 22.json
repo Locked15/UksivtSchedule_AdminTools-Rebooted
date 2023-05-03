@@ -2,329 +2,329 @@
   "changes" : [ {
     "targetGroup" : "22Э-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "география",
       "teacher" : "Литвинова С.А",
       "place" : "214",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22Э-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 4,
       "name" : "география",
       "teacher" : "Литвинова С.А",
       "place" : "214",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22Л-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "география",
       "teacher" : "Литвинова С.А",
       "place" : "214",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22ПД-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "История",
       "teacher" : "Гадельшина А.И.",
       "place" : "329",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "История",
       "teacher" : "Гадельшина А.И.",
       "place" : "329",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22ЗИО-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Информатика",
       "teacher" : "Павловская Е.О.",
       "place" : "223",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22СА-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "Физ-ра",
       "teacher" : "Баранов А.В.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22СА-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 5,
       "name" : "ОБЖ",
       "teacher" : "Кобелева С.В.",
       "place" : "313",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22БД-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "Физ-ра",
       "teacher" : "Гашева Н.В.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21Э-1",
     "isAbsolute" : true,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "ЭОП",
       "teacher" : "Юнусова Л.Р.",
       "place" : "217",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "ЭОП",
       "teacher" : "Юнусова Л.Р.",
       "place" : "217",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "ЭОП",
       "teacher" : "Юнусова Л.Р.",
       "place" : "217",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21Э-2",
     "isAbsolute" : true,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 4,
       "name" : "Эк орг",
       "teacher" : "Арсланова О.А.",
       "place" : "301",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : "Эк орг",
       "teacher" : "Арсланова О.А.",
       "place" : "301",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20Э-1",
     "isAbsolute" : true,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "Физ-ра",
       "teacher" : "Емельянова Л.Г.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20Э-2",
     "isAbsolute" : true,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "Физ-ра",
       "teacher" : "Емельянова Л.Г.",
       "place" : "",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
       "name" : "Аудит ",
       "teacher" : "Попова И.А.",
       "place" : "338",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21СА-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Архитектура АС.",
       "teacher" : "Лепеева Д.И.",
       "place" : "231",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Архитектура АС.",
       "teacher" : "Лепеева Д.И.",
       "place" : "231",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21СА-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "Архитектура АС.",
       "teacher" : "Лепеева Д.И.",
       "place" : "231",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Архитектура АС.",
       "teacher" : "Лепеева Д.И.",
       "place" : "231",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22уКСК-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "Психология",
       "teacher" : "Никонова Е.А.",
       "place" : "216",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПО-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Ин.яз",
       "teacher" : "Пустовалова Э.У.",
       "place" : "библ",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПО-2",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "Ин.яз",
       "teacher" : "Пустовалова Э.У.",
       "place" : "библ",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПО-3",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "Ин.яз",
       "teacher" : "Пустовалова Э.У.",
       "place" : "библ",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПО-4",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "Ин.яз",
       "teacher" : "Пустовалова Э.У.",
       "place" : "библ",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ПСА-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 4,
       "name" : "УП",
       "teacher" : "Алибаева Р.Р.",
       "place" : "305",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ПСА-5",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "УП",
       "teacher" : "Кабиров А.У.",
       "place" : "Чз общ",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "УП",
       "teacher" : "Кабиров А.У.",
       "place" : "Чз общ",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ОИБ-1",
     "isAbsolute" : false,
-    "changesDate" : 1674154800000,
+    "changesDate" : 1674198000000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "История",
       "teacher" : "Ахметшина Е.В.",
       "place" : "323а",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
       "name" : "История",
       "teacher" : "Ахметшина Е.В.",
       "place" : "323а",
-      "isChanged" : false
+      "isChanged" : true
     } ]
   } ],
-  "changesDate" : 1674154800000
+  "changesDate" : 1674198000000
 }
