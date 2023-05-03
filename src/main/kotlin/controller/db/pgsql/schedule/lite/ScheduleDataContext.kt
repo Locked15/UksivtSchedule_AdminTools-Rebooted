@@ -2,13 +2,13 @@ package controller.db.pgsql.schedule.lite
 
 import controller.db.config.DBConfigurator
 import controller.db.pgsql.schedule.lite.helper.getConfigurationModel
-import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDb
-import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDb
+import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDB
+import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDB
 
-import model.data.change.group.ScheduleChangesGroup
-import model.data.schedule.common.result.group.FinalScheduleGroup
 import model.data.change.day.GeneralChangesOfDay as GeneralDayReplacementsModel
+import model.data.change.group.ScheduleDayChangesGroup
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule as GeneralFinalDayScheduleModel
+import model.data.schedule.common.result.group.FinalScheduleGroup
 
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.dao.id.IntIdTable
@@ -44,7 +44,7 @@ class ScheduleDataContext private constructor() {
 
     /* region DB Synchronization Functions */
 
-    fun syncChanges(changes: ScheduleChangesGroup): Boolean {
+    fun syncChanges(changes: ScheduleDayChangesGroup): Boolean {
         var altered = 0
         changes.forEach {
             if (syncChanges(it)) altered++
@@ -60,7 +60,7 @@ class ScheduleDataContext private constructor() {
                 val hash = targetChange.hashCode()
                 if (ScheduleReplacements.select { ScheduleReplacements.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewChangeToDb(targetChange, dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                        if (insertNewChangeToDB(targetChange, dbConfiguration.targetCycle.getTargetCycleId()?.value))
                             altered++
                     }
                     catch (exception: Exception) {
@@ -92,7 +92,7 @@ class ScheduleDataContext private constructor() {
                 val hash = targetSchedule.hashCode()
                 if (FinalSchedules.select { FinalSchedules.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewFinalScheduleToDb(targetSchedule, dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                        if (insertNewFinalScheduleToDB(targetSchedule, dbConfiguration.targetCycle.getTargetCycleId()?.value))
                             altered++
                     }
                     catch (ex: Exception) {
