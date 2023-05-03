@@ -14,7 +14,8 @@ import model.data.schedule.base.Lesson
 import model.data.schedule.base.day.Day
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.GeneralChangesOfDay
-import model.data.change.group.ScheduleChangesGroup
+import model.data.change.day.base.BasicChangesOfDay
+import model.data.change.group.ScheduleDayChangesGroup
 import model.data.parse.ParseSource
 import model.data.parse.changes.ParseDataDetails
 import model.data.schedule.common.origin.BasicSchedule
@@ -76,18 +77,18 @@ class ActionsController : ControllerBase() {
     }
 
     /**
-     * Begins a parsing process in [the][processAutomaticMode] [selected][processTargetMode] [mode][processManualMode].
+     * Begins a parsing process in [the][parseScheduleInAutomaticMode] [selected][parseScheduleInTargetMode] [mode][parseScheduleInManualMode].
      * Selected mode depends on [sent arguments][args].
      */
     private fun parseScheduleBySelectedMode(args: List<String>): Any {
         return if (args.contains("-a") || args.contains("--automatic")) {
-            processAutomaticMode()
+            parseScheduleInAutomaticMode()
         }
         else if (args.contains("-m") || args.contains("--manual")) {
-            processManualMode()
+            parseScheduleInManualMode()
         }
         else {
-            processTargetMode()
+            parseScheduleInTargetMode()
         }
     }
 
@@ -99,7 +100,7 @@ class ActionsController : ControllerBase() {
      *
      * Send '-a' or '--automatic' to args, to activate this mode.
      */
-    private fun processAutomaticMode(): GeneralWeekSchedule {
+    private fun parseScheduleInAutomaticMode(): GeneralWeekSchedule {
         val path = getSafeFilePath("xls", "xlsx")
         val reader = ExcelReader(path)
 
@@ -117,7 +118,7 @@ class ActionsController : ControllerBase() {
      * Send '-t' or '--target' to args, to activate this mode.
      * OR, you can end nothing's, cause it used by default, as I said.
      */
-    private fun processTargetMode(): TargetedWeekSchedule {
+    private fun parseScheduleInTargetMode(): TargetedWeekSchedule {
         val data = getTargetDataForScheduleParse()
         return data.second.getWeekSchedule(data.first)
     }
@@ -131,7 +132,7 @@ class ActionsController : ControllerBase() {
      *
      * Send '-m' or '--manual' to args, to activate this mode.
      */
-    private fun processManualMode(): TargetedWeekSchedule {
+    private fun parseScheduleInManualMode(): TargetedWeekSchedule {
         val groupName = inputText("Input group name")
         return generateScheduleForManualMode(groupName)
     }
@@ -228,26 +229,37 @@ class ActionsController : ControllerBase() {
 
     private fun readChangesBySelectedMode(args: List<String>): BasicScheduleChanges {
         return if (args.contains("-a") || args.contains("--automatic")) {
-            readAllAvailableChangesAssets()
+            readAllAvailableChangesAssets(args.contains("-i") || args.contains("--include"))
         }
         else {
             readChangesByTargetFileAsset()
         }
     }
 
-    private fun readAllAvailableChangesAssets(): ScheduleChangesGroup {
+    private fun readAllAvailableChangesAssets(readMonthLevelAssets: Boolean): ScheduleDayChangesGroup {
         val results = mutableListOf<GeneralChangesOfDay>()
+        if (readMonthLevelAssets) {
+            for (fileName in getChangesStorageMonthLevelAssetFiles()) {
+                readChangesAsset("", fileName)?.let { results.add(it) } ?: run {
+                    println("WARNING:\n\tGot empty changes object on reading Month-Level asset." +
+                                    "Parameters: $fileName")
+                }
+            }
+        }
+
         for (subFolder in getChangesStorageMonthFolderNames()) {
-            for (fileName in getChangesStorageFileNames(subFolder)) {
-                readChangesAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
-                    println("WARNING:\n\tGot empty changes object on reading." +
-                                    "Parameters: $subFolder/$fileName")
+            with(getChangesStorageFileNames(subFolder)) {
+                for (fileName in this) {
+                    readChangesAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
+                        println("WARNING:\n\tGot empty changes object on reading." +
+                                        "Parameters: $subFolder/$fileName")
+                    }
                 }
             }
         }
 
         println("Found ${results.size} schedule changes assets.")
-        return ScheduleChangesGroup(results)
+        return ScheduleDayChangesGroup(results)
     }
 
     private fun readChangesByTargetFileAsset(): GeneralChangesOfDay {
@@ -260,20 +272,31 @@ class ActionsController : ControllerBase() {
 
     private fun readFinalScheduleBySelectedMode(args: List<String>): BasicFinalSchedule {
         return if (args.contains("-a") || args.contains("--automatic")) {
-            readAllAvailableFinalScheduleAssets()
+            readAllAvailableFinalScheduleAssets(args.contains("-i") || args.contains("--include"))
         }
         else {
             readFinalScheduleByTargetFileAsset()
         }
     }
 
-    private fun readAllAvailableFinalScheduleAssets(): FinalScheduleGroup {
+    private fun readAllAvailableFinalScheduleAssets(readMonthLevelAssets: Boolean): FinalScheduleGroup {
         val results = mutableListOf<GeneralFinalDaySchedule>()
+        if (readMonthLevelAssets) {
+            for (fileName in getFinalScheduleStorageMonthLevelAssetFiles()) {
+                readFinalScheduleAsset("", fileName)?.let { results.add(it) } ?: run {
+                    println("WARNING:\n\tGot empty final schedule object on reading Month-Level asset." +
+                                    "Parameters: $fileName")
+                }
+            }
+        }
+
         for (subFolder in getFinalSchedulesStorageMonthFolderNames()) {
-            for (fileName in getFinalSchedulesStorageFileNames(subFolder)) {
-                readFinalScheduleAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
-                    println("WARNING:\n\tGot empty final schedule on reading." +
-                                    "Parameters: $subFolder/$fileName")
+            with(getFinalSchedulesStorageFileNames(subFolder)) {
+                for (fileName in this) {
+                    readFinalScheduleAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
+                        println("WARNING:\n\tGot empty final schedule on reading." +
+                                        "Parameters: $subFolder/$fileName")
+                    }
                 }
             }
         }
@@ -305,14 +328,14 @@ class ActionsController : ControllerBase() {
      * Collects target data for a parsing process.
      * Then, begins changes document parse.
      */
-    private fun parseChangesBySelectedMode(args: List<String>): Any {
+    private fun parseChangesBySelectedMode(args: List<String>): BasicChangesOfDay {
         val isAutoMode = args.contains("-a") || args.contains("--auto")
         val isUnitedMode = args.contains("-u") || args.contains("--united")
         val data = getTargetDataForChangesParse(isAutoMode,
                                                 if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT)
 
-        val result = completeChangesParseBySelectedSource(if (isUnitedMode) ParseSource.UNITED_FILE
-                                                          else ParseSource.DOCUMENT, data)
+        val result = callSpecificChangesParseFunctionBySelectedSource(if (isUnitedMode) ParseSource.UNITED_FILE
+                                                                      else ParseSource.DOCUMENT, data)
 
         return if (result == null) {
             println("WARNING:\n\tWhen parsing changes (auto: $isAutoMode, united: $isUnitedMode) got 'NULL' value!")
@@ -321,12 +344,13 @@ class ActionsController : ControllerBase() {
         else result
     }
 
-    private fun completeChangesParseBySelectedSource(dataSource: ParseSource, parseData: ParseDataDetails): Any? {
-        return if (dataSource.isUnitedMode()) completeChangesParseByUnitedFile(parseData)
-        else completeChangesParseByDocument(parseData)
+    private fun callSpecificChangesParseFunctionBySelectedSource(dataSource: ParseSource,
+                                                                 parseData: ParseDataDetails): BasicChangesOfDay? {
+        return if (dataSource.isUnitedMode()) parseChangesByUnitedFile(parseData)
+        else parseChangesByDocument(parseData)
     }
 
-    private fun completeChangesParseByDocument(data: ParseDataDetails): Any? {
+    private fun parseChangesByDocument(data: ParseDataDetails): BasicChangesOfDay? {
         var reader = WordReader(data.pathToFile)
         return if (data.isAutoMode) {
             val results = mutableListOf<TargetedChangesOfDay?>()
@@ -343,7 +367,7 @@ class ActionsController : ControllerBase() {
         }
     }
 
-    private fun completeChangesParseByUnitedFile(data: ParseDataDetails): Any? {
+    private fun parseChangesByUnitedFile(data: ParseDataDetails): BasicChangesOfDay? {
         val result = readUnknownAsset<GeneralChangesOfDay>(Paths.get(data.pathToFile))
         return if (data.isAutoMode) {
             result
@@ -365,8 +389,9 @@ class ActionsController : ControllerBase() {
 
             // From this point, we begin to get required data and then generate result schedule objects.
             val parseSource = if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT
-            val changesData = completeChangesParseBySelectedSource(parseSource,
-                                                                   getTargetDataForChangesParse(true, parseSource))
+            val changesData = callSpecificChangesParseFunctionBySelectedSource(parseSource,
+                                                                               getTargetDataForChangesParse(true,
+                                                                                                            parseSource))
             lastResult = buildFinalSchedulesWithChangesData(changesData as GeneralChangesOfDay)
 
             if (args.contains("-w") || args.contains("--write")) writeLastResult()
@@ -376,6 +401,9 @@ class ActionsController : ControllerBase() {
             println("WARNING:\nCommand 'Final' can be used only if latest result is filled with basic schedule.")
         }
     }
+
+    private fun completeChecksBeforeBeginFinalize() = lastResult is TargetedWeekSchedule ||
+            lastResult is GeneralWeekSchedule
 
     private fun convertLastResultToGeneralScheduleIfItIsTargeted() {
         if (lastResult is TargetedWeekSchedule)
@@ -413,9 +441,6 @@ class ActionsController : ControllerBase() {
             builtIn
         }
     }
-
-    private fun completeChecksBeforeBeginFinalize() = lastResult is TargetedWeekSchedule ||
-            lastResult is GeneralWeekSchedule
     /* endregion */
     /* endregion */
 
@@ -444,19 +469,19 @@ class ActionsController : ControllerBase() {
      * This function invented to debugging purpose, so it DOES NOT write value to [result][lastResult].
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
      */
-    fun initializeBasicParsingProcessByArguments(args: List<String>) {
+    fun initializeTestParsingProcessByArguments(args: List<String>) {
         if (args.contains("-cd") || args.contains("--changes-document"))
-            beginBasicChangesDocumentParsingIfPossible()
+            beginChangesDocumentTestParsingIfPossible()
         if (args.contains("-sd") || args.contains("--schedule-document"))
-            beginBasicScheduleParsingIfPossible()
+            beginBasicScheduleTestParsingIfPossible()
         if (args.contains("-s") || args.contains("--site"))
-            beginBasicSiteParsingIfPossible()
+            beginWebSiteTestParsingIfPossible()
     }
 
     /**
      * Begins basic changes document parsing, if user sent right arguments.
      */
-    private fun beginBasicChangesDocumentParsingIfPossible() {
+    private fun beginChangesDocumentTestParsingIfPossible() {
         val data = getTargetDataForChangesParse(isAutoMode = false,
                                                 ParseSource.DOCUMENT)
         val reader = WordReader(data.pathToFile)
@@ -467,7 +492,7 @@ class ActionsController : ControllerBase() {
     /**
      * Begins basic schedule document parsing if user sent rights arguments.
      */
-    private fun beginBasicScheduleParsingIfPossible() {
+    private fun beginBasicScheduleTestParsingIfPossible() {
         val data = getTargetDataForScheduleParse()
         data.second.getWeekSchedule(data.first)
     }
@@ -475,7 +500,7 @@ class ActionsController : ControllerBase() {
     /**
      * Begins basic site parsing if user sent right arguments.
      */
-    private fun beginBasicSiteParsingIfPossible() {
+    private fun beginWebSiteTestParsingIfPossible() {
         val months = getSafeIntValue("Input count of parsed months", 0, 12)
         SiteParser().getAvailableNodes(months)
     }
@@ -484,7 +509,7 @@ class ActionsController : ControllerBase() {
     /* region Command: 'Sync' */
 
     fun beginSynchronization(args: List<String>) = when (lastResult) {
-        is ScheduleChangesGroup -> ScheduleDataContext.instance.syncChanges(lastResult as ScheduleChangesGroup)
+        is ScheduleDayChangesGroup -> ScheduleDataContext.instance.syncChanges(lastResult as ScheduleDayChangesGroup)
         is GeneralChangesOfDay -> ScheduleDataContext.instance.syncChanges(lastResult as GeneralChangesOfDay)
 
         is FinalScheduleGroup -> ScheduleDataContext.instance.syncFinalSchedules(lastResult as FinalScheduleGroup)
@@ -533,8 +558,9 @@ class ActionsController : ControllerBase() {
             else
                 TODO("It can be modified, to create possibility to generate '.docx' (Word) document with schedule replacements.")
         }
-        is ScheduleChangesGroup -> TODO("Implement schedule replacement group writing to file (prefer in three modes:" +
-                                                "standalone files, united, standalone docs).")
+        is ScheduleDayChangesGroup -> TODO(
+                "Implement schedule replacement group writing to file (prefer in three modes:" +
+                        "standalone files, united, standalone docs).")
 
         is GeneralFinalDaySchedule -> {
             val writeType = getSafeIntValue("Select writing type:" +

@@ -2,9 +2,7 @@ package controller.io.service
 
 import java.nio.file.Files
 import java.util.stream.Collectors
-import kotlin.io.path.isDirectory
-import kotlin.io.path.name
-import kotlin.io.path.nameWithoutExtension
+import kotlin.io.path.*
 
 
 /* region Clear Names Getters */
@@ -54,29 +52,42 @@ fun getGroupsPaths(branch: String, affiliation: String) = Files.walk(PathResolve
 /* region Storage Sub-Folders Getters */
 
 fun getChangesStorageMonthFolderNames() = Files.walk(PathResolver.changesResourceFolderPath, 1)
-    .filter(Files::isDirectory)
+    .filter { it.isDirectory() }
     .collect(Collectors.toList())
     .map { path -> path.name }
     .drop(1)
 
 fun getFinalSchedulesStorageMonthFolderNames() = Files.walk(PathResolver.finalSchedulesResourceFolderPath, 1)
-    .filter(Files::isDirectory)
+    .filter { it.isDirectory() }
     .collect(Collectors.toList())
     .map { path -> path.name }
     .drop(1)
+/* endregion */
+
+/* region Files in Month-Level Directory (Non-Normalized) */
+
+fun getChangesStorageMonthLevelAssetFiles() = Files.walk(PathResolver.changesResourceFolderPath, 1)
+    .filter { !it.isDirectory() && it.extension.equals("json", true) }
+    .collect(Collectors.toList())
+    .map { path -> path.nameWithoutExtension }
+
+fun getFinalScheduleStorageMonthLevelAssetFiles() = Files.walk(PathResolver.finalSchedulesResourceFolderPath, 1)
+    .filter { !it.isDirectory() && it.extension.equals("json", true) }
+    .collect(Collectors.toList())
+    .map { path -> path.nameWithoutExtension }
 /* endregion */
 
 /* region Files in Storage Sub-Folders Getters */
 
 fun getChangesStorageFileNames(monthFolder: String) = Files.walk(PathResolver.resolvePath(
         PathResolver.changesResourceFolderPath, listOf(monthFolder)), 1)
+    .filter { it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
-    .drop(1)
 
 fun getFinalSchedulesStorageFileNames(monthFolder: String) = Files.walk(PathResolver.resolvePath(
         PathResolver.finalSchedulesResourceFolderPath, listOf(monthFolder)), 1)
+    .filter { it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
-    .drop(1)
 /* endregion */
