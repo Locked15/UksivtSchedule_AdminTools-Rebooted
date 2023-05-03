@@ -47,8 +47,9 @@ class Reader(pathToFile: String) {
     /* region Functions */
 
     fun getAvailableGroups(): List<String> {
-        val foundGroups = mutableListOf<String>()
-        // First row will contain information about cells, so we'll have to skip it.
+        // First by first, we'll get header-declared groups (practise and so on).
+        val foundGroups = getHeaderAdditionalInfo(null).first.toMutableList()
+        // The first row will contain information about cells, so we'll have to skip it.
         for (row in searchTargetTable(document.tables).rows.drop(1)) {
             for ((cellNumber, cell) in row.tableCells.withIndex()) {
                 if (checkCellToBeDeclarationSpecificCell(cellNumber) && !cell.text.isNullOrBlank())
@@ -146,9 +147,20 @@ class Reader(pathToFile: String) {
             }
         }
 
-        // Last one element contains "On Practise" string ending, not group, so remove it.
-        val practiseText = builder.toString().split(ON_PRACTISE_ENDING).dropLast(1)
-        return Pair(practiseText, foundDate)
+        //? Last one element contains "On Practise" line ending, not group, so remove it.
+        val practiseRawTextCollection = builder.toString().split(ON_PRACTISE_FIRST_ENDING, ON_PRACTISE_SECOND_ENDING)
+        /* But (because college can, of course) they may use non-specific separator string, so we need to check it.
+           So, if the size of our collection is less than 2, we have this case (string wasn't split after operation).
+           And all is left to do — return the original string. */
+        val practiseGroups = if (practiseRawTextCollection.size > 1) {
+            practiseRawTextCollection.dropLast(1)[0].split(',').map { it.trim() }
+        }
+        else {
+            practiseRawTextCollection[0].split(',').map { it.trim() }
+        }
+
+        //? And now, we have a full list of practice groups, without trailing spaces!
+        return Pair(practiseGroups, foundDate)
     }
 
     /**
@@ -338,7 +350,9 @@ class Reader(pathToFile: String) {
          *
          * Uses to split whole string into [List].
          */
-        internal const val ON_PRACTISE_ENDING = "— на практике"
+        internal const val ON_PRACTISE_FIRST_ENDING = "— на практике"
+
+        internal const val ON_PRACTISE_SECOND_ENDING = "– на практике"
 
         /**
          * Contains ID of the document paragraph, that contains information about target day and month.
