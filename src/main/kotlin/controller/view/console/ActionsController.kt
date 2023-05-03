@@ -73,7 +73,7 @@ class ActionsController : ControllerBase() {
      */
     fun parseSchedule(args: List<String>) {
         lastResult = parseScheduleBySelectedMode(args)
-        if (args.contains("-w") || args.contains("--write")) writeLastResult()
+        if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
     }
 
     /**
@@ -142,7 +142,7 @@ class ActionsController : ControllerBase() {
 
     fun readAssets(args: List<String>) {
         lastResult = readSelectedAssets(args)
-        if (args.contains("-w") || args.contains("--write")) writeLastResult()
+        if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
     }
 
     private fun readSelectedAssets(args: List<String>): Any {
@@ -320,8 +320,7 @@ class ActionsController : ControllerBase() {
      */
     fun parseChanges(args: List<String>) {
         lastResult = parseChangesBySelectedMode(args)
-
-        if (args.contains("-w") || args.contains("--write")) writeLastResult()
+        if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
     }
 
     /**
@@ -332,7 +331,9 @@ class ActionsController : ControllerBase() {
         val isAutoMode = args.contains("-a") || args.contains("--auto")
         val isUnitedMode = args.contains("-u") || args.contains("--united")
         val data = getTargetDataForChangesParse(isAutoMode,
-                                                if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT)
+                                                if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT,
+                                                !(args.contains("-c") || args.contains("--check"))
+        )
 
         val result = callSpecificChangesParseFunctionBySelectedSource(if (isUnitedMode) ParseSource.UNITED_FILE
                                                                       else ParseSource.DOCUMENT, data)
@@ -354,9 +355,9 @@ class ActionsController : ControllerBase() {
         var reader = WordReader(data.pathToFile)
         return if (data.isAutoMode) {
             val results = mutableListOf<TargetedChangesOfDay?>()
-            for (group in reader.getAvailableGroups()) {
+            for (group in reader.getAvailableGroups(true)) {
                 reader = WordReader(data.pathToFile)
-                results.add(reader.getChanges(group, data.targetDay))
+                results.add(reader.getChanges(group, data.targetDay, false))
             }
 
             GeneralChangesOfDay(results)
@@ -389,12 +390,14 @@ class ActionsController : ControllerBase() {
 
             // From this point, we begin to get required data and then generate result schedule objects.
             val parseSource = if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT
+            val ignoreDayCheck = !(args.contains("-c") || args.contains("--check"))
             val changesData = callSpecificChangesParseFunctionBySelectedSource(parseSource,
                                                                                getTargetDataForChangesParse(true,
-                                                                                                            parseSource))
+                                                                                                            parseSource,
+                                                                                                            ignoreDayCheck))
             lastResult = buildFinalSchedulesWithChangesData(changesData as GeneralChangesOfDay)
 
-            if (args.contains("-w") || args.contains("--write")) writeLastResult()
+            if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
             if (preserve != null) lastResult = preserve
         }
         else {
@@ -482,8 +485,7 @@ class ActionsController : ControllerBase() {
      * Begins basic changes document parsing, if user sent right arguments.
      */
     private fun beginChangesDocumentTestParsingIfPossible() {
-        val data = getTargetDataForChangesParse(isAutoMode = false,
-                                                ParseSource.DOCUMENT)
+        val data = getTargetDataForChangesParse(isAutoMode = false, ParseSource.DOCUMENT)
         val reader = WordReader(data.pathToFile)
 
         reader.getChanges(data.targetGroup!!, data.targetDay)
@@ -532,14 +534,16 @@ class ActionsController : ControllerBase() {
      * Returns [result of writing][Boolean].
      * If value can't be written, prints message and returns false.
      */
-    fun writeLastResult() = when (lastResult) {
+    fun writeLastResult(args: List<String> = listOf()) = when (lastResult) {
         is TargetedWeekSchedule -> writeBasicScheduleToTargetFile(lastResult as TargetedWeekSchedule)
         is GeneralWeekSchedule -> {
-            val writeType = getSafeIntValue("Select writing type:" +
-                                                    "\n\t0 — United files mode;" +
-                                                    "\n\t1 — Standalone files mode." +
-                                                    "\nChoose",
-                                            0, 1)
+            val writeType = if (args.contains("--type") && args.contains("united")) 0
+            else if (args.contains("--type") && (args.contains("split") || args.contains("standalone"))) 1
+            else getSafeIntValue("Select writing type:" +
+                                         "\n\t0 — United files mode;" +
+                                         "\n\t1 — Standalone files mode." +
+                                         "\nChoose",
+                                 0, 1)
             if (writeType == 0)
                 writeBasicScheduleToUnitedAsset(inputText("File name"), lastResult as GeneralWeekSchedule)
             else
@@ -548,11 +552,13 @@ class ActionsController : ControllerBase() {
 
         is TargetedChangesOfDay -> writeChangesToAssetFile(lastResult as TargetedChangesOfDay)
         is GeneralChangesOfDay -> {
-            val writeType = getSafeIntValue("Select writing type:" +
-                                                    "\n\t0 — JSON Asset mode;" +
-                                                    "\n\t1 — Word Document mode." +
-                                                    "\nChoose",
-                                            0, 1)
+            val writeType = if (args.contains("--type") && args.contains("json")) 0
+            else if (args.contains("--type") && args.contains("document")) 1
+            else getSafeIntValue("Select writing type:" +
+                                         "\n\t0 — JSON Asset mode;" +
+                                         "\n\t1 — Word Document mode." +
+                                         "\nChoose",
+                                 0, 1)
             if (writeType == 0)
                 writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
             else
@@ -563,12 +569,15 @@ class ActionsController : ControllerBase() {
                         "standalone files, united, standalone docs).")
 
         is GeneralFinalDaySchedule -> {
-            val writeType = getSafeIntValue("Select writing type:" +
-                                                    "\n\t0 — JSON Asset mode;" +
-                                                    "\n\t1 — Word Document mode." +
-                                                    "\nChoose",
-                                            0, 1)
-            val fileName = inputText("File name (or empty, to auto-generate it)")
+            val writeType = if (args.contains("--type") && args.contains("json")) 0
+            else if (args.contains("--type") && args.contains("document")) 1
+            else getSafeIntValue("Select writing type:" +
+                                         "\n\t0 — JSON Asset mode;" +
+                                         "\n\t1 — Word Document mode." +
+                                         "\nChoose",
+                                 0, 1)
+            val fileName = if (args.contains("--name") && args.contains("ignore")) ""
+            else inputText("File name (or empty, to auto-generate it)")
 
             if (writeType == 0)
                 writeFinalScheduleToAssetFile(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
@@ -849,11 +858,12 @@ class ActionsController : ControllerBase() {
          * * [Second][Triple.second] — Target group name;
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */
-        private fun getTargetDataForChangesParse(isAutoMode: Boolean, source: ParseSource): ParseDataDetails {
+        private fun getTargetDataForChangesParse(isAutoMode: Boolean, source: ParseSource,
+                                                 isIgnoreTargetDay: Boolean = false): ParseDataDetails {
             val path = getSafeFilePath(if (source.isUnitedMode()) "json"
                                        else "docx")
             val group = if (isAutoMode) null else inputText("Input target group")
-            val day = if (source.isUnitedMode()) null else getSafeTargetDay()
+            val day = if (source.isUnitedMode() || isIgnoreTargetDay) null else getSafeTargetDay()
 
             return ParseDataDetails(path, group, isAutoMode, day)
         }
