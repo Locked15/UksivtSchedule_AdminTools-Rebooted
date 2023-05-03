@@ -68,8 +68,8 @@ class Basic(private val user: String) {
                            Command("Help") {
                                controller.showHelp()
                            }),
-            "parse" to Pair(parseCommandDescription,
-                            Command("Parse") {
+            "test" to Pair(testCommandDescription,
+                           Command("Test") {
                                 controller.initializeTestParsingProcessByArguments(it)
                             }),
             "sync" to Pair(syncCommandDescription,
@@ -212,7 +212,7 @@ class Basic(private val user: String) {
         /**
          * Description of the 'Parse' command.
          */
-        private val parseCommandDescription: String
+        private val testCommandDescription: String
 
         /**
          * Description of the 'Sync' command.
@@ -251,7 +251,7 @@ class Basic(private val user: String) {
                         "Begins merging process between basic schedule and changes. Requires last value to contain basic schedule"
 
                     helpCommandDescription = "Show context help for this application"
-                    parseCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
+                    testCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
                     syncCommandDescription = "Begins synchronization process between last result and db"
                     writeCommandDescription = "Writes last gotten result value to file"
                     showCommandDescription = "Show last gotten result in the console (terminal)"
@@ -264,7 +264,7 @@ class Basic(private val user: String) {
                     finalCommandDescription = "開始基本計劃和變更之間的合併過程。 需要最後一個值來包含基本計劃。"
 
                     helpCommandDescription = "顯示此應用程序的上下文幫助"
-                    parseCommandDescription = "開始基本解析過程（可能對調試過程有用）"
+                    testCommandDescription = "開始基本解析過程（可能對調試過程有用）"
                     syncCommandDescription = "TODO: Translate this."
                     writeCommandDescription = "將最後獲得的結果值寫入文件"
                     showCommandDescription = "在控制台（終端）中顯示最後得到的結果"
@@ -280,7 +280,7 @@ class Basic(private val user: String) {
                         "Начать процесс слияния базового расписания и замен. Требует наличия базового расписания в 'lastResult'"
 
                     helpCommandDescription = "Показать контекстную справку для приложения"
-                    parseCommandDescription =
+                    testCommandDescription =
                         "Начать базовый процесс парса чего-либо (может быть полезно для тестирования)"
                     syncCommandDescription = "Начать процесс синхронизации последнего полученного результата и БД"
                     writeCommandDescription = "Записать последний полученный результат в файл"

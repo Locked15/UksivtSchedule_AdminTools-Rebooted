@@ -81,7 +81,7 @@ class ActionsController : ControllerBase() {
      * Selected mode depends on [sent arguments][args].
      */
     private fun parseScheduleBySelectedMode(args: List<String>): Any {
-        return if (args.contains("-a") || args.contains("--automatic")) {
+        return if (args.contains("-a") || args.contains("--auto")) {
             parseScheduleInAutomaticMode()
         }
         else if (args.contains("-m") || args.contains("--manual")) {
@@ -164,7 +164,7 @@ class ActionsController : ControllerBase() {
     /* region Basic Schedule Assets Reading */
 
     private fun readBasicScheduleAssetsBySelectedMode(args: List<String>): BasicSchedule {
-        return if (args.contains("-a") || args.contains("--automatic")) {
+        return if (args.contains("-a") || args.contains("--auto")) {
             readAllAvailableBasicScheduleAssets()
         }
         else if (args.contains("-u") || args.contains("--united")) {
@@ -228,7 +228,7 @@ class ActionsController : ControllerBase() {
     /* region Change(-s) Assets Reading */
 
     private fun readChangesBySelectedMode(args: List<String>): BasicScheduleChanges {
-        return if (args.contains("-a") || args.contains("--automatic")) {
+        return if (args.contains("-a") || args.contains("--auto")) {
             readAllAvailableChangesAssets(args.contains("-i") || args.contains("--include"))
         }
         else {
@@ -271,7 +271,7 @@ class ActionsController : ControllerBase() {
     /* region Final Schedule Assets Parse */
 
     private fun readFinalScheduleBySelectedMode(args: List<String>): BasicFinalSchedule {
-        return if (args.contains("-a") || args.contains("--automatic")) {
+        return if (args.contains("-a") || args.contains("--auto")) {
             readAllAvailableFinalScheduleAssets(args.contains("-i") || args.contains("--include"))
         }
         else {
@@ -456,7 +456,7 @@ class ActionsController : ControllerBase() {
     fun showHelp() = println(helpMessage)
     /* endregion */
 
-    /* region Command: 'Parse' */
+    /* region Command: 'Test' */
 
     /**
      * Initializes a basic parsing process (without data-storage) by sent arguments.
@@ -470,11 +470,11 @@ class ActionsController : ControllerBase() {
      * Also, it supports only a target mode for schedule parsing, because it's a basic mode for others.
      */
     fun initializeTestParsingProcessByArguments(args: List<String>) {
-        if (args.contains("-cd") || args.contains("--changes-document"))
+        if (args.contains("change") || args.contains("replacement"))
             beginChangesDocumentTestParsingIfPossible()
-        if (args.contains("-sd") || args.contains("--schedule-document"))
+        if (args.contains("schedule") || args.contains("basic"))
             beginBasicScheduleTestParsingIfPossible()
-        if (args.contains("-s") || args.contains("--site"))
+        if (args.contains("site") || args.contains("web"))
             beginWebSiteTestParsingIfPossible()
     }
 
