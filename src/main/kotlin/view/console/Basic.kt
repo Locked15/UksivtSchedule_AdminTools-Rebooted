@@ -78,7 +78,7 @@ class Basic(private val user: String) {
                            }),
             "write" to Pair(writeCommandDescription,
                             Command("Write") {
-                                controller.writeLastResult()
+                                controller.writeLastResult(it)
                             }),
             "show" to Pair(showCommandDescription,
                            Command("Show") {
