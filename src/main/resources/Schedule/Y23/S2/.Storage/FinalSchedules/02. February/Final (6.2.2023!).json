@@ -1,6 +1,6 @@
 [ {
   "targetGroup" : "20ЗИО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -50,7 +50,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ЗИО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -100,7 +100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ЗИО-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -150,7 +150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ЗИО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -200,7 +200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ЗИО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -250,7 +250,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ЗИО-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -300,7 +300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21Л-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -350,7 +350,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21Л-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -400,7 +400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21уЛ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -450,7 +450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20Э-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -500,7 +500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20Э-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -550,7 +550,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21Э-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -600,7 +600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21Э-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -650,7 +650,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22БД-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -700,7 +700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ВЕБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -750,7 +750,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ВЕБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -800,7 +800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ЗИО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -850,7 +850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ЗИО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -900,7 +900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ИС-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -950,7 +950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22Л-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1000,7 +1000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ОИБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1050,7 +1050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ОИБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1100,7 +1100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1150,7 +1150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1200,7 +1200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1250,7 +1250,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1300,7 +1300,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22П-5",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1350,7 +1350,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПД-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1400,7 +1400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПД-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1450,7 +1450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1500,7 +1500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1550,7 +1550,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПО-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1600,7 +1600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПСА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1650,7 +1650,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПСА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1700,7 +1700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПСА-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1750,7 +1750,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22СА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1800,7 +1800,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22СА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1850,7 +1850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22Э-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1900,7 +1900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22Э-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -1950,7 +1950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2000,7 +2000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2050,7 +2050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2100,7 +2100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2150,7 +2150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-5",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2200,7 +2200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПД-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2250,7 +2250,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПД-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2300,7 +2300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПД-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2350,7 +2350,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2400,7 +2400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2450,7 +2450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПО-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2500,7 +2500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПО-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2550,7 +2550,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПО-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2600,7 +2600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПО-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2650,7 +2650,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПО-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2700,7 +2700,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПО-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2750,7 +2750,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПСА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2800,7 +2800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПСА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2850,7 +2850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПСА-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2900,7 +2900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -2950,7 +2950,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3000,7 +3000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3050,7 +3050,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3100,7 +3100,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-5",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3150,7 +3150,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-6",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3200,7 +3200,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21БД-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3250,7 +3250,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ВЕБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3300,7 +3300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ВЕБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3350,7 +3350,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "20ВЕБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3400,7 +3400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ВЕБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3450,7 +3450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ВЕБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3500,7 +3500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ВЕБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3550,7 +3550,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ВЕБ-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3600,7 +3600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ИС-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3650,7 +3650,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ИС-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3700,7 +3700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ИС-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3750,7 +3750,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ОИБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3800,7 +3800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ОИБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3850,7 +3850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ОИБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3900,7 +3900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ОИБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -3950,7 +3950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4000,7 +4000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4050,7 +4050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4100,7 +4100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19П-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4150,7 +4150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19П-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4200,7 +4200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19П-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4250,7 +4250,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20П-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4300,7 +4300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20П-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4350,7 +4350,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4400,7 +4400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4450,7 +4450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-3",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4500,7 +4500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-4",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4550,7 +4550,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19КСК-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4600,7 +4600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19КСК-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4650,7 +4650,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19СА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4700,7 +4700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19СА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4750,7 +4750,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20СА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4800,7 +4800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21СА-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4850,7 +4850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21СА-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4900,7 +4900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20уКСК-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -4950,7 +4950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20уКСК-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -5000,7 +5000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21уКСК-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -5050,7 +5050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22уКСК-1",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {
@@ -5100,7 +5100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22уКСК-2",
-  "scheduleDate" : 1675623600000,
+  "scheduleDate" : 1675666800000,
   "schedule" : {
     "day" : "MONDAY",
     "lessons" : [ {

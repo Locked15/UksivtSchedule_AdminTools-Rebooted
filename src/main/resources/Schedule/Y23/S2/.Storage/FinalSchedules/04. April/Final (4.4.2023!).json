@@ -1,156 +1,156 @@
 [ {
   "targetGroup" : "20ЗИО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Страх дело",
-      "teacher" : "Засыпкин К.Н.",
-      "place" : "341",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ЗИО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
-    }, {
-      "number" : 3,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "Страх дело",
-      "teacher" : "Засыпкин К.Н.",
-      "place" : "341",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "Страх дело",
-      "teacher" : "Засыпкин К.Н.",
-      "place" : "341",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ЗИО-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "УП.02.01",
-      "teacher" : "Нагаева З.Т.",
-      "place" : "337",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21ЗИО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -200,7 +200,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ЗИО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -250,7 +250,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ЗИО-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -300,7 +300,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21Л-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -350,7 +350,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21Л-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -400,157 +400,157 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21уЛ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.04.01",
-      "teacher" : "Ахатова Г.И.",
-      "place" : "308",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК.04.01",
-      "teacher" : "Ахатова Г.И.",
-      "place" : "308",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "МДК.04.01",
-      "teacher" : "Ахатова Г.И.",
-      "place" : "308",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20Э-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК.04.01",
-      "teacher" : "Попова И.А.",
-      "place" : "301",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20Э-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "МДК.04.01",
-      "teacher" : "Попова И.А.",
-      "place" : "301",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21Э-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -600,7 +600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21Э-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -650,7 +650,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22БД-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -700,7 +700,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ВЕБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -750,7 +750,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ВЕБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -800,7 +800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ЗИО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -850,7 +850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ЗИО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -900,7 +900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ИС-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -950,7 +950,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22Л-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1000,7 +1000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ОИБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1050,7 +1050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ОИБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1100,7 +1100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1150,7 +1150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1200,7 +1200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1250,7 +1250,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22П-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1300,7 +1300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22П-5",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1350,7 +1350,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПД-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1400,7 +1400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПД-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1450,7 +1450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1500,7 +1500,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1550,7 +1550,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПО-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1600,7 +1600,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПСА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1650,7 +1650,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22ПСА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1700,7 +1700,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22ПСА-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1750,7 +1750,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22СА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1800,7 +1800,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22СА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1850,7 +1850,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22Э-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1900,7 +1900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22Э-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -1950,7 +1950,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "20ПД-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2000,7 +2000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2050,7 +2050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2100,7 +2100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2150,7 +2150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПД-5",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2200,7 +2200,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПД-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2250,7 +2250,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ПД-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2300,7 +2300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПД-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2350,207 +2350,207 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Основы бухучета",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ПО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Основы бухучета",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ПО-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Основы бухучета",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "МДК.02.01",
-      "teacher" : "Хамидова Д.С.",
-      "place" : "323",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ПО-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.02.01",
-      "teacher" : "Кильсенбаев Э.Р.",
-      "place" : "114",
-      "isChanged" : false
-    }, {
-      "number" : 3,
-      "name" : "МДК.02.01",
-      "teacher" : "Кильсенбаев Э.Р.",
-      "place" : "114",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "Основы бухучета",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "Основы бухучета",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21ПО-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2600,7 +2600,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПО-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2650,7 +2650,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПО-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2700,7 +2700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПО-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2750,157 +2750,157 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ПСА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
-      "place" : null,
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
-      "place" : null,
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
-      "place" : null,
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ПСА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.05.02",
-      "teacher" : "Шангареева Г.Ф.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК.01.02",
-      "teacher" : "Шангареева Г.Ф.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.01.02",
-      "teacher" : "Шангареева Г.Ф.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ПСА-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.02.02",
-      "teacher" : "Воронина А.А.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -2950,7 +2950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3000,7 +3000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3050,7 +3050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3100,7 +3100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-5",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3150,7 +3150,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ПСА-6",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3200,7 +3200,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21БД-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3250,107 +3250,107 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ВЕБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19ВЕБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ПОПД",
-      "teacher" : "Дуйсенов И.А.",
-      "place" : "214",
-      "isChanged" : false
-    }, {
-      "number" : 3,
-      "name" : "ПОПД",
-      "teacher" : "Дуйсенов И.А.",
-      "place" : "214",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ВЕБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3400,7 +3400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ВЕБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3450,7 +3450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ВЕБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3500,7 +3500,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ВЕБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3550,7 +3550,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21ВЕБ-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3600,57 +3600,57 @@
   "isChanged" : true
 }, {
   "targetGroup" : "19ИС-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
-    }, {
-      "number" : 3,
-      "name" : "Менеджмент",
-      "teacher" : "Киселева М.В.",
-      "place" : "223",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "ПОПД",
-      "teacher" : "Дуйсенов И.А.",
-      "place" : "214",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "ПОПД",
-      "teacher" : "Дуйсенов И.А.",
-      "place" : "214",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ИС-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3700,7 +3700,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ИС-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3750,107 +3750,107 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19ОИБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Ин.яз",
-      "teacher" : "Ахметова А.М.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК 0301",
-      "teacher" : "Белозерцев Л.Н.",
-      "place" : "243",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК 0301",
-      "teacher" : "Белозерцев Л.Н.",
-      "place" : "243",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19ОИБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК 0301",
-      "teacher" : "Белозерцев Л.Н.",
-      "place" : "243",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "МДК 0301",
-      "teacher" : "Белозерцев Л.Н.",
-      "place" : "243",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "МДК 0301",
-      "teacher" : "Белозерцев Л.Н.",
-      "place" : "243",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20ОИБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3900,7 +3900,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20ОИБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -3950,7 +3950,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4000,7 +4000,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4050,7 +4050,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21ОИБ-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4100,157 +4100,157 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19П-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "ИСРПО",
-      "teacher" : "Каримова Р.Ф.",
-      "place" : "233",
-      "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : "ИСРПО",
-      "teacher" : "Каримова Р.Ф.",
-      "place" : "233",
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М.",
-      "place" : "320",
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19П-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "ИСРПО",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "ИСРПО",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Стандартизация",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Стандартизация",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19П-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ИСРПО",
-      "teacher" : "Фатхулова О.В.",
+      "name" : "Практика",
+      "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "ИСРПО",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Стандартизация",
-      "teacher" : "Фатхулова О.В.",
-      "place" : "221",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20П-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4300,7 +4300,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20П-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4350,7 +4350,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21П-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4400,7 +4400,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4450,7 +4450,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-3",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4500,7 +4500,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21П-4",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4550,207 +4550,207 @@
   "isChanged" : false
 }, {
   "targetGroup" : "19КСК-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Экономика орг",
-      "teacher" : "Ахметова Е.А.",
-      "place" : "339",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "МДК.03.01 л/р",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "МДК.03.01 л/р",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Экономика орг",
-      "teacher" : "Ахметова Е.А.",
-      "place" : "339",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19КСК-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Экономика орг",
-      "teacher" : "Ахметова Е.А.",
-      "place" : "339",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Экономика орг",
-      "teacher" : "Ахметова Е.А.",
-      "place" : "339",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19СА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "19СА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК.03.02",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "УП.03.01",
-      "teacher" : "Тимашев Т.Р.",
-      "place" : "2",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20СА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4800,7 +4800,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "21СА-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4850,7 +4850,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "21СА-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -4900,107 +4900,107 @@
   "isChanged" : false
 }, {
   "targetGroup" : "20уКСК-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.03.01",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК.03.01",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "20уКСК-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.03.01",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК.03.01",
-      "teacher" : "Лихарев И.А.",
-      "place" : "001в",
-      "isChanged" : false
+      "name" : "Практика",
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
-      "name" : null,
+      "name" : "Практика",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21уКСК-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -5050,7 +5050,7 @@
   "isChanged" : true
 }, {
   "targetGroup" : "22уКСК-1",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
@@ -5100,7 +5100,7 @@
   "isChanged" : false
 }, {
   "targetGroup" : "22уКСК-2",
-  "scheduleDate" : 1680548400000,
+  "scheduleDate" : 1680591600000,
   "schedule" : {
     "day" : "TUESDAY",
     "lessons" : [ {
