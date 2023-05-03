@@ -307,7 +307,7 @@ class Reader(pathToFile: String) {
      * Represents original (".getDayScheduleWithChanges()") function from old *AdminTools*.
      * Because it won't be used often, I moved it down in functions order.
      */
-    fun getChangedSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedFinalDaySchedule {
+    fun getFinalSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedFinalDaySchedule {
         val changes = getChanges(groupName, day)
         if (changes != null) {
             println("Automatic merge tool found empty targeted changes." +

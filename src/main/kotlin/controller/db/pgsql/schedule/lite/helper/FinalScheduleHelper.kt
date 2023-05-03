@@ -6,7 +6,7 @@ import org.jetbrains.exposed.dao.id.EntityID
 import java.time.LocalDate
 
 
-fun insertNewFinalScheduleToDb(targetSchedule: TargetedFinalDaySchedule?, targetCycleId: Int?): Boolean {
+fun insertNewFinalScheduleToDB(targetSchedule: TargetedFinalDaySchedule?, targetCycleId: Int?): Boolean {
     if (targetSchedule != null) {
         // For memory optimization, we'll store in DB only actual lessons (without 'filler' ones).
         val newFinalScheduleId = createNewFinalScheduleInstance(targetSchedule, targetCycleId)

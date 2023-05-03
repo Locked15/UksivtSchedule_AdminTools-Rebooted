@@ -41,7 +41,7 @@ private fun getTeacherWithSideActions(teacherName: String?): Pair<Int?, Boolean>
         val normalizedTeacherName = TeacherModel.normalizeTeacherName(teacherName)
 
         val newTeacherModel = TeacherModel.createTeacherModelByNormalizedName(normalizedTeacherName)
-        tryToFindPresenceEntryId(newTeacherModel, allAvailableTeachers)?.let { Pair(it.value, false) }
+        tryToFindPresenceEntryID(newTeacherModel, allAvailableTeachers)?.let { Pair(it.value, false) }
             ?: run {
                 try {
                     // This one will be executed if the previous one isn't.
@@ -59,7 +59,7 @@ private fun getTeacherWithSideActions(teacherName: String?): Pair<Int?, Boolean>
     }
 }
 
-private fun tryToFindPresenceEntryId(newTeacher: TeacherModel, allTeachers: List<TeacherEntity>): EntityID<Int>? {
+private fun tryToFindPresenceEntryID(newTeacher: TeacherModel, allTeachers: List<TeacherEntity>): EntityID<Int>? {
     val fullEqualEntries = allTeachers.filter { it.compareWithOtherModel(newTeacher) == 1 }
     val partialEqualEntries = allTeachers.filter { it.compareWithOtherModel(newTeacher) == 0 }
 

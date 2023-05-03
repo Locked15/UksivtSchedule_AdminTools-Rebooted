@@ -175,51 +175,51 @@ class Reader(pathToFile: String) {
      * Checks main conditions (to the header region, that is skips AND to object update conditions).
      * If second ones are completed, updates target objects.
      *
-     * Requires [all][base] [previous][iter] [wrapper-models][local], [current column][column] and [row].
+     * Requires [all][base] [previous][iterator] [wrapper-models][local], [current column][column] and [row].
      */
     private fun checkMainConditionsAndUpdateObjects(column: Int, row: Row, base: BaseIteratorModel,
-                                                    iter: OuterIteratorModel, local: InnerIteratorModel): Boolean {
+                                                    iterator: OuterIteratorModel, local: InnerIteratorModel): Boolean {
         // Skip region with header.
         return if (row.rowNum < base.dayColumnsIndices[0].coordinates.row) true
         else {
             // Check condition to change current day.
             if (row.rowNum == local.dayEndingRow) {
-                if (iter.dayIterator > 0) {
+                if (iterator.dayIterator > 0) {
                     // Inserts a last lesson:
-                    iter.lessons.add(iter.lesson)
+                    iterator.lessons.add(iterator.lesson)
 
                     /* Then we add ready-to-generate 'TargetedDaySchedule' to list and clear current lessons list.
                    Clearing process made by creation new object, to prevent pass-by-reference troubles. */
-                    base.schedules.add(TargetedDaySchedule(iter.currentDay!!, iter.lessons))
-                    iter.lessons = mutableListOf()
+                    base.schedules.add(TargetedDaySchedule(iterator.currentDay!!, iterator.lessons))
+                    iterator.lessons = mutableListOf()
                 }
 
                 /* Then we generate data for another one lesson and write it to properties.
                Especially, I must say about 'currentDay' data-generation: this expression used,
                            cause whole schedule divided and chopped into two parts,
                that are placed horizontally inside a document. */
-                iter.lesson = Lesson()
-                iter.lessonNumber = 0
-                iter.lessonIterator = 0
-                iter.lesson.number = iter.lessonNumber
-                iter.currentDay = Day.getValueByIndex(iter.dayIterator + column * 3)
+                iterator.lesson = Lesson()
+                iterator.lessonNumber = 0
+                iterator.lessonIterator = 0
+                iterator.lesson.number = iterator.lessonNumber
+                iterator.currentDay = Day.getValueByIndex(iterator.dayIterator + column * 3)
 
                 /* At this point, we don't complete condition to change lesson number, and we can meet trouble.
                If lessons of the next day begin in the morning, so variable content doesn't reset,
                   so we must reset it manually.
                Also, at this point we'll increase day iterator, because day WILL change. */
-                iter.lessonNameIsAdded = false
-                iter.dayIterator++
+                iterator.lessonNameIsAdded = false
+                iterator.dayIterator++
             }
             // Check condition to change lesson number.
-            if (iter.lessonIterator != 0 && iter.lessonIterator % 4 == 0) {
-                iter.lessons.add(iter.lesson)
-                iter.lessonNumber++
+            if (iterator.lessonIterator != 0 && iterator.lessonIterator % 4 == 0) {
+                iterator.lessons.add(iterator.lesson)
+                iterator.lessonNumber++
 
-                iter.lesson = Lesson()
-                iter.lesson.number = iter.lessonNumber
-                iter.lessonNameIsAdded = false
-                iter.lessonPlaceIsAdded = false
+                iterator.lesson = Lesson()
+                iterator.lesson.number = iterator.lessonNumber
+                iterator.lessonNameIsAdded = false
+                iterator.lessonPlaceIsAdded = false
             }
 
             false

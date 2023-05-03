@@ -70,7 +70,7 @@ class Basic(private val user: String) {
                            }),
             "parse" to Pair(parseCommandDescription,
                             Command("Parse") {
-                                controller.initializeBasicParsingProcessByArguments(it)
+                                controller.initializeTestParsingProcessByArguments(it)
                             }),
             "sync" to Pair(syncCommandDescription,
                            Command("Sync") {
@@ -106,7 +106,7 @@ class Basic(private val user: String) {
             print("So, what you want to do now?\nEnter command code: ")
             val action = readlnOrNull()
 
-            performUserInput(action ?: "help")
+            performUserInputAndExecute(action ?: "help")
         } while (!action.isNullOrBlank())
     }
 
@@ -118,7 +118,7 @@ class Basic(private val user: String) {
      *    then executes the command.
      * Although, it [returns to input of the command name][beginSession].
      */
-    private fun performUserInput(input: String) {
+    private fun performUserInputAndExecute(input: String) {
         if (input.isNotBlank()) {
             val rawCommand = if (input.contains("last", true)) lastCommand else input
             val commandInfo = parseInputtedText(this, rawCommand.trim())

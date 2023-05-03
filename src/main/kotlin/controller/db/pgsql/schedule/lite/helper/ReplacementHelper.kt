@@ -6,7 +6,7 @@ import org.jetbrains.exposed.dao.id.EntityID
 import java.time.LocalDate
 
 
-fun insertNewChangeToDb(change: TargetedChangesOfDay?, targetCycleId: Int?): Boolean {
+fun insertNewChangeToDB(change: TargetedChangesOfDay?, targetCycleId: Int?): Boolean {
     if (change != null) {
         val newReplacementId = createNewReplacementInstance(change, targetCycleId)
         val alteredTeachers = createNewLessonInstances(change.changedLessons, newReplacementId.value, null, false)

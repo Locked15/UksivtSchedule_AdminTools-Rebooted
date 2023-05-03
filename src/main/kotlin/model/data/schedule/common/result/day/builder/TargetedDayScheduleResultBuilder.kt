@@ -12,7 +12,7 @@ import java.util.*
  * This is builder for resulting class.
  *
  * I created this builder, to insert new functionality softly, without changing
- * [existing][TargetedDaySchedule.buildFinalSchedule] [logic][controller.data.reader.word.Reader.getChangedSchedule].
+ * [existing][TargetedDaySchedule.buildFinalSchedule] [logic][controller.data.reader.word.Reader.getFinalSchedule].
  * It's not fluent builder by the way.
  */
 class TargetedDayScheduleResultBuilder {
