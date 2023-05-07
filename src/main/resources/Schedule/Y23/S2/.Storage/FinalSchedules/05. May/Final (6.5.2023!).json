@@ -1,47 +1,47 @@
 [ {
-  "targetGroup" : "20ЗИО-1",
+  "targetGroup" : "20Р—РРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -49,49 +49,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ЗИО-2",
+  "targetGroup" : "20Р—РРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -99,49 +99,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ЗИО-3",
+  "targetGroup" : "20Р—РРћ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -149,7 +149,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ЗИО-1",
+  "targetGroup" : "21Р—РРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -167,20 +167,20 @@
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Ин.яз",
-      "teacher" : "Сорокина Э Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "РЎРѕСЂРѕРєРёРЅР° Р­ Р“.",
       "place" : "333",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Ин.яз",
-      "teacher" : "Сорокина Э Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "РЎРѕСЂРѕРєРёРЅР° Р­ Р“.",
       "place" : "333",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "УП/-",
-      "teacher" : "Булатов А.Р,",
+      "name" : "РЈРџ/-",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р ,",
       "place" : "305",
       "isChanged" : true
     }, {
@@ -199,7 +199,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ЗИО-2",
+  "targetGroup" : "21Р—РРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -211,20 +211,20 @@
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
@@ -249,44 +249,44 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ЗИО-3",
+  "targetGroup" : "21Р—РРћ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Уп/-",
-      "teacher" : "Булатов А.Р.",
+      "name" : "РЈРї/-",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Уп/-",
-      "teacher" : "Булатов А.Р.",
+      "name" : "РЈРї/-",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Уп/-",
-      "teacher" : "Булатов А.Р.",
+      "name" : "РЈРї/-",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "-/уп",
-      "teacher" : "Булатов А.Р.",
+      "name" : "-/СѓРї",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "-/уп",
-      "teacher" : "Булатов А.Р.",
+      "name" : "-/СѓРї",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "-/уп",
-      "teacher" : "Булатов А.Р.",
+      "name" : "-/СѓРї",
+      "teacher" : "Р‘СѓР»Р°С‚РѕРІ Рђ.Р .",
       "place" : "305",
       "isChanged" : true
     }, {
@@ -299,7 +299,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21Л-1",
+  "targetGroup" : "21Р›-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -317,20 +317,20 @@
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Основы философии",
-      "teacher" : "Исмагилова Г.М.",
+      "name" : "РћСЃРЅРѕРІС‹ С„РёР»РѕСЃРѕС„РёРё",
+      "teacher" : "РСЃРјР°РіРёР»РѕРІР° Р“.Рњ.",
       "place" : "315",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Статистика",
-      "teacher" : "Ахатова Г.И.",
+      "name" : "РЎС‚Р°С‚РёСЃС‚РёРєР°",
+      "teacher" : "РђС…Р°С‚РѕРІР° Р“.Р.",
       "place" : "308",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Статистика",
-      "teacher" : "Ахатова Г.И.",
+      "name" : "РЎС‚Р°С‚РёСЃС‚РёРєР°",
+      "teacher" : "РђС…Р°С‚РѕРІР° Р“.Р.",
       "place" : "308",
       "isChanged" : true
     }, {
@@ -349,7 +349,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21Л-2",
+  "targetGroup" : "21Р›-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -361,20 +361,20 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Статистика",
-      "teacher" : "Ахатова Г.И.",
+      "name" : "РЎС‚Р°С‚РёСЃС‚РёРєР°",
+      "teacher" : "РђС…Р°С‚РѕРІР° Р“.Р.",
       "place" : "308",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Статистика",
-      "teacher" : "Ахатова Г.И.",
+      "name" : "РЎС‚Р°С‚РёСЃС‚РёРєР°",
+      "teacher" : "РђС…Р°С‚РѕРІР° Р“.Р.",
       "place" : "308",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Основы философии",
-      "teacher" : "Исмагилова Г.М.",
+      "name" : "РћСЃРЅРѕРІС‹ С„РёР»РѕСЃРѕС„РёРё",
+      "teacher" : "РСЃРјР°РіРёР»РѕРІР° Р“.Рњ.",
       "place" : "315",
       "isChanged" : false
     }, {
@@ -399,49 +399,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21уЛ-1",
+  "targetGroup" : "21СѓР›-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -449,49 +449,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20Э-1",
+  "targetGroup" : "20Р­-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -499,49 +499,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20Э-2",
+  "targetGroup" : "20Р­-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -549,7 +549,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21Э-1",
+  "targetGroup" : "21Р­-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -561,20 +561,20 @@
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Основы филос",
-      "teacher" : "Каримова И.Р.",
+      "name" : "РћСЃРЅРѕРІС‹ С„РёР»РѕСЃ",
+      "teacher" : "РљР°СЂРёРјРѕРІР° Р.Р .",
       "place" : "336",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Эк орг",
-      "teacher" : "Арсланова О.Н.",
+      "name" : "Р­Рє РѕСЂРі",
+      "teacher" : "РђСЂСЃР»Р°РЅРѕРІР° Рћ.Рќ.",
       "place" : "301",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Эк орг",
-      "teacher" : "Арсланова О.Н.",
+      "name" : "Р­Рє РѕСЂРі",
+      "teacher" : "РђСЂСЃР»Р°РЅРѕРІР° Рћ.Рќ.",
       "place" : "301",
       "isChanged" : true
     }, {
@@ -599,26 +599,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21Э-2",
+  "targetGroup" : "21Р­-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Эк орг",
-      "teacher" : "Арсланова О.Н.",
+      "name" : "Р­Рє РѕСЂРі",
+      "teacher" : "РђСЂСЃР»Р°РЅРѕРІР° Рћ.Рќ.",
       "place" : "301",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Эк орг",
-      "teacher" : "Арсланова О.Н.",
+      "name" : "Р­Рє РѕСЂРі",
+      "teacher" : "РђСЂСЃР»Р°РЅРѕРІР° Рћ.Рќ.",
       "place" : "301",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Основы филос",
-      "teacher" : "Каримова И.Р.",
+      "name" : "РћСЃРЅРѕРІС‹ С„РёР»РѕСЃ",
+      "teacher" : "РљР°СЂРёРјРѕРІР° Р.Р .",
       "place" : "336",
       "isChanged" : false
     }, {
@@ -649,26 +649,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22БД-1",
+  "targetGroup" : "22Р‘Р”-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "329",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "329",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "329",
       "isChanged" : false
     }, {
@@ -699,32 +699,32 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ВЕБ-1",
+  "targetGroup" : "22Р’Р•Р‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Информатика",
-      "teacher" : "Паловская Е.О.",
+      "name" : "РРЅС„РѕСЂРјР°С‚РёРєР°",
+      "teacher" : "РџР°Р»РѕРІСЃРєР°СЏ Р•.Рћ.",
       "place" : "223",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "ОБЖ",
-      "teacher" : "Кобелева С.В.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РљРѕР±РµР»РµРІР° РЎ.Р’.",
       "place" : "313",
       "isChanged" : false
     }, {
@@ -749,7 +749,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ВЕБ-2",
+  "targetGroup" : "22Р’Р•Р‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -761,20 +761,20 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Баш яз",
-      "teacher" : "Юмагулова Г.К.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "Р®РјР°РіСѓР»РѕРІР° Р“.Рљ.",
       "place" : "312",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "История",
-      "teacher" : "Каримова И.Р.",
+      "name" : "РСЃС‚РѕСЂРёСЏ",
+      "teacher" : "РљР°СЂРёРјРѕРІР° Р.Р .",
       "place" : "336",
       "isChanged" : false
     }, {
@@ -799,20 +799,20 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ЗИО-1",
+  "targetGroup" : "22Р—РРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
@@ -849,32 +849,32 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ЗИО-2",
+  "targetGroup" : "22Р—РРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р•РјРµР»СЊСЏРЅРѕРІР° Р›.Р“.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р•РјРµР»СЊСЏРЅРѕРІР° Р›.Р“.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
@@ -899,20 +899,20 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ИС-1",
+  "targetGroup" : "22РРЎ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "История",
-      "teacher" : "Каримова И.Р.",
+      "name" : "РСЃС‚РѕСЂРёСЏ",
+      "teacher" : "РљР°СЂРёРјРѕРІР° Р.Р .",
       "place" : "336",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Баш яз",
-      "teacher" : "Юмагулова Г.К.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "Р®РјР°РіСѓР»РѕРІР° Р“.Рљ.",
       "place" : "312",
       "isChanged" : false
     }, {
@@ -949,7 +949,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22Л-1",
+  "targetGroup" : "22Р›-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -967,15 +967,15 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 4,
@@ -999,26 +999,26 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ОИБ-1",
+  "targetGroup" : "22РћРР‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "ОБЖ",
-      "teacher" : "Кобелева С.В.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РљРѕР±РµР»РµРІР° РЎ.Р’.",
       "place" : "313",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р•РјРµР»СЊСЏРЅРѕРІР° Р›.Р“.",
       "place" : null,
       "isChanged" : false
     }, {
@@ -1049,20 +1049,20 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ОИБ-2",
+  "targetGroup" : "22РћРР‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ОБЖ",
-      "teacher" : "Кобелева С.В.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РљРѕР±РµР»РµРІР° РЎ.Р’.",
       "place" : "313",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
@@ -1099,7 +1099,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22П-1",
+  "targetGroup" : "22Рџ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1129,27 +1129,27 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Информатика",
-      "teacher" : "Паловская Е.О.",
+      "name" : "РРЅС„РѕСЂРјР°С‚РёРєР°",
+      "teacher" : "РџР°Р»РѕРІСЃРєР°СЏ Р•.Рћ.",
       "place" : "223",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Информатика",
-      "teacher" : "Паловская Е.О.",
+      "name" : "РРЅС„РѕСЂРјР°С‚РёРєР°",
+      "teacher" : "РџР°Р»РѕРІСЃРєР°СЏ Р•.Рћ.",
       "place" : "223",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : false
     } ]
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22П-2",
+  "targetGroup" : "22Рџ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1167,26 +1167,26 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Информатика",
-      "teacher" : "Паловская Е.О.",
+      "name" : "РРЅС„РѕСЂРјР°С‚РёРєР°",
+      "teacher" : "РџР°Р»РѕРІСЃРєР°СЏ Р•.Рћ.",
       "place" : "223",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Информатика",
-      "teacher" : "Паловская Е.О.",
+      "name" : "РРЅС„РѕСЂРјР°С‚РёРєР°",
+      "teacher" : "РџР°Р»РѕРІСЃРєР°СЏ Р•.Рћ.",
       "place" : "223",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "ОБЖ",
-      "teacher" : "Кобелева С.В.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РљРѕР±РµР»РµРІР° РЎ.Р’.",
       "place" : "313",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : false
     }, {
@@ -1199,7 +1199,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22П-3",
+  "targetGroup" : "22Рџ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1211,26 +1211,26 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "ОБЖ",
-      "teacher" : "Исмаилова Р.Х.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РСЃРјР°РёР»РѕРІР° Р .РҐ.",
       "place" : "338",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Ин яз",
-      "teacher" : "Резерв",
+      "name" : "РРЅ СЏР·",
+      "teacher" : "Р РµР·РµСЂРІ",
       "place" : "322",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Ин яз",
-      "teacher" : "Резерв",
+      "name" : "РРЅ СЏР·",
+      "teacher" : "Р РµР·РµСЂРІ",
       "place" : "322",
       "isChanged" : false
     }, {
@@ -1249,7 +1249,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22П-4",
+  "targetGroup" : "22Рџ-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1285,21 +1285,21 @@
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "325",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22П-5",
+  "targetGroup" : "22Рџ-5",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1323,14 +1323,14 @@
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Химия",
-      "teacher" : "Гареева С.Т.",
+      "name" : "РҐРёРјРёСЏ",
+      "teacher" : "Р“Р°СЂРµРµРІР° РЎ.Рў.",
       "place" : "325",
       "isChanged" : true
     }, {
@@ -1349,7 +1349,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПД-1",
+  "targetGroup" : "22РџР”-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1367,26 +1367,26 @@
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Русский",
-      "teacher" : "Постнова Д.В.",
+      "name" : "Р СѓСЃСЃРєРёР№",
+      "teacher" : "РџРѕСЃС‚РЅРѕРІР° Р”.Р’.",
       "place" : "316",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Русский",
-      "teacher" : "Постнова Д.В.",
+      "name" : "Р СѓСЃСЃРєРёР№",
+      "teacher" : "РџРѕСЃС‚РЅРѕРІР° Р”.Р’.",
       "place" : "316",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "316",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "316",
       "isChanged" : true
     }, {
@@ -1399,32 +1399,32 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПД-2",
+  "targetGroup" : "22РџР”-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Русский",
-      "teacher" : "Постнова Д.В.",
+      "name" : "Р СѓСЃСЃРєРёР№",
+      "teacher" : "РџРѕСЃС‚РЅРѕРІР° Р”.Р’.",
       "place" : "316",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Русский",
-      "teacher" : "Постнова Д.В.",
+      "name" : "Р СѓСЃСЃРєРёР№",
+      "teacher" : "РџРѕСЃС‚РЅРѕРІР° Р”.Р’.",
       "place" : "316",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Ин.яз",
-      "teacher" : "Хусаинова А.И.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "РҐСѓСЃР°РёРЅРѕРІР° Рђ.Р.",
       "place" : "339",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Ин.яз",
-      "teacher" : "Хусаинова А.И.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "РҐСѓСЃР°РёРЅРѕРІР° Рђ.Р.",
       "place" : "339",
       "isChanged" : true
     }, {
@@ -1449,7 +1449,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПО-1",
+  "targetGroup" : "22РџРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1467,27 +1467,27 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Физ-ра",
-      "teacher" : "Гашева Н.В.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р“Р°С€РµРІР° Рќ.Р’.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Физ-ра",
-      "teacher" : "Гашева Н.В.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р“Р°С€РµРІР° Рќ.Р’.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 6,
@@ -1499,7 +1499,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22ПО-2",
+  "targetGroup" : "22РџРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1517,20 +1517,20 @@
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Ин.яз",
-      "teacher" : "Байназарова Г.Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р‘Р°Р№РЅР°Р·Р°СЂРѕРІР° Р“.Р“.",
       "place" : "309",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Ин.яз",
-      "teacher" : "Байназарова Г.Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р‘Р°Р№РЅР°Р·Р°СЂРѕРІР° Р“.Р“.",
       "place" : "309",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Ин.яз",
-      "teacher" : "Байназарова Г.Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р‘Р°Р№РЅР°Р·Р°СЂРѕРІР° Р“.Р“.",
       "place" : "309",
       "isChanged" : true
     }, {
@@ -1549,7 +1549,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПО-3",
+  "targetGroup" : "22РџРћ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1567,26 +1567,26 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Физ-ра",
-      "teacher" : "Гильманов Р.А.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р“РёР»СЊРјР°РЅРѕРІ Р .Рђ.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Русский яз",
-      "teacher" : "Андреева Р.М.",
+      "name" : "Р СѓСЃСЃРєРёР№ СЏР·",
+      "teacher" : "РђРЅРґСЂРµРµРІР° Р .Рњ.",
       "place" : "314",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Литература",
-      "teacher" : "Андреева Р.М.",
+      "name" : "Р›РёС‚РµСЂР°С‚СѓСЂР°",
+      "teacher" : "РђРЅРґСЂРµРµРІР° Р .Рњ.",
       "place" : "314",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Лит-ра",
-      "teacher" : "Андреева Р.М.",
+      "name" : "Р›РёС‚-СЂР°",
+      "teacher" : "РђРЅРґСЂРµРµРІР° Р .Рњ.",
       "place" : "314",
       "isChanged" : true
     }, {
@@ -1599,20 +1599,20 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПСА-1",
+  "targetGroup" : "22РџРЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Ин.яз",
-      "teacher" : "Байназарова Г.Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р‘Р°Р№РЅР°Р·Р°СЂРѕРІР° Р“.Р“.",
       "place" : "309",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Ин.яз",
-      "teacher" : "Байназарова Г.Г.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р‘Р°Р№РЅР°Р·Р°СЂРѕРІР° Р“.Р“.",
       "place" : "309",
       "isChanged" : true
     }, {
@@ -1649,20 +1649,20 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПСА-2",
+  "targetGroup" : "22РџРЎРђ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р’Р°Р»РµРµРІР° Р—.Рњ.",
       "place" : "320",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М.",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р’Р°Р»РµРµРІР° Р—.Рњ.",
       "place" : "320",
       "isChanged" : true
     }, {
@@ -1699,26 +1699,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22ПСА-3",
+  "targetGroup" : "22РџРЎРђ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Баш яз",
-      "teacher" : "Юмагулова Г.К.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "Р®РјР°РіСѓР»РѕРІР° Р“.Рљ.",
       "place" : "312",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Математика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "315",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ОБЖ",
-      "teacher" : "Кобелева С.В.",
+      "name" : "РћР‘Р–",
+      "teacher" : "РљРѕР±РµР»РµРІР° РЎ.Р’.",
       "place" : "313",
       "isChanged" : false
     }, {
@@ -1749,7 +1749,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22СА-1",
+  "targetGroup" : "22РЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1773,14 +1773,14 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "329",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
@@ -1799,7 +1799,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22СА-2",
+  "targetGroup" : "22РЎРђ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -1829,41 +1829,41 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Математика",
-      "teacher" : "Гарипова Р.М.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "Р“Р°СЂРёРїРѕРІР° Р .Рњ.",
       "place" : "329",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Физика",
-      "teacher" : "Нагаев Р.А.",
+      "name" : "Р¤РёР·РёРєР°",
+      "teacher" : "РќР°РіР°РµРІ Р .Рђ.",
       "place" : "334",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     } ]
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22Э-1",
+  "targetGroup" : "22Р­-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Математика",
-      "teacher" : "Ильинская М.В.",
-      "place" : "323а",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РР»СЊРёРЅСЃРєР°СЏ Рњ.Р’.",
+      "place" : "323Р°",
       "isChanged" : false
     }, {
       "number" : 2,
@@ -1899,26 +1899,26 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "22Э-2",
+  "targetGroup" : "22Р­-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Математика",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "РњР°С‚РµРјР°С‚РёРєР°",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Русский яз",
-      "teacher" : "Андреева Р.М.",
+      "name" : "Р СѓСЃСЃРєРёР№ СЏР·",
+      "teacher" : "РђРЅРґСЂРµРµРІР° Р .Рњ.",
       "place" : "314",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Литература",
-      "teacher" : "Андреева Р.М.",
+      "name" : "Р›РёС‚РµСЂР°С‚СѓСЂР°",
+      "teacher" : "РђРЅРґСЂРµРµРІР° Р .Рњ.",
       "place" : "314",
       "isChanged" : false
     }, {
@@ -1949,32 +1949,32 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "20ПД-1",
+  "targetGroup" : "20РџР”-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М,",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р’Р°Р»РµРµРІР° Р—.Рњ,",
       "place" : "320",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Физ-ра",
-      "teacher" : "Емельянова Л.Г.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р•РјРµР»СЊСЏРЅРѕРІР° Р›.Р“.",
       "place" : null,
       "isChanged" : false
     }, {
@@ -1999,7 +1999,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПД-2",
+  "targetGroup" : "20РџР”-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2011,20 +2011,20 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М,",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р’Р°Р»РµРµРІР° Р—.Рњ,",
       "place" : "320",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
@@ -2049,7 +2049,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПД-3",
+  "targetGroup" : "20РџР”-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2073,52 +2073,52 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Ин.яз",
-      "teacher" : "Валеева З.М,",
+      "name" : "РРЅ.СЏР·",
+      "teacher" : "Р’Р°Р»РµРµРІР° Р—.Рњ,",
       "place" : "320",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "МДК.01.02",
-      "teacher" : "Щеклеин А.",
+      "name" : "РњР”Рљ.01.02",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.",
       "place" : "112",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "МДК",
-      "teacher" : "Щеклеин А.С.",
+      "name" : "РњР”Рљ",
+      "teacher" : "Р©РµРєР»РµРёРЅ Рђ.РЎ.",
       "place" : "112",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПД-4",
+  "targetGroup" : "20РџР”-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
@@ -2149,7 +2149,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "20ПД-5",
+  "targetGroup" : "20РџР”-5",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2173,20 +2173,20 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "МДК.01.01",
-      "teacher" : "Драгомиров М.С.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "Р”СЂР°РіРѕРјРёСЂРѕРІ Рњ.РЎ.",
       "place" : "117",
       "isChanged" : false
     }, {
@@ -2199,32 +2199,32 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ПД-1",
+  "targetGroup" : "21РџР”-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Основы философии",
-      "teacher" : "Исмагилова Г.М,",
+      "name" : "РћСЃРЅРѕРІС‹ С„РёР»РѕСЃРѕС„РёРё",
+      "teacher" : "РСЃРјР°РіРёР»РѕРІР° Р“.Рњ,",
       "place" : "315",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Труд право",
-      "teacher" : "Акчев С.А.",
+      "name" : "РўСЂСѓРґ РїСЂР°РІРѕ",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "БЖД",
-      "teacher" : "Акчев С.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
@@ -2249,7 +2249,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ПД-2",
+  "targetGroup" : "21РџР”-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2273,20 +2273,20 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "БЖД",
-      "teacher" : "Акчев С.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Труд право",
-      "teacher" : "Акчев С.А.",
+      "name" : "РўСЂСѓРґ РїСЂР°РІРѕ",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
@@ -2299,7 +2299,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ПД-3",
+  "targetGroup" : "21РџР”-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2329,69 +2329,69 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Баш яз",
-      "teacher" : "Хисамутдинова Р.М.",
+      "name" : "Р‘Р°С€ СЏР·",
+      "teacher" : "РҐРёСЃР°РјСѓС‚РґРёРЅРѕРІР° Р .Рњ.",
       "place" : "321",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "БЖД",
-      "teacher" : "Акчев С.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "БЖД",
-      "teacher" : "Акчев С.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРєС‡РµРІ РЎ.Рђ.",
       "place" : "110",
       "isChanged" : false
     } ]
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "20ПО-1",
+  "targetGroup" : "20РџРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2399,49 +2399,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПО-2",
+  "targetGroup" : "20РџРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2449,49 +2449,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПО-3",
+  "targetGroup" : "20РџРћ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2499,49 +2499,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПО-4",
+  "targetGroup" : "20РџРћ-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2549,26 +2549,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПО-1",
+  "targetGroup" : "21РџРћ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
@@ -2599,26 +2599,26 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ПО-2",
+  "targetGroup" : "21РџРћ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК",
-      "teacher" : "Кильсенбаев Э.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РљРёР»СЊСЃРµРЅР±Р°РµРІ Р­.Р .",
       "place" : "114",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК",
-      "teacher" : "Кильсенбаев Э.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РљРёР»СЊСЃРµРЅР±Р°РµРІ Р­.Р .",
       "place" : "114",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК",
-      "teacher" : "Кильсенбаев Э.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РљРёР»СЊСЃРµРЅР±Р°РµРІ Р­.Р .",
       "place" : "114",
       "isChanged" : true
     }, {
@@ -2649,7 +2649,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПО-3",
+  "targetGroup" : "21РџРћ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2673,20 +2673,20 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "МДК.01.01",
-      "teacher" : "Калмацкий Н.А.",
+      "name" : "РњР”Рљ.01.01",
+      "teacher" : "РљР°Р»РјР°С†РєРёР№ Рќ.Рђ.",
       "place" : "118",
       "isChanged" : false
     }, {
@@ -2699,7 +2699,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ПО-4",
+  "targetGroup" : "21РџРћ-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -2723,75 +2723,75 @@
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК",
-      "teacher" : "Кильсенбаев Э.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РљРёР»СЊСЃРµРЅР±Р°РµРІ Р­.Р .",
       "place" : "114",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "ТП",
-      "teacher" : "Воронина А.А.",
+      "name" : "РўРџ",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
       "place" : "111",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "ТП",
-      "teacher" : "Воронина А.А.",
+      "name" : "РўРџ",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
       "place" : "111",
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "ТП",
-      "teacher" : "Воронина А.А.",
+      "name" : "РўРџ",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
       "place" : "111",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПСА-1",
+  "targetGroup" : "20РџРЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2799,49 +2799,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПСА-2",
+  "targetGroup" : "20РџРЎРђ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2849,49 +2849,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ПСА-3",
+  "targetGroup" : "20РџРЎРђ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -2899,84 +2899,34 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПСА-1",
+  "targetGroup" : "21РџРЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК 0401,МДк 0402",
-      "teacher" : "Воронина А.А.",
+      "name" : "РњР”Рљ 0401,РњР”Рє 0402",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
       "place" : "111",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК 0401,МДк 0402",
-      "teacher" : "Воронина А.А.",
+      "name" : "РњР”Рљ 0401,РњР”Рє 0402",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
       "place" : "111",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
       "place" : "320",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
       "place" : "320",
       "isChanged" : false
-    }, {
-      "number" : 4,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : false
-    }, {
-      "number" : 5,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : false
-    }, {
-      "number" : 6,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : false
-    } ]
-  },
-  "isChanged" : true
-}, {
-  "targetGroup" : "21ПСА-2",
-  "scheduleDate" : 1683356400000,
-  "schedule" : {
-    "day" : "SATURDAY",
-    "lessons" : [ {
-      "number" : 0,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
-      "place" : "320",
-      "isChanged" : false
-    }, {
-      "number" : 1,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
-      "place" : "320",
-      "isChanged" : false
-    }, {
-      "number" : 2,
-      "name" : "МДК 0401,МДк 0402",
-      "teacher" : "Воронина А.А.",
-      "place" : "111",
-      "isChanged" : true
-    }, {
-      "number" : 3,
-      "name" : "МДК 0401,МДк 0402",
-      "teacher" : "Воронина А.А.",
-      "place" : "111",
-      "isChanged" : true
     }, {
       "number" : 4,
       "name" : null,
@@ -2999,7 +2949,57 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПСА-3",
+  "targetGroup" : "21РџРЎРђ-2",
+  "scheduleDate" : 1683356400000,
+  "schedule" : {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "РњР”Рљ 0401,РњР”Рє 0402",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
+      "place" : "111",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "РњР”Рљ 0401,РњР”Рє 0402",
+      "teacher" : "Р’РѕСЂРѕРЅРёРЅР° Рђ.Рђ.",
+      "place" : "111",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21РџРЎРђ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3029,27 +3029,27 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
       "place" : "320",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Уголовный процесс",
-      "teacher" : "Маликов М.Г.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
       "place" : "320",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "УПП",
-      "teacher" : "Маликов М.Г.",
+      "name" : "РЈРџРџ",
+      "teacher" : "РњР°Р»РёРєРѕРІ Рњ.Р“.",
       "place" : "216",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПСА-4",
+  "targetGroup" : "21РџРЎРђ-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3079,47 +3079,47 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Уголовный процесс",
-      "teacher" : "Сагидуллин Д.Р.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РЎР°РіРёРґСѓР»Р»РёРЅ Р”.Р .",
       "place" : "324",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "Уголовный процесс",
-      "teacher" : "Сагидуллин Д.Р.",
+      "name" : "РЈРіРѕР»РѕРІРЅС‹Р№ РїСЂРѕС†РµСЃСЃ",
+      "teacher" : "РЎР°РіРёРґСѓР»Р»РёРЅ Р”.Р .",
       "place" : "324",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "УПП",
-      "teacher" : "Сагидуллин Д.Р.",
+      "name" : "РЈРџРџ",
+      "teacher" : "РЎР°РіРёРґСѓР»Р»РёРЅ Р”.Р .",
       "place" : "324",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПСА-5",
+  "targetGroup" : "21РџРЎРђ-5",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ТП",
-      "teacher" : "Ахметова Э.Р,",
-      "place" : "Чз",
+      "name" : "РўРџ",
+      "teacher" : "РђС…РјРµС‚РѕРІР° Р­.Р ,",
+      "place" : "Р§Р·",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "ТП",
-      "teacher" : "Ахметова Э.Р,",
-      "place" : "Чз",
+      "name" : "РўРџ",
+      "teacher" : "РђС…РјРµС‚РѕРІР° Р­.Р ,",
+      "place" : "Р§Р·",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ТП",
-      "teacher" : "Ахметова Э.Р,",
-      "place" : "Чз",
+      "name" : "РўРџ",
+      "teacher" : "РђС…РјРµС‚РѕРІР° Р­.Р ,",
+      "place" : "Р§Р·",
       "isChanged" : true
     }, {
       "number" : 3,
@@ -3149,26 +3149,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ПСА-6",
+  "targetGroup" : "21РџРЎРђ-6",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК 0401",
-      "teacher" : "Ардуванова Д.Р,",
+      "name" : "РњР”Рљ 0401",
+      "teacher" : "РђСЂРґСѓРІР°РЅРѕРІР° Р”.Р ,",
       "place" : "323",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК 0401",
-      "teacher" : "Ардуванова Д.Р,",
+      "name" : "РњР”Рљ 0401",
+      "teacher" : "РђСЂРґСѓРІР°РЅРѕРІР° Р”.Р ,",
       "place" : "323",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК 0401",
-      "teacher" : "Ардуванова Д.Р,",
+      "name" : "РњР”Рљ 0401",
+      "teacher" : "РђСЂРґСѓРІР°РЅРѕРІР° Р”.Р ,",
       "place" : "323",
       "isChanged" : true
     }, {
@@ -3199,7 +3199,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21БД-1",
+  "targetGroup" : "21Р‘Р”-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3229,69 +3229,69 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "УП.01.01",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РЈРџ.01.01",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "229",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "УП.01.01",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РЈРџ.01.01",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "229",
       "isChanged" : false
     }, {
       "number" : 6,
-      "name" : "УП",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РЈРџ",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "5",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19ВЕБ-1",
+  "targetGroup" : "19Р’Р•Р‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -3299,49 +3299,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19ВЕБ-2",
+  "targetGroup" : "19Р’Р•Р‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -3349,7 +3349,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ВЕБ-1",
+  "targetGroup" : "20Р’Р•Р‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3367,14 +3367,14 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "ПП.05.01",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "РџРџ.05.01",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "ПП.05.01",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "РџРџ.05.01",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
@@ -3399,7 +3399,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "20ВЕБ-2",
+  "targetGroup" : "20Р’Р•Р‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3429,14 +3429,14 @@
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "ПП.05.01",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "РџРџ.05.01",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
       "number" : 5,
-      "name" : "ПП.05.01",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "РџРџ.05.01",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
@@ -3449,7 +3449,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ВЕБ-1",
+  "targetGroup" : "21Р’Р•Р‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3467,20 +3467,20 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "ПП.08.01",
-      "teacher" : "Васильева А.А.",
+      "name" : "РџРџ.08.01",
+      "teacher" : "Р’Р°СЃРёР»СЊРµРІР° Рђ.Рђ.",
       "place" : "243",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "ПП.08.01",
-      "teacher" : "Васильева А.А.",
+      "name" : "РџРџ.08.01",
+      "teacher" : "Р’Р°СЃРёР»СЊРµРІР° Рђ.Рђ.",
       "place" : "243",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "ПП.08.01",
-      "teacher" : "Васильева А.А.",
+      "name" : "РџРџ.08.01",
+      "teacher" : "Р’Р°СЃРёР»СЊРµРІР° Рђ.Рђ.",
       "place" : "243",
       "isChanged" : false
     }, {
@@ -3499,7 +3499,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ВЕБ-2",
+  "targetGroup" : "21Р’Р•Р‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3511,26 +3511,26 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.08.02",
-      "teacher" : "Мусина Г.А.",
+      "name" : "РњР”Рљ.08.02",
+      "teacher" : "РњСѓСЃРёРЅР° Р“.Рђ.",
       "place" : "7",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "УП.08.01",
-      "teacher" : "Мусина Г.А.",
+      "name" : "РЈРџ.08.01",
+      "teacher" : "РњСѓСЃРёРЅР° Р“.Рђ.",
       "place" : "7",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "УП.08.01",
-      "teacher" : "Мусина Г.А.",
+      "name" : "РЈРџ.08.01",
+      "teacher" : "РњСѓСЃРёРЅР° Р“.Рђ.",
       "place" : "7",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "УП.08.01",
-      "teacher" : "Мусина Г.А.",
+      "name" : "РЈРџ.08.01",
+      "teacher" : "РњСѓСЃРёРЅР° Р“.Рђ.",
       "place" : "7",
       "isChanged" : false
     }, {
@@ -3549,20 +3549,20 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ВЕБ-3",
+  "targetGroup" : "21Р’Р•Р‘-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК.08.01",
-      "teacher" : "Васильева А.А.",
+      "name" : "РњР”Рљ.08.01",
+      "teacher" : "Р’Р°СЃРёР»СЊРµРІР° Рђ.Рђ.",
       "place" : "243",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.08.01",
-      "teacher" : "Васильева А.А.",
+      "name" : "РњР”Рљ.08.01",
+      "teacher" : "Р’Р°СЃРёР»СЊРµРІР° Рђ.Рђ.",
       "place" : "243",
       "isChanged" : false
     }, {
@@ -3599,49 +3599,49 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "19ИС-1",
+  "targetGroup" : "19РРЎ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -3649,32 +3649,32 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ИС-1",
+  "targetGroup" : "20РРЎ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "МДК",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
@@ -3699,7 +3699,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ИС-1",
+  "targetGroup" : "21РРЎ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3723,20 +3723,20 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Физ-ра",
-      "teacher" : "Баранов А.В.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р‘Р°СЂР°РЅРѕРІ Рђ.Р’.",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "ОПБД",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РћРџР‘Р”",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "ОПБД",
-      "teacher" : "Набиева Л.Р.",
+      "name" : "РћРџР‘Р”",
+      "teacher" : "РќР°Р±РёРµРІР° Р›.Р .",
       "place" : "217",
       "isChanged" : true
     }, {
@@ -3749,49 +3749,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19ОИБ-1",
+  "targetGroup" : "19РћРР‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -3799,49 +3799,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19ОИБ-2",
+  "targetGroup" : "19РћРР‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -3849,7 +3849,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ОИБ-1",
+  "targetGroup" : "20РћРР‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3885,21 +3885,21 @@
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20ОИБ-2",
+  "targetGroup" : "20РћРР‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3917,20 +3917,20 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "УП.01.02",
-      "teacher" : "Гильзер Е.М.",
+      "name" : "РЈРџ.01.02",
+      "teacher" : "Р“РёР»СЊР·РµСЂ Р•.Рњ.",
       "place" : "3",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "УП.01.02",
-      "teacher" : "Гильзер Е.М.",
+      "name" : "РЈРџ.01.02",
+      "teacher" : "Р“РёР»СЊР·РµСЂ Р•.Рњ.",
       "place" : "3",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
@@ -3949,7 +3949,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21ОИБ-1",
+  "targetGroup" : "21РћРР‘-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -3973,14 +3973,14 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Элект. и схемот.",
-      "teacher" : "Тяпкина Н.Б.",
+      "name" : "Р­Р»РµРєС‚. Рё СЃС…РµРјРѕС‚.",
+      "teacher" : "РўСЏРїРєРёРЅР° Рќ.Р‘.",
       "place" : "11",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Элект. и схемот.",
-      "teacher" : "Тяпкина Н.Б.",
+      "name" : "Р­Р»РµРєС‚. Рё СЃС…РµРјРѕС‚.",
+      "teacher" : "РўСЏРїРєРёРЅР° Рќ.Р‘.",
       "place" : "11",
       "isChanged" : false
     }, {
@@ -3999,7 +3999,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ОИБ-2",
+  "targetGroup" : "21РћРР‘-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -4011,20 +4011,20 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Элект. и схемот.",
-      "teacher" : "Тяпкина Н.Б.",
+      "name" : "Р­Р»РµРєС‚. Рё СЃС…РµРјРѕС‚.",
+      "teacher" : "РўСЏРїРєРёРЅР° Рќ.Р‘.",
       "place" : "11",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Элект. и схемот.",
-      "teacher" : "Тяпкина Н.Б.",
+      "name" : "Р­Р»РµРєС‚. Рё СЃС…РµРјРѕС‚.",
+      "teacher" : "РўСЏРїРєРёРЅР° Рќ.Р‘.",
       "place" : "11",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "ОАИП л/р",
-      "teacher" : "Лахмуткина Т.Г.",
+      "name" : "РћРђРРџ Р»/СЂ",
+      "teacher" : "Р›Р°С…РјСѓС‚РєРёРЅР° Рў.Р“.",
       "place" : "218",
       "isChanged" : false
     }, {
@@ -4049,32 +4049,32 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21ОИБ-3",
+  "targetGroup" : "21РћРР‘-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ОАИП",
-      "teacher" : "Хасипов Р.Х.",
+      "name" : "РћРђРРџ",
+      "teacher" : "РҐР°СЃРёРїРѕРІ Р .РҐ.",
       "place" : "214",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "ОАИП",
-      "teacher" : "Хасипов Р.Х.",
+      "name" : "РћРђРРџ",
+      "teacher" : "РҐР°СЃРёРїРѕРІ Р .РҐ.",
       "place" : "214",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "ОАИП",
-      "teacher" : "Хасипов Р.Х.",
+      "name" : "РћРђРРџ",
+      "teacher" : "РҐР°СЃРёРїРѕРІ Р .РҐ.",
       "place" : "214",
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "ОАИП",
-      "teacher" : "Хасипов Р.Х.",
+      "name" : "РћРђРРџ",
+      "teacher" : "РҐР°СЃРёРїРѕРІ Р .РҐ.",
       "place" : "214",
       "isChanged" : false
     }, {
@@ -4099,49 +4099,49 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "19П-1",
+  "targetGroup" : "19Рџ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4149,49 +4149,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19П-2",
+  "targetGroup" : "19Рџ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4199,49 +4199,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19П-3",
+  "targetGroup" : "19Рџ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4249,20 +4249,20 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20П-1",
+  "targetGroup" : "20Рџ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Веб",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "Р’РµР±",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Веб",
-      "teacher" : "Дмитриева Е.К.",
+      "name" : "Р’РµР±",
+      "teacher" : "Р”РјРёС‚СЂРёРµРІР° Р•.Рљ.",
       "place" : "9",
       "isChanged" : false
     }, {
@@ -4299,7 +4299,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "20П-3",
+  "targetGroup" : "20Рџ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -4311,14 +4311,14 @@
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.02.03",
-      "teacher" : "Лахмуткина Т.Г.",
+      "name" : "РњР”Рљ.02.03",
+      "teacher" : "Р›Р°С…РјСѓС‚РєРёРЅР° Рў.Р“.",
       "place" : "218",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Физ-ра",
-      "teacher" : "Баранов А.В.",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р‘Р°СЂР°РЅРѕРІ Рђ.Р’.",
       "place" : null,
       "isChanged" : false
     }, {
@@ -4349,7 +4349,7 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21П-1",
+  "targetGroup" : "21Рџ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -4373,14 +4373,14 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "МДК.01.04",
-      "teacher" : "Каюмов",
+      "name" : "РњР”Рљ.01.04",
+      "teacher" : "РљР°СЋРјРѕРІ",
       "place" : "229",
       "isChanged" : false
     }, {
       "number" : 4,
-      "name" : "Численные методы",
-      "teacher" : "Лахмуткина Т.Г.",
+      "name" : "Р§РёСЃР»РµРЅРЅС‹Рµ РјРµС‚РѕРґС‹",
+      "teacher" : "Р›Р°С…РјСѓС‚РєРёРЅР° Рў.Р“.",
       "place" : "218",
       "isChanged" : false
     }, {
@@ -4399,26 +4399,26 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21П-2",
+  "targetGroup" : "21Рџ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "УП.01.02",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РЈРџ.01.02",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "229",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Комп.сети",
-      "teacher" : "Гильзер Е.М.",
+      "name" : "РљРѕРјРї.СЃРµС‚Рё",
+      "teacher" : "Р“РёР»СЊР·РµСЂ Р•.Рњ.",
       "place" : "3",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Численные методы",
-      "teacher" : "Лахмуткина Т.Г.",
+      "name" : "Р§РёСЃР»РµРЅРЅС‹Рµ РјРµС‚РѕРґС‹",
+      "teacher" : "Р›Р°С…РјСѓС‚РєРёРЅР° Рў.Р“.",
       "place" : "218",
       "isChanged" : false
     }, {
@@ -4449,20 +4449,20 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21П-3",
+  "targetGroup" : "21Рџ-3",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Численные методы",
-      "teacher" : "Лахмуткина Т.Г.",
+      "name" : "Р§РёСЃР»РµРЅРЅС‹Рµ РјРµС‚РѕРґС‹",
+      "teacher" : "Р›Р°С…РјСѓС‚РєРёРЅР° Рў.Р“.",
       "place" : "218",
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "Физ-ра",
-      "teacher" : "Баранов",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р‘Р°СЂР°РЅРѕРІ",
       "place" : null,
       "isChanged" : false
     }, {
@@ -4499,26 +4499,26 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "21П-4",
+  "targetGroup" : "21Рџ-4",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Физ-ра",
-      "teacher" : "Баранов",
+      "name" : "Р¤РёР·-СЂР°",
+      "teacher" : "Р‘Р°СЂР°РЅРѕРІ",
       "place" : null,
       "isChanged" : false
     }, {
       "number" : 1,
-      "name" : "МДК.01.01 л/р",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РњР”Рљ.01.01 Р»/СЂ",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "229",
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "УП.01.02",
-      "teacher" : "Каюмов С.А.",
+      "name" : "РЈРџ.01.02",
+      "teacher" : "РљР°СЋРјРѕРІ РЎ.Рђ.",
       "place" : "229",
       "isChanged" : false
     }, {
@@ -4549,49 +4549,49 @@
   },
   "isChanged" : false
 }, {
-  "targetGroup" : "19КСК-1",
+  "targetGroup" : "19РљРЎРљ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4599,49 +4599,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19КСК-2",
+  "targetGroup" : "19РљРЎРљ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4649,49 +4649,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19СА-1",
+  "targetGroup" : "19РЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4699,49 +4699,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "19СА-2",
+  "targetGroup" : "19РЎРђ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4749,26 +4749,26 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20СА-1",
+  "targetGroup" : "20РЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "МДК",
-      "teacher" : "Озерова Р.А.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РћР·РµСЂРѕРІР° Р .Рђ.",
       "place" : "231",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "МДК",
-      "teacher" : "Озерова Р.А.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РћР·РµСЂРѕРІР° Р .Рђ.",
       "place" : "231",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "МДК",
-      "teacher" : "Озерова Р.А.",
+      "name" : "РњР”Рљ",
+      "teacher" : "РћР·РµСЂРѕРІР° Р .Рђ.",
       "place" : "231",
       "isChanged" : true
     }, {
@@ -4799,20 +4799,20 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21СА-1",
+  "targetGroup" : "21РЎРђ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ДМ",
-      "teacher" : "Лихарев И,А.",
+      "name" : "Р”Рњ",
+      "teacher" : "Р›РёС…Р°СЂРµРІ Р,Рђ.",
       "place" : "001",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "ДМ",
-      "teacher" : "Лихарев И,А.",
+      "name" : "Р”Рњ",
+      "teacher" : "Р›РёС…Р°СЂРµРІ Р,Рђ.",
       "place" : "001",
       "isChanged" : true
     }, {
@@ -4849,7 +4849,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21СА-2",
+  "targetGroup" : "21РЎРђ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -4867,14 +4867,14 @@
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ДМ",
-      "teacher" : "Лихарев И,А.",
+      "name" : "Р”Рњ",
+      "teacher" : "Р›РёС…Р°СЂРµРІ Р,Рђ.",
       "place" : "001",
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "ДМ",
-      "teacher" : "Лихарев И,А.",
+      "name" : "Р”Рњ",
+      "teacher" : "Р›РёС…Р°СЂРµРІ Р,Рђ.",
       "place" : "001",
       "isChanged" : true
     }, {
@@ -4899,49 +4899,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20уКСК-1",
+  "targetGroup" : "20СѓРљРЎРљ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4949,49 +4949,49 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "20уКСК-2",
+  "targetGroup" : "20СѓРљРЎРљ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "Практика",
+      "name" : "РџСЂР°РєС‚РёРєР°",
       "teacher" : null,
       "place" : null,
       "isChanged" : true
@@ -4999,7 +4999,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "21уКСК-1",
+  "targetGroup" : "21СѓРљРЎРљ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -5029,46 +5029,46 @@
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     }, {
       "number" : 6,
-      "name" : "БЖД",
-      "teacher" : "Аввакумов А.А.",
+      "name" : "Р‘Р–Р”",
+      "teacher" : "РђРІРІР°РєСѓРјРѕРІ Рђ.Рђ.",
       "place" : "319",
       "isChanged" : true
     } ]
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22уКСК-1",
+  "targetGroup" : "22СѓРљРЎРљ-1",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
@@ -5099,7 +5099,7 @@
   },
   "isChanged" : true
 }, {
-  "targetGroup" : "22уКСК-2",
+  "targetGroup" : "22СѓРљРЎРљ-2",
   "scheduleDate" : 1683356400000,
   "schedule" : {
     "day" : "SATURDAY",
@@ -5123,20 +5123,20 @@
       "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
       "number" : 4,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
       "number" : 5,
-      "name" : "ИТ",
-      "teacher" : "Хасанова А.М",
+      "name" : "РРў",
+      "teacher" : "РҐР°СЃР°РЅРѕРІР° Рђ.Рњ",
       "place" : "1",
       "isChanged" : true
     }, {
