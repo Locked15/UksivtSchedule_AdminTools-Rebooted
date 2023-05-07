@@ -11,7 +11,7 @@ class GlobalStateBuilder {
 
     private var resourceProjectPath: List<String>? = null
 
-    private var dbNameParam: String? = null
+    private var dbTypeParam: String? = null
 
     private var logLevel: LogLevel? = null
     /* endregion */
@@ -42,10 +42,10 @@ class GlobalStateBuilder {
                 else -> productionResourcePath
             }
         })
-        setDbNameParam(with(args) {
-            when (val dbParamIndex = indexOf("--db-param")) {
+        setDBTypeParam(with(args) {
+            when (val dbTypeIndex = indexOf("--db-type")) {
                 -1 -> ""
-                else -> args.getOrElse(dbParamIndex + 1) { "" }
+                else -> args.getOrElse(dbTypeIndex + 1) { "" }
             }
         })
 
@@ -62,15 +62,25 @@ class GlobalStateBuilder {
         return this
     }
 
-    private fun setDbNameParam(param: String): GlobalStateBuilder {
+    private fun setDBTypeParam(param: String): GlobalStateBuilder {
         //? To make it case-insensitive (and because config values write with a first letter in upper-case), we make it.
-        dbNameParam = ".${param.substring(0, 1).uppercase()}${param.substring(1)}"
+        dbTypeParam = if (param.isNotEmpty()) extractDBParameter(param.trim('\'', '"'))
+        else ""
+
         return this
     }
+
+    /**
+     * Extracts normalized DB Configuration prefix from one, that sent by argument.
+     * For example,
+     * "--db-type local" will be converted to ".Local" prefix (and "Local" value).
+     */
+    private fun extractDBParameter(param: String) = ".${param.substring(0, 1).uppercase()}" +
+            param.substring(1)
     /* endregion */
 
     fun build() = GlobalState(projectDirectory!!, resourceProjectPath!!,
-                              dbNameParam!!, logLevel!!)
+                              dbTypeParam!!, logLevel!!)
 
     companion object {
 
