@@ -9,5 +9,7 @@ interface ValueWriter {
          * Through the limitations of the platform, this is marked as 'public', but prefers to be 'protected'.
          */
         const val WRITER_BUFFER_SIZE = 4096
+
+        const val DEFAULT_ENCODING = "UTF-8"
     }
 }
