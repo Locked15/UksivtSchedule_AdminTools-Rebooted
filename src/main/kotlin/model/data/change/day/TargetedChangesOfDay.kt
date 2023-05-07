@@ -75,7 +75,7 @@ class TargetedChangesOfDay(var targetGroup: String?, @JsonAlias("absolute") var 
      * Returns string representation of the current object.
      */
     override fun toString(): String = jacksonObjectMapper().writerWithDefaultPrettyPrinter()
-        .writeValueAsString(this)
+        .writeValueAsString(Pair(this, hashCode()))
     /* endregion */
 
     /* region Companion */
