@@ -445,6 +445,44 @@ class ActionsController : ControllerBase() {
         }
     }
     /* endregion */
+
+    /* region Command: 'Update' */
+
+    fun beginUpdateCommandExecution(args: List<String>) {
+        /* Before everything else, we should get a target document path.
+           We should allow user to place a target path in the argument list.
+           Should, because this function MUST BE possible to call automatically by execution "*.jar" with params.
+           To prevent argument collisions, this argument has only one form: full (with two '-'). */
+        with(args.indexOf("--target-document")) {
+            //? If a path is specified by argument, we take it. Or else, we just ask user to input the path.
+            var path = if (this == -1) getSafeFilePath("docx")
+            else args.getOrElse(this + 1) { getSafeFilePath("docx") }
+
+            path = path.trim(' ', '\'', '"')
+            completeUpdate(args, ParseDataDetails(path, null, true, null))
+        }
+    }
+
+    private fun completeUpdate(args: List<String>, parseDetails: ParseDataDetails) {
+        /* We call this function directly.
+           The same as original, if there are no changes, we return default ones.
+           Also, we store changes data in standalone variable, to further use.
+           After we overwrite "lastResult" with basic schedule, we MUST have changes data to build a final schedule. */
+        val changesStorageVariable = parseChangesByDocument(parseDetails) ?: TargetedChangesOfDay()
+        lastResult = changesStorageVariable
+        //? We make synchronization before file writing (because writing can alter a target object).
+        beginSynchronization(args)
+        writeLastResult(args)
+
+        /* So, we read all available basic assets (directly function call, of course).
+           After this, we build final schedule objects with changes data that are stored in standalone variable. */
+        lastResult = readAllAvailableBasicScheduleAssets()
+        lastResult = buildFinalSchedulesWithChangesData(changesStorageVariable as GeneralChangesOfDay)
+        //? And the same in here. Sync, and after writing.
+        beginSynchronization(args)
+        writeLastResult(args)
+    }
+    /* endregion */
     /* endregion */
 
     /* region Functional Commands */
@@ -510,7 +548,7 @@ class ActionsController : ControllerBase() {
 
     /* region Command: 'Sync' */
 
-    fun beginSynchronization(args: List<String>) = when (lastResult) {
+    fun beginSynchronization(args: List<String> = listOf()) = when (lastResult) {
         is ScheduleDayChangesGroup -> ScheduleDataContext.instance.syncChanges(lastResult as ScheduleDayChangesGroup)
         is GeneralChangesOfDay -> ScheduleDataContext.instance.syncChanges(lastResult as GeneralChangesOfDay)
 

@@ -4,6 +4,8 @@ import controller.view.console.ActionsController
 import model.view.Command
 import model.view.CommandInfo
 import java.util.*
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 
 /**
@@ -53,8 +55,8 @@ class Basic(private val user: String) {
                                }),
             "read" to Pair(readCommandDescription,
                            Command("Read") {
-                                 controller.readAssets(it)
-                             }),
+                               controller.readAssets(it)
+                           }),
             "changes" to Pair(changesCommandDescription,
                               Command("Changes") {
                                   controller.parseChanges(it)
@@ -63,6 +65,10 @@ class Basic(private val user: String) {
                             Command("Final") {
                                 controller.parseFinalSchedule(it)
                             }),
+            "update" to Pair(updateCommandDescription,
+                             Command("Update") {
+                                 controller.beginUpdateCommandExecution(it)
+                             }),
             // Functional Commands:
             "help" to Pair(helpCommandDescription,
                            Command("Help") {
@@ -70,8 +76,8 @@ class Basic(private val user: String) {
                            }),
             "test" to Pair(testCommandDescription,
                            Command("Test") {
-                                controller.initializeTestParsingProcessByArguments(it)
-                            }),
+                               controller.initializeTestParsingProcessByArguments(it)
+                           }),
             "sync" to Pair(syncCommandDescription,
                            Command("Sync") {
                                controller.beginSynchronization(it)
@@ -172,6 +178,31 @@ class Basic(private val user: String) {
 
     companion object {
 
+        /* region Constants */
+
+        /**
+         * This is regular expression.
+         *
+         * Explanation:
+         * * '(' — This parenthesis starts a capture group,
+         *         which means that the matching text will be remembered and can be retrieved later;
+         * * '[^"]\S*' — This part of the regular expression matches any non-quote character
+         *               ([^"]) followed by zero or more non-space characters (\S*).
+         *               This means that it will match any sequence of non-space characters
+         *               that does not start with a double quote;
+         * * '|' — This vertical bar is a logical OR operator
+         *         that allows us to match either the previous pattern or the one that follows;
+         * * '.+?' — This part of the regular expression matches any sequence of characters (.+)
+         *           that are enclosed in double quotes ("), in a non-greedy way (?),
+         *           which means it will match the smallest possible string inside the quotes;
+         * * ')' — This parenthesis closes the capture group;
+         * * '\s*' — This part of the regular expression matches zero or more space characters (\s),
+         *           including spaces, tabs, and newlines, that may appear after the matched string.
+         *
+         */
+        private const val PARAMS_SPLIT_REG_EXP = "([^\"]\\S*|\".+?\")\\s*"
+        /* endregion */
+
         /* region Properties */
 
         /**
@@ -208,6 +239,11 @@ class Basic(private val user: String) {
          * This is a valuable one.
          */
         private val finalCommandDescription: String
+
+        /**
+         * Description of the 'Update' command.
+         */
+        private val updateCommandDescription: String
 
         /**
          * Description of the 'Parse' command.
@@ -249,6 +285,8 @@ class Basic(private val user: String) {
                     changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
                     finalCommandDescription =
                         "Begins merging process between basic schedule and changes. Requires last value to contain basic schedule"
+                    updateCommandDescription =
+                        "Reads target document with replacements, syncs data with DB, writes data to asset file. Then makes the same with final schedule"
 
                     helpCommandDescription = "Show context help for this application"
                     testCommandDescription = "Begins basic parsing process (may be useful for debugging process)"
@@ -262,6 +300,7 @@ class Basic(private val user: String) {
                     readCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
                     changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
                     finalCommandDescription = "開始基本計劃和變更之間的合併過程。 需要最後一個值來包含基本計劃。"
+                    updateCommandDescription = "TODO: Translate this."
 
                     helpCommandDescription = "顯示此應用程序的上下文幫助"
                     testCommandDescription = "開始基本解析過程（可能對調試過程有用）"
@@ -278,6 +317,8 @@ class Basic(private val user: String) {
                     changesCommandDescription = "Начать процесс чтения замен (требуется загруженный документ)"
                     finalCommandDescription =
                         "Начать процесс слияния базового расписания и замен. Требует наличия базового расписания в 'lastResult'"
+                    updateCommandDescription =
+                        "Считывает целевой документ с заменами, синхронизирует данные с БД и записывает это всё в ассет. Затем проделывает всё то же самое с итоговым расписанием"
 
                     helpCommandDescription = "Показать контекстную справку для приложения"
                     testCommandDescription =
@@ -315,12 +356,27 @@ class Basic(private val user: String) {
          * Requires [instance][console] of the main class to get [target action][Command] from [list][availableActions].
          */
         private fun parseInputtedText(console: Basic, input: String): CommandInfo {
-            val split = input.split(' ')
+            val split = splitInputText(input)
             val command = split[0]
 
             // We take all arguments, ignoring the first element (that contains the command itself).
             return CommandInfo(args = split.drop(1).map { arg -> arg.lowercase() },
                                action = console.availableActions[command.lowercase()])
+        }
+
+        /**
+         * Splits raw inputted parameter into standalone command parameters.
+         * It uses [Regular Expression][PARAMS_SPLIT_REG_EXP] to make split correct.
+         */
+        private fun splitInputText(input: String): List<String> {
+            val results = mutableListOf<String>()
+            val matcher = Pattern.compile(PARAMS_SPLIT_REG_EXP).matcher(input)
+            while (matcher.find()) {
+                //? We should trim found values because regexp itself doesn't make it.
+                results.add(matcher.group(1).trim(' ', '\'', '"'))
+            }
+
+            return results
         }
         /* endregion */
     }
