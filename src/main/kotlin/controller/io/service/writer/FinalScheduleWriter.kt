@@ -8,6 +8,7 @@ import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
 import java.io.IOException
+import java.nio.charset.Charset
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -33,7 +34,7 @@ class FinalScheduleWriter : ValueWriter {
         private fun writeFinalScheduleToFile(finalPath: Path, finalSchedules: GeneralFinalDaySchedule): Boolean {
             return try {
                 val serializer = jacksonObjectMapper()
-                val writer = FileWriter(File(finalPath.toUri()))
+                val writer = FileWriter(File(finalPath.toUri()), Charset.forName(ValueWriter.DEFAULT_ENCODING), false)
                 val buffered = BufferedWriter(writer, ValueWriter.WRITER_BUFFER_SIZE)
 
                 buffered.write(serializer.writerWithDefaultPrettyPrinter().writeValueAsString(finalSchedules))

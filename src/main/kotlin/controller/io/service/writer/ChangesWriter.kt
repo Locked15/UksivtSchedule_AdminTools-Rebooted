@@ -6,6 +6,7 @@ import controller.io.service.writer.base.ValueWriter
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.GeneralChangesOfDay
 import java.io.FileWriter
+import java.nio.charset.Charset
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -47,7 +48,8 @@ class ChangesWriter : ValueWriter {
             val serializedValue =
                 jacksonObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(targetChanges)
             return try {
-                val stream = FileWriter(getTargetFilePath(targetChanges.isAbsolute).toFile(), false)
+                val stream = FileWriter(getTargetFilePath(targetChanges.isAbsolute).toFile(),
+                                        Charset.forName(ValueWriter.DEFAULT_ENCODING), false)
                 stream.write(serializedValue)
                 stream.close()
 
@@ -85,7 +87,7 @@ class ChangesWriter : ValueWriter {
                 val stream = FileWriter(getUnitedFilePath(dateAtomicValues.first ?: -1, dateAtomicValues.second ?: -1,
                                                           dateAtomicValues.third ?: -1,
                                                           generalChangesOfDay.changes.size).toFile(),
-                                        false)
+                                        Charset.forName(ValueWriter.DEFAULT_ENCODING), false)
                 stream.write(serializedValue)
                 stream.close()
 

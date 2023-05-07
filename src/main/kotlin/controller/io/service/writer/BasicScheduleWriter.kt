@@ -9,6 +9,7 @@ import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
 import java.io.IOException
+import java.nio.charset.Charset
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -50,7 +51,8 @@ class BasicScheduleWriter : ValueWriter {
         private fun writeToTargetFile(group: String?, schedule: TargetedWeekSchedule): Boolean {
             val serializedValue = jacksonObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(schedule)
             return try {
-                val stream = FileWriter(getTargetFilePath(group ?: "NotRecognized").toString(), false)
+                val stream = FileWriter(getTargetFilePath(group ?: "NotRecognized").toString(),
+                                        Charset.forName(ValueWriter.DEFAULT_ENCODING), false)
                 stream.write(serializedValue)
                 stream.close()
 
@@ -81,7 +83,7 @@ class BasicScheduleWriter : ValueWriter {
             val finalPath = getUnitedFilePath(schedules.size, fileName)
             return try {
                 val serializer = jacksonObjectMapper()
-                val writer = FileWriter(File(finalPath.toUri()))
+                val writer = FileWriter(File(finalPath.toUri()), Charset.forName(ValueWriter.DEFAULT_ENCODING))
                 val buffered = BufferedWriter(writer, ValueWriter.WRITER_BUFFER_SIZE)
 
                 buffered.write(serializer.writerWithDefaultPrettyPrinter().writeValueAsString(schedules))
