@@ -676,8 +676,8 @@ class ActionsController : ControllerBase() {
          * Initializes the help message with current locale.
          */
         init {
-            when (Locale.getDefault()) {
-                Locale.ENGLISH -> helpMessage =
+            when (Locale.getDefault().language) {
+                Locale.ENGLISH.language -> helpMessage =
                     """
                         Admin Tools for Uksivt Schedule System by Locked15.
                         
@@ -715,7 +715,7 @@ class ActionsController : ControllerBase() {
                         All parameters are case-insensitive and order-insensitive.
                         All meaningless/wrong parameters will be automatically ignored.
                     """.trimIndent()
-                Locale.CHINESE -> helpMessage =
+                Locale.CHINESE.language -> helpMessage =
                     """
                         Locked15 的 Uksivt 計劃系統管理工具。
                         

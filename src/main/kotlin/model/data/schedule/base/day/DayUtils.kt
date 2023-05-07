@@ -48,8 +48,8 @@ fun fromCalendarObject(calendar: Calendar?): Day? {
         null
     }
     else {
-        return when (Locale.getDefault()) {
-            Locale.ENGLISH -> fromEnglishString(SimpleDateFormat("EEEE").format(calendar.time))
+        return when (Locale.getDefault().language) {
+            Locale.ENGLISH.language -> fromEnglishString(SimpleDateFormat("EEEE").format(calendar.time))
             else -> fromRussianString(SimpleDateFormat("EEEE").format(calendar.time))
         }
     }

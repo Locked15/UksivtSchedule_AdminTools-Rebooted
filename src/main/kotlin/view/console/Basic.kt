@@ -277,8 +277,8 @@ class Basic(private val user: String) {
          * Some languages aren't supported yet.
          */
         init {
-            when (Locale.getDefault()) {
-                Locale.ENGLISH -> {
+            when (Locale.getDefault().language) {
+                Locale.ENGLISH.language -> {
                     scheduleCommandDescription = "Begins schedule-reading process (requires prepared file)"
                     readCommandDescription = "Begins assets-reading process (requires prepared assets in json format)"
                     changesCommandDescription = "Begins changesOfDay-reading process (requires downloaded document)"
@@ -294,7 +294,7 @@ class Basic(private val user: String) {
                     showCommandDescription = "Show last gotten result in the console (terminal)"
                     exitCommandDescription = "Exits from program"
                 }
-                Locale.CHINESE -> {
+                Locale.CHINESE.language -> {
                     scheduleCommandDescription = "開始計劃閱讀過程（需要準備好的文件）"
                     readCommandDescription = "開始資產讀取過程（需要 json 格式的準備資產）"
                     changesCommandDescription = "開始更改閱讀過程（需要下載的文檔）"
