@@ -11,6 +11,8 @@ class GlobalStateBuilder {
 
     private var resourceProjectPath: List<String>? = null
 
+    private var dbNameParam: String? = null
+
     private var logLevel: LogLevel? = null
     /* endregion */
 
@@ -37,8 +39,13 @@ class GlobalStateBuilder {
         setResourcePath(with(args) {
             when {
                 contains("-d") || contains("--dev") -> developmentResourcePath
-
                 else -> productionResourcePath
+            }
+        })
+        setDbNameParam(with(args) {
+            when (val dbParamIndex = indexOf("--db-param")) {
+                -1 -> ""
+                else -> args.getOrElse(dbParamIndex + 1) { "" }
             }
         })
 
@@ -54,10 +61,16 @@ class GlobalStateBuilder {
         logLevel = level
         return this
     }
+
+    private fun setDbNameParam(param: String): GlobalStateBuilder {
+        //? To make it case-insensitive (and because config values write with a first letter in upper-case), we make it.
+        dbNameParam = ".${param.substring(0, 1).uppercase()}${param.substring(1)}"
+        return this
+    }
     /* endregion */
 
     fun build() = GlobalState(projectDirectory!!, resourceProjectPath!!,
-                              logLevel!!)
+                              dbNameParam!!, logLevel!!)
 
     companion object {
 
