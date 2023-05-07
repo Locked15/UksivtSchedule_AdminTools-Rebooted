@@ -4,7 +4,7 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <version>1.3.2-FIX1</version>
+    <version>1.3.3</version>
     <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
 
@@ -24,6 +24,15 @@
 
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
+
+        <build.assembly-plugin.version>3.5.0</build.assembly-plugin.version>
+        <build.tests-plugin.version>3.0.0</build.tests-plugin.version>
+
+        <dependencies.jsoup.version>1.16.1</dependencies.jsoup.version>
+        <dependencies.apache-poi.version>5.2.3</dependencies.apache-poi.version>
+        <dependencies.jackson.version>2.15.0</dependencies.jackson.version>
+        <dependencies.postgresql-core.version>42.6.0</dependencies.postgresql-core.version>
+        <dependencies.kotlin-exposed.version>0.41.1</dependencies.kotlin-exposed.version>
     </properties>
 
     <build>
@@ -63,7 +72,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>${build.assembly-plugin.version}</version>
 
                 <executions>
                     <execution>
@@ -103,13 +112,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>${build.tests-plugin.version}</version>
             </plugin>
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>${build.tests-plugin.version}</version>
             </plugin>
         </plugins>
     </build>
@@ -140,21 +149,21 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.15.4</version>
+            <version>${dependencies.jsoup.version}</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>5.2.3</version>
+            <version>${dependencies.apache-poi.version}</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
+            <version>${dependencies.apache-poi.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -162,14 +171,14 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.15.0</version>
+            <version>${dependencies.jackson.version}</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin -->
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-kotlin</artifactId>
-            <version>2.15.0</version>
+            <version>${dependencies.jackson.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -177,32 +186,32 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
+            <version>${dependencies.postgresql-core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-core -->
         <dependency>
             <groupId>org.jetbrains.exposed</groupId>
             <artifactId>exposed-core</artifactId>
-            <version>0.41.1</version>
+            <version>${dependencies.kotlin-exposed.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-jdbc -->
         <dependency>
             <groupId>org.jetbrains.exposed</groupId>
             <artifactId>exposed-jdbc</artifactId>
-            <version>0.41.1</version>
+            <version>${dependencies.kotlin-exposed.version}</version>
             <scope>runtime</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-dao -->
         <dependency>
             <groupId>org.jetbrains.exposed</groupId>
             <artifactId>exposed-dao</artifactId>
-            <version>0.41.1</version>
+            <version>${dependencies.kotlin-exposed.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jetbrains.exposed/exposed-java-time -->
         <dependency>
             <groupId>org.jetbrains.exposed</groupId>
             <artifactId>exposed-java-time</artifactId>
-            <version>0.41.1</version>
+            <version>${dependencies.kotlin-exposed.version}</version>
         </dependency>
     </dependencies>
 </project>
