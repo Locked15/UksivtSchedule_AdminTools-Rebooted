@@ -4,7 +4,6 @@ import controller.view.console.ActionsController
 import model.view.Command
 import model.view.CommandInfo
 import java.util.*
-import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 
@@ -21,7 +20,7 @@ class Basic(private val user: String) {
     /**
      * Contains last executed command with arguments and properties.
      */
-    private var lastCommand = "help -f";
+    private var lastCommand = "help -f"
 
     /**
      * Contains a controller object with realizations of the interaction functions.
