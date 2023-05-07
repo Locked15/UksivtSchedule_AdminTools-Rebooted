@@ -81,30 +81,23 @@
                         <goals>
                             <goal>single</goal>
                         </goals>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <addClasspath>true</addClasspath>
-                                    <mainClass>${main.class}</mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-
-                            <outputDirectory>./release</outputDirectory>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <finalName>AdminTools-Rebooted</finalName>
-                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
+                    <encoding>utf-8</encoding>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>${main.class}</mainClass>
                         </manifest>
                     </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+
+                    <outputDirectory>./release</outputDirectory>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <finalName>AdminTools-Rebooted</finalName>
                 </configuration>
             </plugin>
 
