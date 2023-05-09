@@ -23,7 +23,7 @@ fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?,
             name = if (exceptionOnEmptyLessonName) lesson.name!! else lesson.name ?: "Нет"
             teacherId = teacherInfo.first
             place = lesson.place
-            isChanged = true // Hack: Old replacements (changes) assets contain 'false' in this property.
+            isChanged = lesson.isChanged
 
             replacementId = newReplacementId
             scheduleId = newFinalScheduleId
