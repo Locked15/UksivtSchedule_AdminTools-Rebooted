@@ -614,7 +614,7 @@ class ActionsController : ControllerBase() {
                                          "\n\t1 — Word Document mode." +
                                          "\nChoose",
                                  0, 1)
-            val fileName = if (args.contains("--name") && args.contains("ignore")) ""
+            val fileName = if (args.contains("--name-ignore") || args.contains("--ignore-name")) ""
             else inputText("File name (or empty, to auto-generate it)")
 
             if (writeType == 0)
