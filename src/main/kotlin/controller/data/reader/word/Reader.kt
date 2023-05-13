@@ -386,7 +386,7 @@ class Reader(pathToFile: String) {
          */
         private const val CENTERED_GROUP_NAME_CELL_ID = 3
 
-        private const val PRACTISE_GROUP_CELL_ID = 6;
+        private const val PRACTISE_GROUP_CELL_ID = 6
     }
     /* endregion */
 }

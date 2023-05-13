@@ -24,7 +24,7 @@ abstract class BasicDBConfigurator {
                 return serializer.readValue<HashMap<String, String>>(userSecretsFile)
             }
             catch (exception: IOException) {
-                Logger.Companion.logException(exception, 1, "Exception occurred on configuration file reading")
+                Logger.logException(exception, 1, "Exception occurred on configuration file reading")
                 null
             }
         }
