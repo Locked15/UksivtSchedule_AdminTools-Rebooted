@@ -2,9 +2,11 @@ package model.data.change.day
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import controller.view.Logger
 import model.data.change.day.base.BasicChangesOfDay
 import model.data.schedule.base.day.Day
 import model.data.schedule.base.day.fromCalendarObject
+import model.environment.log.LogLevel
 import java.util.*
 
 
@@ -27,7 +29,7 @@ class GeneralChangesOfDay(val changes: List<TargetedChangesOfDay?>) : BasicChang
     fun getChangesBasicDay(): Day? {
         val result = fromCalendarObject(changesDate)
         if (result == null) {
-            println("WARNING:\n\t'Day' object for 'getChangesDay' in 'GeneralChangesOfDay' was null.")
+            Logger.logMessage(LogLevel.WARNING, "'Day' object for 'getChangesDay' in 'GeneralChangesOfDay' was null.")
         }
 
         return result

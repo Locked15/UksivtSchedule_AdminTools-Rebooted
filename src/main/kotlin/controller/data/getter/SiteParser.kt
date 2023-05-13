@@ -1,5 +1,6 @@
 package controller.data.getter
 
+import controller.view.Logger
 import model.data.parse.site.ChangeElement
 import model.data.parse.site.MonthChanges
 import model.data.schedule.base.day.Day
@@ -48,7 +49,7 @@ class SiteParser {
         }
         catch (e: Exception) {
             document = null
-            println("In connection process, an error occurred: ${e.message}.")
+            Logger.logException(e, 1, "In connection process, an error occurred")
         }
         finally {
             webPage = document

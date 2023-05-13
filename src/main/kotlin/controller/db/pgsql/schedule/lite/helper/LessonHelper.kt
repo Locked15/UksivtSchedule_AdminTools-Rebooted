@@ -1,5 +1,7 @@
 package controller.db.pgsql.schedule.lite.helper
 
+import controller.view.Logger
+import model.environment.log.LogLevel
 import org.jetbrains.exposed.dao.id.EntityID
 
 import model.data.schedule.base.Lesson as LessonModel
@@ -48,8 +50,7 @@ private fun getTeacherWithSideActions(teacherName: String?): Pair<Int?, Boolean>
                     Pair(createNewTeacherInstance(newTeacherModel).value, true)
                 }
                 catch (exception: Exception) {
-                    println("ERROR:\n\tOn new teacher creation error occurred: ${exception.message};" +
-                                    "\n\tObject data: ${newTeacherModel.fullName}.")
+                    Logger.logException(exception, 1, "Object data: ${newTeacherModel.fullName}")
                     Pair(-1, false)
                 }
             }
@@ -65,10 +66,8 @@ private fun tryToFindPresenceEntryID(newTeacher: TeacherModel, allTeachers: List
 
     //? At first, we will check full equality (to make it lazy-working: if there is another instance, other blocks willn't be executed).
     if (fullEqualEntries.isNotEmpty()) {
-        if (fullEqualEntries.size > 1) {
-            println("WARNING:\n\tTeacher entity duplicates was found!" +
-                            "\n\tInfo: ${newTeacher.fullName}.")
-            }
+        if (fullEqualEntries.size > 1)
+            Logger.logMessage(LogLevel.WARNING, "Teacher entity duplicates was found!\n\tInfo: ${newTeacher.fullName}")
         return fullEqualEntries[0].id
     }
     //? After the first block (if there are no full equality entries), we will make partial checking.

@@ -3,6 +3,7 @@ package controller.io.service.writer
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import controller.io.service.PathResolver
 import controller.io.service.writer.base.ValueWriter
+import controller.view.Logger
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.GeneralChangesOfDay
 import java.io.FileWriter
@@ -56,7 +57,7 @@ class ChangesWriter : ValueWriter {
                 true
             }
             catch (e: Exception) {
-                println("\n\nOn writing error occurred: ${e.message}.")
+                Logger.logException(e)
                 false
             }
         }
@@ -94,7 +95,7 @@ class ChangesWriter : ValueWriter {
                 true
             }
             catch (e: Exception) {
-                println("\n\nOn writing error occurred: ${e.message}.")
+                Logger.logException(e)
                 false
             }
         }

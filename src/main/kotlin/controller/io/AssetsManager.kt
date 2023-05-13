@@ -9,6 +9,7 @@ import controller.io.service.PathResolver.Companion.thisSemesterResourcePath
 import controller.io.service.writer.BasicScheduleWriter
 import controller.io.service.writer.ChangesWriter
 import controller.io.service.writer.FinalScheduleWriter
+import controller.view.Logger
 import model.data.change.day.GeneralChangesOfDay
 import model.data.change.day.TargetedChangesOfDay
 import model.data.change.day.base.BasicChangesOfDay
@@ -34,13 +35,11 @@ inline fun <reified T> readUnknownAsset(path: Path): T? {
         result
     }
     catch (io: IOException) {
-        println("ERROR:\nIO exception happened on asset file reading. " +
-                        "Stack trace: ${io.localizedMessage}.")
+        Logger.logException(io, 1, "IO exception happened on asset file reading")
         null
     }
     catch (mapping: JsonMappingException) {
-        println("ERROR:\nSent type isn't equal to asset file JSON structure." +
-                        "Stack trace: ${mapping.localizedMessage}.")
+        Logger.logException(mapping, 1, "Sent type isn't equal to asset file JSON structure")
         null
     }
 }
@@ -56,8 +55,7 @@ fun readBasicScheduleAsset(branch: String, affiliation: String, group: String): 
         result
     }
     catch (exception: IOException) {
-        println("ERROR:\nIO exception happened on basic schedule asset file reading. " +
-                        "Stack trace:\n${exception.localizedMessage}.")
+        Logger.logException(exception, 1, "IO exception happened on basic schedule asset file reading")
         null
     }
 }
@@ -74,8 +72,7 @@ fun readChangesAsset(month: String, fileName: String): GeneralChangesOfDay? {
         result
     }
     catch (exception: IOException) {
-        println("ERROR:\nIO exception happened on changes asset file reading. " +
-                        "Stack trace:\n${exception.localizedMessage}.")
+        Logger.logException(exception, 1, "IO exception happened on changes asset file reading")
         null
     }
 }
@@ -92,8 +89,7 @@ fun readFinalScheduleAsset(month: String, fileName: String): GeneralFinalDaySche
         result
     }
     catch (exception: IOException) {
-        println("ERROR:\nIO exception happened on final schedule asset file reading. " +
-                        "Stack trace:\n${exception.localizedMessage}.")
+        Logger.logException(exception, 1, "IO exception happened on final schedule asset file reading")
         null
     }
 }

@@ -2,6 +2,8 @@ package model.entity.schedule.lite.base
 
 import model.data.schedule.base.Teacher as TeacherModel
 import controller.db.pgsql.schedule.lite.ScheduleDataContext
+import controller.view.Logger
+import model.environment.log.LogLevel
 import org.jetbrains.exposed.dao.Entity
 import org.jetbrains.exposed.dao.EntityClass
 import org.jetbrains.exposed.dao.id.EntityID
@@ -41,15 +43,17 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     fun updateSecondaryFields(template: TeacherModel) {
         if (template.name != null || template.patronymic != null) {
-            println("INFO:\n\tTeacher ($surname) entry update:")
+            var message = "Teacher ($surname) entry update:"
             if (template.name != null) {
-                println("\t\tName is updated: $name -> ${template.name}.")
+                message += "\t\tName is updated: $name -> ${template.name}."
                 name = template.name
             }
             if (template.patronymic != null) {
-                println("\t\tPatronymic is updated: $patronymic —> ${template.name}.")
+                message += "\t\tPatronymic is updated: $patronymic —> ${template.name}."
                 patronymic = template.patronymic
             }
+
+            Logger.logMessage(LogLevel.DEBUG, message)
         }
     }
     /* endregion */

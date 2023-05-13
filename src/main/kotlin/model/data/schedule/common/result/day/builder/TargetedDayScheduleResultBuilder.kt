@@ -1,9 +1,11 @@
 package model.data.schedule.common.result.day.builder
 
+import controller.view.Logger
 import model.data.change.day.TargetedChangesOfDay
 import model.data.schedule.base.Lesson
 import model.data.schedule.common.origin.day.TargetedDaySchedule
 import model.data.schedule.common.result.day.TargetedFinalDaySchedule
+import model.environment.log.LogLevel
 import java.util.*
 
 
@@ -113,13 +115,13 @@ class TargetedDayScheduleResultBuilder {
         schedule.let {
             val mergedSchedule = schedule!!.lessons.toMutableList()
             return if (changes == null) {
-                // TODO: Make global app configuration to change showing warnings and errors logs.
-                println("Found 'NULL' changes value on schedule merging. Base schedule will return.\nSkipping...")
+                Logger.logMessage(LogLevel.INFORMATION, "Found 'NULL' changes value on schedule merging. " +
+                        "Base schedule will return.\nSkipping...")
                 TargetedDaySchedule(schedule!!.day, schedule!!.lessons)
             }
             else if (changes!!.isAbsolute) {
-                // ToDO: The same.
-                println("Absolute changes found on schedule merging. New schedule will be applied.\nCalculation...")
+                Logger.logMessage(LogLevel.INFORMATION, "Absolute changes found on schedule merging. " +
+                        "New schedule will be applied.\nCalculation...")
                 TargetedDaySchedule(schedule!!.day, changes!!.changedLessons, true).fillEmptyLessons(true)
             }
             else {
@@ -128,7 +130,9 @@ class TargetedDayScheduleResultBuilder {
                         lesson.name = null
                         lesson.isChanged = true
                     }
-                    else if (lesson.number == null) println("Found 'NULL' lesson number.\nUsed default (0) value.")
+                    else if (lesson.number == null) {
+                        Logger.logMessage(LogLevel.INFORMATION, "Found 'NULL' lesson number.\nUsed default (0) value.")
+                    }
 
                     try {
                         mergedSchedule[lesson.number ?: 0] = lesson
@@ -136,7 +140,8 @@ class TargetedDayScheduleResultBuilder {
                     }
                     catch (exception: IndexOutOfBoundsException) {
                         mergedSchedule.add(Lesson(lesson.number, lesson.name, lesson.teacher, lesson.place, true))
-                        println("While merging schedule with changes found missing lesson...")
+                        Logger.logMessage(LogLevel.INFORMATION,
+                                          "While merging schedule with changes found missing lesson...")
                     }
                 }
 

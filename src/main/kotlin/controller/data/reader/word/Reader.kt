@@ -1,5 +1,6 @@
 package controller.data.reader.word
 
+import controller.view.Logger
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
@@ -13,6 +14,7 @@ import java.io.FileInputStream
 import model.data.parse.changes.CellDefineResult
 import model.data.schedule.common.result.day.TargetedFinalDaySchedule
 import model.data.schedule.common.result.day.builder.TargetedDayScheduleResultBuilder
+import model.environment.log.LogLevel
 import java.lang.Exception
 import java.util.Calendar
 import java.util.GregorianCalendar
@@ -165,8 +167,10 @@ class Reader(pathToFile: String) {
                 headerRawTextAfterSplit.dropLast(1)[0].split(',').map { it.trim() }
             }
             else {
-                if (showWarnings)
-                    println("INFO:\n\tPractise wasn't found on changes document read.\n\tIs it supposed to be?")
+                if (showWarnings) {
+                    Logger.logMessage(LogLevel.WARNING, "Practise wasn't found on changes document read." +
+                            "\n\tIs it supposed to be?")
+                }
                 listOf()
             }
 
@@ -334,8 +338,8 @@ class Reader(pathToFile: String) {
     fun getFinalSchedule(schedule: TargetedDaySchedule, groupName: String, day: Day?): TargetedFinalDaySchedule {
         val changes = getChanges(groupName, day)
         if (changes != null) {
-            println("Automatic merge tool found empty targeted changes." +
-                            "\nBase schedule (new ref) will be return.")
+            Logger.logMessage(LogLevel.INFORMATION, "Automatic merge tool found empty targeted changes." +
+                            "\nBase schedule (new ref) will be return.", 1)
         }
 
         val resultBuilder = TargetedDayScheduleResultBuilder(schedule)

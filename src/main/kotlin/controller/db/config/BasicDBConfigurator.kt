@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import controller.db.DBKind
 import controller.io.service.PathResolver
+import controller.view.Logger
 import java.io.IOException
 
 
@@ -23,7 +24,7 @@ abstract class BasicDBConfigurator {
                 return serializer.readValue<HashMap<String, String>>(userSecretsFile)
             }
             catch (exception: IOException) {
-                println("ERROR:\n\tException occurred on configuration file reading: ${exception.message}.")
+                Logger.Companion.logException(exception, 1, "Exception occurred on configuration file reading")
                 null
             }
         }

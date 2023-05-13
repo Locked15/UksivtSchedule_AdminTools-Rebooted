@@ -1,5 +1,7 @@
 package model.data.schedule.base
 
+import controller.view.Logger
+import model.environment.log.LogLevel
 import model.entity.schedule.lite.base.TargetCycle as TargetCycleEntity
 import org.jetbrains.exposed.dao.id.EntityID
 
@@ -23,15 +25,15 @@ class TargetCycle(private val year: Int, private val semester: Int) {
                 val year = values[0].toIntOrNull()
                 val semester = values[1].toIntOrNull()
                 if (year == null || semester == null) {
-                    println("WARNING:\n\tOne of values on TargetCycle creation was 'NULL'." +
-                                    "\n\tDefault values will be used.")
+                    Logger.logMessage(LogLevel.INFORMATION, "One of values on TargetCycle creation was 'NULL'." +
+                            "\n\tDefault values will be used")
                 }
 
                 TargetCycle(year ?: DEFAULT_YEAR, semester ?: DEFAULT_SEMESTER)
             }
             else {
-                println("WARNING:\n\tTargetCycle creation by string query was faulted." +
-                                "\n\tDefault values will be used.")
+                Logger.logMessage(LogLevel.INFORMATION, "TargetCycle creation by string query was faulted." +
+                                  "\n\tDefault values will be used")
                 TargetCycle(DEFAULT_YEAR, DEFAULT_SEMESTER)
             }
         }

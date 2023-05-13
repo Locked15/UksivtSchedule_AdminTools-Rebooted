@@ -4,11 +4,13 @@ import controller.db.config.DBConfigurator
 import controller.db.pgsql.schedule.lite.helper.getConfigurationModel
 import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDB
 import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDB
+import controller.view.Logger
 
 import model.data.change.day.GeneralChangesOfDay as GeneralDayReplacementsModel
 import model.data.change.group.ScheduleDayChangesGroup
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule as GeneralFinalDayScheduleModel
 import model.data.schedule.common.result.group.FinalScheduleGroup
+import model.environment.log.LogLevel
 
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.dao.id.IntIdTable
@@ -64,16 +66,18 @@ class ScheduleDataContext private constructor() {
                             altered++
                     }
                     catch (exception: Exception) {
-                        println("ERROR:\n\tObject Info: ${targetChange?.targetGroup}/${targetChange?.changesDate.toString()}." +
-                                        "\n${exception.message}.")
+                        Logger.logException(exception, 1, "Object Info: " +
+                                "${targetChange?.targetGroup}/${targetChange?.changesDate.toString()}.")
                     }
                 }
             }
         }
 
         val date = changes.getAtomicDateValues()
-        if (altered > 0)
-            println("Info:\n\tCreated $altered new replacement entries for ${date.first}.${date.second}.${date.third}!.")
+        if (altered > 0) {
+            Logger.logMessage(LogLevel.DEBUG, "Created $altered new replacement entries for " +
+                    "${date.first}.${date.second}.${date.third}!.")
+        }
 
         return altered > 0
     }
@@ -92,20 +96,23 @@ class ScheduleDataContext private constructor() {
                 val hash = targetSchedule.hashCode()
                 if (FinalSchedules.select { FinalSchedules.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewFinalScheduleToDB(targetSchedule, dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                        if (insertNewFinalScheduleToDB(targetSchedule,
+                                                       dbConfiguration.targetCycle.getTargetCycleId()?.value))
                             altered++
                     }
                     catch (ex: Exception) {
-                        print("ERROR:\n\tObject Info: ${targetSchedule.targetGroup}/${targetSchedule.scheduleDate.toString()}" +
-                                      "\n\t${ex.message}.")
+                        Logger.logException(ex, 1, "Object Info: " +
+                                "${targetSchedule.targetGroup}/${targetSchedule.scheduleDate.toString()}")
                     }
                 }
             }
         }
 
         val date = schedule.getAtomicDateValues()
-        if (altered > 0)
-            println("Info:\n\tCreated $altered new final schedule entries for ${date.first}.${date.second}.${date.third}!.")
+        if (altered > 0) {
+            Logger.logMessage(LogLevel.DEBUG, "Created $altered new final schedule entries for " +
+                    "${date.first}.${date.second}.${date.third}!.")
+        }
 
         return altered > 0
     }

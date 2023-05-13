@@ -6,6 +6,7 @@ import controller.data.reader.word.Reader as WordReader
 import controller.data.reader.excel.Reader as ExcelReader
 import controller.io.*
 import controller.io.service.*
+import controller.view.Logger
 import controller.view.base.ControllerBase
 import model.data.change.BasicScheduleChanges
 import model.data.schedule.common.origin.day.TargetedDaySchedule
@@ -24,6 +25,7 @@ import model.data.schedule.common.result.BasicFinalSchedule
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule
 import model.data.schedule.common.result.day.TargetedFinalDaySchedule
 import model.data.schedule.common.result.group.FinalScheduleGroup
+import model.environment.log.LogLevel
 import view.console.Basic
 import java.nio.file.Paths
 import java.util.Calendar
@@ -156,7 +158,7 @@ class ActionsController : ControllerBase() {
             readFinalScheduleBySelectedMode(args)
         }
         else {
-            println("WARNING:\n\tYou must specify what kind of assets you want to read.")
+            Logger.logMessage(LogLevel.WARNING, "You must specify what kind of assets you want to read.")
             lastResult
         }
     }
@@ -186,8 +188,8 @@ class ActionsController : ControllerBase() {
                     readBasicScheduleAsset(branch, affiliation, group)?.let {
                         results.add(it)
                     } ?: run {
-                        println("WARNING:\nFind empty value, while processing auto-assets parse." +
-                                        "Args: $branch — $affiliation — $group.")
+                        Logger.logMessage(LogLevel.WARNING, "Find empty value, while processing auto-assets parse." +
+                                "Args: $branch — $affiliation — $group.")
                     }
                 }
             }
@@ -241,8 +243,8 @@ class ActionsController : ControllerBase() {
         if (readMonthLevelAssets) {
             for (fileName in getChangesStorageMonthLevelAssetFiles()) {
                 readChangesAsset("", fileName)?.let { results.add(it) } ?: run {
-                    println("WARNING:\n\tGot empty changes object on reading Month-Level asset." +
-                                    "Parameters: $fileName")
+                    Logger.logMessage(LogLevel.WARNING, "Got empty changes object on reading Month-Level asset." +
+                            "Parameters: $fileName")
                 }
             }
         }
@@ -251,14 +253,14 @@ class ActionsController : ControllerBase() {
             with(getChangesStorageFileNames(subFolder)) {
                 for (fileName in this) {
                     readChangesAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
-                        println("WARNING:\n\tGot empty changes object on reading." +
-                                        "Parameters: $subFolder/$fileName")
+                        Logger.logMessage(LogLevel.WARNING, "Got empty changes object on reading." +
+                                "Parameters: $subFolder/$fileName")
                     }
                 }
             }
         }
 
-        println("Found ${results.size} schedule changes assets.")
+        Logger.logMessage(LogLevel.DEBUG, "Found ${results.size} schedule changes assets.")
         return ScheduleDayChangesGroup(results)
     }
 
@@ -284,8 +286,8 @@ class ActionsController : ControllerBase() {
         if (readMonthLevelAssets) {
             for (fileName in getFinalScheduleStorageMonthLevelAssetFiles()) {
                 readFinalScheduleAsset("", fileName)?.let { results.add(it) } ?: run {
-                    println("WARNING:\n\tGot empty final schedule object on reading Month-Level asset." +
-                                    "Parameters: $fileName")
+                    Logger.logMessage(LogLevel.WARNING, "Got empty final schedule object on reading Month asset." +
+                            "Parameters: $fileName")
                 }
             }
         }
@@ -294,14 +296,14 @@ class ActionsController : ControllerBase() {
             with(getFinalSchedulesStorageFileNames(subFolder)) {
                 for (fileName in this) {
                     readFinalScheduleAsset(subFolder, fileName)?.let { results.add(it) } ?: run {
-                        println("WARNING:\n\tGot empty final schedule on reading." +
-                                        "Parameters: $subFolder/$fileName")
+                        Logger.logMessage(LogLevel.WARNING, "Got empty final schedule on reading." +
+                                "Parameters: $subFolder/$fileName")
                     }
                 }
             }
         }
 
-        println("Found ${results.size} final schedule assets.")
+        Logger.logMessage(LogLevel.DEBUG, "Found ${results.size} final schedule assets.")
         return FinalScheduleGroup(results)
     }
 
@@ -339,7 +341,8 @@ class ActionsController : ControllerBase() {
                                                                       else ParseSource.DOCUMENT, data)
 
         return if (result == null) {
-            println("WARNING:\n\tWhen parsing changes (auto: $isAutoMode, united: $isUnitedMode) got 'NULL' value!")
+            Logger.logMessage(LogLevel.WARNING,
+                              "When parsing changes (auto: $isAutoMode, united: $isUnitedMode) got 'NULL' value!")
             TargetedChangesOfDay()
         }
         else result
@@ -401,7 +404,8 @@ class ActionsController : ControllerBase() {
             if (preserve != null) lastResult = preserve
         }
         else {
-            println("WARNING:\nCommand 'Final' can be used only if latest result is filled with basic schedule.")
+            Logger.logMessage(LogLevel.WARNING,
+                              "Command 'Final' can be used only if latest result is filled with basic schedule.")
         }
     }
 
@@ -423,7 +427,8 @@ class ActionsController : ControllerBase() {
                                                             targetSchedule, changesData))
             }
             else {
-                println("WARNING: \n\t'targetSchedule' in 'buildFinalSchedulesWithChangesData' was 'NULL'.")
+                Logger.logMessage(LogLevel.ERROR,
+                                  "'targetSchedule' in 'buildFinalSchedulesWithChangesData' was 'NULL'")
             }
         }
 
@@ -557,7 +562,8 @@ class ActionsController : ControllerBase() {
                                                                                               GeneralFinalDaySchedule)
 
         else -> {
-            println("Found unsupported (or incompatible) type on synchronization: ${lastResult.javaClass}.")
+            Logger.logMessage(LogLevel.ERROR,
+                              "Found unsupported (or incompatible) type on synchronization: ${lastResult.javaClass}.")
             false
         }
     }
@@ -594,7 +600,7 @@ class ActionsController : ControllerBase() {
 
         is TargetedChangesOfDay -> writeChangesToAssetFile(lastResult as TargetedChangesOfDay)
         is GeneralChangesOfDay -> {
-            val writeType = when(getFollowingArgumentByTarget("--type", args)) {
+            val writeType = when (getFollowingArgumentByTarget("--type", args)) {
                 "json" -> 0
                 "document" -> 1
 
@@ -616,7 +622,7 @@ class ActionsController : ControllerBase() {
                         "standalone files, united, standalone docs).")
 
         is GeneralFinalDaySchedule -> {
-            val writeType = when(getFollowingArgumentByTarget("--type", args)) {
+            val writeType = when (getFollowingArgumentByTarget("--type", args)) {
                 "json" -> 0
                 "document" -> 1
 
@@ -638,7 +644,7 @@ class ActionsController : ControllerBase() {
         is FinalScheduleGroup -> TODO("Same as replacements.")
 
         else -> {
-            println("Unknown (or incompatible) type to write.")
+            Logger.logMessage(LogLevel.ERROR, "Unknown (or incompatible) type to write.")
             false
         }
     }
@@ -866,7 +872,7 @@ class ActionsController : ControllerBase() {
          */
         private fun generateNewDayScheduleAndNoticeUser(index: Int): TargetedDaySchedule {
             val day = TargetedDaySchedule(Day.getValueByIndex(index))
-            println("Current Day: ${day.day.englishName}.")
+            Logger.logMessage(LogLevel.DEBUG, "Current Day: ${day.day.englishName}")
 
             return day
         }

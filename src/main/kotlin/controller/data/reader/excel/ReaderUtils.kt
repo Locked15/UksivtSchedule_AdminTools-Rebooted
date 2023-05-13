@@ -1,5 +1,6 @@
 package controller.data.reader.excel
 
+import controller.view.Logger
 import model.data.parse.schedule.ColumnBorders
 import model.data.parse.schedule.DayColumnInfo
 import org.apache.poi.ss.usermodel.Cell
@@ -159,7 +160,7 @@ private fun parseCellToFindDayCoordinates(cell: Cell, verbose: Boolean = false):
         }
     }
     catch (ex: IllegalStateException) {
-        if (verbose) println("\n\nFind *non-string* cell inside document.\nOccurred error: $ex.")
+        if (verbose) Logger.logException(ex, 1, "Find *non-string* cell inside document")
     }
 
     return null

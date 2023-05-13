@@ -3,6 +3,7 @@ package controller.io.service.writer
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import controller.io.service.PathResolver
 import controller.io.service.writer.base.ValueWriter
+import controller.view.Logger
 import model.data.schedule.common.origin.week.GeneralWeekSchedule
 import model.data.schedule.common.origin.week.TargetedWeekSchedule
 import java.io.BufferedWriter
@@ -59,7 +60,7 @@ class BasicScheduleWriter : ValueWriter {
                 true
             }
             catch (e: IOException) {
-                println("\n\nOn writing error occurred: ${e.message}.")
+                Logger.logException(e, 1, "On writing error occurred")
                 false
             }
         }
@@ -92,8 +93,7 @@ class BasicScheduleWriter : ValueWriter {
                 true
             }
             catch (exception: IOException) {
-                println("ERROR:\nError occurred on united schedule asset writing. " +
-                                "Stack trace: ${exception.message}.")
+                Logger.logException(exception, 1, "Error occurred on united schedule asset writing")
                 false
             }
         }

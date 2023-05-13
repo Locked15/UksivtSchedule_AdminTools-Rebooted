@@ -1,5 +1,7 @@
 package controller.data.getter
 
+import controller.view.Logger
+import model.environment.log.LogLevel
 import org.apache.commons.io.FileUtils
 import java.io.File
 import java.io.IOException
@@ -46,19 +48,18 @@ class DocumentDownloader {
 	 * @return Result of document download.
 	 */
 	fun downloadGoogleFile(url: String, path: String): Boolean {
-		try {
+		return try {
 			FileUtils.copyURLToFile(URI.create(url).toURL(), File(path))
-			
-			return true
+			true
 		}
 		catch (e: MalformedURLException) {
-			println("Send URL was wrong: $url.")
+			Logger.logMessage(LogLevel.ERROR, "Sent URL was wrong", 1)
+			false
 		}
 		catch (e: IOException) {
-			println("In download process an error occurred: ${e.message}.")
+			Logger.logException(e, 1, "On document download error occurred")
+			false
 		}
-		
-		return false
 	}
 	/* endregion */
 	

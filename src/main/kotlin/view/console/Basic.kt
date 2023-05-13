@@ -1,5 +1,6 @@
 package view.console
 
+import controller.view.Logger
 import controller.view.console.ActionsController
 import model.view.Command
 import model.view.CommandInfo
@@ -135,14 +136,14 @@ class Basic(private val user: String) {
                         executeCommand(commandInfo.args, commandInfo.action.second)
                     }
                     catch (exception: Exception) {
-                        println("\n\n!ERROR:\n\tNot-Specified error happened on command execution." +
-                                        "\nInfo: ${exception.message}.\n")
+                        Logger.logException(exception, 1)
                     }
                 }
                 //? We save the last command after execution, so it saves only if command and arguments are valid.
                 lastCommand = rawCommand
             }
             else {
+                //? Leave it be. Without logger.
                 println("Inputted command isn't supported, please enter 'help' to get list of supported ones.\n")
             }
         }

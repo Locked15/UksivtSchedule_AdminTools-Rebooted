@@ -1,6 +1,8 @@
 package model.data.schedule.base.day
 
+import controller.view.Logger
 import model.data.schedule.base.day.Day.*
+import model.environment.log.LogLevel
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -43,8 +45,7 @@ fun fromRussianString(name: String) = when (name.lowercase()) {
 
 fun fromCalendarObject(calendar: Calendar?): Day? {
     return if (calendar == null) {
-        println("WARNING:" +
-                        "\n\tGot 'NULL' calendar value in 'DayUtils.fromCalendarObject'.")
+        Logger.logMessage(LogLevel.ERROR, "Got 'NULL' calendar value in 'DayUtils.fromCalendarObject'")
         null
     }
     else {

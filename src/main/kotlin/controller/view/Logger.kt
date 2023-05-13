@@ -61,13 +61,13 @@ class Logger {
 
         /* region Public Functions */
 
-        fun logException(ex: Exception, indentLevel: Int = 0) = logMessage(LogLevel.ERROR, ex.message, indentLevel)
+        fun logException(ex: Exception, indentLevel: Int = 1) = logMessage(LogLevel.ERROR, ex.message, indentLevel)
 
-        fun logException(ex: Exception, indentLevel: Int = 0, message: String) = logMessage(LogLevel.ERROR,
+        fun logException(ex: Exception, indentLevel: Int = 1, message: String) = logMessage(LogLevel.ERROR,
                                                                                             "$message (${ex.message}).",
                                                                                             indentLevel)
 
-        fun logMessage(logLevel: LogLevel, message: String?, indent: Int = 0) {
+        fun logMessage(logLevel: LogLevel, message: String?, indent: Int = 1) {
             val info = message ?: "Something happened in the application (severity: ${logLevel.name})."
             when (logLevel) {
                 LogLevel.INFORMATION -> if (LogLevel.INFORMATION >= globalState.logLevel) logInformation(info, indent)

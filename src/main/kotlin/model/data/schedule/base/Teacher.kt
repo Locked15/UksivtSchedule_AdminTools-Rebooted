@@ -1,5 +1,8 @@
 package model.data.schedule.base
 
+import controller.view.Logger
+import model.environment.log.LogLevel
+
 class Teacher(var surname: String, var name: String?, var patronymic: String?) {
 
     val fullName: String
@@ -44,7 +47,7 @@ class Teacher(var surname: String, var name: String?, var patronymic: String?) {
                 else -> {
                     //! But it also calls if we have more than 3, so warn about it.
                     if (atomicNameValues.size > 3)
-                        println("WARNING:\n\tTeacher atomic name values have length more than 3!")
+                        Logger.logMessage(LogLevel.WARNING, "Teacher atomic name values have length more than 3!")
 
                     toReturn.name = atomicNameValues[1]
                     toReturn.patronymic = atomicNameValues[2]

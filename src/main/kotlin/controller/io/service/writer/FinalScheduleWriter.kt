@@ -3,6 +3,7 @@ package controller.io.service.writer
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import controller.io.service.PathResolver
 import controller.io.service.writer.base.ValueWriter
+import controller.view.Logger
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule
 import java.io.BufferedWriter
 import java.io.File
@@ -43,8 +44,7 @@ class FinalScheduleWriter : ValueWriter {
                 true
             }
             catch (exception: IOException) {
-                println("ERROR:\nError occurred on result schedule asset writing. " +
-                                "Stack trace: ${exception.message}.")
+                Logger.logException(exception, 1, "Error occurred on result schedule asset writing")
                 false
             }
         }

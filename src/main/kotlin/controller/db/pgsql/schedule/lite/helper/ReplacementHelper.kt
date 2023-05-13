@@ -1,7 +1,9 @@
 package controller.db.pgsql.schedule.lite.helper
 
+import controller.view.Logger
 import model.data.change.day.TargetedChangesOfDay
 import model.entity.schedule.lite.ScheduleReplacement
+import model.environment.log.LogLevel
 import org.jetbrains.exposed.dao.id.EntityID
 import java.time.LocalDate
 
@@ -12,7 +14,7 @@ fun insertNewChangeToDB(change: TargetedChangesOfDay?, targetCycleId: Int?): Boo
         val alteredTeachers = createNewLessonInstances(change.changedLessons, newReplacementId.value, null, false)
 
         if (alteredTeachers > 0)
-            println("\tCreated new teacher entries: $alteredTeachers for ${change.targetGroup}.")
+            Logger.logMessage(LogLevel.DEBUG, "New teacher entries: $alteredTeachers for ${change.targetGroup}", 1)
         return true
     }
     return false
