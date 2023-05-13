@@ -91,6 +91,22 @@ abstract class ControllerBase {
             return readln()
         }
 
+        @JvmStatic
+        protected fun getFollowingArgumentByTarget(targetName: String, args: List<String>,
+                                                   shortTargetName: String = ""): String? {
+            val targetValueIndex = if (args.indexOf(targetName) != -1) args.indexOf(targetName)
+            else args.indexOf(shortTargetName)
+
+            //? The most simple way to make it: just call the next by target argument.
+            return try {
+                args[targetValueIndex + 1]
+            }
+            //? And catch exception, if something went wrong (include out-of-bounds exception).
+            catch (ex: Exception) {
+                null
+            }
+        }
+
         /**
          * Checks 'do...while' condition to [inputValueSafely] function.
          */

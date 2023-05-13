@@ -575,52 +575,65 @@ class ActionsController : ControllerBase() {
     fun writeLastResult(args: List<String> = listOf()) = when (lastResult) {
         is TargetedWeekSchedule -> writeBasicScheduleToTargetFile(lastResult as TargetedWeekSchedule)
         is GeneralWeekSchedule -> {
-            val writeType = if (args.contains("--type") && args.contains("united")) 0
-            else if (args.contains("--type") && (args.contains("split") || args.contains("standalone"))) 1
-            else getSafeIntValue("Select writing type:" +
-                                         "\n\t0 — United files mode;" +
-                                         "\n\t1 — Standalone files mode." +
-                                         "\nChoose",
-                                 0, 1)
-            if (writeType == 0)
-                writeBasicScheduleToUnitedAsset(inputText("File name"), lastResult as GeneralWeekSchedule)
-            else
-                writeBasicScheduleToTargetFile(lastResult as GeneralWeekSchedule)
+            val writeType = when (getFollowingArgumentByTarget("--type", args)) {
+                "united" -> 0
+                "split", "standalone" -> 1
+
+                else -> getSafeIntValue("""
+                    Select writing type:
+                        0 — United File mode;
+                        1 — Standalone Files mode.
+                    Choose
+                """.trimIndent(), 0, 1)
+            }
+            when (writeType) {
+                0 -> writeBasicScheduleToUnitedAsset(inputText("File name"), lastResult as GeneralWeekSchedule)
+                else -> writeBasicScheduleToTargetFile(lastResult as GeneralWeekSchedule)
+            }
         }
 
         is TargetedChangesOfDay -> writeChangesToAssetFile(lastResult as TargetedChangesOfDay)
         is GeneralChangesOfDay -> {
-            val writeType = if (args.contains("--type") && args.contains("json")) 0
-            else if (args.contains("--type") && args.contains("document")) 1
-            else getSafeIntValue("Select writing type:" +
-                                         "\n\t0 — JSON Asset mode;" +
-                                         "\n\t1 — Word Document mode." +
-                                         "\nChoose",
-                                 0, 1)
-            if (writeType == 0)
-                writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
-            else
-                TODO("It can be modified, to create possibility to generate '.docx' (Word) document with schedule replacements.")
+            val writeType = when(getFollowingArgumentByTarget("--type", args)) {
+                "json" -> 0
+                "document" -> 1
+
+                else -> getSafeIntValue("""
+                    Select writing type:
+                        0 — JSON Asset mode;
+                        1 — Word Document mode.
+                    Choose
+                """.trimIndent(), 0, 1)
+            }
+            when (writeType) {
+                0 -> writeChangesToAssetFile(lastResult as GeneralChangesOfDay)
+                else -> TODO("It can be modified, to create possibility to generate '.docx' " +
+                                     "(Word) document with schedule replacements.")
+            }
         }
         is ScheduleDayChangesGroup -> TODO(
                 "Implement schedule replacement group writing to file (prefer in three modes:" +
                         "standalone files, united, standalone docs).")
 
         is GeneralFinalDaySchedule -> {
-            val writeType = if (args.contains("--type") && args.contains("json")) 0
-            else if (args.contains("--type") && args.contains("document")) 1
-            else getSafeIntValue("Select writing type:" +
-                                         "\n\t0 — JSON Asset mode;" +
-                                         "\n\t1 — Word Document mode." +
-                                         "\nChoose",
-                                 0, 1)
-            val fileName = if (args.contains("--name-ignore") || args.contains("--ignore-name")) ""
-            else inputText("File name (or empty, to auto-generate it)")
+            val writeType = when(getFollowingArgumentByTarget("--type", args)) {
+                "json" -> 0
+                "document" -> 1
 
-            if (writeType == 0)
-                writeFinalScheduleToAssetFile(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
-            else
-                TODO("Same as replacements.")
+                else -> getSafeIntValue("""
+                    Select writing type:
+                        0 — JSON Asset mode;
+                        1 — Word Document mode.
+                    Choose
+                """.trimIndent(), 0, 1)
+            }
+            val fileName = getFollowingArgumentByTarget("--name", args, "-n") ?: inputText(
+                    "File name (or empty, to auto-generate it)")
+
+            when (writeType) {
+                0 -> writeFinalScheduleToAssetFile(fileName.ifBlank { null }, lastResult as GeneralFinalDaySchedule)
+                else -> TODO("Same as replacements.")
+            }
         }
         is FinalScheduleGroup -> TODO("Same as replacements.")
 
