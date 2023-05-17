@@ -612,43 +612,43 @@
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "19ОИБ-2",
@@ -659,43 +659,43 @@
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 2,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ВЕБ-1",
