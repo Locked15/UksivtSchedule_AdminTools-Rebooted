@@ -89,7 +89,7 @@ class TargetedChangesOfDay(var targetGroup: String?, @JsonAlias("absolute") var 
         fun getOnPractiseChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
-                changes.add(Lesson(i, "Практика"))
+                changes.add(Lesson(i, "Практика", null, null, true))
             }
 
             return TargetedChangesOfDay(target, true, date, changes)
@@ -101,7 +101,7 @@ class TargetedChangesOfDay(var targetGroup: String?, @JsonAlias("absolute") var 
         fun getDebtLiquidationChanges(date: Calendar?, target: String?): TargetedChangesOfDay {
             val changes = mutableListOf<Lesson>()
             for (i in 0..6) {
-                changes.add(Lesson(i, "Ликвидация Задолженностей"))
+                changes.add(Lesson(i, "Ликвидация Задолженностей", null, null, true))
             }
 
             return TargetedChangesOfDay(target, true, date, changes)
