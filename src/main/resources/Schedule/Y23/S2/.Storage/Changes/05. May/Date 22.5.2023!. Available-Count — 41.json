@@ -1,0 +1,647 @@
+{
+  "changes" : [ {
+    "targetGroup" : "22ПО-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Байназарова Г.Г.",
+      "place" : "339",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22ПСА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Байназарова Г.Г.",
+      "place" : "339",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22Э-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "Русский",
+      "teacher" : "Андреева Р.М.",
+      "place" : "314",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Русский",
+      "teacher" : "Андреева Р.М.",
+      "place" : "314",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22Л-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Каримова Г.Ф.",
+      "place" : "324",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22ПД-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Математика",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22ПД-2",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22Веб-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Лит-ра",
+      "teacher" : "Кинзина А.З.",
+      "place" : "309",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22П-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р.А.",
+      "place" : "333",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22ВЕБ-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Лит-ра",
+      "teacher" : "Кинзина А.З.",
+      "place" : "309",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22ЗИО-2",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "Химия",
+      "teacher" : "Акбарова Р,Х.",
+      "place" : "325",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "Русский",
+      "teacher" : "Мирасова И.В.",
+      "place" : "321",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22СА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "316",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "316",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22СА-2",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "316",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "316",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "316",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21Л-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "ОБУ",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "ОБУ",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22П-4",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Информатика",
+      "teacher" : "Павловская Е.О,",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Информатика",
+      "teacher" : "Павловская Е.О,",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Информатика",
+      "teacher" : "Павловская Е.О,",
+      "place" : "223",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21Э-1",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21Э-2",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "УП",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ЗИО-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "Эк орг",
+      "teacher" : "Арсланова О.Н.",
+      "place" : "301",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ЗИО-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22П-5",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У,",
+      "place" : "218",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ЗИО-3",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "20СА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "МДК",
+      "teacher" : "Озерова Р.А.",
+      "place" : "235",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "МДК",
+      "teacher" : "Озерова Р.А.",
+      "place" : "235",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21СА-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21СА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 5,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22уКСК-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "ДМ",
+      "teacher" : "Бакирова А.Ю",
+      "place" : "327",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22уКСК-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "ДМ",
+      "teacher" : "Бакирова А.Ю",
+      "place" : "327",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "ДМ",
+      "teacher" : "Бакирова А.Ю",
+      "place" : "327",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПД-3",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "НПП",
+      "teacher" : "Щеклеин А.С.",
+      "place" : "13",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "НПП",
+      "teacher" : "Щеклеин А.С.",
+      "place" : "13",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "20ПД-1",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "МДК 0102",
+      "teacher" : "Щеклеин А.С.",
+      "place" : "13",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "МДК 0102",
+      "teacher" : "Щеклеин А.С.",
+      "place" : "13",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "МДК 0102",
+      "teacher" : "Щеклеин А.С.",
+      "place" : "13",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р,",
+      "place" : "336",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "КП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "343",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-3",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р,",
+      "place" : "336",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-4",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "КП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "343",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-5",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "ТП",
+      "teacher" : "Ахметова Э.Р,",
+      "place" : "305",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-6",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "ТП",
+      "teacher" : "Ахметова Э.Р,",
+      "place" : "305",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "ТП",
+      "teacher" : "Ахметова Э.Р,",
+      "place" : "305",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "20ОИБ-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "МДК",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "20ОИБ-1",
+    "isAbsolute" : true,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "МДК",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "МДК",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "МДК",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "МДК",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21П-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 3,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21П-2",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21П-3",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21П-4",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 1,
+      "name" : "ДМ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ВЕБ-3",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 4,
+      "name" : "КС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "16",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "20П-1",
+    "isAbsolute" : false,
+    "changesDate" : 1684738800000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "Нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "МДК",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233",
+      "isChanged" : true
+    } ]
+  } ],
+  "changesDate" : 1684738800000
+}
