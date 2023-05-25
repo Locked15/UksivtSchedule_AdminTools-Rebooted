@@ -19,12 +19,14 @@ class Lesson(id: EntityID<Int>) : Entity<Int>(id) {
 
     var isChanged: Boolean? by ScheduleDataContext.Lessons.isChanged
 
-    var scheduleId: Int? by ScheduleDataContext.Lessons.scheduleId
+    var basicScheduleId: Int? by ScheduleDataContext.Lessons.basicId
 
     var replacementId: Int? by ScheduleDataContext.Lessons.replacementId
 
+    var finalScheduleId: Int? by ScheduleDataContext.Lessons.finalId
+
     init {
-        index(false, ScheduleDataContext.Lessons.scheduleId, ScheduleDataContext.Lessons.replacementId)
+        index(false, ScheduleDataContext.Lessons.finalId, ScheduleDataContext.Lessons.replacementId)
     }
 
     companion object : EntityClass<Int, Lesson>(ScheduleDataContext.Lessons)
