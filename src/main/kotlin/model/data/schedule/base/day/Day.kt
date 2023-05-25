@@ -1,5 +1,7 @@
 package model.data.schedule.base.day
 
+import java.util.Locale
+
 
 /**
  * Class that contains Day-Of-Week model, that is used by Schedule-AdminTools program.
@@ -82,6 +84,13 @@ enum class Day(val index: Int, val englishName: String, val russianName: String)
 	 */
 	fun getHashCode(): Int {
 		return ordinal
+	}
+
+	override fun toString(): String {
+		return when (Locale.getDefault().language) {
+			Locale.ENGLISH.language -> englishName
+			else -> russianName
+		}
 	}
 
 	/* region Companion */
