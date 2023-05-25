@@ -5,11 +5,15 @@ import model.entity.schedule.lite.base.Lesson as LessonEntity
 
 
 fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?, newFinalScheduleId: Int?,
-                             exceptionOnEmptyLessonName: Boolean = true): Int {
-    var alteredTeachersCount = 0
+                             exceptionOnEmptyLessonName: Boolean = true): Pair<Int, List<String?>> {
+    var createdTeachersCount = 0
+    val newTeachersData = mutableListOf<String?>()
     for (lesson in lessons) {
         val teacherInfo = getTeacherWithSideActions(lesson.teacher)
-        if (teacherInfo.second) alteredTeachersCount++
+        if (teacherInfo.second) {
+            createdTeachersCount++
+            newTeachersData.add(lesson.teacher)
+        }
 
         LessonEntity.new {
             id
@@ -25,6 +29,6 @@ fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?,
         }
     }
 
-    return alteredTeachersCount
+    return Pair(createdTeachersCount, newTeachersData)
 }
 

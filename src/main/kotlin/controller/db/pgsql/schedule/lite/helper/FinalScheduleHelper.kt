@@ -15,9 +15,10 @@ fun insertNewFinalScheduleToDB(targetSchedule: TargetedFinalDaySchedule?, target
         val alteredTeachers = createNewLessonInstances(targetSchedule.schedule.lessons.filter { it.name != null },
                                                        null, newFinalScheduleId.value)
 
-        if (alteredTeachers > 0) {
+        if (alteredTeachers.first > 0) {
             Logger.logMessage(LogLevel.DEBUG,
-                              "New teacher entries: $alteredTeachers for ${targetSchedule.targetGroup}.", 1)
+                              "New teacher entries: $alteredTeachers for ${targetSchedule.targetGroup}" +
+                                      "\n\t(${alteredTeachers.second.joinToString(" ")})")
         }
         return true
     }

@@ -13,8 +13,9 @@ fun insertNewChangeToDB(change: TargetedChangesOfDay?, targetCycleId: Int?): Boo
         val newReplacementId = createNewReplacementInstance(change, targetCycleId)
         val alteredTeachers = createNewLessonInstances(change.changedLessons, newReplacementId.value, null, false)
 
-        if (alteredTeachers > 0)
-            Logger.logMessage(LogLevel.DEBUG, "New teacher entries: $alteredTeachers for ${change.targetGroup}", 1)
+        if (alteredTeachers.first > 0)
+            Logger.logMessage(LogLevel.DEBUG, "New teacher entries: $alteredTeachers for ${change.targetGroup}" +
+                    "\n\t(${alteredTeachers.second.joinToString(" ")})")
         return true
     }
     return false
