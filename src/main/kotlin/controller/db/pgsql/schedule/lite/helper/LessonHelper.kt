@@ -4,7 +4,8 @@ import model.data.schedule.base.Lesson as LessonModel
 import model.entity.schedule.lite.base.Lesson as LessonEntity
 
 
-fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?, newFinalScheduleId: Int?,
+fun createNewLessonInstances(lessons: List<LessonModel>,
+                             basicId: Int? = null, replaceId: Int? = null, finalId: Int? = null,
                              exceptionOnEmptyLessonName: Boolean = true): Pair<Int, List<String?>> {
     var createdTeachersCount = 0
     val newTeachersData = mutableListOf<String?>()
@@ -24,8 +25,9 @@ fun createNewLessonInstances(lessons: List<LessonModel>, newReplacementId: Int?,
             place = lesson.place
             isChanged = lesson.isChanged
 
-            replacementId = newReplacementId
-            scheduleId = newFinalScheduleId
+            basicScheduleId = basicId
+            replacementId = replaceId
+            finalScheduleId = finalId
         }
     }
 
