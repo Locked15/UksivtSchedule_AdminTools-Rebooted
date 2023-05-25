@@ -22,8 +22,6 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     /* region Functions */
 
-    fun isShortEntry() = name == null && patronymic == null
-
     /**
      * Completes comparison with another teacher model (not entity, because entities are created at DB interaction level).
      *
@@ -46,19 +44,21 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     fun updateSecondaryFields(template: TeacherModel) {
         if (template.name != null || template.patronymic != null) {
-            var message = "Teacher ($surname) entry update:"
-            if (template.name != null) {
-                message += "\t\tName is updated: $name -> ${template.name}."
+            val messages = mutableListOf("Teacher ($surname) entry update:")
+            if (template.name != null && !name.equals(template.name, true)) {
+                messages.add("Name is updated: $name -> ${template.name}.")
                 name = template.name
             }
-            if (template.patronymic != null) {
-                message += "\t\tPatronymic is updated: $patronymic —> ${template.name}."
+            if (template.patronymic != null && !patronymic.equals(template.patronymic, true)) {
+                messages.add("Patronymic is updated: $patronymic —> ${template.name}.")
                 patronymic = template.patronymic
             }
 
-            Logger.logMessage(LogLevel.DEBUG, message)
+            if (messages.size > 1) Logger.logMessage(LogLevel.DEBUG, messages.joinToString("\n\t"))
         }
     }
+
+    fun createUnGenderedInstance() = TeacherModel(surname.trimEnd('а'), name, patronymic)
     /* endregion */
 
     companion object : EntityClass<Int, Teacher>(ScheduleDataContext.Teachers)
