@@ -3,16 +3,38 @@ package model.data.schedule.base
 import controller.view.Logger
 import model.environment.log.LogLevel
 
+
 class Teacher(var surname: String, var name: String?, var patronymic: String?) {
+
+    /* region Properties */
 
     val fullName: String
         get() {
             return "$surname $name $patronymic"
         }
+    /* endregion */
+
+    /* region Initializers */
 
     constructor() : this("", null, null)
+    /* endregion */
 
-    fun isShortEntry() = name == null && patronymic == null
+    /* region Functions */
+
+    fun compareWithOtherModel(another: Teacher): Int {
+        val normalizedSurnames = Pair(normalizeTeacherName(surname), normalizeTeacherName(another.surname))
+        val surnamesAreEqual = normalizedSurnames.first.equals(normalizedSurnames.second, true)
+        val namesAndPatronymicsAreEqual = name.equals(another.name, true) && patronymic.equals(another.patronymic, true)
+
+        return if (!surnamesAreEqual) -1
+        else if (!namesAndPatronymicsAreEqual) 0
+        else 1
+    }
+
+    fun createUnGenderedInstance() = Teacher(surname.trimEnd('а'), name, patronymic)
+    /* endregion */
+
+    /* region Companion */
 
     companion object {
 
@@ -58,4 +80,5 @@ class Teacher(var surname: String, var name: String?, var patronymic: String?) {
             }
         }
     }
+    /* endregion */
 }
