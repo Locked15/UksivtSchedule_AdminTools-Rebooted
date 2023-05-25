@@ -2,12 +2,15 @@ package controller.db.pgsql.schedule.lite
 
 import controller.db.config.DBConfigurator
 import controller.db.pgsql.schedule.lite.helper.getConfigurationModel
-import controller.db.pgsql.schedule.lite.helper.insertNewChangeToDB
-import controller.db.pgsql.schedule.lite.helper.insertNewFinalScheduleToDB
+import controller.db.pgsql.schedule.lite.helper.main.BasicScheduleHelper
+import controller.db.pgsql.schedule.lite.helper.main.FinalScheduleHelper
+import controller.db.pgsql.schedule.lite.helper.main.ReplacementHelper
 import controller.view.Logger
 
 import model.data.change.day.GeneralChangesOfDay as GeneralDayReplacementsModel
 import model.data.change.group.ScheduleDayChangesGroup
+import model.data.schedule.common.origin.week.GeneralWeekSchedule
+import model.data.schedule.common.origin.week.TargetedWeekSchedule
 import model.data.schedule.common.result.day.GeneralFinalDaySchedule as GeneralFinalDayScheduleModel
 import model.data.schedule.common.result.group.FinalScheduleGroup
 import model.environment.log.LogLevel
@@ -46,6 +49,44 @@ class ScheduleDataContext private constructor() {
 
     /* region DB Synchronization Functions */
 
+    fun syncBasicSchedules(basicSchedules: GeneralWeekSchedule): Boolean {
+        var altered = 0
+        basicSchedules.forEach { if (syncBasicSchedules(it)) altered++ }
+
+        return altered == basicSchedules.size
+    }
+
+    fun syncBasicSchedules(basicSchedule: TargetedWeekSchedule?): Boolean {
+        if (basicSchedule != null) {
+            var altered = 0
+            transaction {
+                for (daySchedule in basicSchedule.targetedDaySchedules) {
+                    val hash = daySchedule.hashCode()
+                    if (BasicSchedules.select { BasicSchedules.commitHash eq hash }.empty()) {
+                        try {
+                            val helper = BasicScheduleHelper(daySchedule)
+                            if (helper.insertNewEntityIntoDB(dbConfiguration.targetCycle.getTargetCycleId()?.value,
+                                                             daySchedule.day.index, basicSchedule.groupName!!)) {
+                                altered++
+                            }
+                        }
+                        catch (exception: Exception) {
+                            Logger.logException(exception, 1, "Object Info: " +
+                                    "${daySchedule.day}/${basicSchedule.groupName}")
+                        }
+                    }
+                }
+            }
+
+            if (altered > 0) {
+                Logger.logMessage(LogLevel.DEBUG, "Created $altered new basic schedule entries.")
+            }
+
+            return altered > 0
+        }
+        return false
+    }
+
     fun syncChanges(changes: ScheduleDayChangesGroup): Boolean {
         var altered = 0
         changes.forEach {
@@ -62,12 +103,14 @@ class ScheduleDataContext private constructor() {
                 val hash = targetChange.hashCode()
                 if (ScheduleReplacements.select { ScheduleReplacements.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewChangeToDB(targetChange, dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                        val helper = ReplacementHelper(targetChange)
+                        if (helper.insertNewEntityIntoDB(dbConfiguration.targetCycle.getTargetCycleId()?.value)) {
                             altered++
+                        }
                     }
                     catch (exception: Exception) {
                         Logger.logException(exception, 1, "Object Info: " +
-                                "${targetChange?.targetGroup}/${targetChange?.changesDate.toString()}.")
+                                "${targetChange?.targetGroup}/${targetChange?.changesDate.toString()}")
                     }
                 }
             }
@@ -96,9 +139,10 @@ class ScheduleDataContext private constructor() {
                 val hash = targetSchedule.hashCode()
                 if (FinalSchedules.select { FinalSchedules.commitHash eq hash }.empty()) {
                     try {
-                        if (insertNewFinalScheduleToDB(targetSchedule,
-                                                       dbConfiguration.targetCycle.getTargetCycleId()?.value))
+                        val helper = FinalScheduleHelper(targetSchedule)
+                        if (helper.insertNewEntityIntoDB(dbConfiguration.targetCycle.getTargetCycleId()?.value)) {
                             altered++
+                        }
                     }
                     catch (ex: Exception) {
                         Logger.logException(ex, 1, "Object Info: " +
@@ -141,17 +185,32 @@ class ScheduleDataContext private constructor() {
         var isChanged = bool("is_changed")
             .nullable()
 
-        var scheduleId = integer("schedule_id")
-            .references(FinalSchedules.id)
+        var basicId = integer("basic_id")
+            .references(BasicSchedules.id)
+            .index("idx_lesson_basic_id")
             .nullable()
         var replacementId = integer("replacement_id")
             .references(ScheduleReplacements.id)
+            .index("idx_lesson_replacement_id")
+            .nullable()
+        var finalId = integer("final_id")
+            .references(FinalSchedules.id)
+            .index("idx_lesson_final_id")
             .nullable()
     }
 
     object TargetCycles : IntIdTable("target_cycle") {
         var year = integer("year")
         var semester = integer("semester")
+    }
+
+    object BasicSchedules : IntIdTable("basic_schedule") {
+        var targetGroup = text("target_group")
+            .index("basic_schedule_group_index", false)
+        var dayIndex = integer("day_index")
+        var targetCycleId = integer("cycle_id")
+            .references(TargetCycles.id)
+        var commitHash = integer("commit_hash")
     }
 
     object ScheduleReplacements : IntIdTable("schedule_replacement") {
