@@ -93,8 +93,8 @@ class Reader(pathToFile: String) {
                 val iterationData = OuterIteratorModel(-1, "", Lesson())
                 for (cell in row.tableCells) {
                     /** Local data that uses inside last cycle. */
-                    val localData = InnerIteratorModel(cell.text, cell.text.lowercase())
-                    if (groupName.lowercase() == localData.lowerText) {
+                    val localData = InnerIteratorModel(cell.text)
+                    if (localData.text.equals(groupName, true)) {
                         // !!! Use this to stop at target group location in document. !!! \\
                         localData.toString()
                     }
@@ -224,7 +224,7 @@ class Reader(pathToFile: String) {
     private fun defineCellContent(baseData: BaseIteratorModel, iterationData: OuterIteratorModel,
                                   localData: InnerIteratorModel, target: String): CellDefineResult {
         // If we have met with target group name, we'll start changes reading:
-        if (checkValueToEquality(localData.lowerText, target)) {
+        if (checkValueToEquality(localData.text, target)) {
             baseData.listenToChanges = true
             if (iterationData.cellNumber == CENTERED_GROUP_NAME_CELL_ID) baseData.changes.isAbsolute = true
         }
@@ -278,11 +278,8 @@ class Reader(pathToFile: String) {
     private fun checkValueToEquality(text: String, target: String): Boolean {
         val fixedText = text.trim().replace("-", "").replace("_", "").replace(".", "")
         val fixedTarget = target.trim().replace("-", "").replace("_", "").replace(".", "")
-        if (fixedText.equals(fixedTarget, true)) {
-            return true
-        }
 
-        return false
+        return fixedText.equals(fixedTarget, true)
     }
 
     /**

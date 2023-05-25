@@ -1,6 +1,7 @@
 package controller.db.pgsql.schedule.lite.helper
 
 import controller.view.Logger
+import model.data.schedule.base.Teacher
 import model.environment.log.LogLevel
 import org.jetbrains.exposed.dao.id.EntityID
 
@@ -71,13 +72,32 @@ private fun tryToFindPresenceEntryID(newTeacher: TeacherModel, allTeachers: List
         return fullEqualEntries[0].id
     }
     //? After the first block (if there are no full equality entries), we will make partial checking.
-    if (partialEqualEntries.size == 1 && newTeacher.isShortEntry() != partialEqualEntries[0].isShortEntry()) {
+    if (partialEqualEntries.size == 1 && checkTeacherPropertiesState(newTeacher, partialEqualEntries[0])) {
         partialEqualEntries[0].updateSecondaryFields(newTeacher)
         return partialEqualEntries[0].id
     }
 
     //? Otherwise, there is no searching entry in DB, so we will return null.
     return null
+}
+
+private fun checkTeacherPropertiesState(newTeacherEntity: Teacher, existTeacherEntity: TeacherEntity): Boolean {
+    val isShortEntriesStateNotEqual = newTeacherEntity.isShortEntry() != existTeacherEntity.isShortEntry()
+    val isAdditionalPropertiesAreReverseEqual = checkSecondaryInfoToReverseEquality(Pair(newTeacherEntity.name,
+                                                                                         newTeacherEntity.patronymic),
+                                                                                    Pair(existTeacherEntity.name,
+                                                                                         existTeacherEntity.patronymic)
+    )
+
+    return isShortEntriesStateNotEqual || isAdditionalPropertiesAreReverseEqual
+}
+
+fun checkSecondaryInfoToReverseEquality(newTeacherEntity: Pair<String?, String?>,
+                                        existingTeacherEntity: Pair<String?, String?>): Boolean {
+    val nameToSurnameEquality = newTeacherEntity.first.equals(existingTeacherEntity.second, true)
+    val patronymicToNameEquality = existingTeacherEntity.first.equals(newTeacherEntity.second, true)
+
+    return nameToSurnameEquality && patronymicToNameEquality
 }
 
 private fun createNewTeacherInstance(newTeacher: TeacherModel) = TeacherEntity.new {
