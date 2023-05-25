@@ -16,7 +16,9 @@ class Teacher(var surname: String, var name: String?, var patronymic: String?) {
 
     companion object {
 
-        fun normalizeTeacherName(rawName: String) = rawName.replace('.', ' ').replace(',', ' ').trim()
+        fun normalizeTeacherName(rawName: String) = rawName.replace('.', ' ')
+            .replace(',', ' ')
+            .trim()
 
         fun createTeacherModelByNormalizedName(normalizedName: String) : Teacher {
             val atomicNameValues = normalizedName.split(' ').filter { it.isNotEmpty() }
