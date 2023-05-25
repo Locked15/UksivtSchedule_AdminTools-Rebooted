@@ -479,11 +479,13 @@ class ActionsController : ControllerBase() {
         beginSynchronization(args)
         writeLastResult(args)
 
-        /* So, we read all available basic assets (directly function call, of course).
+        /* So, we read all available basic assets (directly function call, of course) and sync it.
            After this, we build final schedule objects with changes data that are stored in standalone variable. */
         lastResult = readAllAvailableBasicScheduleAssets()
-        lastResult = buildFinalSchedulesWithChangesData(changesStorageVariable as GeneralChangesOfDay)
+        beginSynchronization(args)
+
         //? And the same in here. Sync, and after writing.
+        lastResult = buildFinalSchedulesWithChangesData(changesStorageVariable as GeneralChangesOfDay)
         beginSynchronization(args)
         writeLastResult(args)
     }
@@ -554,6 +556,9 @@ class ActionsController : ControllerBase() {
     /* region Command: 'Sync' */
 
     fun beginSynchronization(args: List<String> = listOf()) = when (lastResult) {
+        is GeneralWeekSchedule -> ScheduleDataContext.instance.syncBasicSchedules(lastResult as GeneralWeekSchedule)
+        is TargetedWeekSchedule -> ScheduleDataContext.instance.syncBasicSchedules(lastResult as TargetedWeekSchedule)
+
         is ScheduleDayChangesGroup -> ScheduleDataContext.instance.syncChanges(lastResult as ScheduleDayChangesGroup)
         is GeneralChangesOfDay -> ScheduleDataContext.instance.syncChanges(lastResult as GeneralChangesOfDay)
 
