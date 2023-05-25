@@ -126,7 +126,7 @@ class Basic(private val user: String) {
      */
     private fun performUserInputAndExecute(input: String) {
         if (input.isNotBlank()) {
-            val rawCommand = if (input.contains("last", true)) lastCommand else input
+            val rawCommand = if (input.equals("last", true)) lastCommand else input
             val commandInfo = parseInputtedText(this, rawCommand.trim())
             //? We should check action to presence or app will crash (as expected, by the way).
             if (commandInfo.action != null) {
