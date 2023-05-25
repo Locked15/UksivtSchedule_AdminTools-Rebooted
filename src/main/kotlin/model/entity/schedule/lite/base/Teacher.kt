@@ -33,13 +33,16 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
      * * 1 — Entries are fully equal.
      */
     fun compareWithOtherModel(another: TeacherModel): Int {
-        val surnamesAreEqual = surname.equals(another.surname, true)
+        val normalizedSurnames = Pair(normalizeTeacherName(surname), normalizeTeacherName(another.surname))
+        val surnamesAreEqual = normalizedSurnames.first.equals(normalizedSurnames.second, true)
         val namesAndPatronymicsAreEqual = name.equals(another.name, true) && patronymic.equals(another.patronymic, true)
 
         return if (!surnamesAreEqual) -1
         else if (!namesAndPatronymicsAreEqual) 0
         else 1
     }
+
+    private fun normalizeTeacherName(target: String) = target.replace('ё', 'е')
 
     fun updateSecondaryFields(template: TeacherModel) {
         if (template.name != null || template.patronymic != null) {
