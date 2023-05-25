@@ -10,7 +10,7 @@ import model.entity.schedule.lite.base.Teacher as TeacherEntity
 fun getTeacherWithSideActions(teacherName: String?): Pair<Int?, Boolean> {
     return if (!teacherName.isNullOrBlank()) {
         //? To store data in program memory, we convert db-query to a stored list.
-        val allAvailableTeachers = model.entity.schedule.lite.base.Teacher.all().toList()
+        val allAvailableTeachers = TeacherEntity.all().toList()
         //? We must normalize the original sent teacher name, because commonly it has written vary.
         val normalizedTeacherName = Teacher.normalizeTeacherName(teacherName)
 
@@ -54,7 +54,7 @@ private fun tryToFindPresenceEntryID(newTeacher: Teacher,
 }
 
 private fun checkTeacherPropertiesState(newTeacherEntity: Teacher,
-                                        existTeacherEntity: model.entity.schedule.lite.base.Teacher): Boolean {
+                                        existTeacherEntity: TeacherEntity): Boolean {
     val isShortEntriesStateNotEqual = newTeacherEntity.isShortEntry() != existTeacherEntity.isShortEntry()
     val isAdditionalPropertiesAreReverseEqual = checkSecondaryInfoToReverseEquality(Pair(newTeacherEntity.name,
                                                                                          newTeacherEntity.patronymic),
@@ -73,7 +73,7 @@ fun checkSecondaryInfoToReverseEquality(newTeacherEntity: Pair<String?, String?>
     return nameToSurnameEquality && patronymicToNameEquality
 }
 
-private fun createNewTeacherInstance(newTeacher: Teacher) = model.entity.schedule.lite.base.Teacher.new {
+private fun createNewTeacherInstance(newTeacher: Teacher) = TeacherEntity.new {
     id
     surname = newTeacher.surname
 
