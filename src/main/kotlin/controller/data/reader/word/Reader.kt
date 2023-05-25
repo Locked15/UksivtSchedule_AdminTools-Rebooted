@@ -95,7 +95,7 @@ class Reader(pathToFile: String) {
                     /** Local data that uses inside last cycle. */
                     val localData = InnerIteratorModel(cell.text, cell.text.lowercase())
                     if (groupName.lowercase() == localData.lowerText) {
-                        // !!! Use this to stop at target document location. !!! \\
+                        // !!! Use this to stop at target group location in document. !!! \\
                         localData.toString()
                     }
 
@@ -109,8 +109,9 @@ class Reader(pathToFile: String) {
 
                 checkStateAndUpdateChangedLessons(baseData, iterationData)
                 if (baseData.cycleStopper) {
-                    // If we found all needed information, we can break a parse process, to increase performance.
-                    break
+                    /* Earlier, the reading process was 'Lazy' (find only the first occurrence of the group).
+                       But a document can contain more than one occurrence, so we must check it whole. */
+                    Logger.logMessage(LogLevel.INFORMATION, "Post-Processing document reading is in process...")
                 }
             }
 
@@ -150,7 +151,7 @@ class Reader(pathToFile: String) {
             }
         }
 
-        with (builder.toString()) {
+        with(builder.toString()) {
             /* Because Java doesn't support *Split* function with return-value,
                that says is this split actual or not, we need to handle this in a makeshift way.
            So, I create two additional variables:
@@ -227,9 +228,10 @@ class Reader(pathToFile: String) {
             baseData.listenToChanges = true
             if (iterationData.cellNumber == CENTERED_GROUP_NAME_CELL_ID) baseData.changes.isAbsolute = true
         }
-        // If we met another group name AND we're reading changes, so we'll have to break the cycle.
+        // If we met another group name AND we're reading changes, so we'll have to break listener work.
         else if (checkToParsingStopper(baseData, iterationData, localData, target)) {
             baseData.cycleStopper = true
+            baseData.listenToChanges = false
             return CellDefineResult.BREAK
         }
         // In all other cases (and if we're reading changes), we'll read cell value:
@@ -339,7 +341,7 @@ class Reader(pathToFile: String) {
         val changes = getChanges(groupName, day)
         if (changes != null) {
             Logger.logMessage(LogLevel.INFORMATION, "Automatic merge tool found empty targeted changes." +
-                            "\nBase schedule (new ref) will be return.", 1)
+                    "\nBase schedule (new ref) will be return.", 1)
         }
 
         val resultBuilder = TargetedDayScheduleResultBuilder(schedule)
