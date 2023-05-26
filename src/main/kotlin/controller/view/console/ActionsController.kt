@@ -195,7 +195,6 @@ class ActionsController : ControllerBase() {
             }
         }
 
-        println("Auto-Parsing is complete. Is it faster than 'System.Text.Json' on C#?")
         return GeneralWeekSchedule(results)
     }
 
