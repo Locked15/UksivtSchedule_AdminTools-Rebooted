@@ -9,6 +9,12 @@
       "teacher" : "Юнусова Л.Р.",
       "place" : "309",
       "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Общество",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "312",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22Э-1",

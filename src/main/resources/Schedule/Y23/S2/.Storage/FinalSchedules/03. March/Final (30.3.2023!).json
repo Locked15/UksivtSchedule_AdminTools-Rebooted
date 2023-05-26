@@ -955,10 +955,10 @@
     "day" : "THURSDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Информатика",
-      "teacher" : "Мусина Г.А.",
-      "place" : "7",
-      "isChanged" : false
+      "name" : "ОБЖ",
+      "teacher" : "Кобелева С.В.",
+      "place" : "313",
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "История",
@@ -997,7 +997,7 @@
       "isChanged" : false
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "22ОИБ-1",
   "scheduleDate" : 1680159600000,
@@ -2105,16 +2105,16 @@
     "day" : "THURSDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : true
+      "name" : "МДК.01.04",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110",
+      "isChanged" : false
     }, {
       "number" : 1,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : true
+      "name" : "МДК.01.02",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "110",
+      "isChanged" : false
     }, {
       "number" : 2,
       "name" : "Иняз",
@@ -2147,7 +2147,7 @@
       "isChanged" : false
     } ]
   },
-  "isChanged" : true
+  "isChanged" : false
 }, {
   "targetGroup" : "20ПД-5",
   "scheduleDate" : 1680159600000,
@@ -3117,16 +3117,16 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Уголовное право",
-      "teacher" : "Имаева А.В.",
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
       "place" : "308",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
-      "name" : "Уголовное право",
-      "teacher" : "Имаева А.В.",
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
       "place" : "308",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : null,
@@ -3147,7 +3147,7 @@
       "isChanged" : false
     } ]
   },
-  "isChanged" : false
+  "isChanged" : true
 }, {
   "targetGroup" : "21ПСА-6",
   "scheduleDate" : 1680159600000,

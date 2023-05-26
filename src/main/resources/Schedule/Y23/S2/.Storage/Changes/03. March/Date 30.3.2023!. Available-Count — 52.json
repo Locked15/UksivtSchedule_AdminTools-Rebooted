@@ -1474,24 +1474,7 @@
       "place" : "322",
       "isChanged" : true
     } ]
-  }, {
-    "targetGroup" : "20ПД-4",
-    "isAbsolute" : false,
-    "changesDate" : 1680159600000,
-    "changedLessons" : [ {
-      "number" : 0,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : true
-    }, {
-      "number" : 1,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : true
-    } ]
-  }, {
+  }, null, {
     "targetGroup" : "Драгомиров М.С.",
     "isAbsolute" : true,
     "changesDate" : 1680159600000,
@@ -1567,6 +1550,34 @@
       "name" : "ДМ",
       "teacher" : "Лихарев И.А.",
       "place" : "2",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "21ПСА-5",
+    "isAbsolute" : false,
+    "changesDate" : 1680159600000,
+    "changedLessons" : [ {
+      "number" : 2,
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
+      "place" : "308",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "УП",
+      "teacher" : "Кабиров А.У.",
+      "place" : "308",
+      "isChanged" : true
+    } ]
+  }, {
+    "targetGroup" : "22Л-1",
+    "isAbsolute" : false,
+    "changesDate" : 1680159600000,
+    "changedLessons" : [ {
+      "number" : 0,
+      "name" : "ОБЖ",
+      "teacher" : "Кобелева С.В.",
+      "place" : "313",
       "isChanged" : true
     } ]
   } ],

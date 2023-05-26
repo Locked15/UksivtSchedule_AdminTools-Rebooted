@@ -20,6 +20,18 @@
       "teacher" : "Сыртланова Л.А.",
       "place" : "333",
       "isChanged" : true
+    }, {
+      "number" : 0,
+      "name" : "Экономика",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "203",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "нет",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22П-3",

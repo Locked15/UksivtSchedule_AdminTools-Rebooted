@@ -43,6 +43,12 @@
       "teacher" : "Кабиров А.У.",
       "place" : "305",
       "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "АП",
+      "teacher" : "Султанов У.З.",
+      "place" : "112",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22уКСК-2",

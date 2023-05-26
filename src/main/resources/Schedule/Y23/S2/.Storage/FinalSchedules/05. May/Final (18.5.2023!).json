@@ -961,10 +961,10 @@
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : "История",
-      "teacher" : "Ахметшина Е.В.",
-      "place" : "321",
-      "isChanged" : false
+      "name" : "МДК",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "317",
+      "isChanged" : true
     }, {
       "number" : 2,
       "name" : "Астрономия",

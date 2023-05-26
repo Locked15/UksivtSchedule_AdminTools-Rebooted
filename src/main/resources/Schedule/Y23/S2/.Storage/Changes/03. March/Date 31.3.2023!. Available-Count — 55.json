@@ -1148,6 +1148,12 @@
       "teacher" : "Литвинова С.А",
       "place" : "214",
       "isChanged" : true
+    }, {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : "",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22Э-2",

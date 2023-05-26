@@ -1705,10 +1705,10 @@
     "day" : "WEDNESDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : false
+      "name" : "Экономика",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "203",
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Астрономия",
@@ -1723,10 +1723,10 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Экономика",
-      "teacher" : "Лаврентьева А.В.",
-      "place" : "203",
-      "isChanged" : false
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : null,

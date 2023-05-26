@@ -1318,6 +1318,18 @@
       "teacher" : "Павловская Е.О.",
       "place" : "223",
       "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Информатика",
+      "teacher" : "Павловская Е.О.",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Информатика",
+      "teacher" : "Павловская Е.О.",
+      "place" : "223",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22Л-1",

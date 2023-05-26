@@ -2,7 +2,7 @@
   "changes" : [ {
     "targetGroup" : "22ПСА-1",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "Русский",
@@ -19,7 +19,7 @@
   }, {
     "targetGroup" : "22ПСА-2",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Лит-ра",
@@ -30,7 +30,7 @@
   }, {
     "targetGroup" : "22ПД-2",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Русский",
@@ -47,7 +47,7 @@
   }, {
     "targetGroup" : "21ЗИО-1",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "МДК",
@@ -58,7 +58,7 @@
   }, {
     "targetGroup" : "21ЗИО-2",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "МДК",
@@ -69,7 +69,7 @@
   }, {
     "targetGroup" : "22П-3",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "Нет",
@@ -86,7 +86,7 @@
   }, {
     "targetGroup" : "22П-5",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Нет",
@@ -103,7 +103,7 @@
   }, {
     "targetGroup" : "21Л-1",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "ДОУ",
@@ -114,7 +114,7 @@
   }, {
     "targetGroup" : "21Л-2",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "ДОУ",
@@ -125,7 +125,7 @@
   }, {
     "targetGroup" : "20Э-2",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 1,
       "name" : "Аудит",
@@ -142,7 +142,7 @@
   }, {
     "targetGroup" : "20Э-1",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "Аудит",
@@ -159,7 +159,7 @@
   }, {
     "targetGroup" : "20ПО-3",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "ОБУ",
@@ -170,7 +170,7 @@
   }, {
     "targetGroup" : "20ПСА-2",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "МДК 0104",
@@ -193,7 +193,7 @@
   }, {
     "targetGroup" : "20ПД-2",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "ПО ОРД",
@@ -216,7 +216,7 @@
   }, {
     "targetGroup" : "20ПД-3",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 3,
       "name" : "ПО ОРД",
@@ -239,7 +239,7 @@
   }, {
     "targetGroup" : "20ПД-1",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Криминалистика",
@@ -262,7 +262,7 @@
   }, {
     "targetGroup" : "19ОИБ-1",
     "isAbsolute" : true,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "Корп защита",
@@ -291,7 +291,7 @@
   }, {
     "targetGroup" : "21П-4",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 0,
       "name" : "ДМ",
@@ -302,7 +302,7 @@
   }, {
     "targetGroup" : "21ВЕБ-3",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 2,
       "name" : "ДМ",
@@ -319,7 +319,7 @@
   }, {
     "targetGroup" : "21П-1",
     "isAbsolute" : false,
-    "changesDate" : 1677135600000,
+    "changesDate" : 1677308400000,
     "changedLessons" : [ {
       "number" : 5,
       "name" : "ДМ",
@@ -334,5 +334,5 @@
       "isChanged" : true
     } ]
   } ],
-  "changesDate" : 1677135600000
+  "changesDate" : 1677308400000
 }

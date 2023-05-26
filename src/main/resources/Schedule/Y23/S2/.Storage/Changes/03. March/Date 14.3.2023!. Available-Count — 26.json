@@ -441,18 +441,7 @@
       "place" : "1Ф",
       "isChanged" : true
     } ]
-  }, {
-    "targetGroup" : "19ВЕБ-1",
-    "isAbsolute" : false,
-    "changesDate" : 1678777200000,
-    "changedLessons" : [ {
-      "number" : 0,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : true
-    } ]
-  }, {
+  }, null, {
     "targetGroup" : "Киселева М.В.",
     "isAbsolute" : true,
     "changesDate" : 1678777200000,

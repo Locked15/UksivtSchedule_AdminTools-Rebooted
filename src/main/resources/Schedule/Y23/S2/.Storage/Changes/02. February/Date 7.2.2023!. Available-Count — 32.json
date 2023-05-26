@@ -136,6 +136,12 @@
       "teacher" : "Пустовалова Э.У.",
       "place" : "230",
       "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "Химия",
+      "teacher" : "Гареева С.Т.",
+      "place" : "312",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "20ПД-2",

@@ -359,6 +359,18 @@
       "teacher" : "Фахретдинов И.М.",
       "place" : "14",
       "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р.",
+      "place" : "16",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р.",
+      "place" : "16",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ПСА-5",

@@ -1170,6 +1170,12 @@
       "teacher" : "Каримова Г.Ф.",
       "place" : "305",
       "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22СА-1",

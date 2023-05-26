@@ -1305,46 +1305,46 @@
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
+      "name" : "Нет",
       "teacher" : "",
       "place" : "",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
+      "name" : "Нет",
       "teacher" : "",
       "place" : "",
       "isChanged" : true
     }, {
       "number" : 2,
-      "name" : "ОБЖ",
-      "teacher" : "Исмаилова Р.Х.",
-      "place" : "338",
-      "isChanged" : false
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Химия",
       "teacher" : "Гареева С.Т.",
-      "place" : "325",
-      "isChanged" : false
+      "place" : "216",
+      "isChanged" : true
     }, {
       "number" : 4,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
-      "isChanged" : false
+      "name" : "Химия",
+      "teacher" : "Гареева С.Т.",
+      "place" : "216",
+      "isChanged" : true
     }, {
       "number" : 5,
       "name" : null,
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 6,
       "name" : null,
       "teacher" : null,
       "place" : null,
-      "isChanged" : false
+      "isChanged" : true
     } ]
   },
   "isChanged" : true

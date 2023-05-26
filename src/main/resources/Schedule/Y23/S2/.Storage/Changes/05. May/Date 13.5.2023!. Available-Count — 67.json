@@ -1290,6 +1290,18 @@
       "teacher" : "Байназарова Г.Г.",
       "place" : "309",
       "isChanged" : true
+    }, {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М,",
+      "place" : "320",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М,",
+      "place" : "320",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "22ПО-2",

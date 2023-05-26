@@ -1520,6 +1520,12 @@
       "teacher" : "Каримова Г.Ф.",
       "place" : "324",
       "isChanged" : true
+    }, {
+      "number" : 0,
+      "name" : "ТП",
+      "teacher" : "Ахметова Э.Р,",
+      "place" : "110",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ПСА-5",

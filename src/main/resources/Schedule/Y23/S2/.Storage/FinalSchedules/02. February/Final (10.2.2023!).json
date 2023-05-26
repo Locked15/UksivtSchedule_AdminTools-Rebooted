@@ -1617,10 +1617,10 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Баш яз",
-      "teacher" : "Юмагулова Г.К.",
+      "name" : "Общество",
+      "teacher" : "Исмагилова Г.М.",
       "place" : "312",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : null,

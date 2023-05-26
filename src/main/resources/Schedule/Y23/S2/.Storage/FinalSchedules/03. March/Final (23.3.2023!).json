@@ -967,10 +967,10 @@
       "isChanged" : false
     }, {
       "number" : 2,
-      "name" : "Астрономия",
-      "teacher" : "Сыртланова Л.А.",
-      "place" : "333",
-      "isChanged" : false
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
     }, {
       "number" : 3,
       "name" : "Обществознание",

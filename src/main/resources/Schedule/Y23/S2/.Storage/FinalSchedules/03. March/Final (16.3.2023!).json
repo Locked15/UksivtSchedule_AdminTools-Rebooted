@@ -1473,10 +1473,10 @@
       "isChanged" : false
     }, {
       "number" : 3,
-      "name" : "Астрономия",
-      "teacher" : "Сыртланова Л.А.",
+      "name" : "География",
+      "teacher" : "Юнусова Л.Р.",
       "place" : "333",
-      "isChanged" : false
+      "isChanged" : true
     }, {
       "number" : 4,
       "name" : "ОБЖ",
@@ -3290,10 +3290,22 @@
       "place" : null,
       "isChanged" : true
     }, {
+      "number" : 5,
+      "name" : "Эк орг",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339",
+      "isChanged" : true
+    }, {
       "number" : 6,
       "name" : "Ликвидация Задолженностей",
       "teacher" : null,
       "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "Эк орг",
+      "teacher" : "Ахметова Е.А.",
+      "place" : "339",
       "isChanged" : true
     } ]
   },

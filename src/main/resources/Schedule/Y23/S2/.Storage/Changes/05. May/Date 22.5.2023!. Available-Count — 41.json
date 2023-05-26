@@ -613,6 +613,12 @@
       "teacher" : "Лихарев И.А.",
       "place" : "001",
       "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "МДК",
+      "teacher" : "Каюмов С.А.",
+      "place" : "",
+      "isChanged" : true
     } ]
   }, {
     "targetGroup" : "21ВЕБ-3",

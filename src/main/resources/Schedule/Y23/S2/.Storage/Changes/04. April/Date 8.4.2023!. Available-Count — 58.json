@@ -1343,7 +1343,7 @@
     } ]
   }, {
     "targetGroup" : "22П-5",
-    "isAbsolute" : false,
+    "isAbsolute" : true,
     "changesDate" : 1680937200000,
     "changedLessons" : [ {
       "number" : 0,
@@ -1356,6 +1356,18 @@
       "name" : "Нет",
       "teacher" : "",
       "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Химия",
+      "teacher" : "Гареева С.Т.",
+      "place" : "216",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Химия",
+      "teacher" : "Гареева С.Т.",
+      "place" : "216",
       "isChanged" : true
     } ]
   }, {

@@ -1855,10 +1855,10 @@
     "day" : "FRIDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Ин яз",
-      "teacher" : "Каримова Г.Ф.",
-      "place" : "324",
-      "isChanged" : false
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : "",
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Баш яз",

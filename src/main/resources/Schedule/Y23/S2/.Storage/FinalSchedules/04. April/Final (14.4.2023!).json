@@ -3005,10 +3005,10 @@
     "day" : "FRIDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : "Уголовное право",
-      "teacher" : "Корниенко А.А.",
-      "place" : "315",
-      "isChanged" : false
+      "name" : "ТП",
+      "teacher" : "Ахметова Э.Р,",
+      "place" : "110",
+      "isChanged" : true
     }, {
       "number" : 1,
       "name" : "Уголовное право",

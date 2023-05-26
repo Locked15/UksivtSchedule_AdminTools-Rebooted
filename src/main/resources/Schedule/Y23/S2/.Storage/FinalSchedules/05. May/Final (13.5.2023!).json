@@ -1605,15 +1605,15 @@
     "day" : "SATURDAY",
     "lessons" : [ {
       "number" : 0,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М,",
+      "place" : "320",
       "isChanged" : true
     }, {
       "number" : 1,
-      "name" : null,
-      "teacher" : null,
-      "place" : null,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М,",
+      "place" : "320",
       "isChanged" : true
     }, {
       "number" : 2,
