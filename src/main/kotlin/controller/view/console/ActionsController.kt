@@ -482,7 +482,7 @@ class ActionsController : ControllerBase() {
         /* So, we read all available basic assets (directly function call, of course) and sync it.
            After this, we build final schedule objects with changes data that are stored in standalone variable. */
         lastResult = readAllAvailableBasicScheduleAssets()
-        beginSynchronization(args)
+        if (args.contains("-b") || args.contains("--basic")) beginSynchronization(args)
 
         //? And the same in here. Sync, and after writing.
         lastResult = buildFinalSchedulesWithChangesData(changesStorageVariable as GeneralChangesOfDay)
