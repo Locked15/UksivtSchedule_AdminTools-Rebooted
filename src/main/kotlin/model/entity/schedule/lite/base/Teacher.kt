@@ -42,16 +42,19 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
 
     private fun normalizeTeacherName(target: String) = target.replace('ё', 'е')
 
-    fun updateSecondaryFields(template: TeacherModel) {
-        if (template.name != null || template.patronymic != null) {
-            val messages = mutableListOf("Teacher ($surname) entry update:")
-            if (template.name != null && !name.equals(template.name, true)) {
-                messages.add("Name is updated: $name -> ${template.name}.")
-                name = template.name
+    fun updateSecondaryFields(newTeacherData: TeacherModel) {
+        val messages = mutableListOf("Teacher ($surname) entry update:")
+        if (newTeacherData.name != null || newTeacherData.patronymic != null) {
+            val nameUpdateCheck = shouldUpdateSecondaryField(name, newTeacherData.name)
+            if (nameUpdateCheck) {
+                messages.add("Name is updated: $name -> ${newTeacherData.name}.")
+                name = newTeacherData.name
             }
-            if (template.patronymic != null && !patronymic.equals(template.patronymic, true)) {
-                messages.add("Patronymic is updated: $patronymic —> ${template.name}.")
-                patronymic = template.patronymic
+
+            val patronymicUpdateCheck = shouldUpdateSecondaryField(patronymic, newTeacherData.patronymic)
+            if (patronymicUpdateCheck) {
+                messages.add("Patronymic is updated: $patronymic —> ${newTeacherData.name}.")
+                patronymic = newTeacherData.patronymic
             }
 
             if (messages.size > 1) Logger.logMessage(LogLevel.DEBUG, messages.joinToString("\n\t"))
@@ -59,6 +62,20 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
     }
 
     fun createUnGenderedInstance() = TeacherModel(surname.trimEnd('а'), name, patronymic)
+    /* endregion */
+
+    /* region Internal Functions */
+
+    /**
+     * Makes a checking process, to prevent updating teacher entity with Empty or Irrelevant data.
+     *
+     * Check is:
+     * * [currentOne] and [newOne] ARE NOT equal, ignoring case sensitivity;
+     * * [newOne] IS NOT null or empty.
+     * * [currentOne] IS null or empty.
+     */
+    private fun shouldUpdateSecondaryField(currentOne: String?, newOne: String?) = !currentOne.equals(newOne, true) &&
+            (!newOne.isNullOrEmpty() && currentOne.isNullOrEmpty())
     /* endregion */
 
     companion object : EntityClass<Int, Teacher>(ScheduleDataContext.Teachers)
