@@ -477,7 +477,7 @@ class ActionsController : ControllerBase() {
         lastResult = changesStorageVariable
         //? We make synchronization before file writing (because writing can alter a target object).
         beginSynchronization(args)
-        writeLastResult(args)
+        if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
 
         /* So, we read all available basic assets (directly function call, of course) and sync it.
            After this, we build final schedule objects with changes data that are stored in standalone variable. */
@@ -487,7 +487,7 @@ class ActionsController : ControllerBase() {
         //? And the same in here. Sync, and after writing.
         lastResult = buildFinalSchedulesWithChangesData(changesStorageVariable as GeneralChangesOfDay)
         beginSynchronization(args)
-        writeLastResult(args)
+        if (args.contains("-w") || args.contains("--write")) writeLastResult(args)
     }
     /* endregion */
     /* endregion */
