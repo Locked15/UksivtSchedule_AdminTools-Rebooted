@@ -1,7 +1,7 @@
 package controller.db.pgsql.schedule.lite.helper
 
 import controller.db.pgsql.schedule.lite.helper.util.checkTeacherPropertiesState
-import controller.db.pgsql.schedule.lite.helper.util.filterTeachersListWithoutGenderInclude
+import controller.db.pgsql.schedule.lite.helper.util.makePostProcessingChecks
 import controller.view.Logger
 import model.environment.log.LogLevel
 import org.jetbrains.exposed.dao.id.EntityID
@@ -52,20 +52,8 @@ private fun tryToFindPresenceEntryID(newTeacher: TeacherModel,
     }
     //? In all other cases, we got non-occurred surname (so, we predicate this is new teacher).
     else {
-        /* But, sometimes in documents surname written in different gender (M -> F), so we should warn user about it.
-           We can't say surely that this is a just mistake (after all, this may be really new teacher).
-           So just make LOG and continue.
-
-           Yeah, this is a reference to gender-bender.
-           Ha-Ha. */
-        val benderTeachers = filterTeachersListWithoutGenderInclude(newTeacher, allTeachers, 1)
-        if (benderTeachers.isNotEmpty()) {
-            val idInfoMessage = "Old ID: ${benderTeachers[0].id} -> New ID: ${allTeachers.maxOf { it.id }.value + 1}"
-            Logger.logMessage(LogLevel.WARNING, "Found teachers (${benderTeachers.size}) with same Surname, " +
-                    "but with different gender ($idInfoMessage)")
-        }
-
-        //? After all, there is no searching entry in DB, so we will return null.
+        //? After all, there is no searching entry in DB, so we will make some actions and actually return null.
+        makePostProcessingChecks(newTeacher, allTeachers, 1)
         null
     }
 }
