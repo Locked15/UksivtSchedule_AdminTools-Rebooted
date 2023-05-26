@@ -20,9 +20,8 @@ class FinalScheduleHelper(schedule: TargetedFinalDaySchedule?) : BaseMainHelper<
                                                            finalId = newFinalScheduleId.value)
 
             if (alteredTeachers.first > 0) {
-                Logger.logMessage(LogLevel.DEBUG,
-                                  "New teacher entries: ${alteredTeachers.first} for ${newItem.targetGroup}" +
-                                          "\n\t(${alteredTeachers.second.joinToString(", ")})")
+                Logger.logMessage(LogLevel.DEBUG, getLogMessageForTeachersAltered(alteredTeachers,
+                                                                                  newItem.targetGroup ?: ""))
             }
             return true
         }

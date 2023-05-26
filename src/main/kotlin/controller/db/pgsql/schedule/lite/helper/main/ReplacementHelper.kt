@@ -19,10 +19,10 @@ class ReplacementHelper(change: TargetedChangesOfDay?) : BaseMainHelper<Targeted
                                                            replaceId = newReplacementId.value,
                                                            exceptionOnEmptyLessonName = false)
 
-            if (alteredTeachers.first > 0)
-                Logger.logMessage(LogLevel.DEBUG,
-                                  "New teacher entries: ${alteredTeachers.first} for ${newItem.targetGroup}" +
-                                          "\n\t(${alteredTeachers.second.joinToString(", ")})")
+            if (alteredTeachers.first > 0) {
+                Logger.logMessage(LogLevel.DEBUG, getLogMessageForTeachersAltered(alteredTeachers,
+                                                                                  newItem.targetGroup ?: ""))
+            }
             return true
         }
         return false

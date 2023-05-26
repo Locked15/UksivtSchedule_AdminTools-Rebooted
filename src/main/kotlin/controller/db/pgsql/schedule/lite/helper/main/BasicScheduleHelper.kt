@@ -21,9 +21,8 @@ class BasicScheduleHelper(basicSchedule: TargetedDaySchedule) : BaseMainHelper<T
                                                            basicId = newEntityEntryId.value)
 
             if (alteredTeachers.first > 0) {
-                Logger.logMessage(LogLevel.DEBUG,
-                                  "New teacher entries: ${alteredTeachers.first} for $groupName/${newItem.day}" +
-                                          "\n\t(${alteredTeachers.second.joinToString(", ")})")
+                Logger.logMessage(LogLevel.DEBUG, getLogMessageForTeachersAltered(alteredTeachers,
+                                                                                  "$groupName/${newItem.day}"))
             }
             return true
         }
