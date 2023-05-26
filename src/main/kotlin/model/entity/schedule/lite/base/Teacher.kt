@@ -43,7 +43,7 @@ class Teacher(id: EntityID<Int>) : Entity<Int>(id) {
     private fun normalizeTeacherName(target: String) = target.replace('ё', 'е')
 
     fun updateSecondaryFields(newTeacherData: TeacherModel) {
-        val messages = mutableListOf("Teacher ($surname) entry update:")
+        val messages = mutableListOf("Teacher ($id: $surname) entry update:")
         if (newTeacherData.name != null || newTeacherData.patronymic != null) {
             val nameUpdateCheck = shouldUpdateSecondaryField(name, newTeacherData.name)
             if (nameUpdateCheck) {
