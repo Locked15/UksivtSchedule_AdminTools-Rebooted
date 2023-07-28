@@ -426,7 +426,7 @@ class ActionsController : ControllerBase() {
                                                             targetSchedule, changesData))
             }
             else {
-                Logger.logMessage(LogLevel.ERROR,
+                Logger.logMessage(LogLevel.WARNING,
                                   "'targetSchedule' in 'buildFinalSchedulesWithChangesData' was 'NULL'")
             }
         }
@@ -526,13 +526,18 @@ class ActionsController : ControllerBase() {
     }
 
     /**
-     * Begins basic changes document parsing, if user sent right arguments.
+     * Begins basic changes document parsing if user sent the right arguments.
      */
     private fun beginChangesDocumentTestParsingIfPossible() {
         val data = getTargetDataForChangesParse(isAutoMode = false, ParseSource.DOCUMENT)
         val reader = WordReader(data.pathToFile)
 
-        reader.getChanges(data.targetGroup!!, data.targetDay)
+        try {
+            reader.getChanges(data.targetGroup!!, data.targetDay)
+        }
+        catch (ex: Exception) {
+            Logger.logMessage(LogLevel.ERROR, "Replacements document read was faulted.\nInfo: ${ex.message}.")
+        }
     }
 
     /**
@@ -540,7 +545,12 @@ class ActionsController : ControllerBase() {
      */
     private fun beginBasicScheduleTestParsingIfPossible() {
         val data = getTargetDataForScheduleParse()
-        data.second.getWeekSchedule(data.first)
+        try {
+            data.second.getWeekSchedule(data.first)
+        }
+        catch (ex: Exception) {
+            Logger.logMessage(LogLevel.ERROR, "Basic schedule document reading was faulted.\nInfo: ${ex.message}.")
+        }
     }
 
     /**
@@ -548,7 +558,12 @@ class ActionsController : ControllerBase() {
      */
     private fun beginWebSiteTestParsingIfPossible() {
         val months = getSafeIntValue("Input count of parsed months", 0, 12)
-        SiteParser().getAvailableNodes(months)
+        try {
+            SiteParser().getAvailableNodes(months)
+        }
+        catch (ex: Exception) {
+            Logger.logMessage(LogLevel.ERROR, "Web-Site parsing process was faulted.\nInfo: ${ex.message}.")
+        }
     }
     /* endregion */
 
@@ -664,6 +679,8 @@ class ActionsController : ControllerBase() {
      */
     fun showLastResult() = println(lastResult.toString())
     /* endregion */
+
+    fun showHashCodeOfTheLastResult() = println("Hash-Code of the last result: ${lastResult.hashCode()}.")
 
     /* region Command: 'Exit' */
 

@@ -90,6 +90,10 @@ class Basic(private val user: String) {
                            Command("Show") {
                                controller.showLastResult()
                            }),
+            "hash" to Pair(hashCommandDescription,
+                           Command("Hash") {
+                               controller.showHashCodeOfTheLastResult()
+                           }),
             "exit" to Pair(exitCommandDescription,
                            Command("Exit") {
                                controller.exit()
@@ -266,6 +270,11 @@ class Basic(private val user: String) {
         private val showCommandDescription: String
 
         /**
+         * Description of the 'Hash' command.
+         */
+        private val hashCommandDescription: String
+
+        /**
          * Description of the 'Exit' command.
          */
         private val exitCommandDescription: String
@@ -293,6 +302,7 @@ class Basic(private val user: String) {
                     syncCommandDescription = "Begins synchronization process between last result and db"
                     writeCommandDescription = "Writes last gotten result value to file"
                     showCommandDescription = "Show last gotten result in the console (terminal)"
+                    hashCommandDescription = "Show hash code of the last result"
                     exitCommandDescription = "Exits from program"
                 }
                 Locale.CHINESE.language -> {
@@ -307,6 +317,7 @@ class Basic(private val user: String) {
                     syncCommandDescription = "TODO: Translate this."
                     writeCommandDescription = "將最後獲得的結果值寫入文件"
                     showCommandDescription = "在控制台（終端）中顯示最後得到的結果"
+                    hashCommandDescription = "TODO: Translate this."
                     exitCommandDescription = "退出程序"
                 }
 
@@ -326,6 +337,7 @@ class Basic(private val user: String) {
                     syncCommandDescription = "Начать процесс синхронизации последнего полученного результата и БД"
                     writeCommandDescription = "Записать последний полученный результат в файл"
                     showCommandDescription = "Отобразить последний полученный результат в консоли (терминале)"
+                    hashCommandDescription = "Отображает хэш-код для последнего полученного результата"
                     exitCommandDescription = "Выход из программы"
                 }
             }

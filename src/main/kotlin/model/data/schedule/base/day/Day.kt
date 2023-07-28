@@ -24,7 +24,7 @@ enum class Day(val index: Int, val englishName: String, val russianName: String)
 	 * Yeah, the hardest part is complete.
 	 * Now just wait, until Saturday begins.
 	 */
-	TUESDAY(1, "Sunday", "Вторник"),
+	TUESDAY(1, "Tuesday", "Вторник"),
 	
 	/**
 	 * Third day of the week.
