@@ -36,7 +36,7 @@
         <dependencies.postgresql-core.version>42.6.0</dependencies.postgresql-core.version>
         <dependencies.kotlin-exposed.version>0.41.1</dependencies.kotlin-exposed.version>
 
-        <dependencies.mordant.version>2.0.1</dependencies.mordant.version>
+        <dependencies.mordant.version>2.1.0</dependencies.mordant.version>
     </properties>
     <repositories>
         <!-- Maven Central Repository. -->
