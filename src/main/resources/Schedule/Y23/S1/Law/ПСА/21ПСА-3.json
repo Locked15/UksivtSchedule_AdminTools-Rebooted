@@ -1,0 +1,277 @@
+{
+  "groupName" : "21ПСА-3",
+  "targetedDaySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Архивное дело в суде",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Судебное делопр",
+      "teacher" : "Исламгалеева А.Ф.",
+      "place" : "112",
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 0301",
+      "teacher" : "Воронина А.А.",
+      "place" : "308",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "16",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "16",
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Архивное дело в суде",
+      "teacher" : "Воронина А.А.",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "315",
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0301",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Архивное дело в суде",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 01.03",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 01.03",
+      "teacher" : "Корниенко А.В.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Судебное делопр",
+      "teacher" : "Исламгалеева А.Ф.",
+      "place" : "общ",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Судебное делопр",
+      "teacher" : "Исламгалеева А.Ф.",
+      "place" : "общ",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}
