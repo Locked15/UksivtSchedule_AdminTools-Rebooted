@@ -1,0 +1,277 @@
+{
+  "groupName" : "20П-3",
+  "targetedDaySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "МДК 0401",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "МДК 0401",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП 04.01",
+      "teacher" : "Фатхулова О.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "УП 04.01",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "УП 04.01",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "УП 04.01",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Спецкурс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Спецкурс",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0401",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0401",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0402",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0402",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0202",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0202",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Веб-программир",
+      "teacher" : "Файзулова О.В.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Веб-программир",
+      "teacher" : "Файзулова О.В.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}
