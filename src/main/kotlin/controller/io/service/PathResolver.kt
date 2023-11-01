@@ -23,7 +23,10 @@ class PathResolver {
 
         private val applicationSubFoldersList = listOf("Application")
 
-        private val subFoldersList = listOf("Schedule", "Y23", "S2")
+        /**
+         * !IMP: This MUST be updated when target changes.
+         */
+        private val subFoldersList = listOf("Schedule", "Y23", "S1")
 
         private val changesSubFoldersList = listOf(STORAGE_FOLDER_NAME, "Changes")
 
