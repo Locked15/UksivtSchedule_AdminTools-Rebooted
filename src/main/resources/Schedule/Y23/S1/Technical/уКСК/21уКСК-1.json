@@ -1,0 +1,277 @@
+{
+  "groupName" : "21уКСК-1",
+  "targetedDaySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Пр по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Пр по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Пр по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МПЦ",
+      "teacher" : "Лихарев И.А.",
+      "place" : "001в",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Пр по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Пр по прогр",
+      "teacher" : "Хасипов Р.Х.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}

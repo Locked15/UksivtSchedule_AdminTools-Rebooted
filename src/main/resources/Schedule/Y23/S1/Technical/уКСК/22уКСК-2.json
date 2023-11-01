@@ -1,0 +1,277 @@
+{
+  "groupName" : "22уКСК-2",
+  "targetedDaySchedules" : [ {
+    "day" : "MONDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "TUESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "WEDNESDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Пр по прототип",
+      "teacher" : "Шарипов Н.Т,",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Пр по прототип",
+      "teacher" : "Шарипов Н.Т,",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Пр по прототип",
+      "teacher" : "Шарипов Н.Т,",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "FRIDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Пустовалова Э.У.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Баранов А.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SATURDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ПЦУ",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  }, {
+    "day" : "SUNDAY",
+    "lessons" : [ ]
+  } ]
+}
