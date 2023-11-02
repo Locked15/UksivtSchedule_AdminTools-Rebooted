@@ -7,13 +7,13 @@ import kotlin.io.path.*
 
 /* region Clear Names Getters */
 
-fun getBranchesNames() = Files.walk(PathResolver.thisSemesterResourcePath, 1)
-    .filter { it.isDirectory() && !it.name.equals(PathResolver.STORAGE_FOLDER_NAME, true) }
+fun getBranchesNames() = Files.walk(PathResolver.currentSemesterResourcePaths.first, 1)
+    .filter { it.isDirectory() && !it.name.equals(PathResolver.generalApplicationFolderName, true) }
     .collect(Collectors.toList())
     .map { path -> path.name }
     .drop(1)
 
-fun getAffiliationNames(branch: String) = Files.walk(PathResolver.resolvePath(PathResolver.thisSemesterResourcePath,
+fun getAffiliationNames(branch: String) = Files.walk(PathResolver.resolvePath(PathResolver.currentSemesterResourcePaths.first,
                                                                               listOf(branch)), 1)
     .filter(Files::isDirectory)
     .collect(Collectors.toList())
@@ -21,7 +21,7 @@ fun getAffiliationNames(branch: String) = Files.walk(PathResolver.resolvePath(Pa
     .drop(1)
 
 fun getGroupsNames(branch: String, affiliation: String) = Files.walk(PathResolver.resolvePath(
-        PathResolver.thisSemesterResourcePath, listOf(branch, affiliation)), 1)
+        PathResolver.currentSemesterResourcePaths.first, listOf(branch, affiliation)), 1)
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
     .drop(1)
@@ -29,13 +29,13 @@ fun getGroupsNames(branch: String, affiliation: String) = Files.walk(PathResolve
 
 /* region Full Path Getters */
 
-fun getBranchesPaths() = Files.walk(PathResolver.thisSemesterResourcePath, 1)
+fun getBranchesPaths() = Files.walk(PathResolver.currentSemesterResourcePaths.first, 1)
     .filter(Files::isDirectory)
     .collect(Collectors.toList())
     .map { path -> path.toUri().path }
     .drop(1)
 
-fun getAffiliationPaths(branch: String) = Files.walk(PathResolver.resolvePath(PathResolver.thisSemesterResourcePath,
+fun getAffiliationPaths(branch: String) = Files.walk(PathResolver.resolvePath(PathResolver.currentSemesterResourcePaths.first,
                                                                               listOf(branch)), 1)
     .filter(Files::isDirectory)
     .collect(Collectors.toList())
@@ -43,7 +43,7 @@ fun getAffiliationPaths(branch: String) = Files.walk(PathResolver.resolvePath(Pa
     .drop(1)
 
 fun getGroupsPaths(branch: String, affiliation: String) = Files.walk(PathResolver.resolvePath(
-        PathResolver.thisSemesterResourcePath, listOf(branch, affiliation)), 1)
+        PathResolver.currentSemesterResourcePaths.first, listOf(branch, affiliation)), 1)
     .collect(Collectors.toList())
     .map { path -> path.toUri().path }
     .drop(1)
@@ -51,13 +51,13 @@ fun getGroupsPaths(branch: String, affiliation: String) = Files.walk(PathResolve
 
 /* region Storage Sub-Folders Getters */
 
-fun getChangesStorageMonthFolderNames() = Files.walk(PathResolver.changesResourceFolderPath, 1)
+fun getChangesStorageMonthFolderNames() = Files.walk(PathResolver.currentSemesterResourcePaths.second, 1)
     .filter { it.isDirectory() }
     .collect(Collectors.toList())
     .map { path -> path.name }
     .drop(1)
 
-fun getFinalSchedulesStorageMonthFolderNames() = Files.walk(PathResolver.finalSchedulesResourceFolderPath, 1)
+fun getFinalSchedulesStorageMonthFolderNames() = Files.walk(PathResolver.currentSemesterResourcePaths.third, 1)
     .filter { it.isDirectory() }
     .collect(Collectors.toList())
     .map { path -> path.name }
@@ -66,12 +66,12 @@ fun getFinalSchedulesStorageMonthFolderNames() = Files.walk(PathResolver.finalSc
 
 /* region Files in Month-Level Directory (Non-Normalized) */
 
-fun getChangesStorageMonthLevelAssetFiles() = Files.walk(PathResolver.changesResourceFolderPath, 1)
+fun getChangesStorageMonthLevelAssetFiles() = Files.walk(PathResolver.currentSemesterResourcePaths.second, 1)
     .filter { !it.isDirectory() && it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
 
-fun getFinalScheduleStorageMonthLevelAssetFiles() = Files.walk(PathResolver.finalSchedulesResourceFolderPath, 1)
+fun getFinalScheduleStorageMonthLevelAssetFiles() = Files.walk(PathResolver.currentSemesterResourcePaths.third, 1)
     .filter { !it.isDirectory() && it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
@@ -80,13 +80,13 @@ fun getFinalScheduleStorageMonthLevelAssetFiles() = Files.walk(PathResolver.fina
 /* region Files in Storage Sub-Folders Getters */
 
 fun getChangesStorageFileNames(monthFolder: String) = Files.walk(PathResolver.resolvePath(
-        PathResolver.changesResourceFolderPath, listOf(monthFolder)), 1)
+        PathResolver.currentSemesterResourcePaths.second, listOf(monthFolder)), 1)
     .filter { it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }
 
 fun getFinalSchedulesStorageFileNames(monthFolder: String) = Files.walk(PathResolver.resolvePath(
-        PathResolver.finalSchedulesResourceFolderPath, listOf(monthFolder)), 1)
+        PathResolver.currentSemesterResourcePaths.third, listOf(monthFolder)), 1)
     .filter { it.extension.equals("json", true) }
     .collect(Collectors.toList())
     .map { path -> path.nameWithoutExtension }

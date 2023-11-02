@@ -13,6 +13,8 @@ class GlobalStateBuilder {
 
     private var dbTypeParam: String? = null
 
+    private var configFileName: String? = null
+
     private var logLevel: LogLevel? = null
     /* endregion */
 
@@ -48,6 +50,12 @@ class GlobalStateBuilder {
                 else -> args.getOrElse(dbTypeIndex + 1) { "" }
             }
         })
+        setConfigFileName(with(args) {
+            when (val configFileNameArgIndex = indexOf("--config")) {
+                -1 -> "App"
+                else -> args.getOrElse(configFileNameArgIndex + 1) { "App" }
+            }
+        })
 
         return this
     }
@@ -70,6 +78,11 @@ class GlobalStateBuilder {
         return this
     }
 
+    private fun setConfigFileName(name: String): GlobalStateBuilder {
+        configFileName = name
+        return this
+    }
+
     /**
      * Extracts normalized DB Configuration prefix from one, that sent by argument.
      * For example,
@@ -80,7 +93,7 @@ class GlobalStateBuilder {
     /* endregion */
 
     fun build() = GlobalState(projectDirectory!!, resourceProjectPath!!,
-                              dbTypeParam!!, logLevel!!)
+                              dbTypeParam!!, logLevel!!, configFileName!!)
 
     companion object {
 

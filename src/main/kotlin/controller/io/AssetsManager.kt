@@ -3,9 +3,7 @@ package controller.io
 import com.fasterxml.jackson.databind.JsonMappingException
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
-import controller.io.service.PathResolver.Companion.changesResourceFolderPath
-import controller.io.service.PathResolver.Companion.finalSchedulesResourceFolderPath
-import controller.io.service.PathResolver.Companion.thisSemesterResourcePath
+import controller.io.service.PathResolver.Companion.currentSemesterResourcePaths
 import controller.io.service.writer.BasicScheduleWriter
 import controller.io.service.writer.ChangesWriter
 import controller.io.service.writer.FinalScheduleWriter
@@ -47,7 +45,7 @@ inline fun <reified T> readUnknownAsset(path: Path): T? {
 /* region Basic Schedule */
 
 fun readBasicScheduleAsset(branch: String, affiliation: String, group: String): TargetedWeekSchedule? {
-    val target = Paths.get(thisSemesterResourcePath.toString(), branch, affiliation, "$group.json").toFile()
+    val target = Paths.get(currentSemesterResourcePaths.first.toString(), branch, affiliation, "$group.json").toFile()
     return try {
         val serializer = jacksonObjectMapper()
         val result = serializer.readValue<TargetedWeekSchedule>(target)
@@ -64,7 +62,7 @@ fun readBasicScheduleAsset(branch: String, affiliation: String, group: String): 
 /* region Changes */
 
 fun readChangesAsset(month: String, fileName: String): GeneralChangesOfDay? {
-    val target = Paths.get(changesResourceFolderPath.toString(), month, "$fileName.json").toFile()
+    val target = Paths.get(currentSemesterResourcePaths.second.toString(), month, "$fileName.json").toFile()
     return try {
         val serializer = jacksonObjectMapper()
         val result = serializer.readValue<GeneralChangesOfDay>(target)
@@ -81,7 +79,7 @@ fun readChangesAsset(month: String, fileName: String): GeneralChangesOfDay? {
 /* region Final Schedule */
 
 fun readFinalScheduleAsset(month: String, fileName: String): GeneralFinalDaySchedule? {
-    val target = Paths.get(finalSchedulesResourceFolderPath.toString(), month, "$fileName.json").toFile()
+    val target = Paths.get(currentSemesterResourcePaths.third.toString(), month, "$fileName.json").toFile()
     return try {
         val serializer = jacksonObjectMapper()
         val result = serializer.readValue<GeneralFinalDaySchedule>(target)

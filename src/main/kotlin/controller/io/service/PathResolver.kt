@@ -1,5 +1,6 @@
 package controller.io.service
 
+import config
 import globalState
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -9,39 +10,57 @@ class PathResolver {
 
     companion object {
 
-        const val STORAGE_FOLDER_NAME = ".Storage"
+        /* region Top-Level Paths. */
 
-        const val USER_SECRETS_FOLDER_NAME = "secrets"
+        val generalApplicationFolderName = getPathFromConfigByParameter("App.Folders.Resources.Application.Storage")
+
+        val generalUserSecretsFolderName = getPathFromConfigByParameter("App.Folders.Resources.Application.Secrets")
 
         val applicationResourcePath: Path
 
-        val thisSemesterResourcePath: Path
-
-        val changesResourceFolderPath: Path
-
-        val finalSchedulesResourceFolderPath: Path
-
-        private val applicationSubFoldersList = listOf("Application")
-
         /**
-         * !IMP: This MUST be updated when target changes.
+         * Contains three values:
+         * 1. Path to current semester resources (e.g.: "./resources/Schedule/Y23/S2";
+         * 2. Path to current changes resources (e.g.: "./resources/Schedule/Y23/S2/.Storage/Changes");
+         * 3. Path to current final schedules resources (e.g.: "./resources/Schedule/Y23/S2/.Storage/FinalSchedules").
          */
-        private val subFoldersList = listOf("Schedule", "Y23", "S1")
+        val currentSemesterResourcePaths: Triple<Path, Path, Path>
+        /* endregion */
 
-        private val changesSubFoldersList = listOf(STORAGE_FOLDER_NAME, "Changes")
+        /* region Private Paths. */
 
-        private val finalSchedulesFoldersList = listOf(STORAGE_FOLDER_NAME, "FinalSchedules")
+        private val applicationResourcesFoldersList =
+            listOf(getPathFromConfigByParameter("App.Folders.Resources.Application"))
+
+        private val currentScheduleCycleSubFoldersList =
+            listOf(getPathFromConfigByParameter("App.Folders.Resources.Application.Storage.Schedule"),
+                   "Y${getPathFromConfigByParameter("App.Settings.TargetYear")}",
+                   "S${getPathFromConfigByParameter("App.Settings.TargetSemester")}")
+
+        private val changesSubSubFoldersList = listOf(generalApplicationFolderName,
+                                                      getPathFromConfigByParameter(
+                                                              "App.Folders.Resources.Application.Storage.Changes"))
+
+        private val finalSchedulesSubSubFoldersList = listOf(generalApplicationFolderName,
+                                                             getPathFromConfigByParameter(
+                                                                     "App.Folders.Resources.Application.Storage.Final"))
+        /* endregion */
 
         init {
-            applicationResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
-                                                  applicationSubFoldersList)
-            thisSemesterResourcePath = resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
-                                                   subFoldersList)
+            applicationResourcePath =
+                resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
+                            applicationResourcesFoldersList)
 
-            changesResourceFolderPath = resolvePath(thisSemesterResourcePath,
-                                                    changesSubFoldersList)
-            finalSchedulesResourceFolderPath = resolvePath(thisSemesterResourcePath,
-                                                           finalSchedulesFoldersList)
+            val thisSemesterResourcePath =
+                resolvePath(Paths.get(globalState.projectDirectory), globalState.resourceProjectPath,
+                            currentScheduleCycleSubFoldersList)
+            val changesResourceFolderPath = resolvePath(thisSemesterResourcePath,
+                                                        changesSubSubFoldersList)
+            val finalSchedulesResourceFolderPath = resolvePath(thisSemesterResourcePath,
+                                                               finalSchedulesSubSubFoldersList)
+
+            currentSemesterResourcePaths = Triple(thisSemesterResourcePath, changesResourceFolderPath,
+                                                  finalSchedulesResourceFolderPath)
         }
 
         fun resolvePath(basicPath: Path, vararg additionalPaths: List<String>): Path {
@@ -52,5 +71,7 @@ class PathResolver {
 
             return result
         }
+
+        private fun getPathFromConfigByParameter(parameter: String) = config.getProperty(parameter) ?: ""
     }
 }

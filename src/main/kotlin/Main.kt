@@ -1,6 +1,10 @@
 import model.environment.state.GlobalState
 import model.environment.state.GlobalStateBuilder
 import view.console.Basic
+import java.io.FileInputStream
+import java.nio.file.Paths
+import java.util.Properties
+import javax.naming.ConfigurationException
 
 
 private var programArgs: Array<String> = arrayOf()
@@ -11,6 +15,19 @@ val globalState: GlobalState by lazy {
         .setByArgs(programArgs)
 
     builder.build()
+}
+
+val config: Properties by lazy {
+    val props = Properties()
+    val result = runCatching {
+        val readerStream = FileInputStream(Paths.get(System.getProperty("user.dir"),
+                                                     "${globalState.configFileName}.cfg").toFile())
+        props.load(readerStream)
+    }
+
+    if (result.isFailure) throw ConfigurationException(
+            "Config file MUST be provided ('${globalState.configFileName}.cfg' in root dir).")
+    props
 }
 
 /**

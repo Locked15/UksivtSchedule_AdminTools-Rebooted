@@ -50,7 +50,7 @@ class FinalScheduleWriter : ValueWriter {
         }
 
         private fun getFinalScheduleFilePath(fileName: String?, date: Triple<Int?, Int?, Int?>) = Paths.get(
-                PathResolver.finalSchedulesResourceFolderPath.toString(), String.format(FILE_NAME_TEMPLATE,
+                PathResolver.currentSemesterResourcePaths.third.toString(), String.format(FILE_NAME_TEMPLATE,
                                                                                         fileName ?: PRESERVED_FILE_NAME,
                                                                                         date.first ?: -1,
                                                                                         date.second ?: -1,

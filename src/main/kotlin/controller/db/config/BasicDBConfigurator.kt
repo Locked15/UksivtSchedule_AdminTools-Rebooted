@@ -17,7 +17,7 @@ abstract class BasicDBConfigurator {
         @JvmStatic
         protected fun getRawConfiguration(dbKind: DBKind): HashMap<String, String>? {
             val userSecretsFile = PathResolver.resolvePath(PathResolver.applicationResourcePath,
-                                                           listOf(PathResolver.USER_SECRETS_FOLDER_NAME,
+                                                           listOf(PathResolver.generalUserSecretsFolderName,
                                                                   dbKind.getSpecificUserSecretFileName())).toFile()
             return try {
                 val serializer = getSerializer()

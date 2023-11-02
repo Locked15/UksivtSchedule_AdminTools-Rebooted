@@ -67,7 +67,7 @@ class ChangesWriter : ValueWriter {
          * It contains [absolute value][absolute] declaration variable.
          */
         private fun getTargetFilePath(absolute: Boolean): Path {
-            val path = PathResolver.changesResourceFolderPath
+            val path = PathResolver.currentSemesterResourcePaths.second
             return Paths.get(path.toString(), String.format(TARGET_FILE_NAME_TEMPLATE, absolute))
         }
         /* endregion */
@@ -105,7 +105,7 @@ class ChangesWriter : ValueWriter {
          * It contains [day of month][day], [month number][month], [year] and [declared changed schedules count][count].
          */
         private fun getUnitedFilePath(day: Int, month: Int, year: Int, count: Int): Path {
-            val path = PathResolver.changesResourceFolderPath
+            val path = PathResolver.currentSemesterResourcePaths.second
             return Paths.get(path.toString(), String.format(UNITED_FILE_NAME_TEMPLATE, day, month, year, count))
         }
         /* endregion */
