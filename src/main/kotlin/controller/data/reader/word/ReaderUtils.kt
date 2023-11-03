@@ -1,5 +1,6 @@
 package controller.data.reader.word
 
+import controller.data.getter.SiteParser.Companion.NON_BREAKING_SPACE
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel
@@ -69,16 +70,16 @@ private fun thirdTableCheckPart(header: String): Boolean = header.contains("за
 /* region "checkToParsingStopper" function */
 
 fun checkToParsingStopper(base: BaseIteratorModel, outer: OuterIteratorModel, inner: InnerIteratorModel,
-                          target: String): Boolean {
+                          centeredCellId: Int, target: String): Boolean {
     val metAnotherGroupWhileParseChanges = checkCellToDifference(base.listenToChanges, inner.text, target)
-    val anotherGroupNameMetOnSpecifiedCell = checkCellToBeDeclarationSpecificCell(outer.cellNumber)
+    val anotherGroupNameMetOnSpecifiedCell = checkCellToBeDeclarationSpecificCell(outer.cellNumber, centeredCellId)
 
     return metAnotherGroupWhileParseChanges && anotherGroupNameMetOnSpecifiedCell
 }
 
 private fun checkCellToDifference(listen: Boolean, foundText: String, target: String): Boolean = listen &&
-        foundText.isNotEmpty() && foundText.lowercase() != target.lowercase()
+        foundText.isNotBlank() && foundText.lowercase() != target.lowercase()
 
-fun checkCellToBeDeclarationSpecificCell(cellNumber: Int): Boolean = cellNumber == 0 ||
-        cellNumber == 3
+fun checkCellToBeDeclarationSpecificCell(cellNumber: Int, centeredGroupNameCellId: Int): Boolean = cellNumber == 0 ||
+        cellNumber == centeredGroupNameCellId
 /* endregion */
