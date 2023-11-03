@@ -1,6 +1,5 @@
 package controller.data.reader.word
 
-import controller.data.getter.SiteParser.Companion.NON_BREAKING_SPACE
 import model.data.parse.changes.wrapper.BaseIteratorModel
 import model.data.parse.changes.wrapper.InnerIteratorModel
 import model.data.parse.changes.wrapper.OuterIteratorModel

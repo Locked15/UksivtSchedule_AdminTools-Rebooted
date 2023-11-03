@@ -24,7 +24,7 @@ import java.util.GregorianCalendar
 /**
  * Reader-Class for a Word documents with schedule changes.
  */
-class Reader(pathToFile: String, private val parseInLegacyMode: Boolean) {
+class Reader(pathToFile: String, parseInLegacyMode: Boolean) {
 
     /* region Properties */
 
@@ -35,22 +35,25 @@ class Reader(pathToFile: String, private val parseInLegacyMode: Boolean) {
 
     /**
      * Contains ID of the document paragraph, that contains information about target day and month.
+     * Earlier it was in cell 4.
+     * But after the new standard was released, it had moved to 5.
      *
      * I.E.:
      * "НА 19 ДЕКАБРЯ – ПОНЕДЕЛЬНИК".
      */
-    private val dateInfoParagraphId: Int = if (parseInLegacyMode) 5 else 5
+    private val dateInfoParagraphId: Int = if (parseInLegacyMode) 4 else 5
 
     /**
      * Contains ID of the cell, that may contain information with group name (that schedule is changes),
      * if a change object is absolute.
      *
-     * Otherwise, it contains info about teacher, that will be replaced.
+     * Otherwise, it contains info about teacher that will be replaced.
      */
     private val centeredGroupNameCellId: Int = if (parseInLegacyMode) 3 else 0
 
     /**
      * TODO: Check it.
+     * There is no practises for now, so I can't check it now.
      */
     private val practiseGroupCellId: Int = if (parseInLegacyMode) 6 else 6
     /* endregion */
@@ -60,7 +63,7 @@ class Reader(pathToFile: String, private val parseInLegacyMode: Boolean) {
     /**
      * Initializes a current *document* property.
      *
-     * May throw exceptions, if sent an incorrect path.
+     * May throw exceptions if sent an incorrect path.
      */
     init {
         val docStream = FileInputStream(pathToFile)
