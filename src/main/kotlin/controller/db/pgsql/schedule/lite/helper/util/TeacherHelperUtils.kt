@@ -3,6 +3,7 @@ package controller.db.pgsql.schedule.lite.helper.util
 import controller.view.Logger
 import model.data.schedule.base.Teacher
 import model.environment.log.LogLevel
+import java.lang.StringBuilder
 import model.data.schedule.base.Teacher as TeacherModel
 import model.entity.schedule.lite.base.Teacher as TeacherEntity
 
@@ -47,23 +48,27 @@ private fun checkUnGenderedTeachersList(newTeacherModel: Teacher, allTeachers: L
                                         targetEqualityId: Int): Boolean {
     /* But, sometimes in documents surname written in different gender (M -> F), so we should warn user about it.
        We can't say surely that this is a just mistake (after all, this may be really new teacher).
-       So just make LOG and continue.
+       So make LOG and continue.
 
        Yeah, this is a reference to gender-bender.
        Ha-Ha. */
     val benderTeachers = filterTeachersListWithoutGenderInclude(newTeacherModel, allTeachers, targetEqualityId)
     if (benderTeachers.isNotEmpty()) {
-        /**
-         * Here we make a message, that contains information about target IDs.
-         * * Old ID contains ID of the teacher that presented in the system, but has different gender.
-         * * The New ID contains a new teacher, that will be created in the system.
-         *
-         * This allows user to easily replace incorrect IDs via procedures of the DB.
-         */
-        val idInfoMessage = "Old ID: ${benderTeachers[0].id} -> New ID: ${allTeachers.maxOf { it.id }.value + 1}"
-        Logger.logMessage(LogLevel.WARNING, "Found teachers (${benderTeachers.size}) with same Surname, " +
-                "but with different gender. Details:" +
-                "\n\t($idInfoMessage)")
+        with (benderTeachers[0]) {
+            /**
+             * Here we make a message, that contains information about target IDs.
+             * * Old ID contains ID of the teacher that presented in the system, but has different gender.
+             * * The New ID contains a new teacher, that will be created in the system.
+             *
+             * This allows user to easily replace incorrect IDs via procedures of the DB.
+             */
+            val idInfoMessage = "Old ID: $id -> New ID: ${allTeachers.maxOf { it.id }.value + 1}"
+            val teacherBio = StringBuilder(surname).append(name ?: "").append(patronymic ?: "").toString()
+            Logger.logMessage(LogLevel.WARNING,
+                              "Found teachers (${benderTeachers.size}) with same Surname ($teacherBio), " +
+                                      "but with different gender. Details:" +
+                                      "\n\t($idInfoMessage)")
+        }
 
         return true
     }
