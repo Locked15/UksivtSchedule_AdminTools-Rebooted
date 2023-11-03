@@ -1,0 +1,5051 @@
+[ {
+  "targetGroup" : "21ЗИО-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Эк анализ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "БУ и НО",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "БУ и НО",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ЗИО-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Эк анализ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "БУ и НО",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "УТИНИ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ЗИО-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Эк анализ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "БУ и НО",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ЗИО-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "общ",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "УТИНИ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "УТИНИ",
+      "teacher" : "Акчева Д.М.",
+      "place" : "331",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ЗИО-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОЭТ",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21Л-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0301",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Налоги и НО",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Налоги и НО",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21Л-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0301",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Налоги и НО",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Налоги и НО",
+      "teacher" : "Засыпкин К.Н.",
+      "place" : "341",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22Л-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "МДК 0201",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "МДК 0201",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "МДК 0201",
+      "teacher" : "Кузнецов В.А.",
+      "place" : "317",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22Л-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "ОЭТ",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "ОЭТ",
+      "teacher" : "Киселева М.В.",
+      "place" : "337",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23уЛ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Ин. яз. ",
+      "teacher" : "Пустовалова Э. У.",
+      "place" : "227",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Ин. яз. ",
+      "teacher" : "Пустовалова Э. У.",
+      "place" : "227",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21Э-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ДОУ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "МДК 0401",
+      "teacher" : "Попова И.А.",
+      "place" : "339",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.02",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21Э-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0402",
+      "teacher" : "Лаврентьева А.В.",
+      "place" : "301",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0401",
+      "teacher" : "Попова И.А.",
+      "place" : "339",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ДОУ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "301",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22Э-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Психол общ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Основы БУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22Э-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Психол общ",
+      "teacher" : "Алибаева Р. Р.",
+      "place" : "305",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Основы БУ",
+      "teacher" : "Кузнецова Л.Р.",
+      "place" : "317",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 05.01",
+      "teacher" : "Лаврентьева А. В.",
+      "place" : "301",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23ВЕБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Математика",
+      "teacher" : "Ильинская М.В.",
+      "place" : "323а",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Ильинская М.В.",
+      "place" : "323а",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р.А.",
+      "place" : "334",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ВЕБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р.А.",
+      "place" : "334",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "История",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "География",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23З-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "География",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Информатика",
+      "teacher" : "Габитова А.И.",
+      "place" : "229",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Русский",
+      "teacher" : "Мирасова И.В.",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Общество",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23З-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Русский",
+      "teacher" : "Мирасова И.В.",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23Л-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р.А.",
+      "place" : "334",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "История",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : "2",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Баш.яз",
+      "teacher" : "Хисамутдинова Р.М.",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23Л-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Баранова Н. Г.",
+      "place" : "338",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р.А,",
+      "place" : "334",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23ОИБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Лит-ра",
+      "teacher" : "Абдульманова А.С.",
+      "place" : "309",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Общество",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ОИБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Лит-ра",
+      "teacher" : "Абдульманова А.С.",
+      "place" : "309",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Математика",
+      "teacher" : "Ильинская М.В.",
+      "place" : "323а",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23П-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "ОБЖ",
+      "teacher" : "Исмаилова Р.Х",
+      "place" : "333",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М",
+      "place" : "322",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Общество ",
+      "teacher" : "Исмагилова Г.М",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "География",
+      "teacher" : "Юнусова Л. Р.",
+      "place" : "313",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23П-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Русский.яз",
+      "teacher" : "Мирасова И.в",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Физика ",
+      "teacher" : "Нагаев Р.А",
+      "place" : "334",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Георгафия ",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Информатика",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23П-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Информатика",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Математика ",
+      "teacher" : "Лахмуткина Т.Г.",
+      "place" : "218",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Баш.яз",
+      "teacher" : "Хисамутдинова Р.М",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "История ",
+      "teacher" : "Баранова Н.Г",
+      "place" : "338",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23П-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И",
+      "place" : "Чз общ",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Физика",
+      "teacher" : "Нагаев Р. А",
+      "place" : "334",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23П-5",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "История ",
+      "teacher" : "Каримова И.Р ",
+      "place" : "336",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Общество",
+      "teacher" : "Анастасьев А. Г.",
+      "place" : "111а",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Баш яз. ",
+      "teacher" : "Хисамутдинова Р.М",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23П-6",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Математика ",
+      "teacher" : "Лахмуткина Т.Г,",
+      "place" : "218",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Баш яз. ",
+      "teacher" : "Хисамутдинова Р.М ",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Баш. яз",
+      "teacher" : "Хисамутдинова Р.М.",
+      "place" : "316",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23ПД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Информатика",
+      "teacher" : "Габитова А.И.",
+      "place" : "229",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "География",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Общество",
+      "teacher" : "Анастасьев А. Г.",
+      "place" : "111а",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23ПД-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Общество",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "общ",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "География",
+      "teacher" : "Юнусова Л.Р.",
+      "place" : "313",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Информатика",
+      "teacher" : "Габитова А.И.",
+      "place" : "229",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ПО-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Математика",
+      "teacher" : "Голуб И.А.",
+      "place" : "318",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Математика",
+      "teacher" : "Голуб И.А.",
+      "place" : "318",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ПО-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Общество",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : "2",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Информатика",
+      "teacher" : "Габитова А.И.",
+      "place" : "229",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Физра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ПО-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ОБЖ",
+      "teacher" : "Исмаилова Р.Х.",
+      "place" : "333",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "История",
+      "teacher" : "Ахметшина Е.В.",
+      "place" : "2",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Русский",
+      "teacher" : "Постнова Д.В.",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Лит-ра",
+      "teacher" : "Постнова Д.В.",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23ПО-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И",
+      "place" : "Чз общ",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Информатика",
+      "teacher" : "Габитова А.И.",
+      "place" : "229",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23ПО-5",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "История",
+      "teacher" : "Баранова Н. Г.",
+      "place" : "338",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "История",
+      "teacher" : "Баранова Н. Г.",
+      "place" : "338",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "История",
+      "teacher" : "Баранова Н.Г.",
+      "place" : "338",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23СА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Баш.яз",
+      "teacher" : "Хисамутдинова Р.М ",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ОБЖ",
+      "teacher" : "Исмаилова Р.Х",
+      "place" : "333",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Русский язык ",
+      "teacher" : "Абдульманова А.С",
+      "place" : "309",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23СА-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОБЖ",
+      "teacher" : "Исмаилова Р.Х",
+      "place" : "333",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Баш.яз",
+      "teacher" : "Хисамутдинова Р.М ",
+      "place" : "316",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Информатика ",
+      "teacher" : "Жданова Г.А.",
+      "place" : "7",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Русский язык ",
+      "teacher" : "Абдульманова А.С",
+      "place" : "309",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23СА-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Математика ",
+      "teacher" : "Тяпкина Н.Б",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Информатика",
+      "teacher" : "Жданова Г.А.",
+      "place" : "7",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Информатика",
+      "teacher" : "Жданова Г.А.",
+      "place" : "7",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23Э-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Лит-ра",
+      "teacher" : "Мирасова И.В.",
+      "place" : "321",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Общество",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Информатика",
+      "teacher" : "Габитова А. И.",
+      "place" : "229",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "23Э-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Информатика",
+      "teacher" : "Жданова Г.А.",
+      "place" : "7",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Общество",
+      "teacher" : "Анастасьев А.г.",
+      "place" : "117",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ПД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "УП 0201",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "110",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0201",
+      "teacher" : "Ахметова Э.Р.",
+      "place" : "110",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А. Г. ",
+      "place" : "110",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А. Г. ",
+      "place" : "110",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А. Г. ",
+      "place" : "110",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "20ПД-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А. Г.",
+      "place" : "110",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "20ПД-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Делопроизв и РС",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Делопроизв и РС",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ПД-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А.Г.",
+      "place" : "117",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0201",
+      "teacher" : "Языкбаев А.Г.",
+      "place" : "117",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ПД-5",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Делопроизв и РС",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Делопроизв и РС",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "МДК 0201",
+      "teacher" : "Хасанова Л.Ф.",
+      "place" : "111",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "343",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Криминология",
+      "teacher" : "Ахметова А.Р.",
+      "place" : "343",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "117",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПД-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Криминология",
+      "teacher" : "Акчев С.А.",
+      "place" : "112",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Криминология",
+      "teacher" : "Акчев С.А.",
+      "place" : "112",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Криминалистика",
+      "teacher" : "Фагманова Э.В.",
+      "place" : "117",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПД-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ТСП",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "343",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ТСП",
+      "teacher" : "Музафаров Ф.Ф.",
+      "place" : "343",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "323",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "323",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПД-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "История",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "323",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ТГП",
+      "teacher" : "Султанов А.Х.",
+      "place" : "323",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПО-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Семейное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "203",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "УП 0101",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "УП 0101",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21ПО-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП 0101",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : "УП 0101",
+      "teacher" : "Хамидова Д.С.",
+      "place" : "223",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Семейное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "203",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21ПО-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Статистика",
+      "teacher" : "Ахатова Г.И.",
+      "place" : "308",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Семейное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "203",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПО-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Семейное право",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "203",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Сорокина Э.Г.",
+      "place" : "324",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПО-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ПИСО",
+      "teacher" : "Гареева Г.Ф.",
+      "place" : "203",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "БЖД",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "339",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Менеджмент",
+      "teacher" : "Кунсбаева К.С.",
+      "place" : "114",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПО-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "ДОУ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "305",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "БЖД",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "339",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Менеджмент",
+      "teacher" : "Кунсбаева К.С.",
+      "place" : "114",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПО-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Менеджмент",
+      "teacher" : "Кунсбаева К.С.",
+      "place" : "114",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "ДОУ",
+      "teacher" : "Алибаева Р.Р.",
+      "place" : "405",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "БЖД",
+      "teacher" : "Драгомиров М.С.",
+      "place" : "339",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПСА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПСА-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21ПСА-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0301",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Архивное дело в суде",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Исполн производство",
+      "teacher" : "Шангареева Г.Ф",
+      "place" : "13",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПСА-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ПСА-5",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "",
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21ПСА-6",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0301",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0301",
+      "teacher" : "Воронина А.А.",
+      "place" : "216",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "МДК 0302",
+      "teacher" : "Корниенко А.В.",
+      "place" : "214",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПСА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ПИСО",
+      "teacher" : "Акчев С.А.",
+      "place" : "112",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Физра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПСА-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ПИСО",
+      "teacher" : "Акчев С.А.",
+      "place" : "112",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ПСА-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ПИСО",
+      "teacher" : "Акчев С.А.",
+      "place" : "112",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Гражд право",
+      "teacher" : "Фахретдинов И.М.",
+      "place" : "118",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21БД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ПП",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ПП",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22БД-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ИТ",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ИТ",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ЭВМ",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ВЕБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 09.01",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 09.01",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "МДК 09.01",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ВЕБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 09.03",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 09.03",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 09.03",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ВЕБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "ОПБД",
+      "teacher" : "Файзулова А.И.",
+      "place" : "237",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ВЕБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "УП 0501",
+      "teacher" : "Шарипова Д.А.",
+      "place" : "234",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "УП 0501",
+      "teacher" : "Шарипова Д.А.",
+      "place" : "234",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Основы фил",
+      "teacher" : "Каримова И.Р.",
+      "place" : "336",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ВЕБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "ЭВМ",
+      "teacher" : "Голуб И.А.",
+      "place" : "318",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Граф диз",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "ИТ",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22ВЕБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ОСИС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ОСИС",
+      "teacher" : "Озерова Р.А.",
+      "place" : "231",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Психология",
+      "teacher" : "Лихарева Е.А.",
+      "place" : "3",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20ИС-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : "Веб-программирование",
+      "teacher" : "Шарипова Д.А.",
+      "place" : "234",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Веб",
+      "teacher" : "Шарипова Д. А.",
+      "place" : "227",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Веб",
+      "teacher" : "Шарипова Д. А.",
+      "place" : "227",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "21ИС-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "МДК 05.02",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "МДК 05.02",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "МДК 05.02",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22ИС-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ОС",
+      "teacher" : "Озерова Р. А.",
+      "place" : "231",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "ОС",
+      "teacher" : "Озерова Р. А.",
+      "place" : "231",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "20ОИБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Ахметова А.М.",
+      "place" : "322",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Физ-ра",
+      "teacher" : "Емельянова Л.Г.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ОИБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.02.",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.02.",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "СИСПИ",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ОИБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.02.",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Базы данных",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Базы данных",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21ОИБ-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Базы данных",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Базы данных",
+      "teacher" : "Стюкова Я.Д.",
+      "place" : "217",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ОИБ-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ТСИ",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ТСИ",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22ОИБ-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Ин.яз",
+      "teacher" : "Валеева З.М.",
+      "place" : "320",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Математика",
+      "teacher" : "Голуб И.А,",
+      "place" : "318",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ОИБ",
+      "teacher" : "Файзулов М.И.",
+      "place" : "245",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20П-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0202",
+      "teacher" : "Каримова Р.Ф,",
+      "place" : "233",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0202",
+      "teacher" : "Каримова Р.Ф,",
+      "place" : "233",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20П-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0402",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0402",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0202",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0202",
+      "teacher" : "Фатхулова О.В.",
+      "place" : "221",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21П-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 0103",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0103",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Спецкурс",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "232",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21П-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0103",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0103",
+      "teacher" : "Набиева Л.Р.",
+      "place" : "232",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "ПП",
+      "teacher" : "Каюмов С.А.",
+      "place" : "5",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "ПП",
+      "teacher" : "Каюмов С.А.",
+      "place" : "5",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21П-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 0102",
+      "teacher" : "Каюмов С.А.",
+      "place" : "5",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "МДК 0102",
+      "teacher" : "Каюмов С.А.",
+      "place" : "5",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 0102",
+      "teacher" : "Каюмов С.А.",
+      "place" : "5",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22П-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ЭВМ",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ОАИП",
+      "teacher" : "Каримова Р.Ф.",
+      "place" : "233",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22П-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : "",
+      "place" : "",
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "ЭВМ",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "ТВиМС",
+      "teacher" : "Бакирова А. Ю.",
+      "place" : "327",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : "ТВиМС",
+      "teacher" : "Бакирова А. Ю.",
+      "place" : "327",
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22П-3",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "Физ-ра",
+      "teacher" : "Гашева Н.В.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ТВИМС",
+      "teacher" : "Бакирова А. Ю.",
+      "place" : "227",
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22П-4",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ЭВМ",
+      "teacher" : "Голуб И.А.",
+      "place" : "318",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Физ-ра",
+      "teacher" : "Гильманов Р.А.",
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "20СА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "УП 0201",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "УП 0201",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "УП 0201",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21СА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "МДК 02.03",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Основы электр.",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "МДК 01.02",
+      "teacher" : "Тимашев Т.Р.",
+      "place" : "16",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21СА-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "МДК 02.03",
+      "teacher" : "Лепеева Д.И.",
+      "place" : "235",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "Основы электр.",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001б",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22СА-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "ЭВМ",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "319",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "История",
+      "teacher" : "Исмагилова Г.М.",
+      "place" : "315",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22СА-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : "История",
+      "teacher" : "Гадельшина А.И.",
+      "place" : "общ",
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ЭВМ",
+      "teacher" : "Гарипова Р.М.",
+      "place" : "329",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ИТ",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ИТ",
+      "teacher" : "Васильева А.А.",
+      "place" : "243",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "21уКСК-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    }, {
+      "number" : 3,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001в",
+      "isChanged" : true
+    }, {
+      "number" : 4,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001в",
+      "isChanged" : true
+    }, {
+      "number" : 5,
+      "name" : "МДК 02.02",
+      "teacher" : "Шарипов Н.Т.",
+      "place" : "001в",
+      "isChanged" : true
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : true
+    } ]
+  },
+  "isChanged" : true
+}, {
+  "targetGroup" : "22уКСК-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "22уКСК-2",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "Цифр схемот",
+      "teacher" : "Тяпкина Н.Б.",
+      "place" : "11",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : "Прикл эл-ка",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+}, {
+  "targetGroup" : "23уКСК-1",
+  "scheduleDate" : 1694674800000,
+  "schedule" : {
+    "day" : "THURSDAY",
+    "lessons" : [ {
+      "number" : 0,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 1,
+      "name" : "ЭВМ",
+      "teacher" : "Бакирова А.Ю.",
+      "place" : "327",
+      "isChanged" : false
+    }, {
+      "number" : 2,
+      "name" : "ИКГ",
+      "teacher" : "Кувшинников А.М.",
+      "place" : "14",
+      "isChanged" : false
+    }, {
+      "number" : 3,
+      "name" : "ОЭиЭТ",
+      "teacher" : "Колесников Д.Н.",
+      "place" : "1",
+      "isChanged" : false
+    }, {
+      "number" : 4,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 5,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    }, {
+      "number" : 6,
+      "name" : null,
+      "teacher" : null,
+      "place" : null,
+      "isChanged" : false
+    } ]
+  },
+  "isChanged" : false
+} ]
