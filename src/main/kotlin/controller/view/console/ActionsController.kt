@@ -333,7 +333,8 @@ class ActionsController : ControllerBase() {
         val isUnitedMode = args.contains("-u") || args.contains("--united")
         val data = getTargetDataForChangesParse(isAutoMode,
                                                 if (isUnitedMode) ParseSource.UNITED_FILE else ParseSource.DOCUMENT,
-                                                !(args.contains("-c") || args.contains("--check"))
+                                                !(args.contains("-c") || args.contains("--check")),
+                                                args.contains("--legacy")
         )
 
         val result = callSpecificChangesParseFunctionBySelectedSource(if (isUnitedMode) ParseSource.UNITED_FILE
@@ -354,18 +355,18 @@ class ActionsController : ControllerBase() {
     }
 
     private fun parseChangesByDocument(data: ParseDataDetails): BasicChangesOfDay? {
-        var reader = WordReader(data.pathToFile)
+        var reader = WordReader(data.pathToFile, data.parseInLegacyMode)
         return if (data.isAutoMode) {
             val results = mutableListOf<TargetedChangesOfDay?>()
             for (group in reader.getAvailableGroups(true)) {
-                reader = WordReader(data.pathToFile)
+                reader = WordReader(data.pathToFile, data.parseInLegacyMode)
                 results.add(reader.getChanges(group, data.targetDay, false))
             }
 
             GeneralChangesOfDay(results)
         }
         else {
-            // "data.second" never will be NULL in this place. Because it may be null only in auto mode.
+            // "Data.second" never will be NULL in this place. Because it may be null only in auto mode.
             reader.getChanges(data.targetGroup!!, data.targetDay)
         }
     }
@@ -458,12 +459,12 @@ class ActionsController : ControllerBase() {
            Should, because this function MUST BE possible to call automatically by execution "*.jar" with params.
            To prevent argument collisions, this argument has only one form: full (with two '-'). */
         with(args.indexOf("--target-document")) {
-            //? If a path is specified by argument, we take it. Or else, we just ask user to input the path.
+            //? If an argument specifies a path, we take it. Or else, we just ask user to input the path.
             var path = if (this == -1) getSafeFilePath("docx")
             else args.getOrElse(this + 1) { getSafeFilePath("docx") }
 
             path = path.trim(' ', '\'', '"')
-            completeUpdate(args, ParseDataDetails(path, null, true, null))
+            completeUpdate(args, ParseDataDetails(path, null, true, null, args.contains("--legacy")))
         }
     }
 
@@ -518,7 +519,7 @@ class ActionsController : ControllerBase() {
      */
     fun initializeTestParsingProcessByArguments(args: List<String>) {
         if (args.contains("change") || args.contains("replacement"))
-            beginChangesDocumentTestParsingIfPossible()
+            beginChangesDocumentTestParsingIfPossible(args)
         if (args.contains("schedule") || args.contains("basic"))
             beginBasicScheduleTestParsingIfPossible()
         if (args.contains("site") || args.contains("web"))
@@ -528,9 +529,11 @@ class ActionsController : ControllerBase() {
     /**
      * Begins basic changes document parsing if user sent the right arguments.
      */
-    private fun beginChangesDocumentTestParsingIfPossible() {
-        val data = getTargetDataForChangesParse(isAutoMode = false, ParseSource.DOCUMENT)
-        val reader = WordReader(data.pathToFile)
+    private fun beginChangesDocumentTestParsingIfPossible(args: List<String>) {
+        val data = getTargetDataForChangesParse(isAutoMode = false, ParseSource.DOCUMENT,
+                                                !(args.contains("-c") || args.contains("--check")),
+                                                args.contains("--legacy"))
+        val reader = WordReader(data.pathToFile, data.parseInLegacyMode)
 
         try {
             reader.getChanges(data.targetGroup!!, data.targetDay)
@@ -937,13 +940,14 @@ class ActionsController : ControllerBase() {
          * * [Third][Triple.third] — Day (may be null), to the day-corresponding check.
          */
         private fun getTargetDataForChangesParse(isAutoMode: Boolean, source: ParseSource,
-                                                 isIgnoreTargetDay: Boolean = false): ParseDataDetails {
+                                                 isIgnoreTargetDay: Boolean = false,
+                                                 parseInLegacyMode: Boolean = false): ParseDataDetails {
             val path = getSafeFilePath(if (source.isUnitedMode()) "json"
                                        else "docx")
             val group = if (isAutoMode) null else inputText("Input target group")
             val day = if (source.isUnitedMode() || isIgnoreTargetDay) null else getSafeTargetDay()
 
-            return ParseDataDetails(path, group, isAutoMode, day)
+            return ParseDataDetails(path, group, isAutoMode, day, parseInLegacyMode)
         }
         /* endregion */
     }
