@@ -7,4 +7,4 @@ package model.data.parse.changes.wrapper
  *
  * @param text  Text of current parsing cell.
  */
-class InnerIteratorModel(val text: String)
+class InnerIteratorModel(val text: String, val isTextBold: Boolean = false)
