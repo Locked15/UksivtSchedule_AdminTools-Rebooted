@@ -17,6 +17,11 @@ class PathResolver {
         val generalUserSecretsFolderName = getPathFromConfigByParameter("App.Folders.Resources.Application.Secrets")
 
         val applicationResourcePath: Path
+        /* endregion */
+
+        /* region Sub-Level Paths. */
+
+        val secretConnectionsDataFolderName = getPathFromConfigByParameter("App.Folders.Resources.Application.Secrets.Connections")
 
         /**
          * Contains three values:

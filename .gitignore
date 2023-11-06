@@ -9,5 +9,4 @@
 /.mvn/
 
 # Application Secrets.
-**/secrets/*.secret
-!**/secrets/template-connection.secret
+**/secrets/**/*.secret
