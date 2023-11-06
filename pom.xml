@@ -4,7 +4,7 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <version>1.4.1</version>
+    <version>1.4.2</version>
     <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
 
@@ -58,7 +58,7 @@
             <resource>
                 <directory>./src/main/resources/${resource.application.basic}</directory>
                 <targetPath>./${resource.application.basic}</targetPath>
-                
+
                 <excludes>
                     <exclude>**/*.secret</exclude>
                 </excludes>
