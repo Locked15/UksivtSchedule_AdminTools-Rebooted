@@ -25,6 +25,10 @@
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
 
+        <!-- Target Resource Directories. -->
+        <resource.application.basic>Application</resource.application.basic>
+        <resource.schedule.basic>Schedule</resource.schedule.basic>
+
         <!-- Build Plugins Versions. -->
         <build.assembly-plugin.version>3.6.0</build.assembly-plugin.version>
         <build.tests-plugin.version>3.2.1</build.tests-plugin.version>
@@ -49,6 +53,27 @@
 
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
+        <resources>
+            <!-- Application Resources. -->
+            <resource>
+                <directory>./src/main/resources/${resource.application.basic}</directory>
+                <targetPath>./${resource.application.basic}</targetPath>
+                
+                <excludes>
+                    <exclude>**/*.secret</exclude>
+                </excludes>
+            </resource>
+            <!-- Schedule Resources. -->
+            <resource>
+                <directory>./src/main/resources/${resource.schedule.basic}</directory>
+                <targetPath>./${resource.schedule.basic}</targetPath>
+
+                <excludes>
+                    <exclude>**/*.json</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
         <plugins>
             <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-maven-plugin -->
             <plugin>
