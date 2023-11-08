@@ -1,6 +1,7 @@
 package model.data.schedule.base
 
 import com.fasterxml.jackson.annotation.JsonAlias
+import controller.data.getter.SiteParser.Companion.NON_BREAKING_SPACE
 
 
 /**
@@ -55,6 +56,15 @@ class Lesson(var number: Int?, var name: String?, var teacher: String?, var plac
     /* endregion */
 
     /* region Functions */
+
+    fun clearFromNonBreakingSpaces() {
+        // NBSP — Non-Breaking Space.
+        with (NON_BREAKING_SPACE) {
+            if (name?.contains(this) == true) name = name?.replace(this, "")
+            if (teacher?.contains(this) == true) teacher = teacher?.replace(this, "")
+            if (place?.contains(this) == true) place = place?.replace(this, "")
+        }
+    }
 
     /**
      * Allow comparing two instances of this class.

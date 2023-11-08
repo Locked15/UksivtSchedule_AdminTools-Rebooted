@@ -87,7 +87,7 @@ class Reader(pathToFile: String, parseInLegacyMode: Boolean) {
 
         // I not sure about it, but I think it's better if I clear from empty elements and distinct final list.
         foundGroups.removeAll { it.isBlank() }
-        return foundGroups.distinct()
+        return foundGroups.distinct().map { it.replace(NON_BREAKING_SPACE, "").trim() }
     }
 
     /**
@@ -144,7 +144,10 @@ class Reader(pathToFile: String, parseInLegacyMode: Boolean) {
             }
 
             return if (baseData.changes.changedLessons.isEmpty()) null
-            else baseData.changes
+            else {
+                baseData.changes.changedLessons.map { it.clearFromNonBreakingSpaces() }
+                baseData.changes
+            }
         }
     }
 
