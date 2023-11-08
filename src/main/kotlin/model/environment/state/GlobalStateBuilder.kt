@@ -11,6 +11,8 @@ class GlobalStateBuilder {
 
     private var resourceProjectPath: List<String>? = null
 
+    private var dbNameParam: String? = null
+
     private var dbTypeParam: String? = null
 
     private var configFileName: String? = null
@@ -44,6 +46,12 @@ class GlobalStateBuilder {
                 else -> productionResourcePath
             }
         })
+        setDBNameParam(with(args) {
+            when (val dbNameIndex = indexOf("--db-name")) {
+                -1 -> DB_DEFAULT_NAME
+                else -> args.getOrElse(dbNameIndex + 1) { DB_DEFAULT_NAME }
+            }
+        })
         setDBTypeParam(with(args) {
             when (val dbTypeIndex = indexOf("--db-type")) {
                 -1 -> ""
@@ -70,6 +78,11 @@ class GlobalStateBuilder {
         return this
     }
 
+    private fun setDBNameParam(name: String): GlobalStateBuilder {
+        dbNameParam = name
+        return this
+    }
+
     private fun setDBTypeParam(param: String): GlobalStateBuilder {
         //? To make it case-insensitive (and because config values write with a first letter in upper-case), we make it.
         dbTypeParam = if (param.isNotEmpty()) extractDBParameter(param.trim('\'', '"'))
@@ -92,10 +105,12 @@ class GlobalStateBuilder {
             param.substring(1)
     /* endregion */
 
-    fun build() = GlobalState(projectDirectory!!, resourceProjectPath!!,
+    fun build() = GlobalState(projectDirectory!!, resourceProjectPath!!, dbNameParam!!,
                               dbTypeParam!!, logLevel!!, configFileName!!)
 
     companion object {
+
+        private const val DB_DEFAULT_NAME = "UksivtSchedule"
 
         private val developmentResourcePath = listOf("src", "main", "resources")
 

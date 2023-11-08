@@ -13,7 +13,7 @@ private const val DEFAULT_USER_NAME = "postgres"
 private const val DEFAULT_USER_PASSWORD = "Unknown"
 
 fun getConfigurationModel(configurationParameters: HashMap<String, String>): ScheduleConfig {
-    val defaultDBTargetCycleKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.DB_Name}.TargetCycle"
+    val defaultDBTargetCycleKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.getDBName()}.TargetCycle"
     val targetCycle = configurationParameters.getOrElse(defaultDBTargetCycleKey) {
         configurationParameters.getOrElse("DB.General.TargetCycle") {
             null
@@ -25,9 +25,9 @@ fun getConfigurationModel(configurationParameters: HashMap<String, String>): Sch
 }
 
 private fun getConnectionModel(configurationParameters: HashMap<String, String>): DBConnectionModel {
-    val defaultDBAddressKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.DB_Name}.Address"
-    val defaultDBUserKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.DB_Name}.User"
-    val defaultDBPasswordKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.DB_Name}.Password"
+    val defaultDBAddressKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.getDBName()}.Address"
+    val defaultDBUserKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.getDBName()}.User"
+    val defaultDBPasswordKey = "DB${globalState.dbTypeParam}.${ScheduleConfig.getDBName()}.Password"
 
     //? Here we take DB address. Or use 'localhost:5432' if it's not available.
     val addressWithPort = configurationParameters.getOrElse(defaultDBAddressKey) {
@@ -48,5 +48,5 @@ private fun getConnectionModel(configurationParameters: HashMap<String, String>)
         }
     }
 
-    return DBConnectionModel(addressWithPort, ScheduleConfig.DB_Name, user, password)
+    return DBConnectionModel(addressWithPort, ScheduleConfig.getDBName(), user, password)
 }

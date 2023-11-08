@@ -36,7 +36,7 @@ class ScheduleDataContext private constructor() {
         if (rawConfiguration != null) {
             dbConfiguration = getConfigurationModel(rawConfiguration)
             dbConnection = Database.connect(
-                    "${dbKind.getSpecificDataBaseAddressConnector()}://${dbConfiguration.connectionModel.dbAddress}/${ScheduleConfig.DB_Name}",
+                    "${dbKind.getSpecificDataBaseAddressConnector()}://${dbConfiguration.connectionModel.dbAddress}/${ScheduleConfig.getDBName()}",
                     driver = dbKind.getSpecificDataBaseDataDriver(),
                     user = dbConfiguration.connectionModel.userName,
                     password = dbConfiguration.connectionModel.userPassword
