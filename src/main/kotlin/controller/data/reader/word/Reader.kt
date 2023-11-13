@@ -52,10 +52,10 @@ class Reader(pathToFile: String, parseInLegacyMode: Boolean) {
     private val centeredGroupNameCellId: Int = if (parseInLegacyMode) 3 else 0
 
     /**
-     * TODO: Check it.
-     * There is no practises for now, so I can't check it now.
+     * Contains ID of the practise cell, so we can call it directly.
+     * !IMP: This may be varied, depending on a document version.
      */
-    private val practiseGroupCellId: Int = if (parseInLegacyMode) 6 else 6
+    private val practiseGroupCellId: Int = if (parseInLegacyMode) 6 else 8
     /* endregion */
 
     /* region Initializers */
