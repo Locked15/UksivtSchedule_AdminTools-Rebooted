@@ -37,7 +37,7 @@
         <dependencies.jsoup.version>1.16.2</dependencies.jsoup.version>
         <dependencies.apache-poi.version>5.2.4</dependencies.apache-poi.version>
 
-        <dependencies.jackson.version>2.16.0-rc1</dependencies.jackson.version>
+        <dependencies.jackson.version>2.16.0</dependencies.jackson.version>
         <dependencies.postgresql-core.version>42.6.0</dependencies.postgresql-core.version>
         <dependencies.kotlin-exposed.version>0.44.1</dependencies.kotlin-exposed.version>
 
